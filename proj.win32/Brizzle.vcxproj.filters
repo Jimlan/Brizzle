@@ -22,6 +22,9 @@
     <Filter Include="Classes\utils">
       <UniqueIdentifier>{9776b312-8a44-4e3c-bcb5-b41bdd8cb021}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\managers">
+      <UniqueIdentifier>{e132a352-feaa-451a-965f-5b6a92a3913c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -35,6 +38,12 @@
     </ClCompile>
     <ClCompile Include="..\Classes\scenes\HomeScene.cpp">
       <Filter>Classes\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\VisibleRect.cpp">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\managers\SoundManager.cpp">
+      <Filter>Classes\managers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +61,15 @@
     </ClInclude>
     <ClInclude Include="..\Classes\scenes\HomeScene.h">
       <Filter>Classes\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\VisibleRect.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\managers\SoundManager.h">
+      <Filter>Classes\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\userdefault_keys.h">
+      <Filter>Classes\common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

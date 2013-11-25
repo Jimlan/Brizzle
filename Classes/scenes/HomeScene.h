@@ -6,8 +6,12 @@
 class HomeScene:public BaseScene
 {
 private:
-	void __initBackground();
-	void __initLighting();
+    /* 设置场景的背景图片 */
+    void __initBackground();
+    /* 添加旋转的光芒 */
+    void __initLighting();
+    /* 初始化主页按钮 */
+    void __initMainMenu();
 public:
     virtual bool init();
     virtual void loadAssets();
