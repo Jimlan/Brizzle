@@ -7,6 +7,21 @@
     <Filter Include="Classes">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\base">
+      <UniqueIdentifier>{ffc24e26-24dc-4ae1-bc0a-ecfd78696a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\components">
+      <UniqueIdentifier>{3d8131a8-3139-44b4-b465-5e6bfafd035a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\common">
+      <UniqueIdentifier>{9057ee1c-3720-45f6-87f9-0f96a275e5cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\scenes">
+      <UniqueIdentifier>{de03dd80-c163-43c5-9d2a-eccefab2f525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\utils">
+      <UniqueIdentifier>{9776b312-8a44-4e3c-bcb5-b41bdd8cb021}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -15,8 +30,11 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>Classes</Filter>
+    <ClCompile Include="..\Classes\base\BaseScene.cpp">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\HomeScene.cpp">
+      <Filter>Classes\scenes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -26,8 +44,14 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
-      <Filter>Classes</Filter>
+    <ClInclude Include="..\Classes\common\common_header.h">
+      <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\BaseScene.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\HomeScene.h">
+      <Filter>Classes\scenes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
