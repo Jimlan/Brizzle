@@ -5,6 +5,9 @@
 
 class HomeScene:public BaseScene
 {
+private:
+	void __initBackground();
+	void __initLighting();
 public:
     virtual bool init();
     virtual void loadAssets();
