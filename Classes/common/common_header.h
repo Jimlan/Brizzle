@@ -14,4 +14,10 @@ using namespace CocosDenshion;
 #define selector private
 #define SPRITE(URL) CCSprite::createWithSpriteFrameName(URL)
 
+
+#define UD_GET_BOOL(key) CCUserDefault::sharedUserDefault()->getBoolForKey(key)
+#define UD_GET_DOUBLE(key) CCUserDefault::sharedUserDefault()->getDoubleForKey(key)
+
+
+
 #endif // !_COMMON_HEADER_H_

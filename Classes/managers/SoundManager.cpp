@@ -13,5 +13,9 @@ SoundManager * SoundManager::shareSoundManager()
 
 void SoundManager::playBackground( const char *sound,bool repeat )
 {
-    CCUserDefault::sharedUserDefault()->getBoolForKey(KEY_SOUND_ENABLE);
+    bool soundEnable = CCUserDefault::sharedUserDefault()->getBoolForKey(KEY_SOUND_ENABLE);
+    if(soundEnable)
+    {
+        SimpleAudioEngine::sharedEngine()->playBackgroundMusic(sound,repeat);
+    }
 }
