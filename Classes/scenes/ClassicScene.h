@@ -9,6 +9,7 @@ class ClassicScene:public BaseScene
 private:
     void __initBackground();
     void __initPauseSprite();
+	void __createBird();
     PauseMenu *m_pPauseMenu;
 public:
     virtual void loadAssets();

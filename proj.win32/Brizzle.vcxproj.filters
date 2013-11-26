@@ -69,6 +69,12 @@
     <ClCompile Include="..\Classes\components\PauseMenu.cpp">
       <Filter>Classes\components</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\components\Bird.cpp">
+      <Filter>Classes\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\managers\AnimationManager.cpp">
+      <Filter>Classes\managers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -118,6 +124,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\common\notifications_names.h">
       <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\components\Bird.h">
+      <Filter>Classes\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\managers\AnimationManager.h">
+      <Filter>Classes\managers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

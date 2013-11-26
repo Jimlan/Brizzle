@@ -1,8 +1,8 @@
-﻿生成启动时间为 2013/11/26 16:32:44。
+﻿生成启动时间为 2013/11/26 18:12:27。
      1>项目“E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\Brizzle.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         D:\Microsoft\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\include" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\platform\win32" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\platform\third_party\win32" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\external" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\external\chipmunk\include\chipmunk" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\CocosDenshion\include" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\extensions" /I..\Classes /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\components\PauseMenu.cpp
-         PauseMenu.cpp
+         D:\Microsoft\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\include" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\platform\win32" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\platform\third_party\win32" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\external" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\external\chipmunk\include\chipmunk" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\CocosDenshion\include" /I"E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\extensions" /I..\Classes /I.. /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\components\Bird.cpp
+         Bird.cpp
        PreLinkEvent:
          if not exist "E:\cocos\cocos2d-x-2.2.1\Debug.win32\" mkdir "E:\cocos\cocos2d-x-2.2.1\Debug.win32\"
          xcopy /Y /Q "E:\cocos\cocos2d-x-2.2.1\projects\Brizzle\proj.win32\..\..\..\external\libwebsockets\win32\lib\*.*" "E:\cocos\cocos2d-x-2.2.1\Debug.win32\"
@@ -14,8 +14,10 @@
          Debug.win32\BaseScene.obj
          Debug.win32\BaseSprite.obj
          Debug.win32\VisibleRect.obj
+         Debug.win32\Bird.obj
          Debug.win32\PauseMenu.obj
          Debug.win32\AppStartup.obj
+         Debug.win32\AnimationManager.obj
          Debug.win32\SoundManager.obj
          Debug.win32\ClassicScene.obj
          Debug.win32\HomeScene.obj
@@ -32,4 +34,4 @@
 
 生成成功。
 
-已用时间 00:00:03.65
+已用时间 00:00:03.91

@@ -132,8 +132,10 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClCompile Include="..\Classes\base\BaseScene.cpp" />
     <ClCompile Include="..\Classes\base\BaseSprite.cpp" />
     <ClCompile Include="..\Classes\base\VisibleRect.cpp" />
+    <ClCompile Include="..\Classes\components\Bird.cpp" />
     <ClCompile Include="..\Classes\components\PauseMenu.cpp" />
     <ClCompile Include="..\Classes\config\AppStartup.cpp" />
+    <ClCompile Include="..\Classes\managers\AnimationManager.cpp" />
     <ClCompile Include="..\Classes\managers\SoundManager.cpp" />
     <ClCompile Include="..\Classes\scenes\ClassicScene.cpp" />
     <ClCompile Include="..\Classes\scenes\HomeScene.cpp" />
@@ -150,8 +152,10 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\common\common_header.h" />
     <ClInclude Include="..\Classes\common\notifications_names.h" />
     <ClInclude Include="..\Classes\common\userdefault_keys.h" />
+    <ClInclude Include="..\Classes\components\Bird.h" />
     <ClInclude Include="..\Classes\components\PauseMenu.h" />
     <ClInclude Include="..\Classes\config\AppStartup.h" />
+    <ClInclude Include="..\Classes\managers\AnimationManager.h" />
     <ClInclude Include="..\Classes\managers\SoundManager.h" />
     <ClInclude Include="..\Classes\scenes\ClassicScene.h" />
     <ClInclude Include="..\Classes\scenes\HomeScene.h" />

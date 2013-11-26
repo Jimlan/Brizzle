@@ -1,6 +1,7 @@
 ﻿#include "ClassicScene.h"
 #include "base/BaseSprite.h"
 #include "components/PauseMenu.h"
+#include "components/Bird.h"
 
 bool ClassicScene::init()
 {
@@ -16,7 +17,7 @@ bool ClassicScene::init()
 
 void ClassicScene::loadAssets()
 {
-    //m_pFrameCache->addSpriteFramesWithFile("");
+    m_pFrameCache->addSpriteFramesWithFile("images/character/Character_RETINA.plist");
 }
 
 void ClassicScene::__initBackground()
@@ -43,7 +44,7 @@ void ClassicScene::__initBackground()
 
 void ClassicScene::__woodMoveCall()
 {
-
+	__createBird();
 }
 
 
@@ -90,5 +91,12 @@ void ClassicScene::__resumeGame( CCObject *pSender )
 {
 	m_pPauseMenu->removeFromParent();
 	m_pPauseMenu = NULL;
+}
+
+void ClassicScene::__createBird()
+{
+	Bird *bird = Bird::create(0);
+	bird->setPosition(VisibleRect::center());
+	addChild(bird);
 }
 
