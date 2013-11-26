@@ -9,8 +9,8 @@ bool ClassicScene::init()
     {
         return false;
     }
-	__initBackground();
-	__initPauseSprite();
+    __initBackground();
+    __initPauseSprite();
     SoundManager::shareSoundManager()->playBackground("sounds/BGM/Play_bgm_long.mp3",true);
     return true;
 }
@@ -44,7 +44,7 @@ void ClassicScene::__initBackground()
 
 void ClassicScene::__woodMoveCall()
 {
-	__createBird();
+    __createBird();
 }
 
 
@@ -60,7 +60,7 @@ void ClassicScene::__initPauseSprite()
     pauseSpr->setAnchorPoint(ccp(0,1));
     pauseSpr->setPosition(ccp(15,m_winSize.height-15));
     pauseSpr->setTargetEnded(this,menu_selector(ClassicScene::__showPauseMenu));
-	pauseSpr->setOpacity(0);
+    pauseSpr->setOpacity(0);
     addChild(pauseSpr);
 }
 
@@ -70,33 +70,48 @@ void ClassicScene::__showPauseMenu( CCObject *pSender )
     {
         return ;
     }
+	SoundManager::shareSoundManager()->playEffect("sounds/SFX/pausebuttonclick.mp3");
     m_pPauseMenu = PauseMenu::create();
     addChild(m_pPauseMenu);
 }
 
 void ClassicScene::onEnter()
 {
-	BaseScene::onEnter();
-	CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__resumeGame),NOTI_RESUME_GAME,NULL);
+    BaseScene::onEnter();
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__resumeGame),NOTI_RESUME_GAME,NULL);
 }
 
 void ClassicScene::onExit()
 {
-	BaseScene::onExit();
-	CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_RESUME_GAME);
+    BaseScene::onExit();
+    CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_RESUME_GAME);
 
 }
 
 void ClassicScene::__resumeGame( CCObject *pSender )
 {
-	m_pPauseMenu->removeFromParent();
-	m_pPauseMenu = NULL;
+    m_pPauseMenu->removeFromParent();
+    m_pPauseMenu = NULL;
 }
 
 void ClassicScene::__createBird()
 {
-	Bird *bird = Bird::create(0);
-	bird->setPosition(VisibleRect::center());
-	addChild(bird);
+	m_pBirdBatchNode = CCSpriteBatchNode::createWithTexture(SPRITE("box00_burn@2x.png")->getTexture());
+    for(short row = 0; row<9; row++)
+    {
+        for(short col=0; col<7; col++)
+        {
+			short birdType = rand()%8;
+			Bird *bird = Bird::create(birdType);
+			birds[row][col] = bird;
+			bird->row = row;
+			bird->col = col;
+			bird->setScale(0.9f);
+			bird->setPosition(ccp(col*76,row*76));
+			m_pBirdBatchNode->addChild(bird);
+        }
+    }
+	m_pBirdBatchNode->setPosition(ccp(93,85));
+	addChild(m_pBirdBatchNode);
 }
 

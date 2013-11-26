@@ -27,7 +27,6 @@ public:
     void setTargetEnded(CCObject *target,SEL_MenuHandler sel);
     void setTouchEnabled(bool enable);
     void setTouchPriority(int proirity);
-selector:
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);

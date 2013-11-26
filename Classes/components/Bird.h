@@ -9,7 +9,11 @@ private:
 	void blink();
 	CCAnimate *blinkAct;
 public:
+	short row;
+	short col;
 	static Bird *create(short type);
+	virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
+	
 };
 
 

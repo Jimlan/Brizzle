@@ -1,4 +1,5 @@
 ﻿#include "Bird.h"
+#include "managers/SoundManager.h"
 
 Bird * Bird::create( short type )
 {
@@ -26,5 +27,11 @@ void Bird::blink()
     CCDelayTime *delayTime = CCDelayTime::create(delaySec);
     CCCallFunc *callfunc = CCCallFunc::create(this,callfunc_selector(Bird::blink));
     runAction(CCSequence::create(delayTime,blinkAct,callfunc,NULL));
+}
+
+void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
+{
+	SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_droped.mp3");
+	BaseSprite::ccTouchEnded(pTouch,pEvent);
 }
 

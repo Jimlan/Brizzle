@@ -3,6 +3,7 @@
 
 #include "base/BaseScene.h"
 #include "components/PauseMenu.h"
+#include "components/Bird.h"
 
 class ClassicScene:public BaseScene
 {
@@ -12,6 +13,8 @@ private:
 	void __createBird();
     PauseMenu *m_pPauseMenu;
 public:
+	CCSpriteBatchNode *m_pBirdBatchNode;
+	Bird *birds[9][7];
     virtual void loadAssets();
     virtual bool init();
     CREATE_FUNC(ClassicScene);
@@ -25,7 +28,7 @@ selector:
     void __delayCall(CCNode *node);
     /* 显示暂停按钮 */
     void __showPauseMenu(CCObject *pSender);
-
+	/* 继续游戏 */
 	void __resumeGame(CCObject *pSender);
 };
 
