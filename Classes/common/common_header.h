@@ -6,6 +6,7 @@
 #include "SimpleAudioEngine.h"
 #include "base/VisibleRect.h"
 #include "userdefault_keys.h"
+#include "notifications_names.h"
 
 using namespace cocos2d;
 using namespace cocos2d::extension;

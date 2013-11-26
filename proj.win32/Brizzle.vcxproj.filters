@@ -63,6 +63,12 @@
     <ClCompile Include="..\Classes\scenes\IcebreakScene.cpp">
       <Filter>Classes\scenes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\base\BaseSprite.cpp">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\components\PauseMenu.cpp">
+      <Filter>Classes\components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -103,6 +109,15 @@
     </ClInclude>
     <ClInclude Include="..\Classes\scenes\IcebreakScene.h">
       <Filter>Classes\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\BaseSprite.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\components\PauseMenu.h">
+      <Filter>Classes\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\common\notifications_names.h">
+      <Filter>Classes\common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
