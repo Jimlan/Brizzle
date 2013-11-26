@@ -8,8 +8,9 @@ class SoundManager
 private:
     static SoundManager *_instance;
 public:
+	void playEffect(const char *sound);
     void playBackground(const char *sound,bool repeat);
-    SoundManager *shareSoundManager();
+    static SoundManager *shareSoundManager();
 };
 
 #endif // !_SOUNDMANAGER_H_

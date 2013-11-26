@@ -25,6 +25,9 @@
     <Filter Include="Classes\managers">
       <UniqueIdentifier>{e132a352-feaa-451a-965f-5b6a92a3913c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\config">
+      <UniqueIdentifier>{ae3a2209-a8ce-48e6-93e9-ef3078e0bd48}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -44,6 +47,21 @@
     </ClCompile>
     <ClCompile Include="..\Classes\managers\SoundManager.cpp">
       <Filter>Classes\managers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\config\AppStartup.cpp">
+      <Filter>Classes\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\BaseMenuItemSprite.cpp">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\ClassicScene.cpp">
+      <Filter>Classes\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\PandoraScene.cpp">
+      <Filter>Classes\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\scenes\IcebreakScene.cpp">
+      <Filter>Classes\scenes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +88,21 @@
     </ClInclude>
     <ClInclude Include="..\Classes\common\userdefault_keys.h">
       <Filter>Classes\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\config\AppStartup.h">
+      <Filter>Classes\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\BaseMenuItemSprite.h">
+      <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\ClassicScene.h">
+      <Filter>Classes\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\PandoraScene.h">
+      <Filter>Classes\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\scenes\IcebreakScene.h">
+      <Filter>Classes\scenes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

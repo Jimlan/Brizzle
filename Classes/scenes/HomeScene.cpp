@@ -1,4 +1,8 @@
 ﻿#include "HomeScene.h"
+#include "base/BaseMenuItemSprite.h"
+#include "ClassicScene.h"
+#include "PandoraScene.h"
+#include "IcebreakScene.h"
 
 void HomeScene::loadAssets()
 {
@@ -45,6 +49,7 @@ bool HomeScene::init()
     __initBackground();
     __initLighting();
     __initMainMenu();
+	SoundManager::shareSoundManager()->playBackground("sounds/BGM/Main_bgm.mp3",true);
     return true;
 }
 
@@ -71,12 +76,27 @@ void HomeScene::__initLighting()
 
 void HomeScene::__initMainMenu()
 {
-    CCMenuItemSprite *classic = CCMenuItemSprite::create(SPRITE("main_menu_classic_china@2x.png"),SPRITE("main_menu_classic_push_china@2x.png"));
-    CCMenuItemSprite *icebreak = CCMenuItemSprite::create(SPRITE("main_menu_icebreak_china@2x.png"),SPRITE("main_menu_icebreak_push_china@2x.png"));
-    CCMenuItemSprite *pandora = CCMenuItemSprite::create(SPRITE("main_menu_pandora_china@2x.png"),SPRITE("main_menu_pandora_push_china@2x.png"));
+    CCMenuItemSprite *classic = BaseMenuItemSprite::create(SPRITE("main_menu_classic_china@2x.png"),SPRITE("main_menu_classic_push_china@2x.png"),this,menu_selector(HomeScene::__gotoClassic));
+    CCMenuItemSprite *icebreak = BaseMenuItemSprite::create(SPRITE("main_menu_icebreak_china@2x.png"),SPRITE("main_menu_icebreak_push_china@2x.png"),this,menu_selector(HomeScene::__gotoIcebreak));
+    CCMenuItemSprite *pandora = BaseMenuItemSprite::create(SPRITE("main_menu_pandora_china@2x.png"),SPRITE("main_menu_pandora_push_china@2x.png"),this,menu_selector(HomeScene::__gotoPandora));
     CCMenu *mainMenu = CCMenu::create(classic,icebreak,pandora,NULL);
     addChild(mainMenu);
 	classic->setPosition(ccp(0,130));
 	pandora->setPosition(ccp(0,-130));
+}
+
+void HomeScene::__gotoClassic( CCObject *pSender )
+{
+	m_pDirector->replaceScene(CCTransitionFlipAngular::create(1,ClassicScene::create()));
+}
+
+void HomeScene::__gotoPandora( CCObject *pSender )
+{
+	m_pDirector->replaceScene(CCTransitionSplitRows::create(0.5,PandoraScene::create()));
+}
+
+void HomeScene::__gotoIcebreak( CCObject *pSender )
+{
+	m_pDirector->replaceScene(CCTransitionTurnOffTiles::create(0.5,IcebreakScene::create()));
 }
 

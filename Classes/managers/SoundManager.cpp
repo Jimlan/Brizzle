@@ -19,3 +19,12 @@ void SoundManager::playBackground( const char *sound,bool repeat )
         SimpleAudioEngine::sharedEngine()->playBackgroundMusic(sound,repeat);
     }
 }
+
+void SoundManager::playEffect( const char *sound )
+{
+	bool soundEnable = CCUserDefault::sharedUserDefault()->getBoolForKey(KEY_SOUND_ENABLE);
+	if(soundEnable)
+	{
+		SimpleAudioEngine::sharedEngine()->playEffect(sound);
+	}
+}

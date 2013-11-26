@@ -16,6 +16,13 @@ public:
     virtual bool init();
     virtual void loadAssets();
     CREATE_FUNC(HomeScene);
+selector:
+	/* 切换到经典模式场景 */
+	void __gotoClassic(CCObject *pSender);
+	/* 切换到潘多拉模式 */
+	void __gotoPandora(CCObject *pSender);
+	/* 切换到破冰模式 */
+	void __gotoIcebreak(CCObject *pSender);
 };
 
 #endif // !_HOMESCENE_H_

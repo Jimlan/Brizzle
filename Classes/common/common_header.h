@@ -18,6 +18,7 @@ using namespace CocosDenshion;
 #define UD_GET_BOOL(key) CCUserDefault::sharedUserDefault()->getBoolForKey(key)
 #define UD_GET_DOUBLE(key) CCUserDefault::sharedUserDefault()->getDoubleForKey(key)
 
+#define UD_SET_BOOL(key,val) CCUserDefault::sharedUserDefault()->setBoolForKey(key,val)
 
 
 #endif // !_COMMON_HEADER_H_

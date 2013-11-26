@@ -2,6 +2,7 @@
 #define _BASESCENE_H_
 
 #include "common/common_header.h"
+#include "managers/SoundManager.h"
 
 class BaseScene:public CCScene
 {
