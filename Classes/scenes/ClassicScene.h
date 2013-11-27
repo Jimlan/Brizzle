@@ -14,7 +14,6 @@ private:
     PauseMenu *m_pPauseMenu;
 public:
 	CCSpriteBatchNode *m_pBirdBatchNode;
-	Bird *birds[9][7];
     virtual void loadAssets();
     virtual bool init();
     CREATE_FUNC(ClassicScene);

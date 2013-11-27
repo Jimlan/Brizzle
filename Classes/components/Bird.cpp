@@ -109,6 +109,10 @@ void Bird::__changeBirdPos()
     ShareManager *sm = ShareManager::shareManager();
     Bird *fst = sm->fstBird;
     Bird *sed = sm->sedBird;
+	/* 交换在二维数组中的位置 */
+	sm->birds[fst->row][fst->col] = sed;
+	sm->birds[sed->row][sed->col] = fst;
+	/* 临时保存行列坐标 */
     int fstRow = fst->row;
     int fstCol = fst->col;
     CCPoint fstPos = fst->getPosition();
@@ -120,6 +124,7 @@ void Bird::__changeBirdPos()
     sed->runAction(CCSequence::create(sedMoveAct,moveCall,NULL));
 	fst->isMoving = true;
 	sed->isMoving = true;
+	/* 更新小鸟的行列属性 */
     fst->row = row;
     fst->col = col;
     row = fstRow;

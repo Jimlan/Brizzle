@@ -105,7 +105,7 @@ void ClassicScene::__createBird()
         {
 			short birdType = rand()%8;
 			Bird *bird = Bird::create(birdType);
-			birds[row][col] = bird;
+			ShareManager::shareManager()->birds[row][col] = bird;
 			bird->row = row;
 			bird->col = col;
 			bird->setScale(0.9f);

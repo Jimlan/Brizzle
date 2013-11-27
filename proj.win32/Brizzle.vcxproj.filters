@@ -78,6 +78,9 @@
     <ClCompile Include="..\Classes\managers\ShareManager.cpp">
       <Filter>Classes\managers</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\util\PuzzleUtil.cpp">
+      <Filter>Classes\utils</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -136,6 +139,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\managers\ShareManager.h">
       <Filter>Classes\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\util\PuzzleUtil.h">
+      <Filter>Classes\utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
