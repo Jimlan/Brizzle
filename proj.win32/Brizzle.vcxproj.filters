@@ -75,6 +75,9 @@
     <ClCompile Include="..\Classes\managers\AnimationManager.cpp">
       <Filter>Classes\managers</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\managers\ShareManager.cpp">
+      <Filter>Classes\managers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -129,6 +132,9 @@
       <Filter>Classes\components</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\managers\AnimationManager.h">
+      <Filter>Classes\managers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\managers\ShareManager.h">
       <Filter>Classes\managers</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,10 +5,10 @@
 
 class BaseSprite:public CCSprite,public CCTouchDelegate
 {
+protected:
+	bool _isContainPoint(CCTouch *touch);
 private:
     bool m_bTouchEnable;
-
-    bool __isContainPoint(CCTouch *touch);
     CCObject *m_pTargetBegan;
     SEL_MenuHandler beganHandler;
     CCObject *m_pTargetMove;
@@ -27,6 +27,7 @@ public:
     void setTargetEnded(CCObject *target,SEL_MenuHandler sel);
     void setTouchEnabled(bool enable);
     void setTouchPriority(int proirity);
+	//void setIsSwallow(bool swallow);
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);

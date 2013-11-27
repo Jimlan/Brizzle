@@ -43,18 +43,19 @@ BaseSprite * BaseSprite::create( const char *fileName )
     return NULL;
 }
 
-bool BaseSprite::__isContainPoint( CCTouch *touch )
+bool BaseSprite::_isContainPoint( CCTouch *touch )
 {
     CCPoint arPoint = getAnchorPointInPoints();
     CCPoint point = convertTouchToNodeSpaceAR(touch);
-    CCSize spriteSize = getContentSize();
+	CCRect rect = boundingBox();
+    CCSize spriteSize = rect.size;
     CCRect spriteRect = CCRectMake(-arPoint.x,-arPoint.y,spriteSize.width,spriteSize.height);
     return spriteRect.containsPoint(point);
 }
 
 bool BaseSprite::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
 {
-    if(__isContainPoint(pTouch))
+    if(_isContainPoint(pTouch))
     {
         if(m_pTargetBegan&&beganHandler)
         {

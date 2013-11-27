@@ -2,6 +2,7 @@
 #include "base/BaseSprite.h"
 #include "components/PauseMenu.h"
 #include "components/Bird.h"
+#include "managers/ShareManager.h"
 
 bool ClassicScene::init()
 {
@@ -85,7 +86,8 @@ void ClassicScene::onExit()
 {
     BaseScene::onExit();
     CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_RESUME_GAME);
-
+	ShareManager::shareManager()->fstBird = NULL;
+	ShareManager::shareManager()->sedBird = NULL;
 }
 
 void ClassicScene::__resumeGame( CCObject *pSender )
@@ -107,7 +109,7 @@ void ClassicScene::__createBird()
 			bird->row = row;
 			bird->col = col;
 			bird->setScale(0.9f);
-			bird->setPosition(ccp(col*76,row*76));
+			bird->setPosition(ccp(col*ShareManager::boxWidth,row*ShareManager::boxHeight));
 			m_pBirdBatchNode->addChild(bird);
         }
     }

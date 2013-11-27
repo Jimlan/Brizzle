@@ -6,14 +6,28 @@
 class Bird:public BaseSprite
 {
 private:
-	void blink();
-	CCAnimate *blinkAct;
+    void blink();
+    CCAnimate *blinkAct;
+    /* 记录点击的小鸟 */
+    void __recordBird();
+    /* 交换记录的小鸟的位置 */
+    void __changeBirdPos();
+
+    void __shakeBody();
+
+	void __moveEnd(CCNode *node);
 public:
-	short row;
-	short col;
-	static Bird *create(short type);
-	virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
-	
+	/* 记录当前是否在移动 如果正在移动的话 就禁止接收事件 */
+    bool isMoving;
+    short row;
+    short col;
+    Bird():isMoving(false) {};
+    static Bird *create(short type);
+    virtual void onEnter();
+    virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
+    virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
+
 };
 
 
