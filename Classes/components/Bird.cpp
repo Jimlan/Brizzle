@@ -47,17 +47,14 @@ void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
         CCSequence *scaleSeq = CCSequence::create(scaleIn,scaleBack,NULL);
         runAction(scaleSeq);
         ShareManager *sm = ShareManager::shareManager();
+		if(isMoving==false){
+			__recordBird();
+		}
         if(sm->sedBird!=NULL)
         {
             sm->fstBird = NULL;
             sm->sedBird = NULL;
-        }else{
-			if(isMoving==false)
-			{
-				__recordBird();
-			}
-			
-		}
+        }
         BaseSprite::ccTouchEnded(pTouch,pEvent);
     }
 
