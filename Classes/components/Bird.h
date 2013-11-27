@@ -21,7 +21,8 @@ public:
     bool isMoving;
     short row;
     short col;
-    Bird():isMoving(false) {};
+	short birdType;
+    Bird():birdType(-1),isMoving(false) {};
     static Bird *create(short type);
     virtual void onEnter();
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);

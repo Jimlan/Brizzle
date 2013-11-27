@@ -14,6 +14,7 @@ Bird * Bird::create( short type )
     CCString *name = CCString::createWithFormat("box0%d_normal_00@2x.png",type);
     if(bird&&bird->initWithSpriteFrameName(name->getCString()))
     {
+		bird->birdType = type;
         bird->autorelease();
         CCArray *frames = CCArray::create();
         CCString *blinkFrame = CCString::createWithFormat("box0%d_normal_02@2x.png",type);

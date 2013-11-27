@@ -28,11 +28,29 @@ void PuzzleUtil::createBirds()
             ShareManager::shareManager()->birds[i][j] = bird;
         }
     }
-
 }
 
 bool PuzzleUtil::detectPuzzleBirds()
 {
 	/* 查看是否存在三个以上的 */
+	//step 1  left->right by row
+	ShareManager *sm = ShareManager::shareManager();
+	for(int i=0;i<ShareManager::row;i++)
+	{
+		//记录出现的次数 和上一次出现的的小鸟
+		int appearCount = 0;
+		Bird *prevBird = NULL;
+		for(int j=0;j<ShareManager::col;j++)
+		{
+			Bird *bird = sm->birds[i][j];
+			if(prevBird==NULL)
+			{
+				prevBird = bird;
+				appearCount++;
+			}else if(prevBird->birdType==bird->birdType){
+				appearCount++;
+			}
+		}
+	}
 	return true;
 }
