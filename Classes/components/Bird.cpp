@@ -41,6 +41,7 @@ void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
 {
     if(_isContainPoint(pTouch))
     {
+		CCLog("ended event");
         const float actTime = 0.1f;
         SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_droped.mp3");
         CCActionInterval *scaleIn = CCScaleBy::create(0.2f,0.7f,1.2f);
@@ -137,5 +138,7 @@ void Bird::__moveEnd( CCNode *node )
 	CCLog("move end");
 	Bird *bird = (Bird*)node;
 	bird->isMoving = false;
+	ShareManager::shareManager()->fstBird = NULL;
+	ShareManager::shareManager()->sedBird = NULL;
 }
 
