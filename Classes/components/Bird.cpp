@@ -1,6 +1,7 @@
 ﻿#include "Bird.h"
 #include "managers/SoundManager.h"
 #include "managers/ShareManager.h"
+#include "util/PuzzleUtil.h"
 
 void Bird::onEnter()
 {
@@ -14,7 +15,7 @@ Bird * Bird::create( short type )
     CCString *name = CCString::createWithFormat("box0%d_normal_00@2x.png",type);
     if(bird&&bird->initWithSpriteFrameName(name->getCString()))
     {
-		bird->birdType = type;
+        bird->birdType = type;
         bird->autorelease();
         CCArray *frames = CCArray::create();
         CCString *blinkFrame = CCString::createWithFormat("box0%d_normal_02@2x.png",type);
@@ -41,22 +42,6 @@ void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
 {
     if(_isContainPoint(pTouch))
     {
-		CCLog("ended event");
-        const float actTime = 0.1f;
-        SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_droped.mp3");
-        CCActionInterval *scaleIn = CCScaleBy::create(0.2f,0.7f,1.2f);
-        CCActionInterval *scaleBack = CCEaseElasticOut::create(CCScaleTo::create(0.6f,0.9f,0.9f));
-        CCSequence *scaleSeq = CCSequence::create(scaleIn,scaleBack,NULL);
-        runAction(scaleSeq);
-        ShareManager *sm = ShareManager::shareManager();
-		if(isMoving==false){
-			__recordBird();
-		}
-        if(sm->sedBird!=NULL)
-        {
-            sm->fstBird = NULL;
-            sm->sedBird = NULL;
-        }
         BaseSprite::ccTouchEnded(pTouch,pEvent);
     }
 
@@ -66,14 +51,34 @@ void Bird::ccTouchMoved( CCTouch *pTouch, CCEvent *pEvent )
 {
     if(_isContainPoint(pTouch)&&isMoving==false)
     {
-		__recordBird();
+        __recordBird();
         BaseSprite::ccTouchMoved(pTouch,pEvent);
     }
 }
 
 bool Bird::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
 {
-    BaseSprite::ccTouchBegan(pTouch,pEvent);
+
+    bool res = BaseSprite::ccTouchBegan(pTouch,pEvent);
+    if(res)
+    {
+        CCLog("began event");
+        SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_droped.mp3");
+        CCActionInterval *scaleIn = CCScaleBy::create(0.2f,0.7f,1.2f);
+        CCActionInterval *scaleBack = CCEaseElasticOut::create(CCScaleTo::create(0.6f,0.9f,0.9f));
+        CCSequence *scaleSeq = CCSequence::create(scaleIn,scaleBack,NULL);
+        runAction(scaleSeq);
+        ShareManager *sm = ShareManager::shareManager();
+        if(isMoving==false)
+        {
+            __recordBird();
+        }
+        if(sm->sedBird!=NULL)
+        {
+            sm->fstBird = NULL;
+            sm->sedBird = NULL;
+        }
+    }
     return true;
 }
 
@@ -99,46 +104,10 @@ void Bird::__recordBird()
         bool sameColNeighbor = fbCol==col?abs(fbRow-row)==1:false;
         if(sameColNeighbor||sameRowNeighbor)
         {
-            __changeBirdPos();
+            PuzzleUtil::instance()->changeBirdPosition();
         }
         CCLog("second");
-
     }
 }
 
-void Bird::__changeBirdPos()
-{
-    ShareManager *sm = ShareManager::shareManager();
-    Bird *fst = sm->fstBird;
-    Bird *sed = sm->sedBird;
-	/* 交换在二维数组中的位置 */
-	sm->birds[fst->row][fst->col] = sed;
-	sm->birds[sed->row][sed->col] = fst;
-	/* 临时保存行列坐标 */
-    int fstRow = fst->row;
-    int fstCol = fst->col;
-    CCPoint fstPos = fst->getPosition();
-    CCPoint secPos = getPosition();
-    CCMoveTo *sedMoveAct = CCMoveTo::create(0.2f,fstPos);
-    CCMoveTo *fstMoveAct = CCMoveTo::create(0.2f,secPos);
-	CCCallFuncN *moveCall = CCCallFuncN::create(this,callfuncN_selector(Bird::__moveEnd));
-    fst->runAction(CCSequence::create(fstMoveAct,moveCall,NULL));
-    sed->runAction(CCSequence::create(sedMoveAct,moveCall,NULL));
-	fst->isMoving = true;
-	sed->isMoving = true;
-	/* 更新小鸟的行列属性 */
-    fst->row = row;
-    fst->col = col;
-    row = fstRow;
-    col = fstCol;
-}
-
-void Bird::__moveEnd( CCNode *node )
-{
-	CCLog("move end");
-	Bird *bird = (Bird*)node;
-	bird->isMoving = false;
-	ShareManager::shareManager()->fstBird = NULL;
-	ShareManager::shareManager()->sedBird = NULL;
-}
 

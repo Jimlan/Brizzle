@@ -73,34 +73,86 @@ bool PuzzleUtil::detectPuzzleBirds(short outer,short inner,PuzzleDetectDirection
             {
                 short type;
                 while((type = rand()%8)==prevBird->birdType);
+                Bird *newBird = Bird::create(type);
                 if(kDirection==kRow)
                 {
                     CCLog("row:%d,col:%d,type:%d",i,j,type);
-					sm->birds[i][j] = NULL;
-                    sm->birds[i][j] = Bird::create(type);
+                    sm->birds[i][j] = NULL;
+                    sm->birds[i][j] = newBird;
+                    newBird->row = i;
+                    newBird->col = j;
                 }
                 else
                 {
                     CCLog("row:%d,col:%d,type:%d",j,i,type);
-					sm->birds[j][i] = NULL;
-                    sm->birds[j][i] = Bird::create(type);
+                    sm->birds[j][i] = NULL;
+                    sm->birds[j][i] = newBird;
+                    newBird->row = j;
+                    newBird->col = i;
                 }
             }
         }
     }
 
-    //step 2  bottom->up by col
-    /*for(int i=0;i<ShareManager::col;i++)
-    {
-    	for(int j=0;j<ShareManager::row;j++)
-    	{
-
-    	}
-    }*/
     return true;
 }
 
 void PuzzleUtil::changeBirdPosition()
 {
+    ShareManager *sm = ShareManager::shareManager();
+    Bird *fst = sm->fstBird;
+    Bird *sed = sm->sedBird;
+    /* 交换在二维数组中的位置 */
+    sm->birds[fst->row][fst->col] = sed;
+    sm->birds[sed->row][sed->col] = fst;
+    /* 临时保存行列坐标 */
+    int fstRow = fst->row;
+    int fstCol = fst->col;
+    CCPoint fstPos = fst->getPosition();
+    CCPoint secPos = sed->getPosition();
+    CCMoveTo *sedMoveAct = CCMoveTo::create(0.2f,fstPos);
+    CCMoveTo *fstMoveAct = CCMoveTo::create(0.2f,secPos);
+    CCCallFuncN *moveCall = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__moveEnd));
+    fst->runAction(CCSequence::create(fstMoveAct,moveCall,NULL));
+    sed->runAction(CCSequence::create(sedMoveAct,moveCall,NULL));
+    fst->isMoving = true;
+    sed->isMoving = true;
+    /* 更新小鸟的行列属性 */
+    fst->row = sed->row;
+    fst->col = sed->col;
+    sed->row = fstRow;
+    sed->col = fstCol;
+}
 
+void PuzzleUtil::__moveEnd( CCNode *pSender )
+{
+    CCLog("move end");
+    Bird *bird = (Bird*)pSender;
+    bird->isMoving = false;
+    ShareManager::shareManager()->fstBird = NULL;
+    ShareManager::shareManager()->sedBird = NULL;
+}
+
+bool PuzzleUtil::isCanPuzzle()
+{
+    //如果在同一列就检测两个移动的小鸟所在的行 如果在同一行就检测两个移动的小鸟所在的列
+
+    ShareManager *sm = ShareManager::shareManager();
+    Bird *first = sm->fstBird;
+    Bird *second = sm->sedBird;
+    int fbRow = first->row;
+    int fbCol = first->col;
+    int sdRow = second->row;
+    int sdCol = second->col;
+    bool sameRowNeighbor = fbRow==sdRow?abs(fbCol-sdCol)==1:false;
+    bool sameColNeighbor = fbCol==sdCol?abs(fbRow-sdRow)==1:false;
+    if(sameRowNeighbor)
+    {
+
+    }
+    else if(sameColNeighbor)
+    {
+
+    }
+    return true;
 }

@@ -14,6 +14,7 @@ class PuzzleUtil:public CCObject
 {
 private:
     static PuzzleUtil *_instance;
+	void __moveEnd(CCNode *pSender);
 public:
     static PuzzleUtil *instance();
     /* 生成没有三个连续的小鸟的二维数组 */
@@ -22,6 +23,8 @@ public:
     bool detectPuzzleBirds(short outer,short inner,PuzzleDetectDirection kDirection);
 	/* 交换两个小鸟的位置 */
 	void changeBirdPosition();
+	/* 移动位置后是否可以消除 */
+	bool isCanPuzzle();
     /* 如果消除的个数为4个 */
     void dash4Bird();
     /* 如果消除的个数为5个 */
