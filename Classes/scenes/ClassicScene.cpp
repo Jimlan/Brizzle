@@ -3,6 +3,7 @@
 #include "components/PauseMenu.h"
 #include "components/Bird.h"
 #include "managers/ShareManager.h"
+#include "util/PuzzleUtil.h"
 
 bool ClassicScene::init()
 {
@@ -99,15 +100,12 @@ void ClassicScene::__resumeGame( CCObject *pSender )
 void ClassicScene::__createBird()
 {
 	m_pBirdBatchNode = CCSpriteBatchNode::createWithTexture(SPRITE("box00_burn@2x.png")->getTexture());
-    for(short row = 0; row<9; row++)
+    PuzzleUtil::instance()->createBirds();
+	for(short row = 0; row<9; row++)
     {
         for(short col=0; col<7; col++)
         {
-			short birdType = rand()%8;
-			Bird *bird = Bird::create(birdType);
-			ShareManager::shareManager()->birds[row][col] = bird;
-			bird->row = row;
-			bird->col = col;
+			Bird *bird = ShareManager::shareManager()->birds[row][col];
 			bird->setScale(0.9f);
 			bird->setPosition(ccp(col*ShareManager::boxWidth,row*ShareManager::boxHeight));
 			m_pBirdBatchNode->addChild(bird);
