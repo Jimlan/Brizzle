@@ -129,14 +129,13 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
     CCLog("move end");
     Bird *bird = (Bird*)pSender;
     bird->isMoving = false;
+	isCanPuzzle();
     ShareManager::shareManager()->fstBird = NULL;
     ShareManager::shareManager()->sedBird = NULL;
 }
 
 bool PuzzleUtil::isCanPuzzle()
 {
-    //如果在同一列就检测两个移动的小鸟所在的行 如果在同一行就检测两个移动的小鸟所在的列
-
     ShareManager *sm = ShareManager::shareManager();
     Bird *first = sm->fstBird;
     Bird *second = sm->sedBird;
@@ -146,13 +145,60 @@ bool PuzzleUtil::isCanPuzzle()
     int sdCol = second->col;
     bool sameRowNeighbor = fbRow==sdRow?abs(fbCol-sdCol)==1:false;
     bool sameColNeighbor = fbCol==sdCol?abs(fbRow-sdRow)==1:false;
-    if(sameRowNeighbor)
+    if(sameRowNeighbor)//如果在同一行就检测两个移动的小鸟所在的列
     {
 
     }
-    else if(sameColNeighbor)
+    else if(sameColNeighbor)//如果在同一列就检测两个移动的小鸟所在的行
     {
-
+		CCArray *birds1 = getRowDashBirds(first);
+		CCArray *birds2 = getRowDashBirds(second);
+		CCLog("count1:%d",birds1->count());
+		CCLog("count2:%d",birds2->count());
     }
     return true;
+}
+
+CCArray * PuzzleUtil::getRowDashBirds(Bird *bird )
+{
+    //左右方向进行检测
+    short col = bird->col;
+    short row = bird->row;
+    short birdType = bird->birdType;
+    ShareManager *sm = ShareManager::shareManager();
+    CCArray *birds = CCArray::create();
+	birds->retain();
+    birds->addObject(bird);
+    bird->isChecked = true;
+    short leftCol = col-1;
+    short rightCol = col+1;
+    if(leftCol>=0)
+    {
+        Bird *leftBird = sm->birds[row][leftCol];
+        short leftType = leftBird->birdType;
+        if(birdType==leftType)
+        {
+            leftBird->isChecked = true;
+            birds->addObjectsFromArray(getRowDashBirds(leftBird));
+        }
+    }
+    if(rightCol<ShareManager::col)
+    {
+        Bird *rightBird = sm->birds[row][rightCol];
+        short rightType = rightBird->birdType;
+        if(birdType==rightType)
+        {
+            rightBird->isChecked = true;
+            birds->addObjectsFromArray(getRowDashBirds(rightBird));
+        }
+    }
+    return birds;
+}
+
+CCArray * PuzzleUtil::getColDashBirds(Bird *bird )
+{
+    //上下方向进行检测
+    short col = bird->col;
+    short row = bird->row;
+	return NULL;
 }
