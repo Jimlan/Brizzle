@@ -29,8 +29,8 @@ void PuzzleUtil::createBirds()
             ShareManager::shareManager()->birds[i][j] = bird;
         }
     }
-    detectPuzzleBirds(ShareManager::row,ShareManager::col,kRow);
-    detectPuzzleBirds(ShareManager::col,ShareManager::row,kCol);
+    //detectPuzzleBirds(ShareManager::row,ShareManager::col,kRow);
+    //detectPuzzleBirds(ShareManager::col,ShareManager::row,kCol);
 }
 
 bool PuzzleUtil::detectPuzzleBirds(short outer,short inner,PuzzleDetectDirection kDirection)
@@ -129,9 +129,8 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
     CCLog("move end");
     Bird *bird = (Bird*)pSender;
     bird->isMoving = false;
-	isCanPuzzle();
-    ShareManager::shareManager()->fstBird = NULL;
-    ShareManager::shareManager()->sedBird = NULL;
+	ShareManager::shareManager()->fstBird = NULL;
+	ShareManager::shareManager()->sedBird = NULL;
 }
 
 bool PuzzleUtil::isCanPuzzle()
@@ -151,10 +150,10 @@ bool PuzzleUtil::isCanPuzzle()
     }
     else if(sameColNeighbor)//如果在同一列就检测两个移动的小鸟所在的行
     {
-		CCArray *birds1 = getRowDashBirds(first);
-		CCArray *birds2 = getRowDashBirds(second);
-		CCLog("count1:%d",birds1->count());
-		CCLog("count2:%d",birds2->count());
+		//CCArray *birds1 = getRowDashBirds(first);
+		//CCArray *birds2 = getRowDashBirds(second);
+		//CCLog("count1:%d",birds1->count());
+		//CCLog("count2:%d",birds2->count());
     }
     return true;
 }
