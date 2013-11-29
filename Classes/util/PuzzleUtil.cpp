@@ -97,9 +97,11 @@ bool PuzzleUtil::detectPuzzleBirds(short outer,short inner,PuzzleDetectDirection
     return true;
 }
 
-void PuzzleUtil::changeBirdPosition()
+void PuzzleUtil::changeBirdPosition(bool withCallback)
 {
     ShareManager *sm = ShareManager::shareManager();
+    sm->fstBird->getParent()->reorderChild(sm->fstBird,0);
+    sm->sedBird->getParent()->reorderChild(sm->sedBird,1);
     Bird *fst = sm->fstBird;
     Bird *sed = sm->sedBird;
     /* 交换在二维数组中的位置 */
@@ -110,8 +112,8 @@ void PuzzleUtil::changeBirdPosition()
     int fstCol = fst->col;
     CCPoint fstPos = fst->getPosition();
     CCPoint secPos = sed->getPosition();
-    CCMoveTo *sedMoveAct = CCMoveTo::create(0.2f,fstPos);
-    CCMoveTo *fstMoveAct = CCMoveTo::create(0.2f,secPos);
+    CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,fstPos);
+    CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,secPos);
     CCCallFuncN *moveCall = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__moveEnd));
     fst->runAction(CCSequence::create(fstMoveAct,moveCall,NULL));
     sed->runAction(CCSequence::create(sedMoveAct,moveCall,NULL));
@@ -122,16 +124,74 @@ void PuzzleUtil::changeBirdPosition()
     fst->col = sed->col;
     sed->row = fstRow;
     sed->col = fstCol;
-	getDashBirds();
 }
 
+void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
+{
+    ShareManager *sm = ShareManager::shareManager();
+    sm->fstBird->getParent()->reorderChild(sm->fstBird,1);
+    sm->sedBird->getParent()->reorderChild(sm->sedBird,0);
+    //更改他们在数组中的位置
+    sm->birds[fstBird->row][fstBird->col] = sedBird;
+    sm->birds[sedBird->row][sedBird->col] = fstBird;
+    int tempRow = fstBird->row,tempCol = fstBird->col;
+    fstBird->row = sedBird->row;
+    fstBird->col = sedBird->col;
+    sedBird->row = tempRow;
+    sedBird->col = tempCol;
+    /* 标记正在移动 不能接收用户的操作 */
+    sedBird->isMoving = fstBird->isMoving = true;
+    CCPoint fstPos = fstBird->getPosition();
+    CCPoint secPos = sedBird->getPosition();
+    CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,fstPos);
+    CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,secPos);
+    CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__resetBird));
+    fstBird->runAction(CCSequence::create(fstMoveAct,moveFunc,NULL));
+    sedBird->runAction(CCSequence::create(sedMoveAct,moveFunc,NULL));
+}
+
+/**
+ *小鸟交换位置后的回调函数
+ *在此方法中 判断是不是有可以消除的小鸟
+ *如果没有的话 就将小鸟恢复原位
+ */
 void PuzzleUtil::__moveEnd( CCNode *pSender )
 {
     CCLog("move end");
+    ShareManager *sm = ShareManager::shareManager();
     Bird *bird = (Bird*)pSender;
     bird->isMoving = false;
-    ShareManager::shareManager()->fstBird = NULL;
-    ShareManager::shareManager()->sedBird = NULL;
+
+    if(sm->fstBird->isMoving==false&&sm->sedBird->isMoving==false)
+    {
+        CCArray *dashBirds = getDashBirds();
+        int birdCount = dashBirds->count();
+        CCLog("dash birds count:%d",birdCount);
+        if(birdCount>0)
+        {
+            //消除数组内的小鸟
+            CCObject *obj = NULL;
+            CCARRAY_FOREACH(dashBirds,obj)
+            {
+                Bird *bird = (Bird*)obj;
+                CCScaleTo *scaleAct = CCScaleTo::create(0.2f,0.5);
+                bird->stopAllActions();
+                //CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
+                //CCSequence::create(scaleAct,NULL)
+                bird->runAction(scaleAct);
+            }
+            sm->fstBird = NULL;
+            sm->sedBird = NULL;
+        }
+        else
+        {
+            //将小鸟恢复原位
+            changeBirdPosition(sm->fstBird,sm->sedBird);
+            sm->fstBird = NULL;
+            sm->sedBird = NULL;
+        }
+
+    }
 }
 
 bool PuzzleUtil::isCanPuzzle()
@@ -151,57 +211,11 @@ bool PuzzleUtil::isCanPuzzle()
     }
     else if(sameColNeighbor)//如果在同一列就检测两个移动的小鸟所在的行
     {
-        //CCArray *birds1 = getRowDashBirds(first);
-        //CCArray *birds2 = getRowDashBirds(second);
-        //CCLog("count1:%d",birds1->count());
-        //CCLog("count2:%d",birds2->count());
+
     }
     return true;
 }
 
-CCArray * PuzzleUtil::getRowDashBirds(Bird *bird )
-{
-    //左右方向进行检测
-    short col = bird->col;
-    short row = bird->row;
-    short birdType = bird->birdType;
-    ShareManager *sm = ShareManager::shareManager();
-    CCArray *birds = CCArray::create();
-    birds->retain();
-    birds->addObject(bird);
-    bird->isChecked = true;
-    short leftCol = col-1;
-    short rightCol = col+1;
-    if(leftCol>=0)
-    {
-        Bird *leftBird = sm->birds[row][leftCol];
-        short leftType = leftBird->birdType;
-        if(birdType==leftType)
-        {
-            leftBird->isChecked = true;
-            birds->addObjectsFromArray(getRowDashBirds(leftBird));
-        }
-    }
-    if(rightCol<ShareManager::col)
-    {
-        Bird *rightBird = sm->birds[row][rightCol];
-        short rightType = rightBird->birdType;
-        if(birdType==rightType)
-        {
-            rightBird->isChecked = true;
-            birds->addObjectsFromArray(getRowDashBirds(rightBird));
-        }
-    }
-    return birds;
-}
-
-CCArray * PuzzleUtil::getColDashBirds(Bird *bird )
-{
-    //上下方向进行检测
-    short col = bird->col;
-    short row = bird->row;
-    return NULL;
-}
 
 CCArray * PuzzleUtil::getDashBirds()
 {
@@ -225,11 +239,11 @@ CCArray * PuzzleUtil::getDashBirds()
             {
                 rowDashBird->addObject(currentBird);
                 appearCount++;
-				if(j==ShareManager::col-1&&appearCount>=3)
-				{
-					 birdDash->addObjectsFromArray(rowDashBird);
-					 rowDashBird->removeAllObjects();
-				}
+                if(j==ShareManager::col-1&&appearCount>=3)
+                {
+                    birdDash->addObjectsFromArray(rowDashBird);
+                    rowDashBird->removeAllObjects();
+                }
             }
             else
             {
@@ -238,7 +252,7 @@ CCArray * PuzzleUtil::getDashBirds()
                     birdDash->addObjectsFromArray(rowDashBird);
                 }
                 rowDashBird->removeAllObjects();
-				rowDashBird->addObject(currentBird);
+                rowDashBird->addObject(currentBird);
                 prevBird = currentBird;
                 appearCount=1;
             }
@@ -263,11 +277,11 @@ CCArray * PuzzleUtil::getDashBirds()
             {
                 colDashBird->addObject(currentBird);
                 appearCount++;
-				if(i==ShareManager::row-1&&appearCount>=3)
-				{
-					birdDash->addObjectsFromArray(colDashBird);
-					colDashBird->removeAllObjects();
-				}
+                if(i==ShareManager::row-1&&appearCount>=3)
+                {
+                    birdDash->addObjectsFromArray(colDashBird);
+                    colDashBird->removeAllObjects();
+                }
             }
             else
             {
@@ -276,12 +290,23 @@ CCArray * PuzzleUtil::getDashBirds()
                     birdDash->addObjectsFromArray(colDashBird);
                 }
                 colDashBird->removeAllObjects();
-				colDashBird->addObject(currentBird);
+                colDashBird->addObject(currentBird);
                 prevBird = currentBird;
                 appearCount=1;
             }
         }
     }
-	CCLog("dash birds:%d",birdDash->count());
-	return birdDash;
+
+    return birdDash;
+}
+
+void PuzzleUtil::__resetBird( CCNode *pSender )
+{
+    Bird *bird = (Bird*)pSender;
+    bird->isMoving = false;
+}
+
+void PuzzleUtil::updateBirdPosition()
+{
+
 }

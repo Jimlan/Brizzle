@@ -40,7 +40,13 @@ void Bird::blink()
 
 void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
 {
-    ShareManager::shareManager()->isChanging=false;
+	ShareManager *sm = ShareManager::shareManager();
+	sm->isChanging=false;
+	/*if(sm->sedBird!=NULL)
+	{
+		sm->fstBird = NULL;
+		sm->sedBird = NULL;
+	}*/
     if(_isContainPoint(pTouch))
     {
         BaseSprite::ccTouchEnded(pTouch,pEvent);
@@ -73,11 +79,6 @@ bool Bird::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
         if(isMoving==false)
         {
             __recordBird();
-        }
-        if(sm->sedBird!=NULL)
-        {
-            sm->fstBird = NULL;
-            sm->sedBird = NULL;
         }
     }
     return true;
