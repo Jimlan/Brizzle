@@ -24,11 +24,12 @@ class PuzzleUtil:public CCObject
 private:
     const float changePosTime;
     const float scaleTime;
+	const float downSpeed;//更新小鸟时候的位置
     static PuzzleUtil *_instance;
     void __moveEnd(CCNode *pSender);
     void __resetBird(CCNode *pSender);
 public:
-    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f) {};
+    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(100) {};
     static PuzzleUtil *instance();
     /* 生成没有三个连续的小鸟的二维数组 */
     void createBirds();

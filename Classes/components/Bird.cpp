@@ -108,7 +108,10 @@ void Bird::__recordBird()
         {
 			ShareManager::shareManager()->isChanging=true;
             PuzzleUtil::instance()->changeBirdPosition();
-        }
+        }else{
+			sm->fstBird = NULL;
+			sm->sedBird = NULL;
+		}
         CCLog("second");
     }
 }

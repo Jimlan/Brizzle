@@ -164,8 +164,8 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
 
     if(sm->fstBird->isMoving==false&&sm->sedBird->isMoving==false)
     {
-		//获取到小鸟所在的父节点 
-		CCNode *birdParentNode = bird->getParent();
+        //获取到小鸟所在的父节点
+        CCNode *birdParentNode = bird->getParent();
         CCArray *dashBirds = getDashBirds();
         int birdCount = dashBirds->count();
         CCLog("dash birds count:%d",birdCount);
@@ -178,13 +178,16 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
                 Bird *bird = (Bird*)obj;
                 CCScaleTo *scaleAct = CCScaleTo::create(scaleTime,0);
                 bird->stopAllActions();
-                //CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
-                //CCSequence::create(scaleAct,NULL)
-                bird->runAction(scaleAct);
+                //移除之后将数组位置置空
+                sm->birds[bird->row][bird->col] = NULL;
+                CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
+                CCSequence *seqAct = CCSequence::create(scaleAct,scaleFunc,NULL);
+                bird->runAction(seqAct);
+
             }
-			CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
-			CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
-			birdParentNode->runAction(CCSequence::create(updatePosDelay,updatePosFunc,NULL));
+            CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
+            CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
+            birdParentNode->runAction(CCSequence::create(updatePosDelay,updatePosFunc,NULL));
             sm->fstBird = NULL;
             sm->sedBird = NULL;
         }
@@ -234,6 +237,17 @@ CCArray * PuzzleUtil::getDashBirds()
         for(int j=0; j<ShareManager::col; j++)
         {
             Bird *currentBird = sm->birds[i][j];
+            if(currentBird==NULL)
+            {
+				if(appearCount>=3)
+				{
+					birdDash->addObjectsFromArray(rowDashBird);
+				}
+                rowDashBird->removeAllObjects();
+				appearCount = 0;
+				prevBird = NULL;
+                continue;
+            }
             if(prevBird==NULL)
             {
                 prevBird = currentBird;
@@ -272,6 +286,17 @@ CCArray * PuzzleUtil::getDashBirds()
         for(int i=0; i<ShareManager::row; i++)
         {
             Bird *currentBird = sm->birds[i][j];
+			if(currentBird==NULL)
+			{
+				if(appearCount>=3)
+				{
+					birdDash->addObjectsFromArray(colDashBird);
+				}
+				colDashBird->removeAllObjects();
+				appearCount = 0;
+				prevBird = NULL;
+				continue;
+			}
             if(prevBird==NULL)
             {
                 prevBird = currentBird;
@@ -313,5 +338,5 @@ void PuzzleUtil::__resetBird( CCNode *pSender )
 
 void PuzzleUtil::updateBirdPosition()
 {
-	CCLog("updatePos");
+
 }
