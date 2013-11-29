@@ -16,6 +16,7 @@ private:
     CCObject *m_pTargetEnded;
     SEL_MenuHandler endedHandler;
 public:
+	bool m_bSwallow;
     int m_iTouchPriority;
     static BaseSprite *createSpriteWithFrameName(const char *frameName);
     static BaseSprite *create(const char *fileName);

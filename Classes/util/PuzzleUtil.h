@@ -28,8 +28,9 @@ private:
     static PuzzleUtil *_instance;
     void __moveEnd(CCNode *pSender);
     void __resetBird(CCNode *pSender);
+	void __moveDown(CCNode *pSender);
 public:
-    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(100) {};
+    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(500.0f) {};
     static PuzzleUtil *instance();
     /* 生成没有三个连续的小鸟的二维数组 */
     void createBirds();

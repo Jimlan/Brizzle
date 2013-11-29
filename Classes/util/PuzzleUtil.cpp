@@ -335,8 +335,38 @@ void PuzzleUtil::__resetBird( CCNode *pSender )
     Bird *bird = (Bird*)pSender;
     bird->isMoving = false;
 }
-
+/**
+ * 小鸟消除后 按照列进行遍历 计算每一个小鸟下面有几个空格
+ */
 void PuzzleUtil::updateBirdPosition()
 {
+	return;
+	ShareManager *sm =ShareManager::shareManager();
+	for(int j=0;j<ShareManager::col;j++)
+	{
+		int emptyCells = 0;
+		for(int i=0;i<ShareManager::row;i++)
+		{
+			Bird *bird = sm->birds[i][j];
+			if(bird==NULL)
+			{
+				emptyCells++;
+			}else if(emptyCells!=0){
+				bird->setTouchEnabled(false);
+				bird->row -= emptyCells;
+				sm->birds[bird->row][bird->col] = bird;
+				float downTime = emptyCells*ShareManager::boxHeight/downSpeed;
+				CCMoveTo *moveToAct = CCMoveTo::create(downTime,ccp(bird->col*ShareManager::boxWidth,bird->row*ShareManager::boxHeight));
+				CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__moveDown));
+				CCSequence *moveSeq = CCSequence::create(moveToAct,moveFunc,NULL);
+				bird->runAction(moveSeq);
+			}
+		}
+	}
+}
 
+void PuzzleUtil::__moveDown( CCNode *pSender )
+{
+	Bird *bird = (Bird*)pSender;
+	bird->setTouchEnabled(true);
 }

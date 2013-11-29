@@ -19,7 +19,9 @@ public:
     short row;
     short col;
 	short birdType;
-    Bird():birdType(-1),isMoving(false),isChecked(false) {};
+    Bird():birdType(-1),isMoving(false),isChecked(false) {
+		m_bSwallow = false;
+	};
     static Bird *create(short type);
     virtual void onEnter();
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);

@@ -2,6 +2,7 @@
 
 
 BaseSprite::BaseSprite():m_iTouchPriority(0),
+	m_bSwallow(true),
     m_pTargetBegan(NULL),
     m_pTargetEnded(NULL),
     m_pTargetMove(NULL)
@@ -12,7 +13,7 @@ BaseSprite::BaseSprite():m_iTouchPriority(0),
 void BaseSprite::onEnter()
 {
     CCSprite::onEnter();
-    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,m_iTouchPriority,true);
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,m_iTouchPriority,m_bSwallow);
 }
 
 void BaseSprite::onExit()
@@ -109,7 +110,7 @@ void BaseSprite::setTouchEnabled( bool enabled )
         {
             if (enabled)
             {
-                CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,m_iTouchPriority,true);
+                CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,m_iTouchPriority,m_bSwallow);
             }
             else
             {
