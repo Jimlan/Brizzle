@@ -39,6 +39,10 @@ public:
     /* 交换两个小鸟的位置 */
     void changeBirdPosition(bool withCallback=false);
     void changeBirdPosition(Bird *fstBird,Bird *sedBird);
+
+	/* 创建新的小鸟到指定的位置 */
+	void createNewBird(short row,short col);
+
     /* 小鸟消除后更新小鸟的位置 */
     void updateBirdPosition();
     /* 移动位置后是否可以消除 */

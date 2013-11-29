@@ -113,5 +113,6 @@ void ClassicScene::__createBird()
     }
 	m_pBirdBatchNode->setPosition(ccp(93,85));
 	addChild(m_pBirdBatchNode);
+	ShareManager::shareManager()->birdBatchNode = m_pBirdBatchNode;
 }
 

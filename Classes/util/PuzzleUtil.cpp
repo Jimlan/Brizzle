@@ -351,16 +351,23 @@ void PuzzleUtil::updateBirdPosition()
 			{
 				emptyCells++;
 			}else if(emptyCells!=0){
+				//将原来的位置置空
 				bird->setTouchEnabled(false);
 				sm->birds[bird->row][bird->col] = NULL;
 				bird->row -= emptyCells;
 				sm->birds[bird->row][bird->col] = bird;
 				float downTime = emptyCells*ShareManager::boxHeight/downSpeed;
-				CCMoveTo *moveToAct = CCMoveTo::create(downTime,ccp(bird->col*ShareManager::boxWidth,bird->row*ShareManager::boxHeight));
+				CCMoveTo *moveToAct = CCMoveTo::create(0.2f,ccp(bird->col*ShareManager::boxWidth,bird->row*ShareManager::boxHeight));
 				CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__moveDown));
 				CCSequence *moveSeq = CCSequence::create(moveToAct,moveFunc,NULL);
 				bird->runAction(moveSeq);
 			}
+		}
+		//小鸟的位置移动之后创建新的小鸟
+		while(emptyCells){
+			int row = ShareManager::row-emptyCells;
+			createNewBird(row,j);
+			emptyCells--;
 		}
 	}
 }
@@ -369,4 +376,23 @@ void PuzzleUtil::__moveDown( CCNode *pSender )
 {
 	Bird *bird = (Bird*)pSender;
 	bird->setTouchEnabled(true);
+}
+
+void PuzzleUtil::createNewBird( short row,short col )
+{
+	CCLog("row:%d,col:%d",row,col);
+	short type = rand()%8;
+	Bird *bird = Bird::create(type);
+	bird->setPosition(ccp(col*ShareManager::boxWidth,VisibleRect::top().y));
+	ShareManager::shareManager()->birdBatchNode->addChild(bird);
+	bird->row = row;
+	bird->col = col;
+	bird->setScale(0.9);
+	ShareManager::shareManager()->birds[row][col] = bird;
+	float targetY = row*ShareManager::boxHeight;
+	float moveTime = (bird->getPositionY() - row*ShareManager::boxHeight)/downSpeed;
+	CCMoveTo *moveAct = CCMoveTo::create(0.2f,ccp(bird->getPositionX(),targetY));
+	CCCallFuncN *moveCall = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__moveDown));
+	bird->setTouchEnabled(false);
+	bird->runAction(CCSequence::create(moveAct,moveCall,NULL));
 }
