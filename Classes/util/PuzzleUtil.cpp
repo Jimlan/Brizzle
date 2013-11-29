@@ -340,7 +340,6 @@ void PuzzleUtil::__resetBird( CCNode *pSender )
  */
 void PuzzleUtil::updateBirdPosition()
 {
-	return;
 	ShareManager *sm =ShareManager::shareManager();
 	for(int j=0;j<ShareManager::col;j++)
 	{
@@ -353,6 +352,7 @@ void PuzzleUtil::updateBirdPosition()
 				emptyCells++;
 			}else if(emptyCells!=0){
 				bird->setTouchEnabled(false);
+				sm->birds[bird->row][bird->col] = NULL;
 				bird->row -= emptyCells;
 				sm->birds[bird->row][bird->col] = bird;
 				float downTime = emptyCells*ShareManager::boxHeight/downSpeed;
