@@ -164,64 +164,48 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
 
     if(sm->fstBird->isMoving==false&&sm->sedBird->isMoving==false)
     {
-        //获取到小鸟所在的父节点
-        CCNode *birdParentNode = bird->getParent();
-        CCArray *dashBirds = getDashBirds();
-        int birdCount = dashBirds->count();
-        CCLog("dash birds count:%d",birdCount);
-        if(birdCount>0)
-        {
-            //消除数组内的小鸟
-            CCObject *obj = NULL;
-            CCARRAY_FOREACH(dashBirds,obj)
-            {
-                Bird *bird = (Bird*)obj;
-                CCScaleTo *scaleAct = CCScaleTo::create(scaleTime,0);
-                bird->stopAllActions();
-                //移除之后将数组位置置空
-                sm->birds[bird->row][bird->col] = NULL;
-                CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
-                CCSequence *seqAct = CCSequence::create(scaleAct,scaleFunc,NULL);
-                bird->runAction(seqAct);
-
-            }
-            CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
-            CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
-            birdParentNode->runAction(CCSequence::create(updatePosDelay,updatePosFunc,NULL));
-            sm->fstBird = NULL;
-            sm->sedBird = NULL;
-        }
-        else
-        {
-            //将小鸟恢复原位
-            changeBirdPosition(sm->fstBird,sm->sedBird);
-            sm->fstBird = NULL;
-            sm->sedBird = NULL;
-        }
-
+		bool res = isCanPuzzle();
+		if(res==false)
+		{
+			//将小鸟恢复原位
+			changeBirdPosition(sm->fstBird,sm->sedBird);
+			sm->fstBird = NULL;
+			sm->sedBird = NULL;
+		}
     }
 }
 
 bool PuzzleUtil::isCanPuzzle()
 {
-    ShareManager *sm = ShareManager::shareManager();
-    Bird *first = sm->fstBird;
-    Bird *second = sm->sedBird;
-    int fbRow = first->row;
-    int fbCol = first->col;
-    int sdRow = second->row;
-    int sdCol = second->col;
-    bool sameRowNeighbor = fbRow==sdRow?abs(fbCol-sdCol)==1:false;
-    bool sameColNeighbor = fbCol==sdCol?abs(fbRow-sdRow)==1:false;
-    if(sameRowNeighbor)//如果在同一行就检测两个移动的小鸟所在的列
-    {
+	ShareManager *sm = ShareManager::shareManager();
+	CCNode *birdParentNode = sm->birdBatchNode;
+	CCArray *dashBirds = getDashBirds();
+	int birdCount = dashBirds->count();
+	CCLog("dash birds count:%d",birdCount);
+	if(birdCount>0)
+	{
+		//消除数组内的小鸟
+		CCObject *obj = NULL;
+		CCARRAY_FOREACH(dashBirds,obj)
+		{
+			Bird *bird = (Bird*)obj;
+			CCScaleTo *scaleAct = CCScaleTo::create(scaleTime,0);
+			bird->stopAllActions();
+			//移除之后将数组位置置空
+			sm->birds[bird->row][bird->col] = NULL;
+			CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
+			CCSequence *seqAct = CCSequence::create(scaleAct,scaleFunc,NULL);
+			bird->runAction(seqAct);
 
-    }
-    else if(sameColNeighbor)//如果在同一列就检测两个移动的小鸟所在的行
-    {
-
-    }
-    return true;
+		}
+		CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
+		CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
+		birdParentNode->runAction(CCSequence::create(updatePosDelay,updatePosFunc,NULL));
+		sm->fstBird = NULL;
+		sm->sedBird = NULL;
+		return true;
+	}
+	return false;
 }
 
 
@@ -369,7 +353,12 @@ void PuzzleUtil::updateBirdPosition()
 			createNewBird(row,j);
 			emptyCells--;
 		}
+		
 	}
+	//更新了位置之后 要继续检测是否有可以消除的小鸟
+	CCDelayTime *checkDelay = CCDelayTime::create(0.2f);
+	CCCallFunc *checkCall = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::__updatePosComplete));
+	sm->birdBatchNode->runAction(CCSequence::create(checkDelay,checkCall,NULL));
 }
 
 void PuzzleUtil::__moveDown( CCNode *pSender )
@@ -387,7 +376,7 @@ void PuzzleUtil::createNewBird( short row,short col )
 	ShareManager::shareManager()->birdBatchNode->addChild(bird);
 	bird->row = row;
 	bird->col = col;
-	bird->setScale(0.9);
+	bird->setScale(0.9f);
 	ShareManager::shareManager()->birds[row][col] = bird;
 	float targetY = row*ShareManager::boxHeight;
 	float moveTime = (bird->getPositionY() - row*ShareManager::boxHeight)/downSpeed;
@@ -395,4 +384,14 @@ void PuzzleUtil::createNewBird( short row,short col )
 	CCCallFuncN *moveCall = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__moveDown));
 	bird->setTouchEnabled(false);
 	bird->runAction(CCSequence::create(moveAct,moveCall,NULL));
+}
+/* 监测是否有可以消除的小鸟 */
+void PuzzleUtil::checkPuzzle()
+{
+
+}
+
+void PuzzleUtil::__updatePosComplete()
+{
+	isCanPuzzle();
 }

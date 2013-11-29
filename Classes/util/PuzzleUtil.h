@@ -29,6 +29,7 @@ private:
     void __moveEnd(CCNode *pSender);
     void __resetBird(CCNode *pSender);
 	void __moveDown(CCNode *pSender);
+	void __updatePosComplete();
 public:
     PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(500.0f) {};
     static PuzzleUtil *instance();
@@ -39,7 +40,7 @@ public:
     /* 交换两个小鸟的位置 */
     void changeBirdPosition(bool withCallback=false);
     void changeBirdPosition(Bird *fstBird,Bird *sedBird);
-
+	void checkPuzzle();
 	/* 创建新的小鸟到指定的位置 */
 	void createNewBird(short row,short col);
 
