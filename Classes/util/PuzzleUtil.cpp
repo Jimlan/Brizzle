@@ -29,8 +29,8 @@ void PuzzleUtil::createBirds()
             ShareManager::shareManager()->birds[i][j] = bird;
         }
     }
-    //detectPuzzleBirds(ShareManager::row,ShareManager::col,kRow);
-    //detectPuzzleBirds(ShareManager::col,ShareManager::row,kCol);
+    detectPuzzleBirds(ShareManager::row,ShareManager::col,kRow);
+    detectPuzzleBirds(ShareManager::col,ShareManager::row,kCol);
 }
 
 bool PuzzleUtil::detectPuzzleBirds(short outer,short inner,PuzzleDetectDirection kDirection)

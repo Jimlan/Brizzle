@@ -40,6 +40,7 @@ void Bird::blink()
 
 void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
 {
+    ShareManager::shareManager()->isChanging=false;
     if(_isContainPoint(pTouch))
     {
         BaseSprite::ccTouchEnded(pTouch,pEvent);
@@ -49,7 +50,7 @@ void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
 
 void Bird::ccTouchMoved( CCTouch *pTouch, CCEvent *pEvent )
 {
-    if(_isContainPoint(pTouch)&&isMoving==false)
+    if(_isContainPoint(pTouch)&&isMoving==false&&ShareManager::shareManager()->isChanging==false)
     {
         __recordBird();
         BaseSprite::ccTouchMoved(pTouch,pEvent);
@@ -104,6 +105,7 @@ void Bird::__recordBird()
         bool sameColNeighbor = fbCol==col?abs(fbRow-row)==1:false;
         if(sameColNeighbor||sameRowNeighbor)
         {
+			ShareManager::shareManager()->isChanging=true;
             PuzzleUtil::instance()->changeBirdPosition();
         }
         CCLog("second");
