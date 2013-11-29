@@ -164,6 +164,8 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
 
     if(sm->fstBird->isMoving==false&&sm->sedBird->isMoving==false)
     {
+		//获取到小鸟所在的父节点 
+		CCNode *birdParentNode = bird->getParent();
         CCArray *dashBirds = getDashBirds();
         int birdCount = dashBirds->count();
         CCLog("dash birds count:%d",birdCount);
@@ -174,12 +176,15 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
             CCARRAY_FOREACH(dashBirds,obj)
             {
                 Bird *bird = (Bird*)obj;
-                CCScaleTo *scaleAct = CCScaleTo::create(0.2f,0.5);
+                CCScaleTo *scaleAct = CCScaleTo::create(scaleTime,0);
                 bird->stopAllActions();
                 //CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
                 //CCSequence::create(scaleAct,NULL)
                 bird->runAction(scaleAct);
             }
+			CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
+			CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
+			birdParentNode->runAction(CCSequence::create(updatePosDelay,updatePosFunc,NULL));
             sm->fstBird = NULL;
             sm->sedBird = NULL;
         }
@@ -308,5 +313,5 @@ void PuzzleUtil::__resetBird( CCNode *pSender )
 
 void PuzzleUtil::updateBirdPosition()
 {
-
+	CCLog("updatePos");
 }

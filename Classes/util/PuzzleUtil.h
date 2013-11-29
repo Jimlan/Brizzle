@@ -22,11 +22,13 @@ typedef enum
 class PuzzleUtil:public CCObject
 {
 private:
-	const float changePosTime = 0.25f;
+    const float changePosTime;
+    const float scaleTime;
     static PuzzleUtil *_instance;
     void __moveEnd(CCNode *pSender);
-	void __resetBird(CCNode *pSender);
+    void __resetBird(CCNode *pSender);
 public:
+    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f) {};
     static PuzzleUtil *instance();
     /* 生成没有三个连续的小鸟的二维数组 */
     void createBirds();
@@ -34,13 +36,13 @@ public:
     bool detectPuzzleBirds(short outer,short inner,PuzzleDetectDirection kDirection);
     /* 交换两个小鸟的位置 */
     void changeBirdPosition(bool withCallback=false);
-	void changeBirdPosition(Bird *fstBird,Bird *sedBird);
-	/* 小鸟消除后更新小鸟的位置 */
-	void updateBirdPosition();
+    void changeBirdPosition(Bird *fstBird,Bird *sedBird);
+    /* 小鸟消除后更新小鸟的位置 */
+    void updateBirdPosition();
     /* 移动位置后是否可以消除 */
     bool isCanPuzzle();
-	/* 获取可以消除的小鸟集合 */
-	CCArray *getDashBirds();
+    /* 获取可以消除的小鸟集合 */
+    CCArray *getDashBirds();
     /* 如果消除的个数为4个 */
     void dash4Bird();
     /* 如果消除的个数为5个 */
