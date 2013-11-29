@@ -122,6 +122,7 @@ void PuzzleUtil::changeBirdPosition()
     fst->col = sed->col;
     sed->row = fstRow;
     sed->col = fstCol;
+	getDashBirds();
 }
 
 void PuzzleUtil::__moveEnd( CCNode *pSender )
@@ -129,8 +130,8 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
     CCLog("move end");
     Bird *bird = (Bird*)pSender;
     bird->isMoving = false;
-	ShareManager::shareManager()->fstBird = NULL;
-	ShareManager::shareManager()->sedBird = NULL;
+    ShareManager::shareManager()->fstBird = NULL;
+    ShareManager::shareManager()->sedBird = NULL;
 }
 
 bool PuzzleUtil::isCanPuzzle()
@@ -150,10 +151,10 @@ bool PuzzleUtil::isCanPuzzle()
     }
     else if(sameColNeighbor)//如果在同一列就检测两个移动的小鸟所在的行
     {
-		//CCArray *birds1 = getRowDashBirds(first);
-		//CCArray *birds2 = getRowDashBirds(second);
-		//CCLog("count1:%d",birds1->count());
-		//CCLog("count2:%d",birds2->count());
+        //CCArray *birds1 = getRowDashBirds(first);
+        //CCArray *birds2 = getRowDashBirds(second);
+        //CCLog("count1:%d",birds1->count());
+        //CCLog("count2:%d",birds2->count());
     }
     return true;
 }
@@ -166,7 +167,7 @@ CCArray * PuzzleUtil::getRowDashBirds(Bird *bird )
     short birdType = bird->birdType;
     ShareManager *sm = ShareManager::shareManager();
     CCArray *birds = CCArray::create();
-	birds->retain();
+    birds->retain();
     birds->addObject(bird);
     bird->isChecked = true;
     short leftCol = col-1;
@@ -199,5 +200,88 @@ CCArray * PuzzleUtil::getColDashBirds(Bird *bird )
     //上下方向进行检测
     short col = bird->col;
     short row = bird->row;
-	return NULL;
+    return NULL;
+}
+
+CCArray * PuzzleUtil::getDashBirds()
+{
+    ShareManager *sm = ShareManager::shareManager();
+    CCArray *birdDash = CCArray::create();
+    for(int i=0; i<ShareManager::row; i++)
+    {
+        CCArray *rowDashBird = CCArray::create();
+        int appearCount = 0;
+        Bird *prevBird = NULL;
+        for(int j=0; j<ShareManager::col; j++)
+        {
+            Bird *currentBird = sm->birds[i][j];
+            if(prevBird==NULL)
+            {
+                prevBird = currentBird;
+                appearCount++;
+                rowDashBird->addObject(currentBird);
+            }
+            else if(prevBird->birdType==currentBird->birdType)
+            {
+                rowDashBird->addObject(currentBird);
+                appearCount++;
+				if(j==ShareManager::col-1&&appearCount>=3)
+				{
+					 birdDash->addObjectsFromArray(rowDashBird);
+					 rowDashBird->removeAllObjects();
+				}
+            }
+            else
+            {
+                if(appearCount>=3)
+                {
+                    birdDash->addObjectsFromArray(rowDashBird);
+                }
+                rowDashBird->removeAllObjects();
+				rowDashBird->addObject(currentBird);
+                prevBird = currentBird;
+                appearCount=1;
+            }
+        }
+    }
+
+    for(int j=0; j<ShareManager::col; j++)
+    {
+        CCArray *colDashBird = CCArray::create();
+        int appearCount = 0;
+        Bird *prevBird = NULL;
+        for(int i=0; i<ShareManager::row; i++)
+        {
+            Bird *currentBird = sm->birds[i][j];
+            if(prevBird==NULL)
+            {
+                prevBird = currentBird;
+                appearCount++;
+                colDashBird->addObject(currentBird);
+            }
+            else if(prevBird->birdType==currentBird->birdType)
+            {
+                colDashBird->addObject(currentBird);
+                appearCount++;
+				if(i==ShareManager::row-1&&appearCount>=3)
+				{
+					birdDash->addObjectsFromArray(colDashBird);
+					colDashBird->removeAllObjects();
+				}
+            }
+            else
+            {
+                if(appearCount>=3)
+                {
+                    birdDash->addObjectsFromArray(colDashBird);
+                }
+                colDashBird->removeAllObjects();
+				colDashBird->addObject(currentBird);
+                prevBird = currentBird;
+                appearCount=1;
+            }
+        }
+    }
+	CCLog("dash birds:%d",birdDash->count());
+	return birdDash;
 }

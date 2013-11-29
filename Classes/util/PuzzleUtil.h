@@ -9,7 +9,16 @@ typedef enum
     kRow
 } PuzzleDetectDirection;
 
-
+/**
+ *1.创建小鸟
+ *2.检测创建的小鸟是否有三个连续挨着的
+ *3.如果存在就替换连续的小鸟的第三个为其他的
+ *4.检测替换后的小鸟中是不是有可以在移动后消除的
+ *5.如果没有执行步骤1 知道第5步成立
+ *6.小鸟交换后 检测是不是有可以消除的
+ *7.如果有的话 就消除小鸟 然后生成新的小鸟 填充空位
+ *8.填充后执行步骤4 如此循环执行 直到当前任务完成
+ */
 class PuzzleUtil:public CCObject
 {
 private:
@@ -24,9 +33,11 @@ public:
     /* 交换两个小鸟的位置 */
     void changeBirdPosition();
     /* 移动位置后是否可以消除 */
-    CCArray *getRowDashBirds(Bird *bird);
-    CCArray *getColDashBirds(Bird *bird);
     bool isCanPuzzle();
+	/* 获取可以消除的小鸟集合 */
+	CCArray *getDashBirds();
+	CCArray *getRowDashBirds(Bird *bird);
+	CCArray *getColDashBirds(Bird *bird);
     /* 如果消除的个数为4个 */
     void dash4Bird();
     /* 如果消除的个数为5个 */
