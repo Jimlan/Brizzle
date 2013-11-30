@@ -10,8 +10,10 @@ private:
     CCAnimate *blinkAct;
     /* 记录点击的小鸟 */
     void __recordBird();
-    void __shakeBody();
+    
 public:
+	//小鸟颤动身体的动作
+	void shakeBody();
 	/* 记录当前是否在移动 如果正在移动的话 就禁止接收事件 */
     bool isMoving;
 	/* 是否被检测过了 */

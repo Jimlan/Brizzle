@@ -28,7 +28,7 @@ private:
     static PuzzleUtil *_instance;
     void __moveEnd(CCNode *pSender);
     void __resetBird(CCNode *pSender);
-	void __moveDown(CCNode *pSender);
+	void __moveDown(CCNode *pSenderj);
 	void __updatePosComplete();
 public:
     PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(500.0f) {};
