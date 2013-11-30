@@ -110,20 +110,21 @@ void PuzzleUtil::changeBirdPosition(bool withCallback)
     /* 临时保存行列坐标 */
     int fstRow = fst->row;
     int fstCol = fst->col;
-    CCPoint fstPos = fst->getPosition();
-    CCPoint secPos = sed->getPosition();
-    CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,fstPos);
-    CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,secPos);
+	/* 更新小鸟的行列属性 */
+	fst->row = sed->row;
+	fst->col = sed->col;
+	sed->row = fstRow;
+	sed->col = fstCol;
+    CCPoint fstPos = CCPointMake(fst->col*ShareManager::boxWidth,fst->row*ShareManager::boxHeight);//fst->getPosition();
+    CCPoint secPos = CCPointMake(sed->col*ShareManager::boxWidth,sed->row*ShareManager::boxHeight);//sed->getPosition();
+    CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,secPos);
+    CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,fstPos);
     CCCallFuncN *moveCall = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__moveEnd));
     fst->runAction(CCSequence::create(fstMoveAct,moveCall,NULL));
     sed->runAction(CCSequence::create(sedMoveAct,moveCall,NULL));
     fst->isMoving = true;
     sed->isMoving = true;
-    /* 更新小鸟的行列属性 */
-    fst->row = sed->row;
-    fst->col = sed->col;
-    sed->row = fstRow;
-    sed->col = fstCol;
+    
 }
 
 void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
@@ -141,10 +142,10 @@ void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
     sedBird->col = tempCol;
     /* 标记正在移动 不能接收用户的操作 */
     sedBird->isMoving = fstBird->isMoving = true;
-    CCPoint fstPos = fstBird->getPosition();
-    CCPoint secPos = sedBird->getPosition();
-    CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,fstPos);
-    CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,secPos);
+	CCPoint fstPos = CCPointMake(fstBird->col*ShareManager::boxWidth,fstBird->row*ShareManager::boxHeight);//fst->getPosition();
+	CCPoint secPos = CCPointMake(sedBird->col*ShareManager::boxWidth,sedBird->row*ShareManager::boxHeight);//sed->getPosition();
+	CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,secPos);
+    CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,fstPos);
     CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__resetBird));
     fstBird->runAction(CCSequence::create(fstMoveAct,moveFunc,NULL));
     sedBird->runAction(CCSequence::create(sedMoveAct,moveFunc,NULL));
