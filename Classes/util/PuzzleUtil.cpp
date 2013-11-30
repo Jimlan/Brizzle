@@ -332,7 +332,7 @@ void PuzzleUtil::updateBirdPosition()
 		{
 			Bird *bird = sm->birds[i][j];
 			if(bird==NULL)
-			{
+			{ 
 				emptyCells++;
 			}else if(emptyCells!=0){
 				//将原来的位置置空

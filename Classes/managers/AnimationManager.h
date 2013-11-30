@@ -7,10 +7,9 @@ class AnimationManager:CCObject
 {
 private:
 	static AnimationManager *_instance;
-
 public:
 	static AnimationManager *shareManager();
-	void addAnimation(const char *animationName);
+	void addAnimation(const char *prefix,const char *animationName,int began,int end,float fps);
 };
 
 #endif // !_ANIMATINMANAGER_H_

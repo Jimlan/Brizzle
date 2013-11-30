@@ -3,6 +3,7 @@
 #include "components/PauseMenu.h"
 #include "components/Bird.h"
 #include "managers/ShareManager.h"
+#include "managers/AnimationManager.h"
 #include "util/PuzzleUtil.h"
 
 bool ClassicScene::init()
@@ -20,6 +21,14 @@ bool ClassicScene::init()
 void ClassicScene::loadAssets()
 {
     m_pFrameCache->addSpriteFramesWithFile("images/character/Character_RETINA.plist");
+	m_pFrameCache->addSpriteFramesWithFile("images/item/itemblackhole_RETINA.plist");
+	m_pFrameCache->addSpriteFramesWithFile("images/item/itembomb_RETINA.plist");
+	m_pFrameCache->addSpriteFramesWithFile("images/item/itemfirebird_RETINA.plist");
+	m_pFrameCache->addSpriteFramesWithFile("images/item/itemlightning_RETINA.plist");
+	AnimationManager::shareManager()->addAnimation("itemBlackhole","BlackHole",0,11,60);
+	AnimationManager::shareManager()->addAnimation("itemBomb","bomb",0,11,60);
+	AnimationManager::shareManager()->addAnimation("itemFirebird","FireBird",0,11,60);
+	AnimationManager::shareManager()->addAnimation("itemLightning","lightning",0,11,60);
 }
 
 void ClassicScene::__initBackground()
