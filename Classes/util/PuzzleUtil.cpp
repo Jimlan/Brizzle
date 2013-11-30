@@ -162,7 +162,7 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
     Bird *bird = (Bird*)pSender;
     bird->isMoving = false;
 
-    if(sm->fstBird->isMoving==false&&sm->sedBird->isMoving==false)
+    if(sm->fstBird&&sm->sedBird&&sm->fstBird->isMoving==false&&sm->sedBird->isMoving==false)
     {
 		bool res = isCanPuzzle();
 		if(res==false)
