@@ -2,7 +2,9 @@
 #define _SHAREMANAGER_H_
 
 #include "common/common_header.h"
-#include "components/Bird.h"
+#include "components/ForbiddenLayer.h"
+
+class Bird;
 
 class ShareManager:public CCObject
 {
@@ -22,6 +24,7 @@ public:
     Bird *fstBird;
     Bird *sedBird;
 	CCSpriteBatchNode *birdBatchNode;
+	ForbiddenLayer *effectLayer;
 };
 
 #endif // !_SHAREMANAGER_H_

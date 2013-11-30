@@ -5,6 +5,7 @@
 #include "managers/ShareManager.h"
 #include "managers/AnimationManager.h"
 #include "util/PuzzleUtil.h"
+#include "components/ForbiddenLayer.h"
 
 bool ClassicScene::init()
 {
@@ -25,10 +26,10 @@ void ClassicScene::loadAssets()
 	m_pFrameCache->addSpriteFramesWithFile("images/item/itembomb_RETINA.plist");
 	m_pFrameCache->addSpriteFramesWithFile("images/item/itemfirebird_RETINA.plist");
 	m_pFrameCache->addSpriteFramesWithFile("images/item/itemlightning_RETINA.plist");
-	AnimationManager::shareManager()->addAnimation("itemBlackhole","BlackHole",0,11,60);
-	AnimationManager::shareManager()->addAnimation("itemBomb","bomb",0,11,60);
-	AnimationManager::shareManager()->addAnimation("itemFirebird","FireBird",0,11,60);
-	AnimationManager::shareManager()->addAnimation("itemLightning","lightning",0,11,60);
+	AnimationManager::shareManager()->addAnimation("itemBlackhole","BlackHole",0,11,12);
+	AnimationManager::shareManager()->addAnimation("itemBomb","bomb",0,11,12);
+	AnimationManager::shareManager()->addAnimation("itemFirebird","FireBird",0,11,12);
+	AnimationManager::shareManager()->addAnimation("itemLightning","lightning",0,11,12);
 }
 
 void ClassicScene::__initBackground()
@@ -123,5 +124,11 @@ void ClassicScene::__createBird()
 	m_pBirdBatchNode->setPosition(ccp(93,85));
 	addChild(m_pBirdBatchNode);
 	ShareManager::shareManager()->birdBatchNode = m_pBirdBatchNode;
+	effectLayer = ForbiddenLayer::create();
+	//effectLayer->setPosition(VisibleRect::center());
+	effectLayer->setSwallow(false);
+	addChild(effectLayer);
+	ShareManager::shareManager()->effectLayer = effectLayer;
+	PuzzleUtil::instance()->dash4Bird();
 }
 

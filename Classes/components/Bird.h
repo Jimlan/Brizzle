@@ -13,7 +13,7 @@ private:
     
 public:
 	//小鸟颤动身体的动作
-	void shakeBody();
+	void shakeBody(float scaleX,float scaleY);
 	/* 记录当前是否在移动 如果正在移动的话 就禁止接收事件 */
     bool isMoving;
 	/* 是否被检测过了 */

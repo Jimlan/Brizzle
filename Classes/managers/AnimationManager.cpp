@@ -28,7 +28,7 @@ void AnimationManager::addAnimation(const char *prefix, const char *animationNam
 		CCSpriteFrame *frame = frameCache->spriteFrameByName(frameName->getCString());
 		frames->addObject(frame);
 	}
-	CCAnimation *animation = CCAnimation::createWithSpriteFrames(frames,1.0/fps);
+	CCAnimation *animation = CCAnimation::createWithSpriteFrames(frames,1.0f/fps);
 	CCAnimationCache::sharedAnimationCache()->addAnimation(animation,animationName);
 }
 

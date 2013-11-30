@@ -81,6 +81,9 @@
     <ClCompile Include="..\Classes\util\PuzzleUtil.cpp">
       <Filter>Classes\utils</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\components\ForbiddenLayer.cpp">
+      <Filter>Classes\components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -142,6 +145,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\util\PuzzleUtil.h">
       <Filter>Classes\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\components\ForbiddenLayer.h">
+      <Filter>Classes\components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

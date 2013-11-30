@@ -71,7 +71,7 @@ bool Bird::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
     {
         CCLog("began event");
         SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_droped.mp3");
-        shakeBody();
+        shakeBody(0.7f,1.2f);
         ShareManager *sm = ShareManager::shareManager();
         if(isMoving==false)
         {
@@ -113,9 +113,9 @@ void Bird::__recordBird()
     }
 }
 
-void Bird::shakeBody()
+void Bird::shakeBody(float scaleX,float scaleY)
 {
-	CCActionInterval *scaleIn = CCScaleBy::create(0.2f,0.7f,1.2f);
+	CCActionInterval *scaleIn = CCScaleBy::create(0.2f,scaleX,scaleY);
 	CCActionInterval *scaleBack = CCEaseElasticOut::create(CCScaleTo::create(0.6f,0.9f,0.9f));
 	CCSequence *scaleSeq = CCSequence::create(scaleIn,scaleBack,NULL);
 	runAction(scaleSeq);

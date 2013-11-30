@@ -185,6 +185,22 @@ bool PuzzleUtil::isCanPuzzle()
 	CCLog("dash birds count:%d",birdCount);
 	if(birdCount>0)
 	{
+		switch(birdCount)
+		{
+		case 4:
+			dash4Bird();
+			break;
+		case 5:
+			dash5Bird();
+			break;
+		case 6:
+			dash6Bird();
+			break;
+		case 7:
+			dash7Bird();
+		default:
+			break;
+		}
 		//消除数组内的小鸟
 		CCObject *obj = NULL;
 		CCARRAY_FOREACH(dashBirds,obj)
@@ -366,6 +382,7 @@ void PuzzleUtil::__moveDown( CCNode *pSender )
 {
 	Bird *bird = (Bird*)pSender;
 	bird->setTouchEnabled(true);
+	//bird->shakeBody(1.1f,0.8f);
 }
 
 void PuzzleUtil::createNewBird( short row,short col )
@@ -391,8 +408,36 @@ void PuzzleUtil::checkPuzzle()
 {
 
 }
-
+/* 位置更新完毕之后需要重新监测 是否有可以消除的小鸟 */
 void PuzzleUtil::__updatePosComplete()
 {
 	isCanPuzzle();
+}
+
+void PuzzleUtil::dash4Bird()
+{
+	CCSprite *sprite = SPRITE("itemBomb_002.png");
+	CCAnimationCache *animationCache = CCAnimationCache::sharedAnimationCache();
+	CCAnimation *animation = animationCache->animationByName("bomb");
+	int frames = animation->getFrames()->count();
+	CCAnimate *effectAnimate = CCAnimate::create(animation);
+	
+	ShareManager::shareManager()->effectLayer->addChild(sprite);
+	sprite->setPosition(VisibleRect::center());
+	sprite->runAction(effectAnimate);
+}
+
+void PuzzleUtil::dash5Bird()
+{
+
+}
+
+void PuzzleUtil::dash6Bird()
+{
+
+}
+
+void PuzzleUtil::dash7Bird()
+{
+
 }

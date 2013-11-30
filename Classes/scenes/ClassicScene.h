@@ -5,6 +5,7 @@
 #include "components/PauseMenu.h"
 #include "components/Bird.h"
 
+class ForbiddenLayer;
 class ClassicScene:public BaseScene
 {
 private:
@@ -14,6 +15,8 @@ private:
     PauseMenu *m_pPauseMenu;
 public:
 	CCSpriteBatchNode *m_pBirdBatchNode;
+	/* 消除个数在3个以上的时候显示小鸟特效所在的层 */
+	ForbiddenLayer *effectLayer;
     virtual void loadAssets();
     virtual bool init();
     CREATE_FUNC(ClassicScene);

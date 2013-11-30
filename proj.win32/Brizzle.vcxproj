@@ -133,6 +133,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClCompile Include="..\Classes\base\BaseSprite.cpp" />
     <ClCompile Include="..\Classes\base\VisibleRect.cpp" />
     <ClCompile Include="..\Classes\components\Bird.cpp" />
+    <ClCompile Include="..\Classes\components\ForbiddenLayer.cpp" />
     <ClCompile Include="..\Classes\components\PauseMenu.cpp" />
     <ClCompile Include="..\Classes\config\AppStartup.cpp" />
     <ClCompile Include="..\Classes\managers\AnimationManager.cpp" />
@@ -155,6 +156,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\common\notifications_names.h" />
     <ClInclude Include="..\Classes\common\userdefault_keys.h" />
     <ClInclude Include="..\Classes\components\Bird.h" />
+    <ClInclude Include="..\Classes\components\ForbiddenLayer.h" />
     <ClInclude Include="..\Classes\components\PauseMenu.h" />
     <ClInclude Include="..\Classes\config\AppStartup.h" />
     <ClInclude Include="..\Classes\managers\AnimationManager.h" />
