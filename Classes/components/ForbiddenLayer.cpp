@@ -12,11 +12,13 @@ bool ForbiddenLayer::init()
 
 void ForbiddenLayer::onEnter()
 {
+	CCLayer::onEnter();
     CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,m_iPriority,m_bSwallow);
 }
 
 void ForbiddenLayer::onExit()
 {
+	CCLayer::onExit();
     CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
 }
 

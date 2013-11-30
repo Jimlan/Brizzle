@@ -416,15 +416,14 @@ void PuzzleUtil::__updatePosComplete()
 
 void PuzzleUtil::dash4Bird()
 {
-	CCSprite *sprite = SPRITE("itemBomb_002.png");
+	CCSprite *sprite = SPRITE("itemFirebird_000.png");
 	CCAnimationCache *animationCache = CCAnimationCache::sharedAnimationCache();
-	CCAnimation *animation = animationCache->animationByName("bomb");
+	CCAnimation *animation = animationCache->animationByName("FireBird");
 	int frames = animation->getFrames()->count();
 	CCAnimate *effectAnimate = CCAnimate::create(animation);
-	
 	ShareManager::shareManager()->effectLayer->addChild(sprite);
 	sprite->setPosition(VisibleRect::center());
-	sprite->runAction(effectAnimate);
+	sprite->runAction(CCRepeatForever::create(effectAnimate));
 }
 
 void PuzzleUtil::dash5Bird()
