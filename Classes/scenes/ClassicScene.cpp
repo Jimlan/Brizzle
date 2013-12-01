@@ -129,6 +129,6 @@ void ClassicScene::__createBird()
 	effectLayer->setSwallow(false);
 	addChild(effectLayer);
 	ShareManager::shareManager()->effectLayer = effectLayer;
-	PuzzleUtil::instance()->dash4Bird();
+	//PuzzleUtil::instance()->dash4Bird();
 }
 

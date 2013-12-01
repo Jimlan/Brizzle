@@ -18,12 +18,7 @@ void AnimationManager::addAnimation(const char *prefix, const char *animationNam
 	CCSpriteFrameCache *frameCache = CCSpriteFrameCache::sharedSpriteFrameCache();
 	for(int i=began;i<=end;i++)
 	{ 
-		std::string suffix;
-		if(i<10){
-			suffix = "_00%d.png";
-		}else{
-			suffix = "_0%d.png";
-		}
+		std::string suffix = "_0%02d.png";
 		CCString *frameName = CCString::createWithFormat((prefix+suffix).c_str(),i);
 		CCSpriteFrame *frame = frameCache->spriteFrameByName(frameName->getCString());
 		frames->addObject(frame);

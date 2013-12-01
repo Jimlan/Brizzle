@@ -12,6 +12,8 @@ private:
     void __recordBird();
     
 public:
+	//和小鸟跟随的动画
+	CCSprite *effectSprite;
 	//小鸟颤动身体的动作
 	void shakeBody(float scaleX,float scaleY);
 	/* 记录当前是否在移动 如果正在移动的话 就禁止接收事件 */
@@ -21,7 +23,7 @@ public:
     short row;
     short col;
 	short birdType;
-    Bird():birdType(-1),isMoving(false),isChecked(false) {
+    Bird():effectSprite(NULL),birdType(-1),isMoving(false),isChecked(false) {
 		m_bSwallow = false;
 	};
     static Bird *create(short type);
@@ -29,7 +31,6 @@ public:
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
-
 };
 
 

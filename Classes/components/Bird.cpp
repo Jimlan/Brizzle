@@ -65,7 +65,6 @@ void Bird::ccTouchMoved( CCTouch *pTouch, CCEvent *pEvent )
 
 bool Bird::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
 {
-
     bool res = BaseSprite::ccTouchBegan(pTouch,pEvent);
     if(res)
     {

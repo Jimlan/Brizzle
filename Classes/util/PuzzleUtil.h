@@ -51,13 +51,13 @@ public:
     /* 获取可以消除的小鸟集合 */
     CCArray *getDashBirds();
     /* 如果消除的个数为4个 */
-    void dash4Bird();
+    void dash4Bird(Bird *bird);
     /* 如果消除的个数为5个 */
-    void dash5Bird();
+    void dash5Bird(Bird *bird);
     /* 如果消除的个数为6个 */
-    void dash6Bird();
+    void dash6Bird(Bird *bird);
     /* 如果消除的个数为7个或者7个以上 */
-    void dash7Bird();
+    void dash7Bird(Bird *bird);
 };
 
 #endif // !_PUZZLEUTIL_H_

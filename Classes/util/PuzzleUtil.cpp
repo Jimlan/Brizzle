@@ -185,19 +185,30 @@ bool PuzzleUtil::isCanPuzzle()
 	CCLog("dash birds count:%d",birdCount);
 	if(birdCount>0)
 	{
+		Bird *effectBird = NULL;
+		if(dashBirds->containsObject(sm->fstBird))
+		{
+			effectBird = sm->fstBird;
+		}else if(dashBirds->containsObject(sm->sedBird))
+		{
+			effectBird = sm->sedBird;
+		}else{
+			effectBird = (Bird*)dashBirds->objectAtIndex(floor(birdCount/2));
+		}
+		
 		switch(birdCount)
 		{
 		case 4:
-			dash4Bird();
+			dash4Bird(effectBird);
 			break;
 		case 5:
-			dash5Bird();
+			dash5Bird(effectBird);
 			break;
 		case 6:
-			dash6Bird();
+			dash6Bird(effectBird);
 			break;
 		case 7:
-			dash7Bird();
+			dash7Bird(effectBird);
 		default:
 			break;
 		}
@@ -213,7 +224,6 @@ bool PuzzleUtil::isCanPuzzle()
 			CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
 			CCSequence *seqAct = CCSequence::create(scaleAct,scaleFunc,NULL);
 			bird->runAction(seqAct);
-
 		}
 		CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
 		CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
@@ -414,29 +424,28 @@ void PuzzleUtil::__updatePosComplete()
 	isCanPuzzle();
 }
 
-void PuzzleUtil::dash4Bird()
+void PuzzleUtil::dash4Bird(Bird *bird)
 {
+	ShareManager *sm = ShareManager::shareManager();
 	CCSprite *sprite = SPRITE("itemFirebird_000.png");
-	CCAnimationCache *animationCache = CCAnimationCache::sharedAnimationCache();
-	CCAnimation *animation = animationCache->animationByName("FireBird");
-	int frames = animation->getFrames()->count();
-	CCAnimate *effectAnimate = CCAnimate::create(animation);
-	ShareManager::shareManager()->effectLayer->addChild(sprite);
-	sprite->setPosition(VisibleRect::center());
-	sprite->runAction(CCRepeatForever::create(effectAnimate));
+	sm->effectLayer->addChild(sprite);
+	sprite->setPosition(sm->birdBatchNode->convertToWorldSpace(bird->getPosition()));
+	sprite->runAction(CCRepeatForever::create(GET_ANIMATE("FireBird")));
+	bird->effectSprite = sprite;
+	sprite->setScale(0.9f);
 }
 
-void PuzzleUtil::dash5Bird()
+void PuzzleUtil::dash5Bird(Bird *bird)
 {
 
 }
 
-void PuzzleUtil::dash6Bird()
+void PuzzleUtil::dash6Bird(Bird *bird)
 {
 
 }
 
-void PuzzleUtil::dash7Bird()
+void PuzzleUtil::dash7Bird(Bird *bird)
 {
 
 }

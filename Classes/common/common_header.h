@@ -14,7 +14,7 @@ using namespace CocosDenshion;
 
 #define selector private
 #define SPRITE(URL) CCSprite::createWithSpriteFrameName(URL)
-
+#define GET_ANIMATE(NAME) CCAnimate::create(CCAnimationCache::sharedAnimationCache()->animationByName(NAME))
 
 #define UD_GET_BOOL(key) CCUserDefault::sharedUserDefault()->getBoolForKey(key)
 #define UD_GET_DOUBLE(key) CCUserDefault::sharedUserDefault()->getDoubleForKey(key)
