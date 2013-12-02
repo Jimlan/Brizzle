@@ -24,12 +24,13 @@ class PuzzleUtil:public CCObject
 private:
     const float changePosTime;
     const float scaleTime;
-	const float downSpeed;//更新小鸟时候的位置
+    const float downSpeed;//更新小鸟时候的位置
     static PuzzleUtil *_instance;
     void __moveEnd(CCNode *pSender);
     void __resetBird(CCNode *pSender);
-	void __moveDown(CCNode *pSenderj);
-	void __updatePosComplete();
+    void __moveDown(CCNode *pSenderj);
+    void __updatePosComplete();
+    CCPoint getWoldPos(const CCPoint &pos);
 public:
     PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(500.0f) {};
     static PuzzleUtil *instance();
@@ -40,9 +41,9 @@ public:
     /* 交换两个小鸟的位置 */
     void changeBirdPosition(bool withCallback=false);
     void changeBirdPosition(Bird *fstBird,Bird *sedBird);
-	void checkPuzzle();
-	/* 创建新的小鸟到指定的位置 */
-	void createNewBird(short row,short col);
+    void checkPuzzle();
+    /* 创建新的小鸟到指定的位置 */
+    void createNewBird(short row,short col);
 
     /* 小鸟消除后更新小鸟的位置 */
     void updateBirdPosition();
@@ -50,14 +51,8 @@ public:
     bool isCanPuzzle();
     /* 获取可以消除的小鸟集合 */
     CCArray *getDashBirds();
-    /* 如果消除的个数为4个 */
-    void dash4Bird(Bird *bird);
-    /* 如果消除的个数为5个 */
-    void dash5Bird(Bird *bird);
-    /* 如果消除的个数为6个 */
-    void dash6Bird(Bird *bird);
-    /* 如果消除的个数为7个或者7个以上 */
-    void dash7Bird(Bird *bird);
+    /* 如果消除的个数为3个以上的话 */
+    void dashBird(Bird *bird,const char *fstFrameName,const char *animationName,int type);
 };
 
 #endif // !_PUZZLEUTIL_H_
