@@ -224,22 +224,26 @@ bool PuzzleUtil::isCanPuzzle()
             }
             dashBirds->removeObject(effectBird,false);
             int effectType = rand()%4+4;
-            switch(effectType)
-            {
-            case 4:
-                dashBird(effectBird,"itemBomb_000.png","bomb",effectType);
-                break;
-            case 5:
-                dashBird(effectBird,"itemFirebird_000.png","FireBird",effectType);
-                break;
-            case 6:
-                dashBird(effectBird,"itemBlackhole_000.png","BlackHole",effectType);
-                break;
-            case 7:
-                dashBird(effectBird,"itemLightning_000.png","lightning",effectType);
-            default:
-                break;
-            }
+			if(effectBird->effectSprite==NULL)
+			{
+				switch(effectType)
+				{
+				case 4:
+					dashBird(effectBird,"itemBomb_000.png","bomb",effectType);
+					break;
+				case 5:
+					dashBird(effectBird,"itemFirebird_000.png","FireBird",effectType);
+					break;
+				case 6:
+					dashBird(effectBird,"itemBlackhole_000.png","BlackHole",effectType);
+					break;
+				case 7:
+					dashBird(effectBird,"itemLightning_000.png","lightning",effectType);
+				default:
+					break;
+				}
+			}
+            
         }
 
         //消除数组内的小鸟 在消除的时候要判断小鸟的特效类型
@@ -247,6 +251,10 @@ bool PuzzleUtil::isCanPuzzle()
         CCARRAY_FOREACH(dashBirds,obj)
         {
             Bird *bird = (Bird*)obj;
+			if(bird->effectSprite)
+			{
+				runEffect(bird);
+			}
             CCScaleTo *scaleAct = CCScaleTo::create(scaleTime,0);
             bird->stopAllActions();
             //移除之后将数组位置置空
@@ -514,20 +522,32 @@ void PuzzleUtil::runEffect( Bird *bird )
 
 void PuzzleUtil::fireBird( Bird *bird )
 {
-
+	CCSprite *effect = SPRITE("firebird_000.png");
+	effect->runAction(CCRepeatForever::create(GET_ANIMATE("FireBirdEff")));
+	sm->effectLayer->addChild(effect);
+	effect->setPosition(getWoldPos(bird->getPosition()));
 }
 
 void PuzzleUtil::blackHole( Bird *bird )
 {
-
+	CCSprite *effect = SPRITE("Blackhole_000.png");
+	effect->runAction(CCRepeatForever::create(GET_ANIMATE("BlackHoleEff")));
+	sm->effectLayer->addChild(effect);
+	effect->setPosition(getWoldPos(bird->getPosition()));
 }
 
 void PuzzleUtil::bombBird( Bird *bird )
 {
-
+	CCSprite *effect = SPRITE("bomb_001.png");
+	effect->runAction(CCRepeatForever::create(GET_ANIMATE("BombEff")));
+	sm->effectLayer->addChild(effect);
+	effect->setPosition(getWoldPos(bird->getPosition()));
 }
 
 void PuzzleUtil::lightning( Bird *bird )
 {
-
+	CCSprite *effect = SPRITE("firebird_000.png");
+	effect->runAction(CCRepeatForever::create(GET_ANIMATE("FireBirdEff")));
+	sm->effectLayer->addChild(effect);
+	effect->setPosition(getWoldPos(bird->getPosition()));
 }

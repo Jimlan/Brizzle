@@ -2,6 +2,7 @@
 #define _PUZZLEUTIL_H_
 
 #include "components/Bird.h"
+#include "managers/ShareManager.h"
 
 typedef enum
 {
@@ -32,8 +33,11 @@ private:
     void __updatePosComplete();
 	void __effectMoveEnd(CCNode *node);
     CCPoint getWoldPos(const CCPoint &pos);
+	ShareManager *sm;
 public:
-    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(500.0f) {};
+    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(500.0f) {
+		sm = ShareManager::shareManager();
+	};
     static PuzzleUtil *instance();
     /* 生成没有三个连续的小鸟的二维数组 */
     void createBirds();
