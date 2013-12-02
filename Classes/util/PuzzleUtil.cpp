@@ -490,6 +490,8 @@ void PuzzleUtil::runEffect( Bird *bird )
 {
     if(bird->effectSprite)
     {
+		bird->effectSprite->removeFromParentAndCleanup(true);
+		bird->effectSprite = NULL;
         switch(bird->effectType)
         {
         case 4:
