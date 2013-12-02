@@ -22,7 +22,7 @@ void PuzzleUtil::createBirds()
     {
         for(short j=0; j<col; j++)
         {
-            short birdType = rand()%8;
+            short birdType = rand()%5;
             Bird *bird = Bird::create(birdType);
             bird->row = i;
             bird->col = j;
@@ -421,7 +421,7 @@ void PuzzleUtil::updateBirdPosition()
 
     }
     //更新了位置之后 要继续检测是否有可以消除的小鸟
-    CCDelayTime *checkDelay = CCDelayTime::create(0.2f);
+    CCDelayTime *checkDelay = CCDelayTime::create(0.25f);
     CCCallFunc *checkCall = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::__updatePosComplete));
     sm->birdBatchNode->runAction(CCSequence::create(checkDelay,checkCall,NULL));
 }
