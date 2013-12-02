@@ -54,6 +54,13 @@ public:
     CCArray *getDashBirds();
     /* 如果消除的个数为3个以上的话 */
     void dashBird(Bird *bird,const char *fstFrameName,const char *animationName,int type);
+	/* 执行小鸟特效 如果存在特效的话 */
+	void runEffect(Bird *bird);
+
+	void blackHole(Bird *bird);
+	void fireBird(Bird *bird);
+	void bombBird(Bird *bird);
+	void lightning(Bird *bird);
 };
 
 #endif // !_PUZZLEUTIL_H_

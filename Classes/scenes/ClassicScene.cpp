@@ -22,14 +22,26 @@ bool ClassicScene::init()
 void ClassicScene::loadAssets()
 {
     m_pFrameCache->addSpriteFramesWithFile("images/character/Character_RETINA.plist");
+	//小鸟特效纹理
 	m_pFrameCache->addSpriteFramesWithFile("images/item/itemblackhole_RETINA.plist");
 	m_pFrameCache->addSpriteFramesWithFile("images/item/itembomb_RETINA.plist");
 	m_pFrameCache->addSpriteFramesWithFile("images/item/itemfirebird_RETINA.plist");
 	m_pFrameCache->addSpriteFramesWithFile("images/item/itemlightning_RETINA.plist");
+	//执行特效时候的纹理
+	m_pFrameCache->addSpriteFramesWithFile("images/item_effect/effectblackhole_RETINA.plist");
+	m_pFrameCache->addSpriteFramesWithFile("images/item_effect/effectbomb_RETINA.plist");
+	m_pFrameCache->addSpriteFramesWithFile("images/item_effect/effectfirebird_RETINA.plist");
+	m_pFrameCache->addSpriteFramesWithFile("images/item_effect/cloud_RETINA.plist");
+	//小鸟特效动画
 	AnimationManager::shareManager()->addAnimation("itemBlackhole","BlackHole",0,11,12);
 	AnimationManager::shareManager()->addAnimation("itemBomb","bomb",0,11,12);
 	AnimationManager::shareManager()->addAnimation("itemFirebird","FireBird",0,11,12);
 	AnimationManager::shareManager()->addAnimation("itemLightning","lightning",0,11,12);
+	//特效执行时候的动画
+	AnimationManager::shareManager()->addAnimation("Blackhole","BlackHoleEff",0,23,12);
+	AnimationManager::shareManager()->addAnimation("bomb","BombEff",1,16,12);
+	AnimationManager::shareManager()->addAnimation("firebird","FireBirdEff",0,11,12);
+
 }
 
 void ClassicScene::__initBackground()

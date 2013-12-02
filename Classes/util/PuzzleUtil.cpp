@@ -162,13 +162,13 @@ void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
     if(fstBird->effectSprite!=NULL)
     {
         CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,getWoldPos(fstPos));
-		CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__effectMoveEnd));
+        CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__effectMoveEnd));
         fstBird->effectSprite->runAction(CCSequence::create(fstMoveAct,moveFunc,NULL));
     }
     if(sedBird->effectSprite!=NULL)
     {
         CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,getWoldPos(secPos));
-		CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__effectMoveEnd));
+        CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__effectMoveEnd));
         sedBird->effectSprite->runAction(CCSequence::create(sedMoveAct,moveFunc,NULL));
     }
 }
@@ -242,7 +242,7 @@ bool PuzzleUtil::isCanPuzzle()
             }
         }
 
-        //消除数组内的小鸟
+        //消除数组内的小鸟 在消除的时候要判断小鸟的特效类型
         CCObject *obj = NULL;
         CCARRAY_FOREACH(dashBirds,obj)
         {
@@ -483,5 +483,49 @@ CCPoint PuzzleUtil::getWoldPos(const CCPoint &pos )
 
 void PuzzleUtil::__effectMoveEnd( CCNode *node )
 {
-	CCLog("move end effect x:%f,y:%f",node->getPositionX(),node->getPositionY());
+    CCLog("move end effect x:%f,y:%f",node->getPositionX(),node->getPositionY());
+}
+
+void PuzzleUtil::runEffect( Bird *bird )
+{
+    if(bird->effectSprite)
+    {
+        switch(bird->effectType)
+        {
+        case 4:
+            bombBird(bird);
+            break;
+        case 5:
+            fireBird(bird);
+            break;
+        case 6:
+            blackHole(bird);
+            break;
+        case 7:
+            lightning(bird);
+            break;
+        default:
+            break;
+        }
+    }
+}
+
+void PuzzleUtil::fireBird( Bird *bird )
+{
+
+}
+
+void PuzzleUtil::blackHole( Bird *bird )
+{
+
+}
+
+void PuzzleUtil::bombBird( Bird *bird )
+{
+
+}
+
+void PuzzleUtil::lightning( Bird *bird )
+{
+
 }
