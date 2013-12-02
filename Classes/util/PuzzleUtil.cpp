@@ -221,19 +221,20 @@ bool PuzzleUtil::isCanPuzzle()
                 effectBird = (Bird*)dashBirds->objectAtIndex(floor(birdCount/2));
             }
             dashBirds->removeObject(effectBird,false);
-            switch(birdCount)
+            int effectType = rand()%4+4;
+            switch(effectType)
             {
             case 4:
-                dashBird(effectBird,"itemBomb_000.png","bomb",birdCount);
+                dashBird(effectBird,"itemBomb_000.png","bomb",effectType);
                 break;
             case 5:
-                dashBird(effectBird,"itemFirebird_000.png","FireBird",birdCount);
+                dashBird(effectBird,"itemFirebird_000.png","FireBird",effectType);
                 break;
             case 6:
-                dashBird(effectBird,"itemBlackhole_000.png","BlackHole",birdCount);
+                dashBird(effectBird,"itemBlackhole_000.png","BlackHole",effectType);
                 break;
             case 7:
-                dashBird(effectBird,"itemLightning_000.png","lightning",birdCount);
+                dashBird(effectBird,"itemLightning_000.png","lightning",effectType);
             default:
                 break;
             }
