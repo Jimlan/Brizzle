@@ -162,12 +162,14 @@ void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
     if(fstBird->effectSprite!=NULL)
     {
         CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,getWoldPos(fstPos));
-        fstBird->effectSprite->runAction(fstMoveAct);
+		CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__effectMoveEnd));
+        fstBird->effectSprite->runAction(CCSequence::create(fstMoveAct,moveFunc,NULL));
     }
     if(sedBird->effectSprite!=NULL)
     {
         CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,getWoldPos(secPos));
-        sedBird->effectSprite->runAction(sedMoveAct);
+		CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__effectMoveEnd));
+        sedBird->effectSprite->runAction(CCSequence::create(sedMoveAct,moveFunc,NULL));
     }
 }
 
@@ -477,4 +479,9 @@ CCPoint PuzzleUtil::getWoldPos(const CCPoint &pos )
 {
     CCPoint globalPos = ShareManager::shareManager()->birdBatchNode->convertToWorldSpace(pos);
     return globalPos;
+}
+
+void PuzzleUtil::__effectMoveEnd( CCNode *node )
+{
+	CCLog("move end effect x:%f,y:%f",node->getPositionX(),node->getPositionY());
 }

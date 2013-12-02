@@ -30,6 +30,7 @@ private:
     void __resetBird(CCNode *pSender);
     void __moveDown(CCNode *pSenderj);
     void __updatePosComplete();
+	void __effectMoveEnd(CCNode *node);
     CCPoint getWoldPos(const CCPoint &pos);
 public:
     PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(500.0f) {};

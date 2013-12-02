@@ -69,6 +69,12 @@ bool Bird::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
     if(res)
     {
         CCLog("began event");
+		if(effectSprite)
+		{
+			CCPoint pos = effectSprite->getPosition();
+			CCLog("effectsprite x:%f,y:%f",pos.x,pos.y);
+			CCLog("bird x:%f,y:%f",getPositionX(),getPositionY());
+		}
         SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_droped.mp3");
         shakeBody(0.7f,1.2f);
         ShareManager *sm = ShareManager::shareManager();
