@@ -1,5 +1,6 @@
 ﻿#include "PuzzleUtil.h"
 #include "managers/ShareManager.h"
+#include "managers/SoundManager.h"
 
 
 PuzzleUtil *PuzzleUtil::_instance = NULL;
@@ -205,6 +206,7 @@ bool PuzzleUtil::isCanPuzzle()
         Bird *effectBird = NULL;
         if(birdCount>3)
         {
+			
             if(dashBirds->containsObject(sm->fstBird))
             {
                 effectBird = sm->fstBird;
@@ -240,7 +242,7 @@ bool PuzzleUtil::isCanPuzzle()
             }
 
         }
-
+		SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_remove.mp3");
         //消除数组内的小鸟 在消除的时候要判断小鸟的特效类型
         CCObject *obj = NULL;
         CCARRAY_FOREACH(dashBirds,obj)
@@ -499,15 +501,19 @@ void PuzzleUtil::runEffect( Bird *bird )
         switch(bird->effectType)
         {
         case 4:
+			SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_starbomb.mp3");
             bombBird(bird);
             break;
         case 5:
+			SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_firebomb.mp3");
             fireBird(bird);
             break;
         case 6:
+			SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_blackhole.mp3");
             blackHole(bird);
             break;
         case 7:
+			SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_lighting.mp3");
          //   lightning(bird);
             break;
         default:
@@ -676,6 +682,11 @@ void PuzzleUtil::__removeBurnBird( CCNode *node )
 void PuzzleUtil::__burnEff( CCNode *node )
 {
 	Bird *bird = (Bird*)node;
+	if(bird->effectSprite)
+	{
+		bird->effectSprite->removeFromParent();
+		bird->effectSprite = NULL;
+	}
 	sm->birds[bird->row][bird->col] = NULL;
 	node->removeFromParent();
 }
