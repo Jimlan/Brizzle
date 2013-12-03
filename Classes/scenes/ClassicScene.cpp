@@ -38,9 +38,9 @@ void ClassicScene::loadAssets()
 	AnimationManager::shareManager()->addAnimation("itemFirebird","FireBird",0,11,12);
 	AnimationManager::shareManager()->addAnimation("itemLightning","lightning",0,11,12);
 	//特效执行时候的动画
-	AnimationManager::shareManager()->addAnimation("Blackhole","BlackHoleEff",0,23,12);
-	AnimationManager::shareManager()->addAnimation("bomb","BombEff",1,16,12);
-	AnimationManager::shareManager()->addAnimation("firebird","FireBirdEff",0,11,12);
+	AnimationManager::shareManager()->addAnimation("Blackhole","BlackHoleEff",0,23,24);
+	AnimationManager::shareManager()->addAnimation("bomb","BombEff",1,16,24);
+	AnimationManager::shareManager()->addAnimation("firebird","FireBirdEff",0,11,24);
 
 }
 

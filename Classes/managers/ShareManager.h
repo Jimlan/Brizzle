@@ -13,6 +13,8 @@ private:
 public:
     /* 当前是不是正在交换位置 */
     bool isChanging;
+	/* 出现的小鸟的类型 */
+	int birdTypes;
     static const short row = 9;
     static const short col = 7;
     Bird *birds[row][col];
@@ -20,11 +22,12 @@ public:
     static const int boxHeight = 76;
     static ShareManager *shareManager();
     ShareManager():isChanging(false),fstBird(NULL),
-        sedBird(NULL),birdBatchNode(NULL) {};
+        sedBird(NULL),birdBatchNode(NULL),birdTypes(5) {};
     Bird *fstBird;
     Bird *sedBird;
 	CCSpriteBatchNode *birdBatchNode;
 	ForbiddenLayer *effectLayer;
+	
 };
 
 #endif // !_SHAREMANAGER_H_

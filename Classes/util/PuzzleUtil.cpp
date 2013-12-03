@@ -22,11 +22,11 @@ void PuzzleUtil::createBirds()
     {
         for(short j=0; j<col; j++)
         {
-            short birdType = rand()%5;
+            short birdType = rand()%sm->birdTypes;
             Bird *bird = Bird::create(birdType);
             bird->row = i;
             bird->col = j;
-            ShareManager::shareManager()->birds[i][j] = bird;
+            sm->birds[i][j] = bird;
         }
     }
     detectPuzzleBirds(ShareManager::row,ShareManager::col,kRow);
@@ -37,7 +37,6 @@ bool PuzzleUtil::detectPuzzleBirds(short outer,short inner,PuzzleDetectDirection
 {
     /* 查看是否存在三个以上的 */
     //step 1  left->right by row
-    ShareManager *sm = ShareManager::shareManager();
     for(int i=0; i<outer; i++)
     {
         //记录出现的次数 和上一次出现的的小鸟
@@ -99,7 +98,6 @@ bool PuzzleUtil::detectPuzzleBirds(short outer,short inner,PuzzleDetectDirection
 
 void PuzzleUtil::changeBirdPosition(bool withCallback)
 {
-    ShareManager *sm = ShareManager::shareManager();
     sm->fstBird->getParent()->reorderChild(sm->fstBird,0);
     sm->sedBird->getParent()->reorderChild(sm->sedBird,1);
     Bird *fst = sm->fstBird;
@@ -139,7 +137,6 @@ void PuzzleUtil::changeBirdPosition(bool withCallback)
 
 void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
 {
-    ShareManager *sm = ShareManager::shareManager();
     sm->fstBird->getParent()->reorderChild(sm->fstBird,1);
     sm->sedBird->getParent()->reorderChild(sm->sedBird,0);
     //更改他们在数组中的位置
@@ -181,7 +178,6 @@ void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
 void PuzzleUtil::__moveEnd( CCNode *pSender )
 {
     CCLog("move end");
-    ShareManager *sm = ShareManager::shareManager();
     Bird *bird = (Bird*)pSender;
     bird->isMoving = false;
 
@@ -200,7 +196,6 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
 
 bool PuzzleUtil::isCanPuzzle()
 {
-    ShareManager *sm = ShareManager::shareManager();
     CCNode *birdParentNode = sm->birdBatchNode;
     CCArray *dashBirds = getDashBirds();
     int birdCount = dashBirds->count();
@@ -224,26 +219,26 @@ bool PuzzleUtil::isCanPuzzle()
             }
             dashBirds->removeObject(effectBird,false);
             int effectType = rand()%4+4;
-			if(effectBird->effectSprite==NULL)
-			{
-				switch(effectType)
-				{
-				case 4:
-					dashBird(effectBird,"itemBomb_000.png","bomb",effectType);
-					break;
-				case 5:
-					dashBird(effectBird,"itemFirebird_000.png","FireBird",effectType);
-					break;
-				case 6:
-					dashBird(effectBird,"itemBlackhole_000.png","BlackHole",effectType);
-					break;
-				case 7:
-					dashBird(effectBird,"itemLightning_000.png","lightning",effectType);
-				default:
-					break;
-				}
-			}
-            
+            if(effectBird->effectSprite==NULL)
+            {
+                switch(effectType)
+                {
+                case 4:
+                    dashBird(effectBird,"itemBomb_000.png","bomb",effectType);
+                    break;
+                case 5:
+                    dashBird(effectBird,"itemFirebird_000.png","FireBird",effectType);
+                    break;
+                case 6:
+                    dashBird(effectBird,"itemBlackhole_000.png","BlackHole",effectType);
+                    break;
+                case 7:
+                    dashBird(effectBird,"itemLightning_000.png","lightning",effectType);
+                default:
+                    break;
+                }
+            }
+
         }
 
         //消除数组内的小鸟 在消除的时候要判断小鸟的特效类型
@@ -251,10 +246,10 @@ bool PuzzleUtil::isCanPuzzle()
         CCARRAY_FOREACH(dashBirds,obj)
         {
             Bird *bird = (Bird*)obj;
-			if(bird->effectSprite)
-			{
-				runEffect(bird);
-			}
+            if(bird->effectSprite)
+            {
+                runEffect(bird);
+            }
             CCScaleTo *scaleAct = CCScaleTo::create(scaleTime,0);
             bird->stopAllActions();
             //移除之后将数组位置置空
@@ -276,7 +271,7 @@ bool PuzzleUtil::isCanPuzzle()
 
 CCArray * PuzzleUtil::getDashBirds()
 {
-    ShareManager *sm = ShareManager::shareManager();
+
     CCArray *birdDash = CCArray::create();
     for(int i=0; i<ShareManager::row; i++)
     {
@@ -444,7 +439,7 @@ void PuzzleUtil::__moveDown( CCNode *pSender )
 void PuzzleUtil::createNewBird( short row,short col )
 {
     CCLog("row:%d,col:%d",row,col);
-    short type = rand()%8;
+    short type = rand()%sm->birdTypes;
     Bird *bird = Bird::create(type);
     bird->setPosition(ccp(col*ShareManager::boxWidth,VisibleRect::top().y));
     ShareManager::shareManager()->birdBatchNode->addChild(bird);
@@ -472,10 +467,10 @@ void PuzzleUtil::__updatePosComplete()
 
 void PuzzleUtil::dashBird(Bird *bird,const char *fstFrameName,const char *animationName,int type)
 {
-    ShareManager *sm = ShareManager::shareManager();
+
     CCSprite *sprite = SPRITE(fstFrameName);
     sm->effectLayer->addChild(sprite);
-    sprite->setPosition(getWoldPos(bird->getPosition()));
+    sprite->setPosition(getWoldPos(ccp(bird->col*ShareManager::boxWidth,bird->row*ShareManager::boxHeight)));
     sprite->runAction(CCRepeatForever::create(GET_ANIMATE(animationName)));
     bird->effectSprite = sprite;
     sprite->setScale(0.9f);
@@ -498,8 +493,8 @@ void PuzzleUtil::runEffect( Bird *bird )
 {
     if(bird->effectSprite)
     {
-		bird->effectSprite->removeFromParentAndCleanup(true);
-		bird->effectSprite = NULL;
+        bird->effectSprite->removeFromParentAndCleanup(true);
+        bird->effectSprite = NULL;
         switch(bird->effectType)
         {
         case 4:
@@ -522,32 +517,32 @@ void PuzzleUtil::runEffect( Bird *bird )
 
 void PuzzleUtil::fireBird( Bird *bird )
 {
-	CCSprite *effect = SPRITE("firebird_000.png");
-	effect->runAction(CCRepeatForever::create(GET_ANIMATE("FireBirdEff")));
-	sm->effectLayer->addChild(effect);
-	effect->setPosition(getWoldPos(bird->getPosition()));
+    CCSprite *effect = SPRITE("firebird_000.png");
+    effect->runAction(CCRepeatForever::create(GET_ANIMATE("FireBirdEff")));
+    sm->effectLayer->addChild(effect);
+    effect->setPosition(getWoldPos(bird->getPosition()));
 }
 
 void PuzzleUtil::blackHole( Bird *bird )
 {
-	CCSprite *effect = SPRITE("Blackhole_000.png");
-	effect->runAction(CCRepeatForever::create(GET_ANIMATE("BlackHoleEff")));
-	sm->effectLayer->addChild(effect);
-	effect->setPosition(getWoldPos(bird->getPosition()));
+    CCSprite *effect = SPRITE("Blackhole_000.png");
+    effect->runAction(CCRepeatForever::create(GET_ANIMATE("BlackHoleEff")));
+    sm->effectLayer->addChild(effect);
+    effect->setPosition(getWoldPos(bird->getPosition()));
 }
 
 void PuzzleUtil::bombBird( Bird *bird )
 {
-	CCSprite *effect = SPRITE("bomb_001.png");
-	effect->runAction(CCRepeatForever::create(GET_ANIMATE("BombEff")));
-	sm->effectLayer->addChild(effect);
-	effect->setPosition(getWoldPos(bird->getPosition()));
+    CCSprite *effect = SPRITE("bomb_001.png");
+    effect->runAction(CCRepeatForever::create(GET_ANIMATE("BombEff")));
+    sm->effectLayer->addChild(effect);
+    effect->setPosition(getWoldPos(bird->getPosition()));
 }
 
 void PuzzleUtil::lightning( Bird *bird )
 {
-	CCSprite *effect = SPRITE("firebird_000.png");
-	effect->runAction(CCRepeatForever::create(GET_ANIMATE("FireBirdEff")));
-	sm->effectLayer->addChild(effect);
-	effect->setPosition(getWoldPos(bird->getPosition()));
+    CCSprite *effect = SPRITE("firebird_000.png");
+    effect->runAction(CCRepeatForever::create(GET_ANIMATE("FireBirdEff")));
+    sm->effectLayer->addChild(effect);
+    effect->setPosition(getWoldPos(bird->getPosition()));
 }
