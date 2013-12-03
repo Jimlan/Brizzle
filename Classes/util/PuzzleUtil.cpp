@@ -158,13 +158,13 @@ void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
     sedBird->runAction(CCSequence::create(sedMoveAct,moveFunc,NULL));
     if(fstBird->effectSprite!=NULL)
     {
-        CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,getWoldPos(fstPos));
+        CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,getWorldPos(fstPos));
         CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__effectMoveEnd));
         fstBird->effectSprite->runAction(CCSequence::create(fstMoveAct,moveFunc,NULL));
     }
     if(sedBird->effectSprite!=NULL)
     {
-        CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,getWoldPos(secPos));
+        CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,getWorldPos(secPos));
         CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__effectMoveEnd));
         sedBird->effectSprite->runAction(CCSequence::create(sedMoveAct,moveFunc,NULL));
     }
@@ -215,7 +215,7 @@ bool PuzzleUtil::isCanPuzzle()
             }
             else
             {
-                effectBird = (Bird*)dashBirds->objectAtIndex(floor(birdCount/2));
+                effectBird = (Bird*)dashBirds->objectAtIndex(ceil(birdCount/2));
             }
             dashBirds->removeObject(effectBird,false);
             int effectType = rand()%4+4;
@@ -246,12 +246,12 @@ bool PuzzleUtil::isCanPuzzle()
         CCARRAY_FOREACH(dashBirds,obj)
         {
             Bird *bird = (Bird*)obj;
-            if(bird->effectSprite)
-            {
-                runEffect(bird);
-            }
             CCScaleTo *scaleAct = CCScaleTo::create(scaleTime,0);
             bird->stopAllActions();
+			if(bird->effectSprite)
+			{
+				runEffect(bird);
+			}
             //移除之后将数组位置置空
             sm->birds[bird->row][bird->col] = NULL;
             CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
@@ -470,7 +470,7 @@ void PuzzleUtil::dashBird(Bird *bird,const char *fstFrameName,const char *animat
 
     CCSprite *sprite = SPRITE(fstFrameName);
     sm->effectLayer->addChild(sprite);
-    sprite->setPosition(getWoldPos(ccp(bird->col*ShareManager::boxWidth,bird->row*ShareManager::boxHeight)));
+    sprite->setPosition(getWorldPos(ccp(bird->col*ShareManager::boxWidth,bird->row*ShareManager::boxHeight)));
     sprite->runAction(CCRepeatForever::create(GET_ANIMATE(animationName)));
     bird->effectSprite = sprite;
     sprite->setScale(0.9f);
@@ -478,7 +478,7 @@ void PuzzleUtil::dashBird(Bird *bird,const char *fstFrameName,const char *animat
 }
 
 //通过小鸟的坐标来获取到全局坐标
-CCPoint PuzzleUtil::getWoldPos(const CCPoint &pos )
+CCPoint PuzzleUtil::getWorldPos(const CCPoint &pos )
 {
     CCPoint globalPos = ShareManager::shareManager()->birdBatchNode->convertToWorldSpace(pos);
     return globalPos;
@@ -493,6 +493,7 @@ void PuzzleUtil::runEffect( Bird *bird )
 {
     if(bird->effectSprite)
     {
+        //sm->effectLayer->setSwallow(true);
         bird->effectSprite->removeFromParentAndCleanup(true);
         bird->effectSprite = NULL;
         switch(bird->effectType)
@@ -507,7 +508,7 @@ void PuzzleUtil::runEffect( Bird *bird )
             blackHole(bird);
             break;
         case 7:
-            lightning(bird);
+         //   lightning(bird);
             break;
         default:
             break;
@@ -520,23 +521,96 @@ void PuzzleUtil::fireBird( Bird *bird )
     CCSprite *effect = SPRITE("firebird_000.png");
     effect->runAction(CCRepeatForever::create(GET_ANIMATE("FireBirdEff")));
     sm->effectLayer->addChild(effect);
-    effect->setPosition(getWoldPos(bird->getPosition()));
+    effect->setPosition(getWorldPos(bird->getPosition()));
+    const float speed = 400.0f;
+    float time = (effect->getPositionY()+100)/speed;
+    CCMoveTo *moveAct = CCMoveTo::create(time,ccp(effect->getPositionX(),-100));
+    effect->runAction(moveAct);
+    CCString *burnName = CCString::createWithFormat("box0%d_burn@2x.png",bird->birdType);
+    bird->setDisplayFrame(frameCache->spriteFrameByName(burnName->getCString()));
+	int row = bird->row,col = bird->col;
+	for(int i=0;i<row;i++)
+	{
+		Bird *currentBird = sm->birds[i][col];
+		if(currentBird)
+		{
+			float dt = (row-i)*ShareManager::boxHeight/speed;
+			CCDelayTime *delay = CCDelayTime::create(dt);
+			CCCallFuncN *delayCall = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__birdBurn));
+			currentBird->runAction(CCSequence::create(delay,delayCall,NULL));
+		}
+	}
+	__effectEnd(time);
 }
 
 void PuzzleUtil::blackHole( Bird *bird )
 {
+    const float effTime = 1.5f;
     CCSprite *effect = SPRITE("Blackhole_000.png");
+    CCPoint birdPos = bird->getPosition();
     effect->runAction(CCRepeatForever::create(GET_ANIMATE("BlackHoleEff")));
     sm->effectLayer->addChild(effect);
-    effect->setPosition(getWoldPos(bird->getPosition()));
+    effect->setPosition(getWorldPos(birdPos));
+    sm->effectLayer->setTouchEnable(true);
+    CCScaleTo *scaleAct = CCScaleTo::create(3.0f,0);
+    effect->runAction(scaleAct);
+    for(int i=0; i<ShareManager::row; i++)
+    {
+        for(int j=0; j<ShareManager::col; j++)
+        {
+            Bird *currentBird = sm->birds[i][j];
+            if(currentBird&&currentBird->birdType==bird->birdType)
+            {
+				if(currentBird->effectSprite)
+				{
+					currentBird->effectSprite->removeFromParentAndCleanup(true);
+					currentBird->effectSprite = NULL;
+				}
+				currentBird->setZOrder(2);
+                float angle = rand()%360+100;
+                CCRotateBy *rotateAct = CCRotateBy::create(effTime,angle);
+                CCScaleTo *scaleAct = CCScaleTo::create(effTime,0.3f);
+                CCMoveTo *moveAct = CCMoveTo::create(effTime,birdPos);
+                CCSpawn *spawnAct = CCSpawn::create(rotateAct,moveAct,scaleAct,NULL);
+                CCCallFuncN *actHandler = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__blackHoleEff));
+                currentBird->runAction(CCSequence::create(spawnAct,actHandler,NULL));
+            }
+        }
+    }
+    __effectEnd(2.5f);
 }
 
 void PuzzleUtil::bombBird( Bird *bird )
 {
     CCSprite *effect = SPRITE("bomb_001.png");
-    effect->runAction(CCRepeatForever::create(GET_ANIMATE("BombEff")));
+    CCCallFunc *callfunc = CCCallFunc::create(effect,callfunc_selector(CCSprite::removeFromParent));
+    effect->runAction(CCSequence::create(GET_ANIMATE("BombEff"),callfunc,NULL));
     sm->effectLayer->addChild(effect);
-    effect->setPosition(getWoldPos(bird->getPosition()));
+    effect->setPosition(getWorldPos(bird->getPosition()));
+    CCArray *neighbor = CCArray::create();
+    int row = bird->row,col = bird->col;
+    int top = (row+1)==ShareManager::row?row:row+1,
+        left=(col-1)<0?col:col-1,
+        right=(col+1)==ShareManager::col?col:col+1
+              ,bottom=(row-1)<0?0:row-1;
+    for(int i=bottom; i<=top; i++)
+    {
+        for(int j=left; j<=right; j++)
+        {
+            Bird *currentBird = sm->birds[i][j];
+            if(currentBird)
+			{
+				currentBird->runAction(CCScaleTo::create(0.5f,0));
+				if(currentBird->effectSprite)
+				{
+					currentBird->effectSprite->removeFromParentAndCleanup(true);
+					currentBird->effectSprite = NULL;
+				}
+			}
+			sm->birds[i][j] = NULL;
+        }
+    }
+    __effectEnd(0.5f);
 }
 
 void PuzzleUtil::lightning( Bird *bird )
@@ -544,5 +618,64 @@ void PuzzleUtil::lightning( Bird *bird )
     CCSprite *effect = SPRITE("firebird_000.png");
     effect->runAction(CCRepeatForever::create(GET_ANIMATE("FireBirdEff")));
     sm->effectLayer->addChild(effect);
-    effect->setPosition(getWoldPos(bird->getPosition()));
+    effect->setPosition(getWorldPos(bird->getPosition()));
+    CCSprite *colLight = CCSprite::create("images/item_effect/lightning_A_RETINA.png");
+    CCSprite *rowLight = CCSprite::create("images/item_effect/lightning_B_RETINA.png");
+    rowLight->setPosition(ccp(VisibleRect::center().x,bird->getPositionY()));
+    colLight->setAnchorPoint(ccp(0.5,0));
+    colLight->setPosition(ccp(getWorldPos(bird->getPosition()).x,ShareManager::boxHeight/2));
+    sm->effectLayer->addChild(rowLight);
+    sm->effectLayer->addChild(colLight);
+    CCScaleBy *colScaleBy = CCScaleBy::create(0.5f,0.2f,1.0f);
+    CCScaleBy *rowScaleBy = CCScaleBy::create(0.5f,1.0f,0.2f);
+    CCScaleTo *colScaleTo = CCScaleTo::create(0.5f,0,1.0f);
+    CCScaleTo *rowScaleTo = CCScaleTo::create(0.5f,1.0f,0);
+    colLight->runAction(CCSequence::create(colScaleBy,colScaleBy->reverse(),colScaleTo,NULL));
+    rowLight->runAction(CCSequence::create(rowScaleBy,rowScaleBy->reverse(),rowScaleTo,NULL));
+}
+
+void PuzzleUtil::__blackHoleEff( CCNode *node )
+{
+    Bird *bird = (Bird*)node;
+    
+    bird->removeFromParentAndCleanup(true);
+    sm->birds[bird->row][bird->col] = NULL;
+    bird = NULL;
+}
+
+void PuzzleUtil::__effectEnd(float delayTime)
+{
+    CCDelayTime *delay = CCDelayTime::create(delayTime);
+    CCCallFunc *delayCall = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::__effectEndHandler));
+    sm->effectLayer->runAction(CCSequence::create(delay,delayCall,NULL));
+}
+
+void PuzzleUtil::__effectEndHandler()
+{
+    updateBirdPosition();
+}
+
+void PuzzleUtil::__birdBurn( CCNode *node )
+{
+	Bird *bird = (Bird*)node;
+	bird->stopAllActions();
+	CCString *burnName = CCString::createWithFormat("box0%d_burn@2x.png",bird->birdType);
+	bird->setDisplayFrame(frameCache->spriteFrameByName(burnName->getCString()));
+	CCDelayTime *delay = CCDelayTime::create(0.2f);
+	CCCallFuncN *delayCall = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__removeBurnBird));
+	bird->runAction(CCSequence::create(delay,delayCall,NULL));
+}
+
+void PuzzleUtil::__removeBurnBird( CCNode *node )
+{
+	Bird *bird = (Bird*)node;
+	bird->setDisplayFrame(frameCache->spriteFrameByName("bone@2x.png"));
+	bird->runAction(CCSequence::create(CCDelayTime::create(0.1f),CCFadeOut::create(0.1f),CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__burnEff)),NULL));
+}
+
+void PuzzleUtil::__burnEff( CCNode *node )
+{
+	Bird *bird = (Bird*)node;
+	sm->birds[bird->row][bird->col] = NULL;
+	node->removeFromParent();
 }

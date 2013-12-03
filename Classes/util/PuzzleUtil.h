@@ -32,11 +32,20 @@ private:
     void __moveDown(CCNode *pSenderj);
     void __updatePosComplete();
 	void __effectMoveEnd(CCNode *node);
-    CCPoint getWoldPos(const CCPoint &pos);
+	void __blackHoleEff(CCNode *node);
+	void __bombEff(CCNode *node);
+	void __effectEnd(float delayTime);
+	void __effectEndHandler();
+	void __birdBurn(CCNode *node);
+	void __removeBurnBird(CCNode *node);
+	void __burnEff(CCNode *node);
+    CCPoint getWorldPos(const CCPoint &pos);
 	ShareManager *sm;
+	CCSpriteFrameCache *frameCache;
 public:
     PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(500.0f) {
 		sm = ShareManager::shareManager();
+		frameCache = CCSpriteFrameCache::sharedSpriteFrameCache();
 	};
     static PuzzleUtil *instance();
     /* 生成没有三个连续的小鸟的二维数组 */

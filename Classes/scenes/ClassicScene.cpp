@@ -39,7 +39,7 @@ void ClassicScene::loadAssets()
 	AnimationManager::shareManager()->addAnimation("itemLightning","lightning",0,11,12);
 	//特效执行时候的动画
 	AnimationManager::shareManager()->addAnimation("Blackhole","BlackHoleEff",0,23,24);
-	AnimationManager::shareManager()->addAnimation("bomb","BombEff",1,16,24);
+	AnimationManager::shareManager()->addAnimation("bomb","BombEff",1,16,50);
 	AnimationManager::shareManager()->addAnimation("firebird","FireBirdEff",0,11,24);
 
 }
@@ -64,6 +64,7 @@ void ClassicScene::__initBackground()
     CCSprite *grass = CCSprite::create("images/stage_classic/stage_tree_grass_RETINA.png");
     grass->setAnchorPoint(CCPointZero);
     addChild(grass);
+	grass->setZOrder(1);
 }
 
 void ClassicScene::__woodMoveCall()
