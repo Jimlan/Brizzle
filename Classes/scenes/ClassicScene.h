@@ -12,6 +12,9 @@ private:
     void __initBackground();
     void __initPauseSprite();
 	void __createBird();
+	void __ready();
+	void __start();
+	void __startHandler(CCNode *node);
     PauseMenu *m_pPauseMenu;
 public:
 	CCSpriteBatchNode *m_pBirdBatchNode;

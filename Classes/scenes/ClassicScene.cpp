@@ -22,31 +22,32 @@ bool ClassicScene::init()
 void ClassicScene::loadAssets()
 {
     m_pFrameCache->addSpriteFramesWithFile("images/character/Character_RETINA.plist");
-	m_pFrameCache->addSpriteFramesWithFile("images/stage_classic/stage_RETINA.plist");
-	//小鸟特效纹理
-	m_pFrameCache->addSpriteFramesWithFile("images/item/itemblackhole_RETINA.plist");
-	m_pFrameCache->addSpriteFramesWithFile("images/item/itembomb_RETINA.plist");
-	m_pFrameCache->addSpriteFramesWithFile("images/item/itemfirebird_RETINA.plist");
-	m_pFrameCache->addSpriteFramesWithFile("images/item/itemlightning_RETINA.plist");
-	//执行特效时候的纹理
-	m_pFrameCache->addSpriteFramesWithFile("images/item_effect/effectblackhole_RETINA.plist");
-	m_pFrameCache->addSpriteFramesWithFile("images/item_effect/effectbomb_RETINA.plist");
-	m_pFrameCache->addSpriteFramesWithFile("images/item_effect/effectfirebird_RETINA.plist");
-	m_pFrameCache->addSpriteFramesWithFile("images/item_effect/cloud_RETINA.plist");
-	//小鸟特效动画
-	AnimationManager::shareManager()->addAnimation("itemBlackhole","BlackHole",0,11,12);
-	AnimationManager::shareManager()->addAnimation("itemBomb","bomb",0,11,12);
-	AnimationManager::shareManager()->addAnimation("itemFirebird","FireBird",0,11,12);
-	AnimationManager::shareManager()->addAnimation("itemLightning","lightning",0,11,12);
-	//特效执行时候的动画
-	AnimationManager::shareManager()->addAnimation("Blackhole","BlackHoleEff",0,23,24);
-	AnimationManager::shareManager()->addAnimation("bomb","BombEff",1,16,50);
-	AnimationManager::shareManager()->addAnimation("firebird","FireBirdEff",0,11,24);
+    m_pFrameCache->addSpriteFramesWithFile("images/stage_classic/stage_RETINA.plist");
+    //小鸟特效纹理
+    m_pFrameCache->addSpriteFramesWithFile("images/item/itemblackhole_RETINA.plist");
+    m_pFrameCache->addSpriteFramesWithFile("images/item/itembomb_RETINA.plist");
+    m_pFrameCache->addSpriteFramesWithFile("images/item/itemfirebird_RETINA.plist");
+    m_pFrameCache->addSpriteFramesWithFile("images/item/itemlightning_RETINA.plist");
+    //执行特效时候的纹理
+    m_pFrameCache->addSpriteFramesWithFile("images/item_effect/effectblackhole_RETINA.plist");
+    m_pFrameCache->addSpriteFramesWithFile("images/item_effect/effectbomb_RETINA.plist");
+    m_pFrameCache->addSpriteFramesWithFile("images/item_effect/effectfirebird_RETINA.plist");
+    m_pFrameCache->addSpriteFramesWithFile("images/item_effect/cloud_RETINA.plist");
+    //小鸟特效动画
+    AnimationManager::shareManager()->addAnimation("itemBlackhole","BlackHole",0,11,12);
+    AnimationManager::shareManager()->addAnimation("itemBomb","bomb",0,11,12);
+    AnimationManager::shareManager()->addAnimation("itemFirebird","FireBird",0,11,12);
+    AnimationManager::shareManager()->addAnimation("itemLightning","lightning",0,11,12);
+    //特效执行时候的动画
+    AnimationManager::shareManager()->addAnimation("Blackhole","BlackHoleEff",0,23,24);
+    AnimationManager::shareManager()->addAnimation("bomb","BombEff",1,16,50);
+    AnimationManager::shareManager()->addAnimation("firebird","FireBirdEff",0,11,24);
 
 }
 
 void ClassicScene::__initBackground()
 {
+    CCNode *contentNode = CCNode::create();
     CCSprite *bg = CCSprite::create("images/stage_classic/stage_bg_RETINA.png");
     bg->setPosition(VisibleRect::center());
     addChild(bg);
@@ -60,24 +61,47 @@ void ClassicScene::__initBackground()
     CCCallFunc *moveCall = CCCallFunc::create(this,callfunc_selector(ClassicScene::__woodMoveCall));
     CCCallFuncN *delayCall = CCCallFuncN::create(this,callfuncN_selector(ClassicScene::__delayCall));
     wood->setOpacity(0);
-    wood->runAction(CCSequence::create(delayRun,delayCall,moveAct,moveCall,NULL));
-    addChild(wood);
+    contentNode->addChild(wood,0,0);
+    CCSprite *progress = SPRITE("stage_tree_gauge_bar@2x.png");
+    CCSprite *progressHead = SPRITE("stage_tree_gauge_head@2x.png");
+    progressHead->setOpacity(0);
+    progress->setOpacity(0);
+    contentNode->addChild(progress);
+    contentNode->addChild(progressHead);
+    CCLabelAtlas *score = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
+    score->setString("000000");
+	score->setAnchorPoint(ccp(0.5,0.5));
+	score->setPosition(ccp(VisibleRect::center().x,-70));
+	score->setOpacity(0);
+    contentNode->addChild(score);
+    progress->setAnchorPoint(ccp(0,0.5));
+    progress->setPosition(ccp(76,-117));
+    progressHead->setPosition(ccp(progress->getPositionX()+progress->getContentSize().width,-117));
+    contentNode->runAction(CCSequence::create(delayRun,delayCall,moveAct,moveCall,NULL));
+    addChild(contentNode);
     CCSprite *grass = CCSprite::create("images/stage_classic/stage_tree_grass_RETINA.png");
     grass->setAnchorPoint(CCPointZero);
     addChild(grass);
-	grass->setZOrder(1);
+    grass->setZOrder(1);
 }
 
 void ClassicScene::__woodMoveCall()
 {
     __createBird();
+	__ready();
 }
 
 
 void ClassicScene::__delayCall(CCNode *node)
 {
-    CCSprite *sprite = (CCSprite*)node;
-    sprite->setOpacity(255);
+    CCArray *children = node->getChildren();
+    CCObject *child = NULL;
+    CCARRAY_FOREACH(children,child)
+    {
+        CCNodeRGBA *sprite = (CCNodeRGBA*)child;
+        if(sprite)
+            sprite->setOpacity(255);
+    }
 }
 
 void ClassicScene::__initPauseSprite()
@@ -96,7 +120,7 @@ void ClassicScene::__showPauseMenu( CCObject *pSender )
     {
         return ;
     }
-	SoundManager::shareSoundManager()->playEffect("sounds/SFX/pausebuttonclick.mp3");
+    SoundManager::shareSoundManager()->playEffect("sounds/SFX/pausebuttonclick.mp3");
     m_pPauseMenu = PauseMenu::create();
     addChild(m_pPauseMenu,3);
 }
@@ -111,8 +135,8 @@ void ClassicScene::onExit()
 {
     BaseScene::onExit();
     CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_RESUME_GAME);
-	ShareManager::shareManager()->fstBird = NULL;
-	ShareManager::shareManager()->sedBird = NULL;
+    ShareManager::shareManager()->fstBird = NULL;
+    ShareManager::shareManager()->sedBird = NULL;
 }
 
 void ClassicScene::__resumeGame( CCObject *pSender )
@@ -123,26 +147,67 @@ void ClassicScene::__resumeGame( CCObject *pSender )
 
 void ClassicScene::__createBird()
 {
-	m_pBirdBatchNode = CCSpriteBatchNode::createWithTexture(SPRITE("box00_burn@2x.png")->getTexture());
+    m_pBirdBatchNode = CCSpriteBatchNode::createWithTexture(SPRITE("box00_burn@2x.png")->getTexture());
     PuzzleUtil::instance()->createBirds();
-	for(short row = 0; row<9; row++)
+    for(short row = 0; row<9; row++)
     {
         for(short col=0; col<7; col++)
         {
-			Bird *bird = ShareManager::shareManager()->birds[row][col];
-			bird->setScale(0.9f);
-			bird->setPosition(ccp(col*ShareManager::boxWidth,row*ShareManager::boxHeight));
-			m_pBirdBatchNode->addChild(bird);
+            Bird *bird = ShareManager::shareManager()->birds[row][col];
+            bird->setScale(0.9f);
+            bird->setPosition(ccp(col*ShareManager::boxWidth,row*ShareManager::boxHeight));
+            m_pBirdBatchNode->addChild(bird);
         }
     }
-	m_pBirdBatchNode->setPosition(ccp(93,85));
-	addChild(m_pBirdBatchNode);
-	ShareManager::shareManager()->birdBatchNode = m_pBirdBatchNode;
-	effectLayer = ForbiddenLayer::create();
-	//effectLayer->setPosition(VisibleRect::center());
+    m_pBirdBatchNode->setPosition(ccp(93,85));
+    addChild(m_pBirdBatchNode);
+    ShareManager::shareManager()->birdBatchNode = m_pBirdBatchNode;
+    effectLayer = ForbiddenLayer::create();
+    //effectLayer->setPosition(VisibleRect::center());
+    effectLayer->setSwallow(false);
+    addChild(effectLayer);
+    ShareManager::shareManager()->effectLayer = effectLayer;
+    //PuzzleUtil::instance()->dash4Bird();
+}
+
+void ClassicScene::__ready()
+{
+	effectLayer->setSwallow(true);
+	CCSprite *ready = SPRITE("stage_level_ready@2x.png");
+	ready->setPosition(ccp(VisibleRect::top().x,VisibleRect::top().y+100));
+	CCMoveTo *moveTo = CCMoveTo::create(0.8f,VisibleRect::center());
+	CCEaseBackOut *backOut = CCEaseBackOut::create(moveTo);
+	CCDelayTime *delay = CCDelayTime::create(0.5f);
+	CCMoveBy *moveOut = CCMoveBy::create(0.2f,ccp(-500,0));
+	CCCallFunc *endCall = CCCallFunc::create(ready,callfunc_selector(CCSprite::removeFromParent));
+	CCCallFunc *startCall = CCCallFunc::create(this,callfunc_selector(ClassicScene::__start));
+	CCDelayTime *delayStart = CCDelayTime::create(0.3f);
+	ready->runAction(CCSequence::create(backOut,delay,moveOut,endCall,startCall,NULL));
+	addChild(ready);
+}
+
+void ClassicScene::__start()
+{
+	CCSprite *start = SPRITE("stage_level_start@2x.png");
+	start->setPosition(VisibleRect::center());
+	start->setScale(0);
+	CCScaleTo *scaleTo = CCScaleTo::create(0.5f,1);
+	CCEaseBackOut *easeOut = CCEaseBackOut::create(scaleTo);
+	CCDelayTime *delay = CCDelayTime::create(0.5f);
+	CCScaleTo *scaleOut = CCScaleTo::create(0.5f,3);
+	CCFadeOut *fadeOut = CCFadeOut::create(0.5f);
+	CCEaseBackIn *backin = CCEaseBackIn::create(scaleOut);
+	CCSpawn *out = CCSpawn::create(backin,fadeOut,NULL);
+	CCCallFuncN *endCall = CCCallFuncN::create(this,callfuncN_selector(ClassicScene::__startHandler));
+	CCSequence *startSeq = CCSequence::create(easeOut,delay,out,endCall,NULL);
+	addChild(start);
+	start->runAction(startSeq);
+	
+}
+
+void ClassicScene::__startHandler(CCNode *node)
+{
 	effectLayer->setSwallow(false);
-	addChild(effectLayer);
-	ShareManager::shareManager()->effectLayer = effectLayer;
-	//PuzzleUtil::instance()->dash4Bird();
+	node->removeFromParent();
 }
 
