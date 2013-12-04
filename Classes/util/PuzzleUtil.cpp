@@ -514,6 +514,7 @@ void PuzzleUtil::runEffect( Bird *bird )
 {
     if(bird->effectSprite)
     {
+		sm->effectLayer->stopAllActions();
         sm->effectLayer->setSwallow(true);
         bird->effectSprite->removeFromParentAndCleanup(true);
         bird->effectSprite = NULL;
@@ -675,7 +676,7 @@ void PuzzleUtil::__blackHoleEff( CCNode *node )
 
 void PuzzleUtil::__effectEnd(float delayTime)
 {
-    sm->effectLayer->stopAllActions();
+    
     CCDelayTime *delay = CCDelayTime::create(delayTime);
     CCCallFunc *delayCall = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::__effectEndHandler));
     sm->effectLayer->runAction(CCSequence::create(delay,delayCall,NULL));
