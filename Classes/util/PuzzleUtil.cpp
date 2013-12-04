@@ -552,7 +552,8 @@ void PuzzleUtil::fireBird( Bird *bird )
     const float speed = 400.0f;
     float time = (effect->getPositionY()+100)/speed;
     CCMoveTo *moveAct = CCMoveTo::create(time,ccp(effect->getPositionX(),-100));
-    effect->runAction(moveAct);
+    CCCallFunc *moveCall = CCCallFunc::create(this,callfunc_selector(CCSprite::removeFromParent));
+	effect->runAction(CCSequence::create(moveAct,NULL));
     bird->stopAllActions();
     __birdBurn(bird);
     int row = bird->row,col = bird->col;
@@ -568,7 +569,7 @@ void PuzzleUtil::fireBird( Bird *bird )
             currentBird->runAction(CCSequence::create(delay,delayCall,NULL));
         }
     }
-    __effectEnd(time);
+    __effectEnd(time+0.1f);
 }
 
 void PuzzleUtil::blackHole( Bird *bird )
@@ -580,8 +581,9 @@ void PuzzleUtil::blackHole( Bird *bird )
     sm->effectLayer->addChild(effect);
     effect->setPosition(getWorldPos(birdPos));
     sm->effectLayer->setTouchEnable(true);
-    CCScaleTo *scaleAct = CCScaleTo::create(3.0f,0);
-    effect->runAction(scaleAct);
+    CCScaleTo *scaleAct = CCScaleTo::create(1.5f,0);
+	//CCCallFunc *scaleCall = CCCallFunc::create(this,callfunc_selector(CCSprite::removeFromParent));
+    effect->runAction(CCSequence::create(scaleAct,NULL));
     for(int i=0; i<ShareManager::row; i++)
     {
         for(int j=0; j<ShareManager::col; j++)
@@ -606,7 +608,7 @@ void PuzzleUtil::blackHole( Bird *bird )
             }
         }
     }
-    __effectEnd(2.5f);
+    __effectEnd(1.6f);
 }
 
 void PuzzleUtil::bombBird( Bird *bird )
