@@ -3,6 +3,7 @@
 #include "ClassicScene.h"
 #include "PandoraScene.h"
 #include "IcebreakScene.h"
+#include "SettingScene.h"
 
 void HomeScene::loadAssets()
 {
@@ -10,6 +11,7 @@ void HomeScene::loadAssets()
     m_pFrameCache->addSpriteFramesWithFile("images/main_menu/main_bg_b_RETINA.plist");
     m_pFrameCache->addSpriteFramesWithFile("images/main_menu/mainmenu_a_RETINA.plist");
     m_pFrameCache->addSpriteFramesWithFile("images/main_menu/mainmenu_b_CN_RETINA.plist");
+	m_pFrameCache->addSpriteFramesWithFile("images/main_menu/mainmenu_a_CN_RETINA.plist");
 }
 
 void HomeScene::__initBackground()
@@ -79,8 +81,12 @@ void HomeScene::__initMainMenu()
     CCMenuItemSprite *classic = BaseMenuItemSprite::create(SPRITE("main_menu_classic_china@2x.png"),SPRITE("main_menu_classic_push_china@2x.png"),this,menu_selector(HomeScene::__gotoClassic));
     CCMenuItemSprite *icebreak = BaseMenuItemSprite::create(SPRITE("main_menu_icebreak_china@2x.png"),SPRITE("main_menu_icebreak_push_china@2x.png"),this,menu_selector(HomeScene::__gotoIcebreak));
     CCMenuItemSprite *pandora = BaseMenuItemSprite::create(SPRITE("main_menu_pandora_china@2x.png"),SPRITE("main_menu_pandora_push_china@2x.png"),this,menu_selector(HomeScene::__gotoPandora));
-    CCMenu *mainMenu = CCMenu::create(classic,icebreak,pandora,NULL);
+    CCMenuItemSprite *setting = BaseMenuItemSprite::create(SPRITE("main_option_china@2x.png"),SPRITE("main_option_push_china@2x.png"),this,menu_selector(HomeScene::__gotoSettingScene));
+	CCMenuItemSprite *rank = BaseMenuItemSprite::create(SPRITE("main_rank_china@2x.png"),SPRITE("main_rank_push_china@2x.png"),this,NULL);
+	CCMenu *mainMenu = CCMenu::create(classic,icebreak,pandora,setting,rank,NULL);
     addChild(mainMenu);
+	rank->setPosition(ccp(-130,-365));
+	setting->setPosition(ccp(-250,-365));
 	classic->setPosition(ccp(0,130));
 	pandora->setPosition(ccp(0,-130));
 }
@@ -98,5 +104,10 @@ void HomeScene::__gotoPandora( CCObject *pSender )
 void HomeScene::__gotoIcebreak( CCObject *pSender )
 {
 	m_pDirector->replaceScene(CCTransitionTurnOffTiles::create(0.5,IcebreakScene::create()));
+}
+
+void HomeScene::__gotoSettingScene( CCObject *pSender )
+{
+	CCDirector::sharedDirector()->replaceScene(CCTransitionSlideInR::create(0.5f,SettingScene::create()));
 }
 

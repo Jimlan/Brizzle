@@ -22,6 +22,7 @@ bool ClassicScene::init()
 void ClassicScene::loadAssets()
 {
     m_pFrameCache->addSpriteFramesWithFile("images/character/Character_RETINA.plist");
+	m_pFrameCache->addSpriteFramesWithFile("images/stage_classic/stage_RETINA.plist");
 	//小鸟特效纹理
 	m_pFrameCache->addSpriteFramesWithFile("images/item/itemblackhole_RETINA.plist");
 	m_pFrameCache->addSpriteFramesWithFile("images/item/itembomb_RETINA.plist");

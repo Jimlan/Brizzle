@@ -12,6 +12,8 @@ private:
     void __initLighting();
     /* 初始化主页按钮 */
     void __initMainMenu();
+
+	void __gotoSettingScene(CCObject *pSender);
 public:
     virtual bool init();
     virtual void loadAssets();
