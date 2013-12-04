@@ -12,6 +12,7 @@ private:
     void __recordBird();
     
 public:
+	const char *effectTypeName;
 	//和小鸟跟随的动画
 	CCSprite *effectSprite;
 	//特效类型
@@ -25,7 +26,7 @@ public:
     short row;
     short col;
 	short birdType;
-    Bird():effectSprite(NULL),effectType(0),birdType(-1),isMoving(false),isChecked(false) {
+    Bird():effectTypeName("normaltype"),effectSprite(NULL),effectType(0),birdType(-1),isMoving(false),isChecked(false) {
 		m_bSwallow = false;
 	};
     static Bird *create(short type);

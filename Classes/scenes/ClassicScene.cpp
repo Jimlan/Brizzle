@@ -97,7 +97,7 @@ void ClassicScene::__showPauseMenu( CCObject *pSender )
     }
 	SoundManager::shareSoundManager()->playEffect("sounds/SFX/pausebuttonclick.mp3");
     m_pPauseMenu = PauseMenu::create();
-    addChild(m_pPauseMenu);
+    addChild(m_pPauseMenu,3);
 }
 
 void ClassicScene::onEnter()

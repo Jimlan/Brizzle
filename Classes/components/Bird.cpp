@@ -78,7 +78,7 @@ bool Bird::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
         SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_droped.mp3");
         shakeBody(0.7f,1.2f);
         ShareManager *sm = ShareManager::shareManager();
-        if(isMoving==false)
+        if(isMoving==false&&sm->isChanging==false)
         {
             __recordBird();
         }
@@ -108,6 +108,7 @@ void Bird::__recordBird()
         bool sameColNeighbor = fbCol==col?abs(fbRow-row)==1:false;
         if(sameColNeighbor||sameRowNeighbor)
         {
+			sm->effectLayer->setSwallow(true);
 			ShareManager::shareManager()->isChanging=true;
             PuzzleUtil::instance()->changeBirdPosition();
         }else{
