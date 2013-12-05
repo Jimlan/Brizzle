@@ -40,6 +40,7 @@ private:
 	void __removeBurnBird(CCNode *node);
 	void __burnEff(CCNode *node);
 	void __setForbiddenDisable();
+	void __clearSelectBirds();
     CCPoint getWorldPos(const CCPoint &pos);
 	ShareManager *sm;
 	CCSpriteFrameCache *frameCache;

@@ -201,11 +201,21 @@ bool PuzzleUtil::isCanPuzzle()
     CCLog("dash birds count:%d",birdCount);
     if(birdCount>0)
     {
+		CCObject *obj = NULL;
         Bird *effectBird = NULL;
         bool updateFlag = true;
-        if(birdCount>3)
+		bool hasEffect = false;
+		CCARRAY_FOREACH(dashBirds,obj){
+			Bird *bird = (Bird*)obj;
+			if(bird->effectSprite)
+			{
+				hasEffect = true;
+				break;
+			}
+		}
+        if(birdCount>3&&hasEffect==false)
         {
-
+			 
             if(dashBirds->containsObject(sm->fstBird))
             {
                 effectBird = sm->fstBird;
@@ -219,10 +229,10 @@ bool PuzzleUtil::isCanPuzzle()
                 effectBird = (Bird*)dashBirds->objectAtIndex(ceil(birdCount/2));
             }
             effectBird->isChecked = false;
-            dashBirds->removeObject(effectBird,false);
             int effectType = rand()%3+4;
             if(effectBird->effectSprite==NULL)
             {
+				dashBirds->removeObject(effectBird,false);
                 switch(effectType)
                 {
                 case 4:
@@ -239,35 +249,50 @@ bool PuzzleUtil::isCanPuzzle()
                 default:
                     break;
                 }
+				float moveTime = 0.2f;
+				CCARRAY_FOREACH(dashBirds,obj)
+				{
+					Bird *bird = (Bird*)obj;
+					CCMoveTo *moveAct = CCMoveTo::create(moveTime,effectBird->getPosition());
+					CCCallFunc *moveEnd = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
+					bird->runAction(CCSequence::create(moveAct,moveEnd,NULL));
+					//移除之后将数组位置置空
+					sm->birds[bird->row][bird->col] = NULL;
+				}
+				CCDelayTime *delay = CCDelayTime::create(moveTime);
+				CCCallFunc *delayCall = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::__clearSelectBirds));
+				sm->effectLayer->runAction(CCSequence::create(delay,delayCall,NULL));
             }
 
-        }
-        SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_remove.mp3");
-        //消除数组内的小鸟 在消除的时候要判断小鸟的特效类型
-        CCObject *obj = NULL;
-        CCARRAY_FOREACH(dashBirds,obj)
-        {
-            Bird *bird = (Bird*)obj;
-            CCScaleTo *scaleAct = CCScaleTo::create(scaleTime,0);
-            bird->stopAllActions();
-            if(bird->effectSprite)
-            {
-                updateFlag = false;
-                runEffect(bird);
-            }
-            //移除之后将数组位置置空
-            sm->birds[bird->row][bird->col] = NULL;
-            CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
-            CCSequence *seqAct = CCSequence::create(scaleAct,scaleFunc,NULL);
-            bird->runAction(seqAct);
-        }
-        if(updateFlag)
-        {
-            CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
-            CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
-            birdParentNode->runAction(CCSequence::create(updatePosDelay,updatePosFunc,NULL));
-        }
-        
+        }else{
+			SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_remove.mp3");
+			//消除数组内的小鸟 在消除的时候要判断小鸟的特效类型
+
+			CCARRAY_FOREACH(dashBirds,obj)
+			{
+				Bird *bird = (Bird*)obj;
+				CCScaleTo *scaleAct = CCScaleTo::create(scaleTime,0);
+				bird->stopAllActions();
+				if(bird->effectSprite)
+				{
+					updateFlag = false;
+					runEffect(bird);
+				}
+				//移除之后将数组位置置空
+				sm->birds[bird->row][bird->col] = NULL;
+				CCCallFunc *scaleFunc = CCCallFunc::create(bird,callfunc_selector(Bird::removeFromParent));
+				CCSequence *seqAct = CCSequence::create(scaleAct,scaleFunc,NULL);
+				bird->runAction(seqAct);
+			}
+			if(updateFlag)
+			{
+				CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
+				CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
+				birdParentNode->runAction(CCSequence::create(updatePosDelay,updatePosFunc,NULL));
+			}
+
+		}
+       
         return true;
     }
     return false;
@@ -724,4 +749,11 @@ void PuzzleUtil::__burnEff( CCNode *node )
 void PuzzleUtil::__setForbiddenDisable()
 {
 	__moveEnd(NULL);
+}
+
+void PuzzleUtil::__clearSelectBirds()
+{
+	sm->fstBird = NULL;
+	sm->sedBird = NULL;
+	updateBirdPosition();
 }
