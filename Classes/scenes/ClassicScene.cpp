@@ -164,7 +164,7 @@ void ClassicScene::__createBird()
     ShareManager::shareManager()->birdBatchNode = m_pBirdBatchNode;
     effectLayer = ForbiddenLayer::create();
     //effectLayer->setPosition(VisibleRect::center());
-    effectLayer->setSwallow(false);
+    effectLayer->setSwallow(true);
     addChild(effectLayer);
     ShareManager::shareManager()->effectLayer = effectLayer;
     //PuzzleUtil::instance()->dash4Bird();
@@ -172,7 +172,7 @@ void ClassicScene::__createBird()
 
 void ClassicScene::__ready()
 {
-	effectLayer->setSwallow(true);
+	//effectLayer->setSwallow(true);
 	CCSprite *ready = SPRITE("stage_level_ready@2x.png");
 	ready->setPosition(ccp(VisibleRect::top().x,VisibleRect::top().y+100));
 	CCMoveTo *moveTo = CCMoveTo::create(0.8f,VisibleRect::center());

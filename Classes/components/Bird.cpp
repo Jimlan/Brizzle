@@ -42,11 +42,6 @@ void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
 {
 	ShareManager *sm = ShareManager::shareManager();
 	sm->isChanging=false;
-	/*if(sm->sedBird!=NULL)
-	{
-		sm->fstBird = NULL;
-		sm->sedBird = NULL;
-	}*/
     if(_isContainPoint(pTouch))
     {
         BaseSprite::ccTouchEnded(pTouch,pEvent);

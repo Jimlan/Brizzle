@@ -118,9 +118,10 @@ void PuzzleUtil::changeBirdPosition(bool withCallback)
     CCPoint secPos = CCPointMake(sed->col*ShareManager::boxWidth,sed->row*ShareManager::boxHeight);//sed->getPosition();
     CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,secPos);
     CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,fstPos);
-    CCCallFuncN *moveCall = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__moveEnd));
-    fst->runAction(CCSequence::create(fstMoveAct,moveCall,NULL));
-    sed->runAction(CCSequence::create(sedMoveAct,moveCall,NULL));
+    CCCallFunc *moveCall = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::__setForbiddenDisable));
+    fst->runAction(fstMoveAct);
+    sed->runAction(sedMoveAct);
+    sm->effectLayer->runAction(CCSequence::create(CCDelayTime::create(changePosTime),moveCall,NULL));
     fst->isMoving = true;
     sed->isMoving = true;
     //移动小鸟的特效动画
@@ -138,7 +139,7 @@ void PuzzleUtil::changeBirdPosition(bool withCallback)
 
 void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
 {
-	sm->effectLayer->setSwallow(true);
+    sm->effectLayer->setSwallow(true);
     sm->fstBird->getParent()->reorderChild(sm->fstBird,1);
     sm->sedBird->getParent()->reorderChild(sm->sedBird,0);
     //更改他们在数组中的位置
@@ -156,8 +157,9 @@ void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
     CCMoveTo *sedMoveAct = CCMoveTo::create(changePosTime,secPos);
     CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,fstPos);
     CCCallFuncN *moveFunc = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__resetBird));
-    fstBird->runAction(CCSequence::create(fstMoveAct,moveFunc,NULL));
-    sedBird->runAction(CCSequence::create(sedMoveAct,moveFunc,NULL));
+    fstBird->runAction(fstMoveAct);
+    sedBird->runAction(sedMoveAct);
+	sm->effectLayer->runAction(CCSequence::create(CCDelayTime::create(changePosTime),moveFunc,NULL));
     if(fstBird->effectSprite!=NULL)
     {
         CCMoveTo *fstMoveAct = CCMoveTo::create(changePosTime,getWorldPos(fstPos));
@@ -180,20 +182,14 @@ void PuzzleUtil::changeBirdPosition( Bird *fstBird,Bird *sedBird )
 void PuzzleUtil::__moveEnd( CCNode *pSender )
 {
     CCLog("move end");
-    Bird *bird = (Bird*)pSender;
-    bird->isMoving = false;
-	bird->setPosition(ccp(bird->col*ShareManager::boxWidth,bird->row*ShareManager::boxHeight));
-    if(sm->fstBird&&sm->sedBird&&sm->fstBird->isMoving==false&&sm->sedBird->isMoving==false)
+    bool res = isCanPuzzle();
+	sm->fstBird->isMoving = false;
+	sm->sedBird->isMoving = false;
+    if(res==false)
     {
-        bool res = isCanPuzzle();
-        if(res==false)
-        {
-			sm->effectLayer->setSwallow(true);
-            //将小鸟恢复原位
-            changeBirdPosition(sm->fstBird,sm->sedBird);
-            sm->fstBird = NULL;
-            sm->sedBird = NULL;
-        }
+        sm->effectLayer->setSwallow(true);
+        //将小鸟恢复原位
+        changeBirdPosition(sm->fstBird,sm->sedBird);
     }
 }
 
@@ -206,46 +202,46 @@ bool PuzzleUtil::isCanPuzzle()
     if(birdCount>0)
     {
         Bird *effectBird = NULL;
-		bool updateFlag = true;
-		if(birdCount>3)
-		{
+        bool updateFlag = true;
+        if(birdCount>3)
+        {
 
-			if(dashBirds->containsObject(sm->fstBird))
-			{
-				effectBird = sm->fstBird;
-			}
-			else if(dashBirds->containsObject(sm->sedBird))
-			{
-				effectBird = sm->sedBird;
-			}
-			else
-			{
-				effectBird = (Bird*)dashBirds->objectAtIndex(ceil(birdCount/2));
-			}
-			effectBird->isChecked = false;
-			dashBirds->removeObject(effectBird,false);
-			int effectType = rand()%3+4;
-			if(effectBird->effectSprite==NULL)
-			{
-				switch(effectType)
-				{
-				case 4:
-					dashBird(effectBird,"itemBomb_000.png","bomb",effectType);
-					break;
-				case 5:
-					dashBird(effectBird,"itemFirebird_000.png","FireBird",effectType);
-					break;
-				case 6:
-					dashBird(effectBird,"itemBlackhole_000.png","BlackHole",effectType);
-					break;
-				case 7:
-					//dashBird(effectBird,"itemLightning_000.png","lightning",effectType);
-				default:
-					break;
-				}
-			}
+            if(dashBirds->containsObject(sm->fstBird))
+            {
+                effectBird = sm->fstBird;
+            }
+            else if(dashBirds->containsObject(sm->sedBird))
+            {
+                effectBird = sm->sedBird;
+            }
+            else
+            {
+                effectBird = (Bird*)dashBirds->objectAtIndex(ceil(birdCount/2));
+            }
+            effectBird->isChecked = false;
+            dashBirds->removeObject(effectBird,false);
+            int effectType = rand()%3+4;
+            if(effectBird->effectSprite==NULL)
+            {
+                switch(effectType)
+                {
+                case 4:
+                    dashBird(effectBird,"itemBomb_000.png","bomb",effectType);
+                    break;
+                case 5:
+                    dashBird(effectBird,"itemFirebird_000.png","FireBird",effectType);
+                    break;
+                case 6:
+                    dashBird(effectBird,"itemBlackhole_000.png","BlackHole",effectType);
+                    break;
+                case 7:
+                    //dashBird(effectBird,"itemLightning_000.png","lightning",effectType);
+                default:
+                    break;
+                }
+            }
 
-		}
+        }
         SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_remove.mp3");
         //消除数组内的小鸟 在消除的时候要判断小鸟的特效类型
         CCObject *obj = NULL;
@@ -256,7 +252,7 @@ bool PuzzleUtil::isCanPuzzle()
             bird->stopAllActions();
             if(bird->effectSprite)
             {
-				updateFlag = false;
+                updateFlag = false;
                 runEffect(bird);
             }
             //移除之后将数组位置置空
@@ -265,14 +261,13 @@ bool PuzzleUtil::isCanPuzzle()
             CCSequence *seqAct = CCSequence::create(scaleAct,scaleFunc,NULL);
             bird->runAction(seqAct);
         }
-		if(updateFlag)
-		{
-			CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
-			CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
-			birdParentNode->runAction(CCSequence::create(updatePosDelay,updatePosFunc,NULL));
-		}
-		sm->fstBird = NULL;
-		sm->sedBird = NULL;
+        if(updateFlag)
+        {
+            CCDelayTime *updatePosDelay = CCDelayTime::create(scaleTime);
+            CCCallFunc *updatePosFunc = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::updateBirdPosition));
+            birdParentNode->runAction(CCSequence::create(updatePosDelay,updatePosFunc,NULL));
+        }
+        
         return true;
     }
     return false;
@@ -395,10 +390,12 @@ CCArray * PuzzleUtil::getDashBirds()
 
 void PuzzleUtil::__resetBird( CCNode *pSender )
 {
-    Bird *bird = (Bird*)pSender;
-    bird->isMoving = false;
-	sm->effectLayer->setSwallow(false);
-	bird->setPosition(ccp(bird->col*ShareManager::boxWidth,bird->row*ShareManager::boxHeight));
+    sm->effectLayer->setSwallow(false);
+	sm->fstBird->isMoving = false;
+	sm->sedBird->isMoving = false;
+	sm->fstBird = NULL;
+	sm->sedBird = NULL;
+
 }
 /**
  * 小鸟消除后 按照列进行遍历 计算每一个小鸟下面有几个空格
@@ -483,7 +480,14 @@ void PuzzleUtil::checkPuzzle()
 /* 位置更新完毕之后需要重新监测 是否有可以消除的小鸟 */
 void PuzzleUtil::__updatePosComplete()
 {
-    isCanPuzzle();
+    bool res = isCanPuzzle();
+	if(res==false)
+	{
+		sm->effectLayer->setSwallow(false);
+		sm->fstBird = NULL;
+		sm->sedBird = NULL;
+	}
+    
 }
 
 void PuzzleUtil::dashBird(Bird *bird,const char *fstFrameName,const char *animationName,int type)
@@ -514,7 +518,7 @@ void PuzzleUtil::runEffect( Bird *bird )
 {
     if(bird->effectSprite)
     {
-		sm->effectLayer->stopAllActions();
+        sm->effectLayer->stopAllActions();
         sm->effectLayer->setSwallow(true);
         bird->effectSprite->removeFromParentAndCleanup(true);
         bird->effectSprite = NULL;
@@ -533,7 +537,7 @@ void PuzzleUtil::runEffect( Bird *bird )
             blackHole(bird);
             break;
         case 7:
-            sm->effectLayer->setSwallow(false);
+            //  sm->effectLayer->setSwallow(false);
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_lighting.mp3");
             //   lightning(bird);
             break;
@@ -553,7 +557,7 @@ void PuzzleUtil::fireBird( Bird *bird )
     float time = (effect->getPositionY()+100)/speed;
     CCMoveTo *moveAct = CCMoveTo::create(time,ccp(effect->getPositionX(),-100));
     CCCallFunc *moveCall = CCCallFunc::create(this,callfunc_selector(CCSprite::removeFromParent));
-	effect->runAction(CCSequence::create(moveAct,NULL));
+    effect->runAction(CCSequence::create(moveAct,NULL));
     bird->stopAllActions();
     __birdBurn(bird);
     int row = bird->row,col = bird->col;
@@ -580,9 +584,8 @@ void PuzzleUtil::blackHole( Bird *bird )
     effect->runAction(CCRepeatForever::create(GET_ANIMATE("BlackHoleEff")));
     sm->effectLayer->addChild(effect);
     effect->setPosition(getWorldPos(birdPos));
-    sm->effectLayer->setTouchEnable(true);
     CCScaleTo *scaleAct = CCScaleTo::create(1.5f,0);
-	//CCCallFunc *scaleCall = CCCallFunc::create(this,callfunc_selector(CCSprite::removeFromParent));
+    //CCCallFunc *scaleCall = CCCallFunc::create(this,callfunc_selector(CCSprite::removeFromParent));
     effect->runAction(CCSequence::create(scaleAct,NULL));
     for(int i=0; i<ShareManager::row; i++)
     {
@@ -618,7 +621,6 @@ void PuzzleUtil::bombBird( Bird *bird )
     effect->runAction(CCSequence::create(GET_ANIMATE("BombEff"),callfunc,NULL));
     sm->effectLayer->addChild(effect);
     effect->setPosition(getWorldPos(bird->getPosition()));
-    CCArray *neighbor = CCArray::create();
     int row = bird->row,col = bird->col;
     int top = (row+1)==ShareManager::row?row:row+1,
         left=(col-1)<0?col:col-1,
@@ -664,7 +666,7 @@ void PuzzleUtil::lightning( Bird *bird )
     CCScaleTo *rowScaleTo = CCScaleTo::create(0.5f,1.0f,0);
     colLight->runAction(CCSequence::create(colScaleBy,colScaleBy->reverse(),colScaleTo,NULL));
     rowLight->runAction(CCSequence::create(rowScaleBy,rowScaleBy->reverse(),rowScaleTo,NULL));
-    sm->effectLayer->setSwallow(false);
+    // sm->effectLayer->setSwallow(false);
 }
 
 void PuzzleUtil::__blackHoleEff( CCNode *node )
@@ -678,7 +680,6 @@ void PuzzleUtil::__blackHoleEff( CCNode *node )
 
 void PuzzleUtil::__effectEnd(float delayTime)
 {
-    
     CCDelayTime *delay = CCDelayTime::create(delayTime);
     CCCallFunc *delayCall = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::__effectEndHandler));
     sm->effectLayer->runAction(CCSequence::create(delay,delayCall,NULL));
@@ -686,7 +687,7 @@ void PuzzleUtil::__effectEnd(float delayTime)
 
 void PuzzleUtil::__effectEndHandler()
 {
-    sm->effectLayer->setSwallow(false);
+
     updateBirdPosition();
 }
 
@@ -718,4 +719,9 @@ void PuzzleUtil::__burnEff( CCNode *node )
     }
     sm->birds[bird->row][bird->col] = NULL;
     node->removeFromParent();
+}
+
+void PuzzleUtil::__setForbiddenDisable()
+{
+	__moveEnd(NULL);
 }
