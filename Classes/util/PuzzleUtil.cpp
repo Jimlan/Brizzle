@@ -256,7 +256,7 @@ bool PuzzleUtil::isCanPuzzle()
                 default:
                     break;
                 }
-				float moveTime = 1.5f;
+				float moveTime = 1.3f;
 				sm->effectLayer->setSwallow(true);
 				CCARRAY_FOREACH(dashBirds,obj)
 				{
@@ -423,7 +423,7 @@ CCArray * PuzzleUtil::getDashBirds()
 
 void PuzzleUtil::__resetBird( CCNode *pSender )
 {
-    sm->effectLayer->setSwallow(false);
+    //sm->effectLayer->setSwallow(false);
 	sm->fstBird->isMoving = false;
 	sm->sedBird->isMoving = false;
 	sm->fstBird = NULL;
@@ -519,7 +519,7 @@ void PuzzleUtil::__updatePosComplete()
     bool res = isCanPuzzle();
 	if(res==false)
 	{
-		sm->effectLayer->setSwallow(false);
+		//sm->effectLayer->setSwallow(false);
 		sm->fstBird = NULL;
 		sm->sedBird = NULL;
 	}

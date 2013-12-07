@@ -24,6 +24,7 @@ void ForbiddenLayer::onExit()
 
 bool ForbiddenLayer::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
 {
+	CCLog("forbidden layer touched");
     return true;
 }
 
@@ -36,6 +37,7 @@ void ForbiddenLayer::setTouchEnable( bool enabled )
         {
             if (enabled)
             {
+				CCLog("set swallow true");
                 CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,m_iPriority,m_bSwallow);
             }
             else

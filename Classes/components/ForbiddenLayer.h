@@ -12,7 +12,7 @@ public:
 	void setTouchEnable(bool enabled);
 	void setPriority(int priority);
 	void setSwallow(bool swallow);
-	ForbiddenLayer():m_bSwallow(true),m_bTouchEnable(true),m_iPriority(MININT){};
+	ForbiddenLayer():m_bSwallow(true),m_bTouchEnable(true),m_iPriority(INT_MIN){};
 	virtual bool init();
 	CREATE_FUNC(ForbiddenLayer);
 	virtual void onEnter();

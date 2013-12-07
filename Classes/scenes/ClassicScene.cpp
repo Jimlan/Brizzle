@@ -163,6 +163,7 @@ void ClassicScene::__createBird()
     addChild(m_pBirdBatchNode);
     ShareManager::shareManager()->birdBatchNode = m_pBirdBatchNode;
     effectLayer = ForbiddenLayer::create();
+	/* 游戏开始的时候显示ready start提示 动画提示完毕后 设置为false */
     effectLayer->setSwallow(true);
     addChild(effectLayer);
     ShareManager::shareManager()->effectLayer = effectLayer;
