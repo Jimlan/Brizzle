@@ -72,7 +72,7 @@ bool PuzzleUtil::detectPuzzleBirds(short outer,short inner,PuzzleDetectDirection
             if(appearCount==3)
             {
                 short type;
-                while((type = rand()%8)==prevBird->birdType);
+                while((type = rand()%sm->birdTypes)==prevBird->birdType);
                 Bird *newBird = Bird::create(type);
                 if(kDirection==kRow)
                 {
@@ -183,8 +183,15 @@ void PuzzleUtil::__moveEnd( CCNode *pSender )
 {
     CCLog("move end");
     bool res = isCanPuzzle();
-	sm->fstBird->isMoving = false;
-	sm->sedBird->isMoving = false;
+	if(sm->fstBird)
+	{
+		sm->fstBird->isMoving = false;
+	}
+	if(sm->sedBird)
+	{
+		sm->sedBird->isMoving = false;
+	}
+	
     if(res==false)
     {
         sm->effectLayer->setSwallow(true);
@@ -249,7 +256,8 @@ bool PuzzleUtil::isCanPuzzle()
                 default:
                     break;
                 }
-				float moveTime = 0.2f;
+				float moveTime = 1.5f;
+				sm->effectLayer->setSwallow(true);
 				CCARRAY_FOREACH(dashBirds,obj)
 				{
 					Bird *bird = (Bird*)obj;
@@ -458,16 +466,19 @@ void PuzzleUtil::updateBirdPosition()
             }
         }
         //小鸟的位置移动之后创建新的小鸟
+		float unitTime = ShareManager::boxHeight/downSpeed;
+		int idx = 0;
         while(emptyCells)
         {
             int row = ShareManager::row-emptyCells;
-            createNewBird(row,j);
+            createNewBird(unitTime*idx,row,j);
+			idx++;
             emptyCells--;
         }
 
     }
     //更新了位置之后 要继续检测是否有可以消除的小鸟
-    CCDelayTime *checkDelay = CCDelayTime::create(0.25f);
+    CCDelayTime *checkDelay = CCDelayTime::create(0.5f);
     CCCallFunc *checkCall = CCCallFunc::create(this,callfunc_selector(PuzzleUtil::__updatePosComplete));
     sm->birdBatchNode->runAction(CCSequence::create(checkDelay,checkCall,NULL));
 }
@@ -479,7 +490,7 @@ void PuzzleUtil::__moveDown( CCNode *pSender )
     //bird->shakeBody(1.1f,0.8f);
 }
 
-void PuzzleUtil::createNewBird( short row,short col )
+void PuzzleUtil::createNewBird(float delay, short row,short col )
 {
     CCLog("row:%d,col:%d",row,col);
     short type = rand()%sm->birdTypes;
@@ -492,10 +503,10 @@ void PuzzleUtil::createNewBird( short row,short col )
     ShareManager::shareManager()->birds[row][col] = bird;
     float targetY = row*ShareManager::boxHeight;
     float moveTime = (bird->getPositionY() - row*ShareManager::boxHeight)/downSpeed;
-    CCMoveTo *moveAct = CCMoveTo::create(0.2f,ccp(bird->getPositionX(),targetY));
+    CCMoveTo *moveAct = CCMoveTo::create(moveTime,ccp(bird->getPositionX(),targetY));
     CCCallFuncN *moveCall = CCCallFuncN::create(this,callfuncN_selector(PuzzleUtil::__moveDown));
     bird->setTouchEnabled(false);
-    bird->runAction(CCSequence::create(moveAct,moveCall,NULL));
+    bird->runAction(CCSequence::create(CCDelayTime::create(delay),moveAct,moveCall,NULL));
 }
 /* 监测是否有可以消除的小鸟 */
 void PuzzleUtil::checkPuzzle()
@@ -712,7 +723,6 @@ void PuzzleUtil::__effectEnd(float delayTime)
 
 void PuzzleUtil::__effectEndHandler()
 {
-
     updateBirdPosition();
 }
 

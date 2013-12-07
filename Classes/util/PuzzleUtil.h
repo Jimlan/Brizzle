@@ -45,7 +45,7 @@ private:
 	ShareManager *sm;
 	CCSpriteFrameCache *frameCache;
 public:
-    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(500.0f) {
+    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(1500.0f) {
 		sm = ShareManager::shareManager();
 		frameCache = CCSpriteFrameCache::sharedSpriteFrameCache();
 	};
@@ -59,7 +59,7 @@ public:
     void changeBirdPosition(Bird *fstBird,Bird *sedBird);
     void checkPuzzle();
     /* 创建新的小鸟到指定的位置 */
-    void createNewBird(short row,short col);
+    void createNewBird(float delay,short row,short col);
 
     /* 小鸟消除后更新小鸟的位置 */
     void updateBirdPosition();
