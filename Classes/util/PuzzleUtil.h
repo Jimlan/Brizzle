@@ -66,7 +66,7 @@ public:
     /* 移动位置后是否可以消除 */
     bool isCanPuzzle();
     /* 获取可以消除的小鸟集合 */
-    CCArray *getDashBirds();
+    std::vector<CCArray *> getDashBirds();
     /* 如果消除的个数为3个以上的话 */
     void dashBird(Bird *bird,const char *fstFrameName,const char *animationName,int type);
 	/* 执行小鸟特效 如果存在特效的话 */

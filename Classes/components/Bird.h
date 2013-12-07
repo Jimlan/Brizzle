@@ -12,6 +12,8 @@ private:
     void __recordBird();
     
 public:
+	//是不是拐弯的地方
+	bool isCorner;
 	const char *effectTypeName;
 	//和小鸟跟随的动画
 	CCSprite *effectSprite;
@@ -26,7 +28,7 @@ public:
     short row;
     short col;
 	short birdType;
-    Bird():effectTypeName("normaltype"),effectSprite(NULL),effectType(0),birdType(-1),isMoving(false),isChecked(false) {
+    Bird():isCorner(false),effectTypeName("normaltype"),effectSprite(NULL),effectType(0),birdType(-1),isMoving(false),isChecked(false) {
 		m_bSwallow = false;
 	};
     static Bird *create(short type);
