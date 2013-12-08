@@ -205,7 +205,7 @@ void ClassicScene::__start()
 
 void ClassicScene::__startHandler(CCNode *node)
 {
-	effectLayer->setSwallow(false);
 	node->removeFromParent();
+	effectLayer->setSwallow(false);
 }
 
