@@ -41,7 +41,6 @@ void Bird::blink()
 void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
 {
 	ShareManager *sm = ShareManager::shareManager();
-	sm->isChanging=false;
     if(_isContainPoint(pTouch))
     {
         BaseSprite::ccTouchEnded(pTouch,pEvent);
@@ -51,7 +50,7 @@ void Bird::ccTouchEnded( CCTouch *pTouch, CCEvent *pEvent )
 
 void Bird::ccTouchMoved( CCTouch *pTouch, CCEvent *pEvent )
 {
-    if(_isContainPoint(pTouch)&&isMoving==false&&ShareManager::shareManager()->isChanging==false)
+    if(_isContainPoint(pTouch))
     {
         __recordBird();
         BaseSprite::ccTouchMoved(pTouch,pEvent);
@@ -65,12 +64,7 @@ bool Bird::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
     {
         SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_droped.mp3");
         shakeBody(0.7f,1.2f);
-        ShareManager *sm = ShareManager::shareManager();
-		sm->effectLayer->setSwallow(true);
-        if(isMoving==false&&sm->isChanging==false)
-        {
-            __recordBird();
-        }
+        __recordBird();
     }
     return true;
 }
@@ -83,7 +77,6 @@ void Bird::__recordBird()
     if(first==NULL)
     {
         sm->fstBird = this;
-        CCLog("first");
     }
     else if(second==NULL&&first!=this)
     {
@@ -97,14 +90,11 @@ void Bird::__recordBird()
         bool sameColNeighbor = fbCol==col?abs(fbRow-row)==1:false;
         if(sameColNeighbor||sameRowNeighbor)
         {
-			sm->effectLayer->setSwallow(true);
-			ShareManager::shareManager()->isChanging=true;
             PuzzleUtil::instance()->changeBirdPosition();
         }else{
 			sm->fstBird = NULL;
 			sm->sedBird = NULL;
 		}
-        CCLog("second");
     }
 }
 
@@ -114,6 +104,15 @@ void Bird::shakeBody(float scaleX,float scaleY)
 	CCActionInterval *scaleBack = CCEaseElasticOut::create(CCScaleTo::create(0.6f,0.9f,0.9f));
 	CCSequence *scaleSeq = CCSequence::create(scaleIn,scaleBack,NULL);
 	runAction(scaleSeq);
+}
+
+void Bird::onExit()
+{
+	BaseSprite::onExit();
+	if(this->effectSprite!=NULL)
+	{
+		this->effectSprite->removeFromParent();
+	}
 }
 
 

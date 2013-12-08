@@ -21,18 +21,17 @@ public:
 	int effectType;
 	//小鸟颤动身体的动作
 	void shakeBody(float scaleX,float scaleY);
-	/* 记录当前是否在移动 如果正在移动的话 就禁止接收事件 */
-    bool isMoving;
 	/* 是否被检测过了 */
 	bool isChecked;
     short row;
     short col;
 	short birdType;
-    Bird():isCorner(false),effectTypeName("normaltype"),effectSprite(NULL),effectType(0),birdType(-1),isMoving(false),isChecked(false) {
+    Bird():isCorner(false),effectTypeName("normaltype"),effectSprite(NULL),effectType(0),birdType(-1),isChecked(false) {
 		m_bSwallow = false;
 	};
     static Bird *create(short type);
     virtual void onEnter();
+	virtual void onExit();
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchMoved(CCTouch *pTouch, CCEvent *pEvent);
