@@ -7,17 +7,15 @@ class ForbiddenLayer:public CCLayer
 {
 public:
 	bool m_bSwallow;
-	bool m_bTouchEnable;
 	int m_iPriority;
-	void setTouchEnable(bool enabled);
 	void setPriority(int priority);
 	void setSwallow(bool swallow);
-	ForbiddenLayer():m_bSwallow(true),m_bTouchEnable(true),m_iPriority(INT_MIN){};
+	ForbiddenLayer():m_bSwallow(true),m_iPriority(INT_MIN){};
 	virtual bool init();
 	CREATE_FUNC(ForbiddenLayer);
-	virtual void onEnter();
-	virtual void onExit();
+	virtual void registerWithTouchDispatcher();
 	virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+	virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
 };
 
 #endif // !_FORBIDDENLAYER_H_
