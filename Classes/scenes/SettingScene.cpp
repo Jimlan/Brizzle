@@ -37,6 +37,12 @@ void SettingScene::onEnter()
 	soundMenu->alignItemsVertically();
 	soundMenu->setPosition(ccp(500,VisibleRect::top().y-200));
 	addChild(soundMenu);
+	if(UD_GET_BOOL(KEY_SOUND_ENABLE))
+	{
+		sound->setSelectedIndex(0);
+	}else{
+		sound->setSelectedIndex(1);
+	}
 }
 
 bool SettingScene::init()
@@ -60,11 +66,12 @@ void SettingScene::__soundHandler(CCObject *pSender)
 	CCMenuItemToggle *sound = (CCMenuItemToggle*)pSender;
 	if(sound->getSelectedIndex()==0)
 	{
+		UD_SET_BOOL(KEY_SOUND_ENABLE,true);
 		SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
-		
 	}
 	else
 	{
+		UD_SET_BOOL(KEY_SOUND_ENABLE,false);
 		SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
 	}
 }
