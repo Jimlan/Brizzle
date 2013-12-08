@@ -3,7 +3,7 @@
 
 #include "common/common_header.h"
 
-class BaseSprite:public CCSprite,public CCTouchDelegate
+class BaseSprite:public CCSprite,public CCTargetedTouchDelegate
 {
 protected:
 	bool _isContainPoint(CCTouch *touch);

@@ -2,7 +2,7 @@
 
 
 BaseSprite::BaseSprite():m_iTouchPriority(0),
-	m_bSwallow(true),
+	m_bSwallow(false),
     m_pTargetBegan(NULL),
     m_pTargetEnded(NULL),
     m_pTargetMove(NULL)
