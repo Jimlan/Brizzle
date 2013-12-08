@@ -23,6 +23,8 @@ typedef enum
 class PuzzleUtil:public CCObject
 {
 private:
+	/* 更新位置的队列 */
+	int updateQueue;
     const float changePosTime;
     const float scaleTime;
     const float downSpeed;//更新小鸟时候的位置
@@ -45,7 +47,7 @@ private:
 	ShareManager *sm;
 	CCSpriteFrameCache *frameCache;
 public:
-    PuzzleUtil():changePosTime(0.25f),scaleTime(0.2f),downSpeed(1500.0f) {
+    PuzzleUtil():updateQueue(0),changePosTime(0.25f),scaleTime(0.2f),downSpeed(1500.0f) {
 		sm = ShareManager::shareManager();
 		frameCache = CCSpriteFrameCache::sharedSpriteFrameCache();
 	};
