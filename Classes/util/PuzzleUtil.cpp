@@ -564,7 +564,7 @@ void PuzzleUtil::__updatePosComplete()
     bool res = isCanPuzzle();
     if(res==false)
     {
-		CCLog("update pos complete ,clear select bird");
+		CCLog("update pos complete ,clear select bird birds num:%d",sm->birdBatchNode->getChildrenCount());
         sm->effectLayer->setSwallow(false);
         sm->fstBird = NULL;
         sm->sedBird = NULL;
@@ -717,7 +717,9 @@ void PuzzleUtil::bombBird( Bird *bird )
             if(currentBird&&currentBird->isChecked==false)
             {
                 currentBird->isChecked = true;
-                currentBird->runAction(CCScaleTo::create(0.5f,0));
+				CCScaleTo *scaleAct = CCScaleTo::create(0.5f,0);
+				CCCallFunc *scaleCall = CCCallFunc::create(currentBird,callfunc_selector(Bird::removeFromParent));
+                currentBird->runAction(CCSequence::create(scaleAct,scaleCall,NULL));
                 if(currentBird->effectSprite)
                 {
                     currentBird->effectSprite->removeFromParentAndCleanup(true);
