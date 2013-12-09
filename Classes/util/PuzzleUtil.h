@@ -43,6 +43,7 @@ private:
 	void __burnEff(CCNode *node);
 	void __setForbiddenDisable();
 	void __clearSelectBirds();
+	void __removeEffectSprite(CCNode *node);
     CCPoint getWorldPos(const CCPoint &pos);
 	ShareManager *sm;
 	CCSpriteFrameCache *frameCache;
