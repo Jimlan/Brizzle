@@ -11,6 +11,8 @@ class ShareManager:public CCObject
 private:
     static ShareManager *_instance;
 public:
+	/* 每次移动所消除的小鸟 */
+	int dashBirdsNum;
 	/* 出现的小鸟的类型 */
 	int birdTypes;
     static const short row = 9;
@@ -20,7 +22,7 @@ public:
     static const int boxHeight = 76;
     static ShareManager *shareManager();
     ShareManager():fstBird(NULL),
-        sedBird(NULL),birdBatchNode(NULL),birdTypes(4) {};
+        sedBird(NULL),birdBatchNode(NULL),birdTypes(4),dashBirdsNum(0) {};
     Bird *fstBird;
     Bird *sedBird;
 	CCSpriteBatchNode *birdBatchNode;

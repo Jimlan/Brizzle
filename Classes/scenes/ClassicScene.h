@@ -20,6 +20,8 @@ public:
 	CCSpriteBatchNode *m_pBirdBatchNode;
 	/* 消除个数在3个以上的时候显示小鸟特效所在的层 */
 	ForbiddenLayer *effectLayer;
+
+	CCNode *m_pScoreNode;
     virtual void loadAssets();
     virtual bool init();
     CREATE_FUNC(ClassicScene);

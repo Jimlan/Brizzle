@@ -68,12 +68,12 @@ void ClassicScene::__initBackground()
     progress->setOpacity(0);
     contentNode->addChild(progress);
     contentNode->addChild(progressHead);
-    CCLabelAtlas *score = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
-    score->setString("000000");
+	/*CCLabelAtlas *score = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
+	score->setString("000000");
 	score->setAnchorPoint(ccp(0.5,0.5));
 	score->setPosition(ccp(VisibleRect::center().x,-70));
 	score->setOpacity(0);
-    contentNode->addChild(score);
+	contentNode->addChild(score);*/
     progress->setAnchorPoint(ccp(0,0.5));
     progress->setPosition(ccp(76,-117));
     progressHead->setPosition(ccp(progress->getPositionX()+progress->getContentSize().width,-117));
@@ -166,7 +166,16 @@ void ClassicScene::__createBird()
 	/* 游戏开始的时候显示ready start提示 动画提示完毕后 设置为false */
     effectLayer->setSwallow(true);
     addChild(effectLayer);
+	m_pScoreNode = CCNode::create();
+	addChild(m_pScoreNode);
     ShareManager::shareManager()->effectLayer = effectLayer;
+
+	CCLabelAtlas *score = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
+	score->setString("000000");
+	score->setAnchorPoint(ccp(0.5,0.5));
+	score->setPosition(ccp(VisibleRect::center().x,VisibleRect::top().y-140));
+	m_pScoreNode->addChild(score);
+
 }
 
 void ClassicScene::__ready()

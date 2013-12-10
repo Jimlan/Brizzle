@@ -62,6 +62,7 @@ bool Bird::ccTouchBegan( CCTouch *pTouch, CCEvent *pEvent )
     bool res = BaseSprite::ccTouchBegan(pTouch,pEvent);
     if(res)
     {
+		ShareManager::shareManager()->dashBirdsNum = 0;
         SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_droped.mp3");
         shakeBody(0.7f,1.2f);
         __recordBird();
