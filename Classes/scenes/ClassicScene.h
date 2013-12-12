@@ -15,6 +15,7 @@ private:
 	void __ready();
 	void __start();
 	void __startHandler(CCNode *node);
+	void __showScore(CCObject *data);
     PauseMenu *m_pPauseMenu;
 public:
 	CCSpriteBatchNode *m_pBirdBatchNode;

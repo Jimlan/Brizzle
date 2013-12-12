@@ -570,19 +570,20 @@ void PuzzleUtil::__updatePosComplete()
         sm->effectLayer->setSwallow(false);
         sm->fstBird = NULL;
         sm->sedBird = NULL;
-        if(ShareManager::shareManager()->dashBirdsNum>30)
+        int dashBirdsCount = ShareManager::shareManager()->dashBirdsNum;
+        if(dashBirdsCount>50)
         {
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/run3.mp3");
         }
-        else if(ShareManager::shareManager()->dashBirdsNum>25)
-        {
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/shoot4.mp3");
-        }
-        else if(ShareManager::shareManager()->dashBirdsNum>20)
+        else if(dashBirdsCount>40)
         {
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/run2.mp3");
         }
-        else if(ShareManager::shareManager()->dashBirdsNum>15)
+        else if(dashBirdsCount>30)
+        {
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/shoot4.mp3");
+        }
+        else if(dashBirdsCount>20)
         {
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/run2.mp3");
         }
@@ -591,6 +592,8 @@ void PuzzleUtil::__updatePosComplete()
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/run1.mp3");
         }
 
+        CCLog("dashbirds count:%d",ShareManager::shareManager()->dashBirdsNum);
+		CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_SHOW_SCORE);
     }
 
 }

@@ -129,12 +129,14 @@ void ClassicScene::onEnter()
 {
     BaseScene::onEnter();
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__resumeGame),NOTI_RESUME_GAME,NULL);
+	CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__showScore),NOTI_SHOW_SCORE,NULL);
 }
 
 void ClassicScene::onExit()
 {
     BaseScene::onExit();
     CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_RESUME_GAME);
+	CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_SHOW_SCORE);
     ShareManager::shareManager()->fstBird = NULL;
     ShareManager::shareManager()->sedBird = NULL;
 }
@@ -216,5 +218,15 @@ void ClassicScene::__startHandler(CCNode *node)
 {
 	node->removeFromParent();
 	effectLayer->setSwallow(false);
+}
+/* 显示单次消除得分的动画 */
+void ClassicScene::__showScore( CCObject *data )
+{
+	/*CCLabelAtlas *score = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
+	score->setString("000000");
+	score->setAnchorPoint(ccp(0.5,0.5));
+	score->setPosition(ccp(VisibleRect::center().x,VisibleRect::top().y-140));
+	m_pScoreNode->addChild(score);*/
+	CCLog("__showScore num:%d",ShareManager::shareManager()->dashBirdsNum);
 }
 

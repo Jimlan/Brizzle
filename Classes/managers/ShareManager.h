@@ -22,7 +22,7 @@ public:
     static const int boxHeight = 76;
     static ShareManager *shareManager();
     ShareManager():fstBird(NULL),
-        sedBird(NULL),birdBatchNode(NULL),birdTypes(4),dashBirdsNum(0) {};
+        sedBird(NULL),birdBatchNode(NULL),birdTypes(5),dashBirdsNum(0) {};
     Bird *fstBird;
     Bird *sedBird;
 	CCSpriteBatchNode *birdBatchNode;
