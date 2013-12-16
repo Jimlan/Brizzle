@@ -7,8 +7,25 @@ LOCAL_MODULE := cocos2dcpp_shared
 LOCAL_MODULE_FILENAME := libcocos2dcpp
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
-                   ../../Classes/AppDelegate.cpp \
-                   ../../Classes/HelloWorldScene.cpp
+				   ../../Classes/AppDelegate.cpp \
+                   ../../Classes/base/BaseMenuItemSprite.cpp \
+                   ../../Classes/base/BaseScene.cpp \
+                   ../../Classes/base/BaseSprite.cpp \
+                   ../../Classes/base/VisibleRect.cpp \
+                   ../../Classes/components/Bird.cpp \
+                   ../../Classes/components/ForbiddenLayer.cpp \
+                   ../../Classes/components/PauseMenu.cpp \
+                   ../../Classes/config/AppStartup.cpp \
+                   ../../Classes/managers/AnimationManager.cpp \
+                   ../../Classes/managers/ShareManager.cpp \
+                   ../../Classes/managers/SoundManager.cpp \
+                   ../../Classes/scenes/ClassicScene.cpp \
+                   ../../Classes/scenes/HomeScene.cpp \
+                   ../../Classes/scenes/IcebreakScene.cpp \
+                   ../../Classes/scenes/PandoraScene.cpp \
+                   ../../Classes/scenes/SettingScene.cpp \
+                   ../../Classes/util/PuzzleUtil.cpp 
+                   
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 

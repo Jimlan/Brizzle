@@ -330,7 +330,7 @@ bool PuzzleUtil::isCanPuzzle()
             iter++;
         }
         dashBirds.clear();
-        dashBirds.swap(std::vector<CCArray*>());
+//        dashBirds.swap(std::vector<CCArray*>());
         return true;
     }
     return false;

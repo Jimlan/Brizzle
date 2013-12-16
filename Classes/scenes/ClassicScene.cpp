@@ -172,11 +172,11 @@ void ClassicScene::__createBird()
 	addChild(m_pScoreNode);
     ShareManager::shareManager()->effectLayer = effectLayer;
 
-	CCLabelAtlas *score = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
-	score->setString("000000");
-	score->setAnchorPoint(ccp(0.5,0.5));
-	score->setPosition(ccp(VisibleRect::center().x,VisibleRect::top().y-140));
-	m_pScoreNode->addChild(score);
+	scoreLabel = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
+	scoreLabel->setString("000000");
+	scoreLabel->setAnchorPoint(ccp(0.5,0.5));
+	scoreLabel->setPosition(ccp(VisibleRect::center().x,VisibleRect::top().y-140));
+	m_pScoreNode->addChild(scoreLabel);
 
 }
 
@@ -222,11 +222,23 @@ void ClassicScene::__startHandler(CCNode *node)
 /* 显示单次消除得分的动画 */
 void ClassicScene::__showScore( CCObject *data )
 {
-	/*CCLabelAtlas *score = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
-	score->setString("000000");
-	score->setAnchorPoint(ccp(0.5,0.5));
-	score->setPosition(ccp(VisibleRect::center().x,VisibleRect::top().y-140));
-	m_pScoreNode->addChild(score);*/
-	CCLog("__showScore num:%d",ShareManager::shareManager()->dashBirdsNum);
+	int currentScore = CCString::createWithFormat(scoreLabel->getString())->intValue();
+	int singleScore = ShareManager::shareManager()->dashBirdsNum*5;
+	currentScore += singleScore;
+	CCString *scoreStr = CCString::createWithFormat("%06d",currentScore);
+	scoreLabel->setString(scoreStr->getCString());
+	CCString *scoreNum = CCString::createWithFormat("%d",singleScore);
+	CCLabelBMFont *score = CCLabelBMFont::create(scoreNum->getCString(),"images/common/alphanum.fnt");
+	score->setPosition(VisibleRect::center());
+	m_pScoreNode->addChild(score);
+	score->setScale(0);
+	CCScaleTo *scale = CCScaleTo::create(0.5f,1);
+	CCEaseBackOut *scaleOut = CCEaseBackOut::create(scale);
+	CCScaleTo *scaleTo = CCScaleTo::create(0.5f,0.2f);
+	CCFadeOut *fadeOut = CCFadeOut::create(0.5f);
+	CCMoveTo *moveAct = CCMoveTo::create(0.5f,ccp(VisibleRect::center().x,VisibleRect::top().y-140));
+	CCSpawn *spawn = CCSpawn::create(scaleTo,fadeOut,moveAct,NULL);
+	CCCallFunc *moveCall = CCCallFunc::create(score,callfunc_selector(CCLabelBMFont::removeFromParent));
+	score->runAction(CCSequence::create(scaleOut,CCDelayTime::create(0.5f),spawn,moveCall,NULL));
 }
 

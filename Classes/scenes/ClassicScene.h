@@ -9,6 +9,7 @@ class ForbiddenLayer;
 class ClassicScene:public BaseScene
 {
 private:
+	CCLabelAtlas *scoreLabel;
     void __initBackground();
     void __initPauseSprite();
 	void __createBird();
