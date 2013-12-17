@@ -51,7 +51,7 @@ bool HomeScene::init()
     __initBackground();
     __initLighting();
     __initMainMenu();
-	SoundManager::shareSoundManager()->playBackground("sounds/BGM/Main_bgm.mp3",true);
+	SoundManager::shareSoundManager()->playBackground("sounds/BGM/Main_bgm",true);
     return true;
 }
 

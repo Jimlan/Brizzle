@@ -16,7 +16,7 @@ void SoundManager::playBackground( const char *sound,bool repeat )
     bool soundEnable = CCUserDefault::sharedUserDefault()->getBoolForKey(KEY_SOUND_ENABLE);
     if(soundEnable)
     {
-        SimpleAudioEngine::sharedEngine()->playBackgroundMusic(sound,repeat);
+        SimpleAudioEngine::sharedEngine()->playBackgroundMusic((sound+suffix).c_str(),repeat);
     }
 }
 
@@ -25,6 +25,6 @@ void SoundManager::playEffect( const char *sound )
 	bool soundEnable = CCUserDefault::sharedUserDefault()->getBoolForKey(KEY_SOUND_ENABLE);
 	if(soundEnable)
 	{
-		SimpleAudioEngine::sharedEngine()->playEffect(sound);
+		SimpleAudioEngine::sharedEngine()->playEffect((sound+suffix).c_str());
 	}
 }

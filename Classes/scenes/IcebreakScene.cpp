@@ -11,7 +11,7 @@ bool IcebreakScene::init()
 		return false;
 	}
 	__initBackground();
-	SoundManager::shareSoundManager()->playBackground("sounds/BGM/Play_bgm_long.mp3",true);
+	SoundManager::shareSoundManager()->playBackground("sounds/BGM/Play_bgm_long",true);
 	return true;
 }
 

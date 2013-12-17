@@ -17,7 +17,7 @@ BaseMenuItemSprite * BaseMenuItemSprite::create( CCNode* normalSprite, CCNode* p
 
 void BaseMenuItemSprite::__delegateSelector( CCObject *pSender )
 {
-	SoundManager::shareSoundManager()->playEffect("sounds/SFX/buttonclick.mp3");
+	SoundManager::shareSoundManager()->playEffect("sounds/SFX/buttonclick");
     if(sel&&m_target)
     {
         (m_target->*sel)(pSender);

@@ -3,6 +3,12 @@
 
 #include "common/common_header.h"
 
+#if(CC_PLATFORM_WIN32==CC_TARGET_PLATFORM)
+#define suffix std::string(".mp3")
+#else
+#define suffix std::string(".ogg")
+#endif
+
 class SoundManager
 {
 private:

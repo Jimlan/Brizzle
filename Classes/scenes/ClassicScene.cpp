@@ -15,7 +15,7 @@ bool ClassicScene::init()
     }
     __initBackground();
     __initPauseSprite();
-    SoundManager::shareSoundManager()->playBackground("sounds/BGM/Play_bgm_long.mp3",true);
+    SoundManager::shareSoundManager()->playBackground("sounds/BGM/Play_bgm_long",true);
     return true;
 }
 
@@ -68,12 +68,6 @@ void ClassicScene::__initBackground()
     progress->setOpacity(0);
     contentNode->addChild(progress);
     contentNode->addChild(progressHead);
-	/*CCLabelAtlas *score = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
-	score->setString("000000");
-	score->setAnchorPoint(ccp(0.5,0.5));
-	score->setPosition(ccp(VisibleRect::center().x,-70));
-	score->setOpacity(0);
-	contentNode->addChild(score);*/
     progress->setAnchorPoint(ccp(0,0.5));
     progress->setPosition(ccp(76,-117));
     progressHead->setPosition(ccp(progress->getPositionX()+progress->getContentSize().width,-117));
@@ -120,7 +114,7 @@ void ClassicScene::__showPauseMenu( CCObject *pSender )
     {
         return ;
     }
-    SoundManager::shareSoundManager()->playEffect("sounds/SFX/pausebuttonclick.mp3");
+    SoundManager::shareSoundManager()->playEffect("sounds/SFX/pausebuttonclick");
     m_pPauseMenu = PauseMenu::create();
     addChild(m_pPauseMenu,3);
 }
@@ -150,7 +144,8 @@ void ClassicScene::__resumeGame( CCObject *pSender )
 void ClassicScene::__createBird()
 {
     m_pBirdBatchNode = CCSpriteBatchNode::createWithTexture(SPRITE("box00_burn@2x.png")->getTexture());
-    PuzzleUtil::instance()->createBirds();
+    ShareManager *sm = ShareManager::shareManager();
+	PuzzleUtil::instance()->createBirds();
     for(short row = 0; row<9; row++)
     {
         for(short col=0; col<7; col++)
@@ -161,16 +156,16 @@ void ClassicScene::__createBird()
             m_pBirdBatchNode->addChild(bird);
         }
     }
-    m_pBirdBatchNode->setPosition(ccp(93,85));
-    addChild(m_pBirdBatchNode);
-    ShareManager::shareManager()->birdBatchNode = m_pBirdBatchNode;
+    m_pBirdBatchNode->setPosition(ccp(ShareManager::boxWidth/2,0));
+   // addChild(m_pBirdBatchNode);
+    sm->birdBatchNode = m_pBirdBatchNode;
     effectLayer = ForbiddenLayer::create();
 	/* 游戏开始的时候显示ready start提示 动画提示完毕后 设置为false */
     effectLayer->setSwallow(true);
     addChild(effectLayer);
 	m_pScoreNode = CCNode::create();
 	addChild(m_pScoreNode);
-    ShareManager::shareManager()->effectLayer = effectLayer;
+    sm->effectLayer = effectLayer;
 
 	scoreLabel = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
 	scoreLabel->setString("000000");
@@ -178,6 +173,22 @@ void ClassicScene::__createBird()
 	scoreLabel->setPosition(ccp(VisibleRect::center().x,VisibleRect::top().y-140));
 	m_pScoreNode->addChild(scoreLabel);
 
+	/* 此处添加遮罩层 */
+	CCDrawNode *stencil = CCDrawNode::create();
+	CCClippingNode *clippingNode = CCClippingNode::create();
+	clippingNode->setContentSize(CCSizeMake(ShareManager::boxWidth*7,ShareManager::boxHeight*9));
+	clippingNode->setPosition(ccp(93,85));
+	
+	CCPoint rectangle[4];
+	rectangle[0] = ccp(0, 0);  
+	rectangle[1] = ccp(clippingNode->getContentSize().width, 0);  
+	rectangle[2] = ccp(clippingNode->getContentSize().width, clippingNode->getContentSize().height);  
+	rectangle[3] = ccp(0, clippingNode->getContentSize().height); 
+	ccColor4F white = {1, 1, 1, 1};  
+	stencil->drawPolygon(rectangle, 4, white, 1, white);
+	clippingNode->setStencil(stencil);
+	clippingNode->addChild(m_pBirdBatchNode);
+	addChild(clippingNode);
 }
 
 void ClassicScene::__ready()

@@ -11,7 +11,7 @@ bool PandoraScene::init()
 		return false;
 	}
 	__initBackground();
-	SoundManager::shareSoundManager()->playBackground("sounds/BGM/pandora_bgm.mp3",true);
+	SoundManager::shareSoundManager()->playBackground("sounds/BGM/pandora_bgm",true);
 	return true;
 }
 

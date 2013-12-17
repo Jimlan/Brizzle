@@ -300,7 +300,7 @@ bool PuzzleUtil::isCanPuzzle()
                 }
                 else
                 {
-                    SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_remove.mp3");
+                    SoundManager::shareSoundManager()->playEffect("sounds/SFX/Bird_remove");
                     CCARRAY_FOREACH(*iter,obj)
                     {
                         Bird *bird = (Bird*)obj;
@@ -573,23 +573,23 @@ void PuzzleUtil::__updatePosComplete()
         int dashBirdsCount = ShareManager::shareManager()->dashBirdsNum;
         if(dashBirdsCount>50)
         {
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/run3.mp3");
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/run3");
         }
         else if(dashBirdsCount>40)
         {
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/run2.mp3");
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/run2");
         }
         else if(dashBirdsCount>30)
         {
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/shoot4.mp3");
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/shoot4");
         }
         else if(dashBirdsCount>20)
         {
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/run2.mp3");
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/run2");
         }
         else if(ShareManager::shareManager()->dashBirdsNum>10)
         {
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/run1.mp3");
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/run1");
         }
 
         CCLog("dashbirds count:%d",ShareManager::shareManager()->dashBirdsNum);
@@ -634,20 +634,20 @@ void PuzzleUtil::runEffect( Bird *bird )
         switch(bird->effectType)
         {
         case 4:
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_starbomb.mp3");
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_starbomb");
             bombBird(bird);
             break;
         case 5:
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_firebomb.mp3");
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_firebomb");
             fireBird(bird);
             break;
         case 6:
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_blackhole.mp3");
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_blackhole");
             blackHole(bird);
             break;
         case 7:
             //  sm->effectLayer->setSwallow(false);
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_lighting.mp3");
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_lighting");
             //   lightning(bird);
             break;
         default:
