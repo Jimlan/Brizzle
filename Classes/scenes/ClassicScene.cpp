@@ -156,15 +156,15 @@ void ClassicScene::__createBird()
             m_pBirdBatchNode->addChild(bird);
         }
     }
-    m_pBirdBatchNode->setPosition(ccp(ShareManager::boxWidth/2,0));
+    m_pBirdBatchNode->setPosition(ccp(ShareManager::boxWidth/2,ShareManager::boxHeight/2));
    // addChild(m_pBirdBatchNode);
     sm->birdBatchNode = m_pBirdBatchNode;
     effectLayer = ForbiddenLayer::create();
 	/* 游戏开始的时候显示ready start提示 动画提示完毕后 设置为false */
     effectLayer->setSwallow(true);
-    addChild(effectLayer);
+   
 	m_pScoreNode = CCNode::create();
-	addChild(m_pScoreNode);
+	
     sm->effectLayer = effectLayer;
 
 	scoreLabel = CCLabelAtlas::create("./0123456789","images/stage_classic/numwhite-hd.png",20,40,'.');
@@ -176,8 +176,8 @@ void ClassicScene::__createBird()
 	/* 此处添加遮罩层 */
 	CCDrawNode *stencil = CCDrawNode::create();
 	CCClippingNode *clippingNode = CCClippingNode::create();
-	clippingNode->setContentSize(CCSizeMake(ShareManager::boxWidth*7,ShareManager::boxHeight*9));
-	clippingNode->setPosition(ccp(93,85));
+	clippingNode->setContentSize(CCSizeMake(ShareManager::boxWidth*7,ShareManager::boxHeight*9+10));
+	clippingNode->setPosition(ccp(55,47));
 	
 	CCPoint rectangle[4];
 	rectangle[0] = ccp(0, 0);  
@@ -189,6 +189,8 @@ void ClassicScene::__createBird()
 	clippingNode->setStencil(stencil);
 	clippingNode->addChild(m_pBirdBatchNode);
 	addChild(clippingNode);
+	addChild(effectLayer);
+	addChild(m_pScoreNode);
 }
 
 void ClassicScene::__ready()
