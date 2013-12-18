@@ -9,6 +9,10 @@ class ForbiddenLayer;
 class ClassicScene:public BaseScene
 {
 private:
+	float totalSeconds;
+	float passSeconds;
+	void progressUpdate(float del);
+	CCNode *progressNode;
 	CCLabelAtlas *scoreLabel;
     void __initBackground();
     void __initPauseSprite();
@@ -29,7 +33,7 @@ public:
     CREATE_FUNC(ClassicScene);
     virtual void onEnter();
     virtual void onExit();
-    ClassicScene():m_pPauseMenu(NULL) {};
+    ClassicScene():m_pPauseMenu(NULL),totalSeconds(60.0f),passSeconds(0.0f) {};
 selector:
     /* 背景木头移动完毕后的回调函数 */
     void __woodMoveCall();

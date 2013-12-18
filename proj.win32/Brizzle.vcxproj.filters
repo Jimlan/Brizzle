@@ -28,6 +28,9 @@
     <Filter Include="Classes\config">
       <UniqueIdentifier>{ae3a2209-a8ce-48e6-93e9-ef3078e0bd48}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\rapidxml">
+      <UniqueIdentifier>{ac55a038-6e70-4fc7-9958-7eeb34c0035a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -154,6 +157,18 @@
     </ClInclude>
     <ClInclude Include="..\Classes\scenes\SettingScene.h">
       <Filter>Classes\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\rapidxml\rapidxml.hpp">
+      <Filter>Classes\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\rapidxml\rapidxml_iterators.hpp">
+      <Filter>Classes\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\rapidxml\rapidxml_print.hpp">
+      <Filter>Classes\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\rapidxml\rapidxml_utils.hpp">
+      <Filter>Classes\rapidxml</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

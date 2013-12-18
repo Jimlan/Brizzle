@@ -62,16 +62,34 @@ void ClassicScene::__initBackground()
     CCCallFuncN *delayCall = CCCallFuncN::create(this,callfuncN_selector(ClassicScene::__delayCall));
     wood->setOpacity(0);
     contentNode->addChild(wood,0,0);
+
+	progressNode = CCNode::create();
     CCSprite *progress = SPRITE("stage_tree_gauge_bar@2x.png");
     CCSprite *progressHead = SPRITE("stage_tree_gauge_head@2x.png");
-    progressHead->setOpacity(0);
-    progress->setOpacity(0);
-    contentNode->addChild(progress);
-    contentNode->addChild(progressHead);
-    progress->setAnchorPoint(ccp(0,0.5));
-    progress->setPosition(ccp(76,-117));
-    progressHead->setPosition(ccp(progress->getPositionX()+progress->getContentSize().width,-117));
-    contentNode->runAction(CCSequence::create(delayRun,delayCall,moveAct,moveCall,NULL));
+    progressNode->addChild(progress);
+    progressNode->addChild(progressHead);
+	progressHead->setAnchorPoint(CCPointZero);
+    progress->setAnchorPoint(CCPointZero);
+    progressHead->setPosition(ccp(progress->getPositionX()+progress->getContentSize().width,0));
+    
+	/* 进度条的遮罩 */
+	CCClippingNode *progressClipNode  = CCClippingNode::create();
+	progressClipNode->setContentSize(CCSizeMake(progress->getContentSize().width+progressHead->getContentSize().width,progress->getContentSize().height));
+	progressNode->setContentSize(progressClipNode->getContentSize());
+	CCDrawNode *stencilNode  = CCDrawNode::create();
+	
+	CCPoint points[4];
+	points[0] = ccp(0, 0);  
+	points[1] = ccp(progressClipNode->getContentSize().width, 0);  
+	points[2] = ccp(progressClipNode->getContentSize().width, progressClipNode->getContentSize().height);  
+	points[3] = ccp(0, progressClipNode->getContentSize().height); 
+	ccColor4F white = {1, 1, 1, 1};  
+	stencilNode->drawPolygon(points, 4, white, 1, white);
+	progressClipNode->setStencil(stencilNode);
+	progressClipNode->setPosition(ccp(76,-128));
+	contentNode->addChild(progressClipNode);
+	progressClipNode->addChild(progressNode);
+	contentNode->runAction(CCSequence::create(delayRun,delayCall,moveAct,moveCall,NULL));
     addChild(contentNode);
     CCSprite *grass = CCSprite::create("images/stage_classic/stage_tree_grass_RETINA.png");
     grass->setAnchorPoint(CCPointZero);
@@ -92,7 +110,7 @@ void ClassicScene::__delayCall(CCNode *node)
     CCObject *child = NULL;
     CCARRAY_FOREACH(children,child)
     {
-        CCNodeRGBA *sprite = (CCNodeRGBA*)child;
+        CCNodeRGBA *sprite = dynamic_cast<CCNodeRGBA*>(child);
         if(sprite)
             sprite->setOpacity(255);
     }
@@ -157,7 +175,6 @@ void ClassicScene::__createBird()
         }
     }
     m_pBirdBatchNode->setPosition(ccp(ShareManager::boxWidth/2,ShareManager::boxHeight/2));
-   // addChild(m_pBirdBatchNode);
     sm->birdBatchNode = m_pBirdBatchNode;
     effectLayer = ForbiddenLayer::create();
 	/* 游戏开始的时候显示ready start提示 动画提示完毕后 设置为false */
@@ -224,7 +241,7 @@ void ClassicScene::__start()
 	CCSequence *startSeq = CCSequence::create(easeOut,delay,out,endCall,NULL);
 	addChild(start);
 	start->runAction(startSeq);
-	
+	schedule(schedule_selector(ClassicScene::progressUpdate),0.05f);
 }
 
 void ClassicScene::__startHandler(CCNode *node)
@@ -253,5 +270,18 @@ void ClassicScene::__showScore( CCObject *data )
 	CCSpawn *spawn = CCSpawn::create(scaleTo,fadeOut,moveAct,NULL);
 	CCCallFunc *moveCall = CCCallFunc::create(score,callfunc_selector(CCLabelBMFont::removeFromParent));
 	score->runAction(CCSequence::create(scaleOut,CCDelayTime::create(0.5f),spawn,moveCall,NULL));
+}
+
+void ClassicScene::progressUpdate( float del )
+{
+	passSeconds += del;
+	float percent = passSeconds/totalSeconds;
+	float offset = percent*progressNode->getContentSize().width-20;
+	progressNode->setPositionX(-offset);
+	if(passSeconds==60)
+	{
+		CCMessageBox("GameOver","Warn");
+		effectLayer->setSwallow(true);	
+	}
 }
 
