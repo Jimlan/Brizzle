@@ -163,10 +163,6 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\managers\AnimationManager.h" />
     <ClInclude Include="..\Classes\managers\ShareManager.h" />
     <ClInclude Include="..\Classes\managers\SoundManager.h" />
-    <ClInclude Include="..\Classes\rapidxml\rapidxml.hpp" />
-    <ClInclude Include="..\Classes\rapidxml\rapidxml_iterators.hpp" />
-    <ClInclude Include="..\Classes\rapidxml\rapidxml_print.hpp" />
-    <ClInclude Include="..\Classes\rapidxml\rapidxml_utils.hpp" />
     <ClInclude Include="..\Classes\scenes\ClassicScene.h" />
     <ClInclude Include="..\Classes\scenes\HomeScene.h" />
     <ClInclude Include="..\Classes\scenes\IcebreakScene.h" />

@@ -276,12 +276,14 @@ void ClassicScene::progressUpdate( float del )
 {
 	passSeconds += del;
 	float percent = passSeconds/totalSeconds;
-	float offset = percent*progressNode->getContentSize().width-20;
+	float offset = percent*progressNode->getContentSize().width+20;
 	progressNode->setPositionX(-offset);
-	if(passSeconds==60)
+	if(passSeconds>=60)
 	{
 		CCMessageBox("GameOver","Warn");
 		effectLayer->setSwallow(true);	
+		unschedule(schedule_selector(ClassicScene::progressUpdate));
+
 	}
 }
 

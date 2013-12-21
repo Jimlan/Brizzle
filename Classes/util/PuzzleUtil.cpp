@@ -260,7 +260,7 @@ bool PuzzleUtil::isCanPuzzle()
                     }
 
                     focus->isChecked = false;
-                    int effectType = rand()%3+4;
+                    int effectType = count;// rand()%3+4;
                     if(focus->effectSprite==NULL)
                     {
                         (*iter)->removeObject(focus,false);
@@ -278,6 +278,7 @@ bool PuzzleUtil::isCanPuzzle()
                         case 7:
                             //dashBird(effectBird,"itemLightning_000.png","lightning",effectType);
                         default:
+							dashBird(focus,"itemBlackhole_000.png","BlackHole",effectType);
                             break;
                         }
                     }
@@ -707,12 +708,13 @@ void PuzzleUtil::blackHole( Bird *bird )
             Bird *currentBird = sm->birds[i][j];
             if(currentBird&&currentBird->effectSprite)
             {
-                currentBird->effectSprite->removeFromParentAndCleanup(true);
-                currentBird->effectSprite = NULL;
+                //currentBird->effectSprite->removeFromParentAndCleanup(true);
+                //currentBird->effectSprite = NULL;
             }
             if(currentBird&&currentBird->isChecked==false&&currentBird->birdType==bird->birdType)
             {
                 currentBird->isChecked=true;
+				runEffect(currentBird);
                 ShareManager::shareManager()->dashBirdsNum++;
                 currentBird->getParent()->reorderChild(currentBird,100);
                 float angle = rand()%360+300;
