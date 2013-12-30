@@ -4,8 +4,29 @@
 #include "common/common_header.h"
 #include "managers/SoundManager.h"
 
+#if(CC_PLATFORM_ANDROID==CC_TARGET_PLATFORM)
+#include "ProtocolAds.h"
+
+using namespace cocos2d::plugin;
+
+class MyAdsListener:public AdsListener{
+public:
+	virtual void onAdsResult(AdsResultCode code, const char* msg);
+	virtual void onPlayerGetPoints(ProtocolAds* pAdsPlugin, int points);
+};
+
+
+#endif
+
 class BaseScene:public CCScene
 {
+#if(CC_PLATFORM_ANDROID==CC_TARGET_PLATFORM)
+
+private:
+	ProtocolAds *m_pAdmob;
+	MyAdsListener *m_pAdsListener;
+
+#endif
 protected:
     CCSize m_winSize;
     CCSpriteFrameCache *m_pFrameCache;

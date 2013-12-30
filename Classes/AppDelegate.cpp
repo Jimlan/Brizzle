@@ -18,7 +18,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     CCDirector* pDirector = CCDirector::sharedDirector();
     CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
     pDirector->setOpenGLView(pEGLView);
-    pEGLView->setDesignResolutionSize(640,960,kResolutionExactFit);
+    pEGLView->setDesignResolutionSize(640,960,kResolutionShowAll);
     pDirector->setDisplayStats(true);
     pDirector->setAnimationInterval(1.0 / 60);
     CCScene *pScene = HomeScene::create();
