@@ -83,7 +83,7 @@ void HomeScene::__initMainMenu()
     CCMenuItemSprite *pandora = BaseMenuItemSprite::create(SPRITE("main_menu_pandora_china@2x.png"),SPRITE("main_menu_pandora_push_china@2x.png"),this,menu_selector(HomeScene::__gotoPandora));
     CCMenuItemSprite *setting = BaseMenuItemSprite::create(SPRITE("main_option_china@2x.png"),SPRITE("main_option_push_china@2x.png"),this,menu_selector(HomeScene::__gotoSettingScene));
 	CCMenuItemSprite *rank = BaseMenuItemSprite::create(SPRITE("main_rank_china@2x.png"),SPRITE("main_rank_push_china@2x.png"),this,NULL);
-	CCMenu *mainMenu = CCMenu::create(classic,icebreak,pandora,setting,rank,NULL);
+	CCMenu *mainMenu = CCMenu::create(classic,setting,NULL);
     addChild(mainMenu);
 	rank->setPosition(ccp(-130,-365));
 	setting->setPosition(ccp(-250,-365));

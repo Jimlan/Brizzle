@@ -28,14 +28,20 @@ private:
 
 #endif
 protected:
+	bool isShowExit;
     CCSize m_winSize;
     CCSpriteFrameCache *m_pFrameCache;
     CCAnimationCache *m_pAnimationCache;
     CCDirector *m_pDirector;
+	void exitGame();
+	void exitGameDelegate(float del);
+	void resumeGame(CCObject *obj);
 public:
     virtual bool init();
+	virtual void onEnter();
+	virtual void onExit();
     virtual void loadAssets() = 0;
-    BaseScene();
+	BaseScene();
 };
 
 #endif // !1

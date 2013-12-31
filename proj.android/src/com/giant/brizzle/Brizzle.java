@@ -27,17 +27,27 @@ import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 import org.cocos2dx.plugin.PluginWrapper;
 
+import android.content.ContentResolver;
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.view.KeyEvent;
 
 public class Brizzle extends Cocos2dxActivity {
 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		PluginWrapper.init(this);
-		// If you want your callback function can be invoked in GL thread, add this line:
-	    PluginWrapper.setGLSurfaceView(Cocos2dxGLSurfaceView.getInstance());
+		// If you want your callback function can be invoked in GL thread, add
+		// this line:
+		PluginWrapper.setGLSurfaceView(Cocos2dxGLSurfaceView.getInstance());
+		createShortCut();
 	}
 
+	
+	
 	public Cocos2dxGLSurfaceView onCreateView() {
 		Cocos2dxGLSurfaceView glSurfaceView = new Cocos2dxGLSurfaceView(this);
 		// Brizzle should create stencil buffer
@@ -46,7 +56,33 @@ public class Brizzle extends Cocos2dxActivity {
 		return glSurfaceView;
 	}
 
+	public static native void exitGame();
+
+	@Override
+	public boolean onKeyUp(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK)
+			exitGame();
+		return super.onKeyUp(keyCode, event);
+	}
+
 	static {
 		System.loadLibrary("cocos2dcpp");
 	}
+	
+	public void createShortCut(){   
+	    //创建快捷方式的Intent                   
+	    Intent shortcutintent = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");                   
+	    //不允许重复创建                   
+	    shortcutintent.putExtra("duplicate", false);                   
+	    //需要现实的名称                   
+	    shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_NAME, getString(R.string.app_name));   
+	    //快捷图片                  
+	    Parcelable icon = Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.drawable.icon);   
+	    shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, icon);   
+	    //点击快捷图片，运行的程序主入口                   
+	    shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, new Intent(getApplicationContext() , Brizzle.class));                   
+	    //发送广播。OK                   
+	    sendBroadcast(shortcutintent);   
+	}
+	
 }

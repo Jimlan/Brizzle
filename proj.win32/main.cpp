@@ -18,5 +18,4 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
     eglView->setViewName("Brizzle");
     eglView->setFrameSize(320, 480);
     return CCApplication::sharedApplication()->run();
-
 }

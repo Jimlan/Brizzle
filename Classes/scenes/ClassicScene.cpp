@@ -118,7 +118,7 @@ void ClassicScene::__delayCall(CCNode *node)
 
 void ClassicScene::__initPauseSprite()
 {
-    BaseSprite *pauseSpr = BaseSprite::create("images/stage_classic/stage_dimm2_RETINA.png");
+    pauseSpr = BaseSprite::create("images/stage_classic/stage_dimm2_RETINA.png");
     pauseSpr->setAnchorPoint(ccp(0,1));
     pauseSpr->setPosition(ccp(15,m_winSize.height-15));
     pauseSpr->setTargetEnded(this,menu_selector(ClassicScene::__showPauseMenu));
@@ -128,13 +128,11 @@ void ClassicScene::__initPauseSprite()
 
 void ClassicScene::__showPauseMenu( CCObject *pSender )
 {
-    if(m_pPauseMenu&&m_pPauseMenu->getParent())
-    {
-        return ;
-    }
+	pauseSpr->setTouchEnabled(false);
     SoundManager::shareSoundManager()->playEffect("sounds/SFX/pausebuttonclick");
     m_pPauseMenu = PauseMenu::create();
     addChild(m_pPauseMenu,3);
+	pauseSchedulerAndActions();
 }
 
 void ClassicScene::onEnter()
@@ -155,8 +153,8 @@ void ClassicScene::onExit()
 
 void ClassicScene::__resumeGame( CCObject *pSender )
 {
-    m_pPauseMenu->removeFromParent();
-    m_pPauseMenu = NULL;
+    pauseSpr->setTouchEnabled(true);
+	resumeSchedulerAndActions();
 }
 
 void ClassicScene::__createBird()
@@ -278,12 +276,13 @@ void ClassicScene::progressUpdate( float del )
 	float percent = passSeconds/totalSeconds;
 	float offset = percent*progressNode->getContentSize().width+20;
 	progressNode->setPositionX(-offset);
-	if(passSeconds>=60)
+	if(passSeconds>=totalSeconds)
 	{
-		CCMessageBox("GameOver","Warn");
+		ShareManager::shareManager()->isGameOver = true;
+		CCMessageBox("GameOver","TIPS");
 		effectLayer->setSwallow(true);	
 		unschedule(schedule_selector(ClassicScene::progressUpdate));
-
+		
 	}
 }
 

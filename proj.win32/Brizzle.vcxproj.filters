@@ -87,6 +87,12 @@
     <ClCompile Include="..\Classes\scenes\SettingScene.cpp">
       <Filter>Classes\scenes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\components\ExitWin.cpp">
+      <Filter>Classes\components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base\MaskLayer.cpp">
+      <Filter>Classes\base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -154,6 +160,16 @@
     </ClInclude>
     <ClInclude Include="..\Classes\scenes\SettingScene.h">
       <Filter>Classes\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\rapidxml\rapidxml.hpp" />
+    <ClInclude Include="..\Classes\rapidxml\rapidxml_iterators.hpp" />
+    <ClInclude Include="..\Classes\rapidxml\rapidxml_print.hpp" />
+    <ClInclude Include="..\Classes\rapidxml\rapidxml_utils.hpp" />
+    <ClInclude Include="..\Classes\components\ExitWin.h">
+      <Filter>Classes\components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\base\MaskLayer.h">
+      <Filter>Classes\base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

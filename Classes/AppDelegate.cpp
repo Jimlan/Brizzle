@@ -1,7 +1,7 @@
 #include "AppDelegate.h"
 #include "scenes/HomeScene.h"
 #include "config/AppStartup.h"
-
+#include "common/notifications_names.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate()
@@ -19,11 +19,11 @@ bool AppDelegate::applicationDidFinishLaunching()
     CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
     pDirector->setOpenGLView(pEGLView);
     pEGLView->setDesignResolutionSize(640,960,kResolutionShowAll);
-    pDirector->setDisplayStats(true);
+    // pDirector->setDisplayStats(true);
     pDirector->setAnimationInterval(1.0 / 60);
     CCScene *pScene = HomeScene::create();
     pDirector->runWithScene(pScene);
-	AppStartup::create();
+    AppStartup::create();
     return true;
 }
 
@@ -44,3 +44,18 @@ void AppDelegate::applicationWillEnterForeground()
     // if you use SimpleAudioEngine, it must resume here
     SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
 }
+
+#if(CC_PLATFORM_ANDROID==CC_TARGET_PLATFORM)
+#include "jni.h"
+#include "platform/android/jni/JniHelper.h"
+#include <android/log.h>
+
+extern "C"
+{
+    JNIEXPORT void JNICALL Java_com_giant_brizzle_Brizzle_exitGame(JNIEnv *env,jobject thiz)
+    {
+        CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_EXIT_GAME,NULL);
+    }
+};
+
+#endif

@@ -714,7 +714,7 @@ void PuzzleUtil::blackHole( Bird *bird )
             if(currentBird&&currentBird->isChecked==false&&currentBird->birdType==bird->birdType)
             {
                 currentBird->isChecked=true;
-				runEffect(currentBird);
+				//runEffect(currentBird);
                 ShareManager::shareManager()->dashBirdsNum++;
                 currentBird->getParent()->reorderChild(currentBird,100);
                 float angle = rand()%360+300;
