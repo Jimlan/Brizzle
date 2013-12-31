@@ -304,7 +304,7 @@ void ClassicScene::__timeReward( CCObject *obj )
 		CCLabelBMFont *rewardTip = CCLabelBMFont::create(timeStr->getCString(),"images/common/alphanum.fnt");
 		effectLayer->addChild(rewardTip);
 		rewardTip->setScale(0);
-		rewardTip->setPosition(ccp(800,800));
+		rewardTip->setPosition(ccp(700,800));
 		CCScaleTo *scaleAct = CCScaleTo::create(0.5f,1);
 		CCEaseElasticOut *easeAct = CCEaseElasticOut::create(scaleAct);
 		CCDelayTime *delayAct = CCDelayTime::create(0.5f);
