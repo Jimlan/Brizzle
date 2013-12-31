@@ -132,7 +132,7 @@ void ClassicScene::__showPauseMenu( CCObject *pSender )
     SoundManager::shareSoundManager()->playEffect("sounds/SFX/pausebuttonclick");
     m_pPauseMenu = PauseMenu::create();
     addChild(m_pPauseMenu,3);
-	pauseSchedulerAndActions();
+	ShareManager::shareManager()->isGamePause = true;
 }
 
 void ClassicScene::onEnter()
@@ -140,6 +140,7 @@ void ClassicScene::onEnter()
     BaseScene::onEnter();
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__resumeGame),NOTI_RESUME_GAME,NULL);
 	CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__showScore),NOTI_SHOW_SCORE,NULL);
+	CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__onExitShow),NOTI_SHOW_EXIT_WIN,NULL);
 }
 
 void ClassicScene::onExit()
@@ -154,7 +155,7 @@ void ClassicScene::onExit()
 void ClassicScene::__resumeGame( CCObject *pSender )
 {
     pauseSpr->setTouchEnabled(true);
-	resumeSchedulerAndActions();
+	ShareManager::shareManager()->isGamePause = false;
 }
 
 void ClassicScene::__createBird()
@@ -175,9 +176,6 @@ void ClassicScene::__createBird()
     m_pBirdBatchNode->setPosition(ccp(ShareManager::boxWidth/2,ShareManager::boxHeight/2));
     sm->birdBatchNode = m_pBirdBatchNode;
     effectLayer = ForbiddenLayer::create();
-	/* 游戏开始的时候显示ready start提示 动画提示完毕后 设置为false */
-    effectLayer->setSwallow(true);
-   
 	m_pScoreNode = CCNode::create();
 	
     sm->effectLayer = effectLayer;
@@ -272,6 +270,10 @@ void ClassicScene::__showScore( CCObject *data )
 
 void ClassicScene::progressUpdate( float del )
 {
+	if(ShareManager::shareManager()->isGamePause)
+	{
+		return;
+	}
 	passSeconds += del;
 	float percent = passSeconds/totalSeconds;
 	float offset = percent*progressNode->getContentSize().width+20;
@@ -282,7 +284,12 @@ void ClassicScene::progressUpdate( float del )
 		CCMessageBox("GameOver","TIPS");
 		effectLayer->setSwallow(true);	
 		unschedule(schedule_selector(ClassicScene::progressUpdate));
-		
 	}
 }
+
+void ClassicScene::__onExitShow( CCObject *pSender )
+{
+	ShareManager::shareManager()->isGamePause = true;
+}
+
 

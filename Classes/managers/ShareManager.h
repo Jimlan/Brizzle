@@ -12,6 +12,7 @@ private:
     static ShareManager *_instance;
 public:
 	bool isGameOver;
+	bool isGamePause;
 	/* 每次移动所消除的小鸟 */
 	int dashBirdsNum;
 	/* 出现的小鸟的类型 */
@@ -22,7 +23,7 @@ public:
     static const int boxWidth = 76;
     static const int boxHeight = 76;
     static ShareManager *shareManager();
-    ShareManager():isGameOver(false),fstBird(NULL),
+    ShareManager():isGameOver(false),isGamePause(false),fstBird(NULL),
         sedBird(NULL),birdBatchNode(NULL),birdTypes(5),dashBirdsNum(0) {};
     Bird *fstBird;
     Bird *sedBird;

@@ -44,6 +44,8 @@ selector:
     void __showPauseMenu(CCObject *pSender);
 	/* 继续游戏 */
 	void __resumeGame(CCObject *pSender);
+	/* 显示退出确认框的时候调度 */
+	void __onExitShow(CCObject *pSender);
 };
 
 

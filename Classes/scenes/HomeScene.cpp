@@ -93,7 +93,7 @@ void HomeScene::__initMainMenu()
 
 void HomeScene::__gotoClassic( CCObject *pSender )
 {
-	m_pDirector->replaceScene(CCTransitionFlipAngular::create(1,ClassicScene::create()));
+	m_pDirector->replaceScene(CCTransitionSplitRows::create(0.5,ClassicScene::create()));
 }
 
 void HomeScene::__gotoPandora( CCObject *pSender )

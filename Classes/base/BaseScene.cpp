@@ -1,5 +1,6 @@
 ﻿#include "BaseScene.h"
 #include "components/ExitWin.h"
+#include "managers/ShareManager.h"
 
 
 #if(CC_PLATFORM_ANDROID==CC_TARGET_PLATFORM)
@@ -61,7 +62,7 @@ BaseScene::BaseScene()
 void BaseScene::onEnter()
 {
     CCScene::onEnter();
-    CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(BaseScene::resumeGame),NOTI_HIDE_EXIT_WIN,NULL);
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(BaseScene::resumeGame),NOTI_RESUME_GAME,NULL);
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(BaseScene::exitGameDelegate),NOTI_EXIT_GAME,NULL);
 }
 
@@ -77,13 +78,14 @@ void BaseScene::exitGame()
     {
         isShowExit = true;
         addChild(ExitWin::create());
+		ShareManager::shareManager()->isGamePause = true;
     }
     else
     {
+		ShareManager::shareManager()->isGamePause = false;
         isShowExit = false;
-        CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_CLOSE_EXIT_WIN);
+        CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_HIDE_EXIT_WIN);
     }
-
 }
 
 void BaseScene::exitGameDelegate( float del )

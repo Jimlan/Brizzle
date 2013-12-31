@@ -7,7 +7,7 @@ BaseSprite::BaseSprite():m_iTouchPriority(0),
     m_pTargetEnded(NULL),
     m_pTargetMove(NULL)
 {
-
+	setTouchEnabled(false);
 }
 
 void BaseSprite::onEnter()

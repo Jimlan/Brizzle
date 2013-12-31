@@ -27,10 +27,7 @@ import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 import org.cocos2dx.plugin.PluginWrapper;
 
-import android.content.ContentResolver;
 import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.KeyEvent;
@@ -43,7 +40,7 @@ public class Brizzle extends Cocos2dxActivity {
 		// If you want your callback function can be invoked in GL thread, add
 		// this line:
 		PluginWrapper.setGLSurfaceView(Cocos2dxGLSurfaceView.getInstance());
-		createShortCut();
+		//createShortCut();
 	}
 
 	
