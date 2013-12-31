@@ -3,11 +3,6 @@
 #include "managers/ShareManager.h"
 #include "util/PuzzleUtil.h"
 
-void Bird::onEnter()
-{
-    CCSprite::onEnter();
-    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,m_iTouchPriority,false);
-}
 
 Bird * Bird::create( short type )
 {
@@ -109,11 +104,11 @@ void Bird::shakeBody(float scaleX,float scaleY)
 
 void Bird::onExit()
 {
-	BaseSprite::onExit();
 	if(this->effectSprite!=NULL)
 	{
 		this->effectSprite->removeFromParent();
 	}
+	BaseSprite::onExit();
 }
 
 

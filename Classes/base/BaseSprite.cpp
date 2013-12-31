@@ -2,24 +2,26 @@
 
 
 BaseSprite::BaseSprite():m_iTouchPriority(0),
-	m_bSwallow(false),
+    m_bSwallow(false),
     m_pTargetBegan(NULL),
     m_pTargetEnded(NULL),
-    m_pTargetMove(NULL)
+    m_pTargetMove(NULL),
+	m_bTouchEnable(true)
 {
-	setTouchEnabled(false);
+    //setTouchEnabled(false);
 }
 
 void BaseSprite::onEnter()
 {
-    CCSprite::onEnter();
     CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,m_iTouchPriority,m_bSwallow);
+    CCSprite::onEnter();
 }
 
 void BaseSprite::onExit()
 {
-    CCSprite::onExit();
+	CCLog("BaseSprite onExit invoke : remove touch delegate");
     CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
+    CCSprite::onExit();
 }
 
 BaseSprite * BaseSprite::createSpriteWithFrameName( const char *frameName )
@@ -48,7 +50,7 @@ bool BaseSprite::_isContainPoint( CCTouch *touch )
 {
     CCPoint arPoint = getAnchorPointInPoints();
     CCPoint point = convertTouchToNodeSpaceAR(touch);
-	CCRect rect = boundingBox();
+    CCRect rect = boundingBox();
     CCSize spriteSize = rect.size;
     CCRect spriteRect = CCRectMake(-arPoint.x,-arPoint.y,spriteSize.width,spriteSize.height);
     return spriteRect.containsPoint(point);

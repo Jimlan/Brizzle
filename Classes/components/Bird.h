@@ -30,7 +30,6 @@ public:
 		m_bSwallow = false;
 	};
     static Bird *create(short type);
-    virtual void onEnter();
 	virtual void onExit();
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
     virtual void ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent);
