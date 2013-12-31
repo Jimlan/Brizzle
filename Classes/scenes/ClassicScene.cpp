@@ -138,7 +138,7 @@ void ClassicScene::__showPauseMenu( CCObject *pSender )
 void ClassicScene::onEnter()
 {
     BaseScene::onEnter();
-    CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__resumeGame),NOTI_RESUME_GAME,NULL);
+    CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__resumeGame),NOTI_CLOSE_PAUSE_MENU,NULL);
 	CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__showScore),NOTI_SHOW_SCORE,NULL);
 	CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__onExitShow),NOTI_SHOW_EXIT_WIN,NULL);
 }
@@ -146,8 +146,9 @@ void ClassicScene::onEnter()
 void ClassicScene::onExit()
 {
     BaseScene::onExit();
-    CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_RESUME_GAME);
+    CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_CLOSE_PAUSE_MENU);
 	CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_SHOW_SCORE);
+	CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_SHOW_EXIT_WIN);
     ShareManager::shareManager()->fstBird = NULL;
     ShareManager::shareManager()->sedBird = NULL;
 }

@@ -45,7 +45,7 @@ bool PauseMenu::init()
 
 void PauseMenu::__resumeGame( CCObject * )
 {
-    CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_RESUME_GAME,NULL);
+    CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_CLOSE_PAUSE_MENU);
 	removeFromParent();
 }
 
