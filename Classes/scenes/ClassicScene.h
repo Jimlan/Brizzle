@@ -9,26 +9,26 @@ class ForbiddenLayer;
 class ClassicScene:public BaseScene
 {
 private:
-	BaseSprite *pauseSpr;
-	float totalSeconds;
-	float passSeconds;
-	void progressUpdate(float del);
-	CCNode *progressNode;
-	CCLabelAtlas *scoreLabel;
+    BaseSprite *pauseSpr;
+    float totalSeconds;
+    float passSeconds;
+    void progressUpdate(float del);
+    CCNode *progressNode;
+    CCLabelAtlas *scoreLabel;
     void __initBackground();
     void __initPauseSprite();
-	void __createBird();
-	void __ready();
-	void __start();
-	void __startHandler(CCNode *node);
-	void __showScore(CCObject *data);
+    void __createBird();
+    void __ready();
+    void __start();
+    void __startHandler(CCNode *node);
+    void __showScore(CCObject *data);
     PauseMenu *m_pPauseMenu;
 public:
-	CCSpriteBatchNode *m_pBirdBatchNode;
-	/* 消除个数在3个以上的时候显示小鸟特效所在的层 */
-	ForbiddenLayer *effectLayer;
+    CCSpriteBatchNode *m_pBirdBatchNode;
+    /* 消除个数在3个以上的时候显示小鸟特效所在的层 */
+    ForbiddenLayer *effectLayer;
 
-	CCNode *m_pScoreNode;
+    CCNode *m_pScoreNode;
     virtual void loadAssets();
     virtual bool init();
     CREATE_FUNC(ClassicScene);
@@ -42,10 +42,12 @@ selector:
     void __delayCall(CCNode *node);
     /* 显示暂停按钮 */
     void __showPauseMenu(CCObject *pSender);
-	/* 继续游戏 */
-	void __resumeGame(CCObject *pSender);
-	/* 显示退出确认框的时候调度 */
-	void __onExitShow(CCObject *pSender);
+    /* 继续游戏 */
+    void __resumeGame(CCObject *pSender);
+    /* 显示退出确认框的时候调度 */
+    void __onExitShow(CCObject *pSender);
+    /* 时间奖励 */
+    void __timeReward(CCObject *obj);
 };
 
 

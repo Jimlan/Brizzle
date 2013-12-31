@@ -6,6 +6,7 @@
 #define NOTI_SHOW_SCORE "show_score_notification"
 #define NOTI_EXIT_GAME "exit_game_norification"
 #define NOTI_CLOSE_PAUSE_MENU "close_pause_menu"
+#define NOTI_TIME_REWARD "time_reward"
 
 #define NOTI_SHOW_EXIT_WIN "showexitwindow"
 #define NOTI_HIDE_EXIT_WIN "hideexitwindow"
