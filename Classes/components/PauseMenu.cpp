@@ -29,14 +29,13 @@ bool PauseMenu::init()
     m_pMenuNode->setPositionY(-463);
 
     CCMenuItemSprite *quit = BaseMenuItemSprite::create(SPRITE("paused_quit_normal_china.png"),SPRITE("paused_quit_push_china.png"),this,menu_selector(PauseMenu::__quitGame));
-    CCMenuItemSprite *restart = BaseMenuItemSprite::create(SPRITE("paused_restart_normal_china.png"),SPRITE("paused_restart_push_china.png"),this,NULL);
+    CCMenuItemSprite *restart = BaseMenuItemSprite::create(SPRITE("paused_restart_normal_china.png"),SPRITE("paused_restart_push_china.png"),this,menu_selector(PauseMenu::__restartGame));
     CCMenuItemSprite *resume = BaseMenuItemSprite::create(SPRITE("paused_resume_normal_china.png"),SPRITE("paused_resume_push_china.png"),this,menu_selector(PauseMenu::__resumeGame));
 
     CCMenu *menu = CCMenu::create(resume,quit,restart,NULL);
     menu->alignItemsVerticallyWithPadding(10);
     m_pMenuNode->addChild(menu);
     menu->setPosition(ccp(380,160));
-
     CCMoveTo *moveAct = CCMoveTo::create(animateTime,CCPointZero);
     m_pMenuNode->runAction(moveAct);
 
@@ -52,4 +51,9 @@ void PauseMenu::__resumeGame( CCObject * )
 void PauseMenu::__quitGame( CCObject * )
 {
     CCDirector::sharedDirector()->replaceScene(HomeScene::create());
+}
+
+void PauseMenu::__restartGame( CCObject * )
+{
+	CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_RESTART_GAME);
 }

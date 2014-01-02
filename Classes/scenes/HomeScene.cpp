@@ -4,6 +4,7 @@
 #include "PandoraScene.h"
 #include "IcebreakScene.h"
 #include "SettingScene.h"
+#include "components/GameOver.h"
 
 void HomeScene::loadAssets()
 {

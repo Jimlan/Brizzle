@@ -17,6 +17,7 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/components/Bird.cpp \
                    ../../Classes/components/ForbiddenLayer.cpp \
                    ../../Classes/components/PauseMenu.cpp \
+                   ../../Classes/components/GameOver.cpp \
                    ../../Classes/config/AppStartup.cpp \
                    ../../Classes/managers/AnimationManager.cpp \
                    ../../Classes/managers/ShareManager.cpp \

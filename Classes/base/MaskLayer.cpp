@@ -2,7 +2,7 @@
 
 void MaskLayer::registerWithTouchDispatcher()
 {
-    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,INT_MIN,true);
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this,touchPriority,true);
 }
 
 bool MaskLayer::init()

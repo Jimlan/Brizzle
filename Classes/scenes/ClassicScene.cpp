@@ -6,6 +6,8 @@
 #include "managers/AnimationManager.h"
 #include "util/PuzzleUtil.h"
 #include "components/ForbiddenLayer.h"
+#include "HomeScene.h"
+#include "components/GameOver.h"
 
 bool ClassicScene::init()
 {
@@ -13,6 +15,11 @@ bool ClassicScene::init()
     {
         return false;
     }
+	ShareManager *sm = ShareManager::shareManager();
+	sm->topLevel = 1;
+	sm->gameScore = 0;
+	sm->playTime = totalSeconds;
+	sm->dashCount = 0;
     __initBackground();
     __initPauseSprite();
     SoundManager::shareSoundManager()->playBackground("sounds/BGM/Play_bgm_long",true);
@@ -142,6 +149,9 @@ void ClassicScene::onEnter()
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__showScore),NOTI_SHOW_SCORE,NULL);
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__onExitShow),NOTI_SHOW_EXIT_WIN,NULL);
     CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__timeReward),NOTI_TIME_REWARD,NULL);
+	CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__quitHandler),NOTI_GAMEOVER_QUIT,NULL);
+	CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__restartHandler),NOTI_GAMEOVER_RESTART,NULL);
+	CCNotificationCenter::sharedNotificationCenter()->addObserver(this,callfuncO_selector(ClassicScene::__restartHandler),NOTI_RESTART_GAME,NULL);
 }
 
 void ClassicScene::onExit()
@@ -151,6 +161,9 @@ void ClassicScene::onExit()
     CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_SHOW_SCORE);
     CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_SHOW_EXIT_WIN);
     CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_TIME_REWARD);
+	CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_GAMEOVER_QUIT);
+	CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_GAMEOVER_RESTART);
+	CCNotificationCenter::sharedNotificationCenter()->removeObserver(this,NOTI_RESTART_GAME);
     ShareManager::shareManager()->fstBird = NULL;
     ShareManager::shareManager()->sedBird = NULL;
 }
@@ -254,6 +267,7 @@ void ClassicScene::__showScore( CCObject *data )
     int currentScore = CCString::createWithFormat(scoreLabel->getString())->intValue();
     int singleScore = ShareManager::shareManager()->dashBirdsNum*5;
     currentScore += singleScore;
+	ShareManager::shareManager()->gameScore = currentScore;
     CCString *scoreStr = CCString::createWithFormat("%06d",currentScore);
     scoreLabel->setString(scoreStr->getCString());
     CCString *scoreNum = CCString::createWithFormat("%d",singleScore);
@@ -269,6 +283,10 @@ void ClassicScene::__showScore( CCObject *data )
     CCSpawn *spawn = CCSpawn::create(scaleTo,fadeOut,moveAct,NULL);
     CCCallFunc *moveCall = CCCallFunc::create(score,callfunc_selector(CCLabelBMFont::removeFromParent));
     score->runAction(CCSequence::create(scaleOut,CCDelayTime::create(0.5f),spawn,moveCall,NULL));
+
+	/* 在此处进行游戏难度升级提示 */
+
+
 }
 
 void ClassicScene::progressUpdate( float del )
@@ -279,13 +297,12 @@ void ClassicScene::progressUpdate( float del )
     }
     passSeconds += del;
     float percent = passSeconds/totalSeconds;
-    float offset = percent*progressNode->getContentSize().width+20;
+    float offset = percent*progressNode->getContentSize().width;
     progressNode->setPositionX(-offset);
     if(passSeconds>=totalSeconds)
     {
         ShareManager::shareManager()->isGameOver = true;
-        CCMessageBox("GameOver","TIPS");
-        effectLayer->setSwallow(true);
+		addChild(GameOver::create());
         unschedule(schedule_selector(ClassicScene::progressUpdate));
     }
 }
@@ -300,11 +317,13 @@ void ClassicScene::__timeReward( CCObject *obj )
 	CCFloat *time = dynamic_cast<CCFloat*>(obj);
 	if(time)
 	{
-		CCString *timeStr = CCString::createWithFormat("+%dS",int(time));
+		ShareManager::shareManager()->playTime += time->getValue();
+		CCString *timeStr = CCString::createWithFormat("+%dS",static_cast<int>(time->getValue()));
 		CCLabelBMFont *rewardTip = CCLabelBMFont::create(timeStr->getCString(),"images/common/alphanum.fnt");
+		rewardTip->setAnchorPoint(ccp(0.5f,0.5f));
 		effectLayer->addChild(rewardTip);
 		rewardTip->setScale(0);
-		rewardTip->setPosition(ccp(700,800));
+		rewardTip->setPosition(ccp(550,800));
 		CCScaleTo *scaleAct = CCScaleTo::create(0.5f,1);
 		CCEaseElasticOut *easeAct = CCEaseElasticOut::create(scaleAct);
 		CCDelayTime *delayAct = CCDelayTime::create(0.5f);
@@ -316,6 +335,20 @@ void ClassicScene::__timeReward( CCObject *obj )
 			passSeconds = 0;
 		}
 	}
+}
+
+void ClassicScene::__quitHandler( CCObject *pSender )
+{
+	CCDirector::sharedDirector()->replaceScene(CCTransitionSlideInR::create(0.5f,HomeScene::create()));
+}
+
+void ClassicScene::__restartHandler( CCObject *pSender )
+{
+	progressNode->setPositionX(0);
+	passSeconds = 0;
+	removeAllChildrenWithCleanup(true);
+	init();
+	ShareManager::shareManager()->isGamePause = false;
 }
 
 

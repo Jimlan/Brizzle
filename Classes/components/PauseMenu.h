@@ -14,6 +14,7 @@ public:
 selector:
 	void __resumeGame(CCObject *);
 	void __quitGame(CCObject *);
+	void __restartGame(CCObject *);
 };
 
 #endif // !_PAUSEMENU_H_

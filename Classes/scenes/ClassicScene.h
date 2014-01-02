@@ -48,6 +48,10 @@ selector:
     void __onExitShow(CCObject *pSender);
     /* 时间奖励 */
     void __timeReward(CCObject *obj);
+
+	void __quitHandler(CCObject *pSender);
+
+	void __restartHandler(CCObject *pSender);
 };
 
 

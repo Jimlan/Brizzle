@@ -597,7 +597,7 @@ void PuzzleUtil::__updatePosComplete()
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/run1");
 			CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(2.0f));
         }
-
+		sm->dashCount += dashBirdsCount;
         CCLog("dashbirds count:%d",ShareManager::shareManager()->dashBirdsNum);
 		CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_SHOW_SCORE);
     }

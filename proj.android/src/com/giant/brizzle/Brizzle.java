@@ -31,6 +31,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.KeyEvent;
+import android.view.WindowManager;
 
 public class Brizzle extends Cocos2dxActivity {
 
@@ -41,6 +42,7 @@ public class Brizzle extends Cocos2dxActivity {
 		// this line:
 		PluginWrapper.setGLSurfaceView(Cocos2dxGLSurfaceView.getInstance());
 		//createShortCut();
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 	}
 
 	

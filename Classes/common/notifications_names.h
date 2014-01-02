@@ -7,6 +7,10 @@
 #define NOTI_EXIT_GAME "exit_game_norification"
 #define NOTI_CLOSE_PAUSE_MENU "close_pause_menu"
 #define NOTI_TIME_REWARD "time_reward"
+#define NOTI_RESTART_GAME "restart_game"
+
+#define NOTI_GAMEOVER_QUIT "game_over_quit"
+#define NOTI_GAMEOVER_RESTART "game_over_restart"
 
 #define NOTI_SHOW_EXIT_WIN "showexitwindow"
 #define NOTI_HIDE_EXIT_WIN "hideexitwindow"

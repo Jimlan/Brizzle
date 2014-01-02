@@ -8,9 +8,13 @@
 class MaskLayer:public CCLayerColor
 {
 public:
+	int touchPriority;
     virtual bool init();
     virtual void registerWithTouchDispatcher();
     virtual bool ccTouchBegan(CCTouch *pTouch, CCEvent *pEvent);
+	MaskLayer():touchPriority(INT_MIN){
+
+	};
     CREATE_FUNC(MaskLayer);
 };
 

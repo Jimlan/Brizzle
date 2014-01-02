@@ -93,6 +93,9 @@
     <ClCompile Include="..\Classes\base\MaskLayer.cpp">
       <Filter>Classes\base</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\components\GameOver.cpp">
+      <Filter>Classes\components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -170,6 +173,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\base\MaskLayer.h">
       <Filter>Classes\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\components\GameOver.h">
+      <Filter>Classes\components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

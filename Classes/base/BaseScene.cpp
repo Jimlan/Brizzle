@@ -96,5 +96,6 @@ void BaseScene::exitGameDelegate( float del )
 void BaseScene::resumeGame( CCObject *obj )
 {
     isShowExit = false;
+	ShareManager::shareManager()->isGamePause = false;
 }
 
