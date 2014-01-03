@@ -41,12 +41,11 @@ public class Brizzle extends Cocos2dxActivity {
 		// If you want your callback function can be invoked in GL thread, add
 		// this line:
 		PluginWrapper.setGLSurfaceView(Cocos2dxGLSurfaceView.getInstance());
-		//createShortCut();
-		getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON, WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		// createShortCut();
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON,
+				WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 	}
 
-	
-	
 	public Cocos2dxGLSurfaceView onCreateView() {
 		Cocos2dxGLSurfaceView glSurfaceView = new Cocos2dxGLSurfaceView(this);
 		// Brizzle should create stencil buffer
@@ -60,28 +59,38 @@ public class Brizzle extends Cocos2dxActivity {
 	@Override
 	public boolean onKeyUp(int keyCode, KeyEvent event) {
 		if (keyCode == KeyEvent.KEYCODE_BACK)
-			exitGame();
+			PluginWrapper.runOnMainThread(new Runnable() {
+				@Override
+				public void run() {
+					exitGame();
+				}
+			});
+
 		return super.onKeyUp(keyCode, event);
 	}
 
 	static {
 		System.loadLibrary("cocos2dcpp");
 	}
-	
-	public void createShortCut(){   
-	    //创建快捷方式的Intent                   
-	    Intent shortcutintent = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");                   
-	    //不允许重复创建                   
-	    shortcutintent.putExtra("duplicate", false);                   
-	    //需要现实的名称                   
-	    shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_NAME, getString(R.string.app_name));   
-	    //快捷图片                  
-	    Parcelable icon = Intent.ShortcutIconResource.fromContext(getApplicationContext(), R.drawable.icon);   
-	    shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, icon);   
-	    //点击快捷图片，运行的程序主入口                   
-	    shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, new Intent(getApplicationContext() , Brizzle.class));                   
-	    //发送广播。OK                   
-	    sendBroadcast(shortcutintent);   
+
+	public void createShortCut() {
+		// 创建快捷方式的Intent
+		Intent shortcutintent = new Intent(
+				"com.android.launcher.action.INSTALL_SHORTCUT");
+		// 不允许重复创建
+		shortcutintent.putExtra("duplicate", false);
+		// 需要现实的名称
+		shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_NAME,
+				getString(R.string.app_name));
+		// 快捷图片
+		Parcelable icon = Intent.ShortcutIconResource.fromContext(
+				getApplicationContext(), R.drawable.icon);
+		shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, icon);
+		// 点击快捷图片，运行的程序主入口
+		shortcutintent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, new Intent(
+				getApplicationContext(), Brizzle.class));
+		// 发送广播。OK
+		sendBroadcast(shortcutintent);
 	}
-	
+
 }

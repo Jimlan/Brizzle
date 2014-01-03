@@ -16,7 +16,7 @@ bool ExitWin::init()
         winBg->setPosition(VisibleRect::center());
         yes = CCMenuItemSprite::create(CCSprite::create("images/exit/exit_yes_normal.png"),CCSprite::create("images/exit/exit_yes_push.png"),this,menu_selector(ExitWin::exitGame));
         no = CCMenuItemSprite::create(CCSprite::create("images/exit/exit_no_normal.png"),CCSprite::create("images/exit/exit_no_push.png"),this,menu_selector(ExitWin::resumeGame));
-        CCMenu *exitMenu = CCMenu::create(yes,no,NULL);
+		CCMenu *exitMenu = CCMenu::create(yes,no,NULL);
         exitMenu->alignItemsHorizontally();
         yesX = yes->getPositionX();
         noX = no->getPositionX();

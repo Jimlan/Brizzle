@@ -34,7 +34,8 @@ public:
     CREATE_FUNC(ClassicScene);
     virtual void onEnter();
     virtual void onExit();
-    ClassicScene():m_pPauseMenu(NULL),totalSeconds(120.0f),passSeconds(0.0f) {};
+	ClassicScene():m_pPauseMenu(NULL),totalSeconds(120.0f),passSeconds(0.0f) {
+	};
 selector:
     /* 背景木头移动完毕后的回调函数 */
     void __woodMoveCall();
@@ -52,6 +53,9 @@ selector:
 	void __quitHandler(CCObject *pSender);
 
 	void __restartHandler(CCObject *pSender);
+	void __adsReceivedHandler(CCObject *pSender);
+	void __adsSpendHandler(CCObject *pSender);
+
 };
 
 

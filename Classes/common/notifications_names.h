@@ -1,6 +1,9 @@
 ﻿#ifndef _NOTIFICATIONS_NAME_H_
 #define _NOTIFICATIONS_NAME_H_
 
+#define NOTI_ADS_RECEIVED "ads_received"
+#define NOTI_ADS_SPEND "ads_spend"
+
 #define NOTI_CLOSE_EXIT_WIN "close_exit_win"
 #define NOTI_RESUME_GAME "resume_game_notification"
 #define NOTI_SHOW_SCORE "show_score_notification"

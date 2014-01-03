@@ -33,9 +33,11 @@ protected:
     CCSpriteFrameCache *m_pFrameCache;
     CCAnimationCache *m_pAnimationCache;
     CCDirector *m_pDirector;
+	void showAds();
 	void exitGame();
 	void exitGameDelegate(float del);
 	void resumeGame(CCObject *obj);
+	void toast(const char *msg);
 public:
     virtual bool init();
 	virtual void onEnter();
