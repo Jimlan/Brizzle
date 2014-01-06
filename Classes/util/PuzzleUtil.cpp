@@ -278,7 +278,7 @@ bool PuzzleUtil::isCanPuzzle()
                         case 7:
                             //dashBird(effectBird,"itemLightning_000.png","lightning",effectType);
                         default:
-							dashBird(focus,"itemBlackhole_000.png","BlackHole",effectType);
+                            dashBird(focus,"itemBlackhole_000.png","BlackHole",effectType);
                             break;
                         }
                     }
@@ -575,31 +575,31 @@ void PuzzleUtil::__updatePosComplete()
         if(dashBirdsCount>50)
         {
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/run3");
-			CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(10.0f));
+            CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(10.0f));
         }
         else if(dashBirdsCount>40)
         {
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/run2");
-			CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(8.0f));
+            CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(8.0f));
         }
         else if(dashBirdsCount>30)
         {
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/shoot4");
-			CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(6.0f));
+            CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(6.0f));
         }
         else if(dashBirdsCount>20)
         {
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/run2");
-			CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(4.0f));
+            CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(4.0f));
         }
         else if(ShareManager::shareManager()->dashBirdsNum>10)
         {
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/run1");
-			CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(2.0f));
+            CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_TIME_REWARD,CCFloat::create(2.0f));
         }
-		sm->dashCount += dashBirdsCount;
+        sm->dashCount += dashBirdsCount;
         CCLog("dashbirds count:%d",ShareManager::shareManager()->dashBirdsNum);
-		CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_SHOW_SCORE);
+        CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_SHOW_SCORE);
     }
 
 }
@@ -653,10 +653,12 @@ void PuzzleUtil::runEffect( Bird *bird )
             break;
         case 7:
             //  sm->effectLayer->setSwallow(false);
-            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_lighting");
+            //SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_lighting");
             //   lightning(bird);
             break;
         default:
+            SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_blackhole");
+            blackHole(bird);
             break;
         }
     }
@@ -719,7 +721,7 @@ void PuzzleUtil::blackHole( Bird *bird )
             if(currentBird&&currentBird->isChecked==false&&currentBird->birdType==bird->birdType)
             {
                 currentBird->isChecked=true;
-				//runEffect(currentBird);
+                //runEffect(currentBird);
                 ShareManager::shareManager()->dashBirdsNum++;
                 currentBird->getParent()->reorderChild(currentBird,100);
                 float angle = rand()%360+300;

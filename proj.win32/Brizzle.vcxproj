@@ -147,6 +147,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClCompile Include="..\Classes\scenes\IcebreakScene.cpp" />
     <ClCompile Include="..\Classes\scenes\PandoraScene.cpp" />
     <ClCompile Include="..\Classes\scenes\SettingScene.cpp" />
+    <ClCompile Include="..\Classes\scenes\SplashScene.cpp" />
     <ClCompile Include="..\Classes\util\PuzzleUtil.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -178,6 +179,7 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\Classes\scenes\IcebreakScene.h" />
     <ClInclude Include="..\Classes\scenes\PandoraScene.h" />
     <ClInclude Include="..\Classes\scenes\SettingScene.h" />
+    <ClInclude Include="..\Classes\scenes\SplashScene.h" />
     <ClInclude Include="..\Classes\util\PuzzleUtil.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>

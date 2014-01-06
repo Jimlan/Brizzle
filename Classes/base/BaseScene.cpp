@@ -103,7 +103,7 @@ void BaseScene::showAds()
     devInfo["AdmobID"] = "a152c0e2117dbe6";
     m_pAdmob->configDeveloperInfo(devInfo);
     m_pAdmob->setAdsListener(m_pAdsListener);
-    m_pAdmob->setDebugMode(true);
+    m_pAdmob->setDebugMode(false);
     m_pAdmob->showAds(ProtocolAds::kBannerAd,0,ProtocolAds::kPosTop);
 #endif
 }

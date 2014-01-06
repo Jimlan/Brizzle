@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
 #include "scenes/HomeScene.h"
+#include "scenes/SplashScene.h"
 #include "config/AppStartup.h"
 #include "common/notifications_names.h"
 USING_NS_CC;
@@ -21,7 +22,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     pEGLView->setDesignResolutionSize(640,960,kResolutionExactFit);
     // pDirector->setDisplayStats(true);
     pDirector->setAnimationInterval(1.0 / 60);
-    CCScene *pScene = HomeScene::create();
+    CCScene *pScene = SplashScene::create();
     pDirector->runWithScene(pScene);
     AppStartup::create();
     return true;

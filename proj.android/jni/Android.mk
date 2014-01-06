@@ -27,6 +27,7 @@ LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/scenes/IcebreakScene.cpp \
                    ../../Classes/scenes/PandoraScene.cpp \
                    ../../Classes/scenes/SettingScene.cpp \
+                   ../../Classes/scenes/SplashScene.cpp \
                    ../../Classes/util/PuzzleUtil.cpp 
                    
 
