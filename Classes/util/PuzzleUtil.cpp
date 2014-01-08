@@ -652,10 +652,8 @@ void PuzzleUtil::runEffect( Bird *bird )
             blackHole(bird);
             break;
         case 7:
-            //  sm->effectLayer->setSwallow(false);
             //SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_lighting");
-            //   lightning(bird);
-            break;
+            //lightning(bird);
         default:
             SoundManager::shareSoundManager()->playEffect("sounds/SFX/item_blackhole");
             blackHole(bird);

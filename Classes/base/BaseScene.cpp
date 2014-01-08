@@ -30,6 +30,7 @@ void MyAdsListener::onPlayerGetPoints(cocos2d::plugin::ProtocolAds* pAdsPlugin, 
 
 #endif
 
+
 bool BaseScene::init()
 {
     if(!CCScene::init())
@@ -37,9 +38,6 @@ bool BaseScene::init()
         return false;
     }
     loadAssets();
-
-
-
     return true;
 }
 
@@ -112,7 +110,7 @@ void BaseScene::toast( const char *msg )
 {
 #if(CC_PLATFORM_ANDROID==CC_TARGET_PLATFORM)
 	JniMethodInfo methodInfo;
-	bool hasToast = JniHelper::getStaticMethodInfo(methodInfo,"com/giant/brizzle/JNIBrige","toast","(Ljava/lang/String;)V");
+	bool hasToast = JniHelper::getStaticMethodInfo(methodInfo,"com/giant/brizzle91/JNIBrige","toast","(Ljava/lang/String;)V");
 	if(hasToast)
 	{
 		jstring jmsg = methodInfo.env->NewStringUTF(msg);

@@ -53,7 +53,7 @@ void AppDelegate::applicationWillEnterForeground()
 
 extern "C"
 {
-    JNIEXPORT void JNICALL Java_com_giant_brizzle_Brizzle_exitGame(JNIEnv *env,jobject thiz)
+    JNIEXPORT void JNICALL Java_com_giant_brizzle91_Brizzle_exitGame(JNIEnv *env,jobject thiz)
     {
         CCNotificationCenter::sharedNotificationCenter()->postNotification(NOTI_EXIT_GAME,NULL);
     }
