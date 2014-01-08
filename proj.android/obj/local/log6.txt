@@ -1,0 +1,2001 @@
+[ro.secure]: [1]
+[ro.allow.mock.location]: [0]
+[ro.debuggable]: [0]
+[persist.service.adb.enable]: [1]
+[ro.factorytest]: [0]
+[dev.silent_reboot]: [0]
+[ro.serialno]: [HC191TE03799]
+[ro.bootmode]: [normal]
+[ro.baseband]: [N/A]
+[ro.carrier]: [COMMON]
+[ro.bootloader]: [1.51.0000]
+[dev.bootreason]: [normal]
+[ro.battery_dq]: [FAIL]
+[ro.hardware]: [hua_shan]
+[ro.revision]: [128]
+[ro.engineerid]: [0]
+[ro.cid]: [HTCCN704]
+[ro.mid]: [PD1120000]
+[ro.emmc]: [0]
+[ro.ril.oem.ecclist]: [000,08,110,999,118,119]
+[ro.ril.enable.a52]: [0]
+[ro.ril.enable.a53]: [1]
+[ril.watchdog.ping_address]: [www.baidu.com]
+[ro.product.locale.language]: [zh]
+[ro.product.locale.region]: [CN]
+[ro.phone.min_match]: [11]
+[ro.aa.rid]: [132]
+[ro.aa.skulist]: [1403]
+[ro.aa.customizationid]: [198865]
+[ro.aa.taskid]: [201801]
+[ro.aa.mainsku]: [1403]
+[ro.aa.romver]: [2.11.1403.1]
+[ro.aa.maincid]: [11111111]
+[ro.aa.project]: [Huashan_Gingerbread]
+[ro.aa.modelid]: [PD1120000]
+[ro.aa.cidlist]: [HTCCN704]
+[ro.com.google.clientidbase]: [android-htc]
+[ro.build.id]: [GRI40]
+[ro.build.display.id]: [GRI40]
+[ro.build.version.incremental]: [88420]
+[ro.build.version.sdk]: [10]
+[ro.build.version.codename]: [REL]
+[ro.build.version.release]: [2.3]
+[ro.build.date]: [二  7月  5 18:05:06 CST 2011]
+[ro.build.date.utc]: [1309860306]
+[ro.build.type]: [user]
+[ro.build.user]: []
+[ro.build.host]: [AA129]
+[ro.build.tags]: [release-keys]
+[ro.product.model]: [HTC A9188]
+[ro.product.brand]: [htccn_chs_cmcc]
+[ro.product.name]: [huashan]
+[ro.product.device]: [huashan]
+[ro.product.board]: [huashan]
+[ro.product.cpu.abi]: [armeabi-v7a]
+[ro.product.cpu.abi2]: [armeabi]
+[ro.product.manufacturer]: [HTC]
+[ro.wifi.channels]: []
+[ro.board.platform]: [omap3]
+[ro.build.product]: [huashan]
+[ro.build.description]: [2.11.1403.1 CL88420 release-keys]
+[ro.build.changelist]: [88420]
+[ro.product.ua]: []
+[ro.build.fingerprint]: [htccn_chs_cmcc/huashan/huashan:2.3/GRI40/88420:user/release-keys]
+[ro.build.project]: [201801]
+[ro.product.version]: [2.11.1403.1]
+[ro.build.languageremove]: [0]
+[keyguard.no_require_sim]: [1]
+[opencore.asmd]: [1]
+[wifi.interface]: [tiwlan0]
+[alsa.mixer.playback.master]: [DAC2 Analog]
+[alsa.mixer.capture.master]: [Analog]
+[dalvik.vm.heapsize]: [32m]
+[ro.sf.lcd_density]: [240]
+[ro.telephony.default_network]: [0]
+[softap.interface]: [tiap0]
+[hostapd.status]: [unloaded]
+[init.svc.btips]: [0]
+[ro.htc.checkin.url]: [http://andchin.htc.com/android/checkin]
+[ro.htc.checkin.crashurl]: [http://andchin.htc.com/android/crash]
+[ro.htc.checkin.url_CN]: [http://andchin.htccomm.com.cn/android/checkin]
+[ro.htc.checkin.crashurl_CN]: [http://andchin.htccomm.com.cn/android/crash]
+[ro.htc.checkin.exmsg.url]: [http://fotamsg.htc.com/android/extra/]
+[ro.htc.checkin.exmsg.url_CN]: [http://fotamsg.htccomm.com.cn/android/extra/]
+[ro.htc.appupdate.url]: [http://apu-chin.htc.com/check-in/rws/and-app/update]
+[ro.htc.appupdate.url_CN]: [http://apu-chin.htccomm.com.cn/check-in/rws/and-app/update]
+[ro.htc.appupdate.exmsg.url]: [http://apu-msg.htc.com/extra-msg/rws/and-app/msg]
+[ro.htc.appupdate.exmsg.url_CN]: [http://apu-msg.htccomm.com.cn/extra-msg/rws/and-app/msg]
+[ro.product.processor]: [800MHz]
+[ro.product.ram]: [512MB]
+[ro.product.display_resolution]: [4.3 inch WVGA resolution]
+[ro.product.main_camera]: [5M]
+[ro.product.front_camera]: [VGA]
+[ro.product.bluetooth]: [2.1 + EDR]
+[ro.product.wifi]: [802.11 b/g]
+[ro.htc.common.version]: [2.1.0.0]
+[keydispatchtimeout]: [15000]
+[ro.setupwizard.mode]: [OPTIONAL]
+[ro.config.ringtone]: [Innovation.mp3]
+[ro.config.notification_sound]: [Color.mp3]
+[ro.config.alarm_alert]: [Light.mp3]
+[ro.config.cal_notification]: [Vector.mp3]
+[ro.config.msg_notification]: [Ascend.mp3]
+[net.bt.name]: [Android]
+[net.change]: [net.dnschange]
+[dalvik.vm.stack-trace-file]: [/data/anr/traces.txt]
+[persist.sys.language]: [zh]
+[persist.sys.country]: [CN]
+[persist.sys.localevar]: []
+[persist.radio.mosms.service]: [3]
+[persist.radio.clip]: [1]
+[persist.radio.als]: [1]
+[persist.radio.silent.reset]: [1]
+[persist.radio.mpdp]: [0]
+[persist.radio.data.auto-connect]: [1]
+[persist.radio.ip.timeout]: [150]
+[persist.radio.fd.rule]: [2]
+[persist.radio.fd.timeout]: [5]
+[persist.radio.fd.plmn]: []
+[persist.radio.first.bootup]: [1]
+[persist.radio.nel]: [0]
+[persist.radio.pcd.timeout]: [180]
+[persist.radio.data_netmgrd_mtu]: [1420]
+[persist.radio.prefer.network]: [0]
+[persist.radio.band.select-mode]: [0]
+[persist.sys.timezone]: [Asia/Shanghai]
+[ro.FOREGROUND_APP_ADJ]: [0]
+[ro.VISIBLE_APP_ADJ]: [1]
+[ro.PERCEPTIBLE_APP_ADJ]: [2]
+[ro.HEAVY_WEIGHT_APP_ADJ]: [3]
+[ro.SECONDARY_SERVER_ADJ]: [4]
+[ro.BACKUP_APP_ADJ]: [5]
+[ro.HOME_APP_ADJ]: [6]
+[ro.HIDDEN_APP_MIN_ADJ]: [7]
+[ro.EMPTY_APP_ADJ]: [15]
+[ro.FOREGROUND_APP_MEM]: [2048]
+[ro.VISIBLE_APP_MEM]: [3072]
+[ro.PERCEPTIBLE_APP_MEM]: [4096]
+[ro.HEAVY_WEIGHT_APP_MEM]: [4096]
+[ro.SECONDARY_SERVER_MEM]: [6144]
+[ro.BACKUP_APP_MEM]: [6144]
+[ro.HOME_APP_MEM]: [6144]
+[ro.HIDDEN_APP_MEM]: [7168]
+[ro.EMPTY_APP_MEM]: [8192]
+[debugtool.anrhistory]: [1]
+[ro.error.receiver.htc.apps]: [com.htc.feedback]
+[net.tcp.buffersize.default]: [4096,87380,110208,4096,16384,110208]
+[net.tcp.buffersize.wifi]: [4095,87380,110208,4096,16384,110208]
+[net.tcp.buffersize.hsdpa]: [4094,87380,393216,4096,16384,110208]
+[net.tcp.buffersize.umts]: [4094,87380,393216,4096,16384,110208]
+[net.tcp.buffersize.edge]: [4093,26280,393216,4096,16384,35040]
+[net.tcp.buffersize.gprs]: [4092,8760,393216,4096,8760,11680]
+[net.tcp.buffersize.lte]: [4094,87380,196608,4096,16384,196608]
+[net.tcp.buffersize.evdo_b]: [4094,87380,262144,4096,16384,262144]
+[net.tcp.buffersize.wimax]: [4096,221184,524288,4096,16384,110208]
+[init.svc.servicemanager]: [running]
+[init.svc.vold]: [running]
+[init.svc.netd]: [running]
+[init.svc.debuggerd]: [running]
+[init.svc.zygote]: [running]
+[init.svc.media]: [running]
+[init.svc.htcfs]: [running]
+[init.svc.dbus]: [running]
+[init.svc.installd]: [running]
+[init.svc.keystore]: [running]
+[init.svc.ipd]: [running]
+[init.svc.post-boot]: [stopped]
+[init.svc.mtd_readahead]: [stopped]
+[init.svc.tdril-daemon]: [running]
+[init.svc.fw3a]: [running]
+[init.svc.agpsd]: [stopped]
+[init.svc.pvrsrvinit]: [stopped]
+[init.svc.baseiamge]: [stopped]
+[init.svc.zchgd]: [running]
+[init.svc.battery-daemon]: [running]
+[init.svc.dmagent]: [running]
+[init.svc.akmd]: [running]
+[init.svc.clockd]: [running]
+[ro.radio.use-ppp]: [yes]
+[ro.config.nocheckin]: [yes]
+[ro.pagesize]: [2048]
+[init.svc.adbd]: [running]
+[init.svc.htc_ebdlogd_rel]: [running]
+[ril.reload.count]: [1]
+[ril.imei]: [86038100111707901]
+[init.svc.bootanim]: [stopped]
+[ro.omadm.pinenable]: [false]
+[ro.omadm.lockstate]: [0]
+[hw.keyboards.65536.devname]: [h2w headset]
+[hw.keyboards.262145.devname]: [atmel-touchscreen]
+[hw.keyboards.65538.devname]: [gpio-keys]
+[net.hostname]: [android_4fa62bed57d07d36]
+[net.active_wan]: [1]
+[dhcp.tiwlan0.autoip]: [0]
+[dev.bootcomplete]: [1]
+[init.svc.bootcomplete]: [stopped]
+[init.svc.wlan_loader]: [stopped]
+[wlan.driver.status]: [ok]
+[init.svc.ifcfg_up]: [stopped]
+[ro.runtime.started]: [946684834652]
+[init.svc.wpa_supplicant]: [running]
+[net.dnschange]: [337]
+[gsm.version.ril-impl]: [HTC-RIL 2.0.0041H (Jul  5 2011,18:10:22)]
+[gsm.sim.types]: []
+[gsm.sim.operator.numeric]: []
+[gsm.sim.operator.alpha]: []
+[gsm.sim.operator.iso-country]: []
+[gsm.sim.cbmi.channel]: []
+[gsm.sim.state]: [ABSENT]
+[gsm.current.phone-type]: [1]
+[dhcp.tiwlan0.result]: [ok]
+[sys.boot_completed]: [1]
+[gsm.operator.numeric]: []
+[gsm.operator.iso-country]: []
+[gsm.operator.alpha]: []
+[gsm.operator.isroaming]: [false]
+[creg_icon_state]: [0]
+[net.gprs.data.connected]: [0]
+[ril.sim-type]: [0]
+[ro.ril.ecclist]: [112,911,000,08,110,999,118,119]
+[gsm.version.baseband]: [0.99.332.8]
+[ro.gsm.imei]: [860381001117079]
+[init.svc.dhcpcd]: [running]
+[dhcp.tiwlan0.pid]: [10168]
+[dhcp.tiwlan0.reason]: [BOUND]
+[ro.runtime.firstboot]: [946684844312]
+[dhcp.tiwlan0.dns1]: [202.106.196.115]
+[dhcp.tiwlan0.dns2]: [192.168.11.254]
+[dhcp.tiwlan0.dns3]: []
+[dhcp.tiwlan0.dns4]: []
+[dhcp.tiwlan0.ipaddress]: [192.168.11.9]
+[dhcp.tiwlan0.gateway]: [192.168.11.254]
+[dhcp.tiwlan0.mask]: [255.255.255.0]
+[dhcp.tiwlan0.leasetime]: [86400]
+[dhcp.tiwlan0.server]: [192.168.11.254]
+[dhcp.tiwlan0.leasedfrom]: [1388722309]
+[net.dns1]: [202.106.196.115]
+[net.dns2]: [192.168.11.254]
+[sys.settings_system_version]: [138]
+[sys.settings_secure_version]: [28]
+
+--------- tester 1
+01-03 15:10:21.398 I/TestinExternalLog(14491): <<<<<<< b4a02fb3eb18b44501fd1468a86c8222 >>>>>>>
+01-03 15:10:21.406 D/AndroidRuntime(15194): Shutting down VM
+01-03 15:10:21.406 D/dalvikvm(15194): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:10:21.414 I/AndroidRuntime(15194): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:21.414 D/jdwp    (15194): adbd disconnected
+01-03 15:10:21.851 D/dalvikvm(14536): GC_CONCURRENT freed 382K, 52% free 2881K/5959K, external 0K/0K, paused 3ms+2ms
+01-03 15:10:22.593 D/AndroidRuntime(15228):
+01-03 15:10:22.593 D/AndroidRuntime(15228): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:22.593 D/AndroidRuntime(15228): CheckJNI is OFF
+01-03 15:10:22.781 D/AndroidRuntime(15228): Calling main entry com.android.commands.am.Am
+01-03 15:10:22.796 I/iTestin (14491): recv broadcast>>>itestin.service.CMD_PrintDeviceTime
+01-03 15:10:22.804 I/TestinExternalLog(14491): <<<<<<< DateTime 2014-01-03 15:10:22.810 >>>>>>>
+01-03 15:10:22.812 D/AndroidRuntime(15228): Shutting down VM
+01-03 15:10:22.812 I/AndroidRuntime(15228): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:22.820 D/dalvikvm(15228): GC_CONCURRENT freed 102K, 67% free 342K/1024K, external 0K/0K, paused 0ms+3ms
+01-03 15:10:22.820 D/jdwp    (15228): adbd disconnected
+01-03 15:10:23.687 D/szipinf (14558): Initializing inflate state
+01-03 15:10:23.687 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:10:23.726 D/szipinf (14558): Initializing inflate state
+01-03 15:10:23.734 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:10:23.820 I/shell   (14558): response: chmod 777 /data/data/com.mgyun.shua.su/files/su
+01-03 15:10:23.921 I/shell   (14558): response:
+01-03 15:10:23.921 I/shell   (14558): #
+01-03 15:10:23.937 I/shell   (14558): response: /data/data/com.mgyun.shua.su/files/su -r /system rw
+01-03 15:10:24.031 D/su      (15240): su invoked.
+01-03 15:10:24.039 I/shell   (14558): response:
+01-03 15:10:24.046 I/shell   (14558): response: #
+01-03 15:10:24.093 I/shell   (14558): response: cat /data/data/com.mgyun.shua.su/files/su > /system/xbin/su; sync
+01-03 15:10:24.281 I/shell   (14558): response: #
+01-03 15:10:24.296 I/shell   (14558): response: chown root.root /system/xbin/su
+01-03 15:10:24.304 I/shell   (14558): response: #
+01-03 15:10:24.320 I/shell   (14558): response: chmod 6755 /system/xbin/su
+01-03 15:10:24.320 I/shell   (14558): #
+01-03 15:10:24.335 I/shell   (14558): response: rm /system/bin/su
+01-03 15:10:24.335 I/shell   (14558): #
+01-03 15:10:24.375 I/shell   (14558): response: cat /data/data/com.mgyun.shua.su/files/su > /system/bin/su; sync
+01-03 15:10:24.515 I/shell   (14558): response: #
+01-03 15:10:24.531 I/shell   (14558): response: chown root.root /system/bin/su
+01-03 15:10:24.539 I/shell   (14558): response: #
+01-03 15:10:24.554 I/shell   (14558): response: chmod 6755 /system/bin/su
+01-03 15:10:24.554 I/shell   (14558): #
+01-03 15:10:26.437 D/szipinf (14558): Initializing inflate state
+01-03 15:10:26.437 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:10:27.015 D/AndroidRuntime(15252):
+01-03 15:10:27.015 D/AndroidRuntime(15252): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:27.015 D/AndroidRuntime(15252): CheckJNI is OFF
+01-03 15:10:27.203 D/AndroidRuntime(15252): Calling main entry com.android.commands.pm.Pm
+--------- beginning of /dev/log/system
+01-03 15:10:27.210 W/PackageManager( 1178): Package named 'com.giant.brizzle' doesn't exist.
+01-03 15:10:27.343 D/dalvikvm( 1178): GC_EXPLICIT freed 671K, 64% free 9710K/26823K, external 2405K/3004K, paused 123ms
+01-03 15:10:27.359 D/AndroidRuntime(15252): Shutting down VM
+01-03 15:10:27.367 D/dalvikvm(15252): GC_CONCURRENT freed 101K, 70% free 309K/1024K, external 0K/0K, paused 0ms+0ms
+01-03 15:10:27.367 I/AndroidRuntime(15252): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:27.367 D/jdwp    (15252): adbd disconnected
+01-03 15:10:27.367 I/TestinExternalLog(1): <<<<<<< Begin installing package com.giant.brizzle >>>>>>>
+01-03 15:10:27.765 D/AndroidRuntime(15262):
+01-03 15:10:27.765 D/AndroidRuntime(15262): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:27.765 D/AndroidRuntime(15262): CheckJNI is OFF
+01-03 15:10:27.804 D/skia    ( 1178): purging 59K from font cache [6 entries]
+01-03 15:10:27.968 D/dalvikvm( 1178): GC_EXPLICIT freed 101K, 65% free 9609K/26823K, external 2405K/3004K, paused 165ms
+01-03 15:10:28.062 D/AndroidRuntime(15262): Calling main entry com.android.commands.am.Am
+01-03 15:10:28.085 I/iTestin (14491): recv broadcast>>>itestin.service.CMD_GETUSERPACKS
+01-03 15:10:28.093 D/AndroidRuntime(15262): Shutting down VM
+01-03 15:10:28.101 I/AndroidRuntime(15262): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:28.101 D/dalvikvm(15262): GC_CONCURRENT freed 102K, 67% free 342K/1024K, external 0K/0K, paused 0ms+0ms
+01-03 15:10:28.101 D/jdwp    (15262): adbd disconnected
+01-03 15:10:28.242 D/dalvikvm(14491): GC_CONCURRENT freed 338K, 50% free 2915K/5767K, external 0K/0K, paused 2ms+3ms
+01-03 15:10:30.781 D/AndroidRuntime(15277):
+01-03 15:10:30.781 D/AndroidRuntime(15277): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:30.789 D/AndroidRuntime(15277): CheckJNI is OFF
+01-03 15:10:31.359 D/AndroidRuntime(15277): Calling main entry com.android.commands.input.Input
+01-03 15:10:31.359 I/SendKeyEvent(15277): 3
+01-03 15:10:31.390 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.borqs.launcher/com.borqs.launcher2.Launcher } from pid 1178
+01-03 15:10:31.398 D/Launcher(14521): addPendingWidgetViewsToDisplay: enter
+01-03 15:10:31.398 D/Launcher(14521): addPendingWidgetViewsToDisplay: exit
+01-03 15:10:31.406 D/AndroidRuntime(15277): Shutting down VM
+01-03 15:10:31.414 I/AndroidRuntime(15277): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:31.414 D/dalvikvm(15277): GC_CONCURRENT freed 100K, 70% free 308K/1024K, external 0K/0K, paused 1ms+0ms
+01-03 15:10:31.414 D/jdwp    (15277): adbd disconnected
+01-03 15:10:32.281 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:10:32.281 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:10:32.281 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:10:32.281 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:10:32.281 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:10:32.281 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:10:32.289 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:10:33.296 D/BATD    ( 1073): [LifePercent] chg dwPredictPercentage=999
+01-03 15:10:33.296 D/BATD    ( 1073): [LifePercent] chg last=100
+01-03 15:10:33.296 D/BATD    ( 1073): [LifePercent]ACR_u=13775, KADC=1000, RARC=999, Predict percentage(10*)=999, Percentage=100, FL_u=13800!
+01-03 15:10:36.898 D/AndroidRuntime(15288):
+01-03 15:10:36.898 D/AndroidRuntime(15288): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:36.898 D/AndroidRuntime(15288): CheckJNI is OFF
+01-03 15:10:37.539 D/AndroidRuntime(15288): Calling main entry com.android.commands.input.Input
+01-03 15:10:37.546 I/SendKeyEvent(15288): 3
+01-03 15:10:37.578 D/Launcher(14521): addPendingWidgetViewsToDisplay: enter
+01-03 15:10:37.578 D/Launcher(14521): addPendingWidgetViewsToDisplay: exit
+01-03 15:10:37.578 D/AndroidRuntime(15288): Shutting down VM
+01-03 15:10:37.578 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.borqs.launcher/com.borqs.launcher2.Launcher } from pid 1178
+01-03 15:10:37.585 D/dalvikvm(15288): GC_CONCURRENT freed 100K, 70% free 308K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:10:37.585 I/AndroidRuntime(15288): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:37.585 D/jdwp    (15288): adbd disconnected
+01-03 15:10:37.617 D/dalvikvm(14491): GC_EXPLICIT freed 228K, 53% free 2733K/5767K, external 0K/0K, paused 1222ms
+01-03 15:10:38.484 D/AndroidRuntime(15298):
+01-03 15:10:38.484 D/AndroidRuntime(15298): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:38.484 D/AndroidRuntime(15298): CheckJNI is OFF
+01-03 15:10:38.671 D/AndroidRuntime(15298): Calling main entry com.android.commands.pm.Pm
+01-03 15:10:38.726 D/dalvikvm(14545): GC_EXPLICIT freed 56K, 51% free 2682K/5379K, external 0K/0K, paused 27ms
+01-03 15:10:38.734 W/ActivityManager( 1178): No content provider found for:
+01-03 15:10:42.968 D/AndroidRuntime(15308):
+01-03 15:10:42.968 D/AndroidRuntime(15308): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:42.976 D/AndroidRuntime(15308): CheckJNI is OFF
+01-03 15:10:43.343 D/AndroidRuntime(15308): Calling main entry com.android.commands.input.Input
+01-03 15:10:43.343 I/SendKeyEvent(15308): 3
+01-03 15:10:43.382 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.borqs.launcher/com.borqs.launcher2.Launcher } from pid 1178
+01-03 15:10:43.390 D/Launcher(14521): addPendingWidgetViewsToDisplay: enter
+01-03 15:10:43.390 D/Launcher(14521): addPendingWidgetViewsToDisplay: exit
+01-03 15:10:43.390 D/AndroidRuntime(15308): Shutting down VM
+01-03 15:10:43.390 D/dalvikvm(15308): GC_CONCURRENT freed 100K, 70% free 308K/1024K, external 0K/0K, paused 0ms+1ms
+01-03 15:10:43.390 I/AndroidRuntime(15308): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:43.398 D/jdwp    (15308): adbd disconnected
+01-03 15:10:43.625 W/ActivityManager( 1178): No content provider found for:
+01-03 15:10:43.632 D/PackageParser( 1178): Scanning package: /data/app/vmdl569268292.tmp
+01-03 15:10:45.242 D/PackageManager( 1178): Scanning package com.giant.brizzle
+01-03 15:10:45.250 I/PackageManager( 1178): Unpacking native libraries for /data/app/com.giant.brizzle-1.apk
+01-03 15:10:46.632 D/installd( 1062): DexInv: --- BEGIN '/data/app/com.giant.brizzle-1.apk' ---
+01-03 15:10:47.296 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:10:47.296 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:10:47.304 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:10:47.304 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:10:47.304 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:10:47.304 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:10:47.312 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:10:47.335 D/installd( 1062): DexInv: --- END '/data/app/com.giant.brizzle-1.apk' (success) ---
+01-03 15:10:47.335 I/ActivityManager( 1178): Force stopping package com.giant.brizzle uid=10083
+01-03 15:10:47.343 D/PackageManager( 1178):   Activities: com.giant.brizzle.Brizzle com.google.ads.AdActivity
+01-03 15:10:47.531 D/dalvikvm( 1178): GC_FOR_MALLOC freed 1740K, 64% free 9914K/26823K, external 2405K/3004K, paused 121ms
+01-03 15:10:47.578 I/installd( 1062): move /data/dalvik-cache/data@app@com.giant.brizzle-1.apk@classes.dex -> /data/dalvik-cache/data@app@com.giant.brizzle-1.apk@classes.dex
+01-03 15:10:47.578 D/PackageManager( 1178): [embedded] New package installed in /data/app/com.giant.brizzle-1.apk
+01-03 15:10:47.804 D/dalvikvm( 1178): GC_EXPLICIT freed 538K, 64% free 9660K/26823K, external 2405K/3004K, paused 122ms
+01-03 15:10:47.812 D/PhoneApp( 1287): -- PackageChangeBroadcastReceiver  action = android.intent.action.PACKAGE_ADDED
+01-03 15:10:47.882 W/RecognitionManagerService( 1178): no available voice recognition services found
+01-03 15:10:48.007 D/Database(14536): dbclose(): path = /data/data/com.kingroot.kinguser/databases/permissions.sqlite, handle = 0x30f188
+01-03 15:10:48.257 D/AndroidRuntime(15298): Shutting down VM
+01-03 15:10:48.273 I/AndroidRuntime(15298): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:48.281 D/dalvikvm(15298): GC_CONCURRENT freed 102K, 70% free 312K/1024K, external 0K/0K, paused 1ms+17ms
+01-03 15:10:48.296 D/jdwp    (15298): adbd disconnected
+01-03 15:10:48.304 I/ActivityManager( 1178): Start proc com.android.packageinstaller for broadcast com.android.packageinstaller/com.htc.app.HtcPackageEnabler: pid=15321 uid=10028 gids={}
+01-03 15:10:48.523 D/PackageEnabler(15321): action: android.intent.action.PACKAGE_ADDED, pkg: com.giant.brizzle, disabled: false, replacing: false
+01-03 15:10:49.007 D/Database(14561): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgets.db, flag = 6, file size = 15360
+01-03 15:10:49.031 D/Database(14561): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgets.db, mode: wal, disk free size: 494 M, handle: 0x4329b0
+01-03 15:10:49.117 I/ActivityManager( 1178): Start proc com.svox.pico for broadcast com.svox.pico/.VoiceDataInstallerReceiver: pid=15340 uid=10048 gids={}
+01-03 15:10:49.148 D/BootCompletedReceiver(14561): ----------- Cursor size: 4
+01-03 15:10:49.148 D/BootCompletedReceiver(14561): ----------- loop=0  runstatus: 0 Process:
+01-03 15:10:49.156 D/BootCompletedReceiver(14561): ----------- loop=1  runstatus: 0 Process:
+01-03 15:10:49.156 D/BootCompletedReceiver(14561): ----------- loop=2  runstatus: 0 Process:
+01-03 15:10:49.156 D/BootCompletedReceiver(14561): ----------- loop=3  runstatus: 0 Process:
+01-03 15:10:49.156 D/Database(14561): dbclose(): path = /data/data/borqs.mobilewidget/databases/widgets.db, handle = 0x4329b0
+01-03 15:10:49.203 D/AndroidRuntime(15331):
+01-03 15:10:49.203 D/AndroidRuntime(15331): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:49.210 D/AndroidRuntime(15331): CheckJNI is OFF
+01-03 15:10:49.312 I/ActivityThread(15340): Pub com.svox.pico.providers.SettingsProvider: com.svox.pico.providers.SettingsProvider
+01-03 15:10:49.335 W/Searchables( 1178): No global search activity found
+01-03 15:10:49.429 I/ActivityManager( 1178): Start proc android.dopod.FileManager for broadcast android.dopod.FileManager/.FileManagerReceiver: pid=15354 uid=10045 gids={1015, 3003}
+01-03 15:10:49.609 D/AndroidRuntime(15331): Calling main entry com.android.commands.input.Input
+01-03 15:10:49.609 I/SendKeyEvent(15331): 3
+01-03 15:10:49.632 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.borqs.launcher/com.borqs.launcher2.Launcher } from pid 1178
+01-03 15:10:49.640 D/Launcher(14521): addPendingWidgetViewsToDisplay: enter
+01-03 15:10:49.640 D/Launcher(14521): addPendingWidgetViewsToDisplay: exit
+01-03 15:10:49.640 D/AndroidRuntime(15331): Shutting down VM
+01-03 15:10:49.648 I/AndroidRuntime(15331): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:49.648 D/dalvikvm(15331): GC_CONCURRENT freed 100K, 70% free 308K/1024K, external 0K/0K, paused 2ms+0ms
+01-03 15:10:49.648 D/jdwp    (15331): adbd disconnected
+01-03 15:10:49.664 D/HtcWidgetScanner(14690): action - android.intent.action.PACKAGE_ADDED
+01-03 15:10:49.710 D/dopodFileManager(15354): FileManagerReceiver: onReceive()...
+01-03 15:10:49.710 D/HtcWidgetScanner(14690): packageUid - 10083
+01-03 15:10:49.710 D/dopodFileManager(15354): FileManagerReceiver: context: android.app.ReceiverRestrictedContext@40526048
+01-03 15:10:49.718 D/dopodFileManager(15354): FileManagerReceiver: intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.giant.brizzle flg=0x10000000 cmp=android.dopod.FileManager/.FileManagerReceiver (has extras) }
+01-03 15:10:49.781 D/Database(14536): dbopen(): path = /data/data/com.kingroot.kinguser/databases/permissions.sqlite, flag = 6, file size = 58368
+01-03 15:10:49.820 D/PhoneApp( 1287): EVENT_QUERY_MO_PACKAGES
+01-03 15:10:49.937 D/Database(14536): dbopen(): path = /data/data/com.kingroot.kinguser/databases/permissions.sqlite, mode: wal, disk free size: 494 M, handle: 0x32abc0
+01-03 15:10:49.945 D/PhoneApp( 1287): -- N1 =1
+01-03 15:10:50.000 D/PhoneApp( 1287): -- N2 =0
+01-03 15:10:50.007 D/PhoneApp( 1287): -- N3 =0
+01-03 15:10:50.171 D/dalvikvm(14807): GC_CONCURRENT freed 271K, 49% free 2844K/5575K, external 0K/0K, paused 3ms+3ms
+01-03 15:10:50.398 D/RegisterService(14656): insert plugin size 1
+01-03 15:10:50.664 D/RegisterService(14656): insert plugin size 1
+01-03 15:10:50.812 D/RegisterService(14656): insert plugin size 1
+01-03 15:10:50.859 D/RegisterService(14656): insert plugin size 1
+01-03 15:10:50.898 D/RegisterService(14656): insert plugin size 1
+01-03 15:10:50.937 D/RegisterService(14656): insert plugin size 3
+01-03 15:10:50.984 D/dalvikvm(14536): GC_CONCURRENT freed 421K, 52% free 2877K/5959K, external 0K/0K, paused 2ms+5ms
+01-03 15:10:52.109 I/ActivityManager( 1178): Process com.htc.launcher (pid 14785) has died.
+01-03 15:10:52.156 D/szipinf (16023): Initializing inflate state
+01-03 15:10:52.195 I/ActivityManager( 1178): Process com.android.defcontainer (pid 14545) has died.
+01-03 15:10:52.257 V/DeviceStorageMonitorService( 1178): freeMemory=518250496
+01-03 15:10:52.257 D/DeviceStorageMonitorService( 1178): OoO SMS Memory available. SMS_AVAILABLE_THRESHOLD == 524288
+01-03 15:10:52.257 I/DeviceStorageMonitorService( 1178): Posting Message again
+01-03 15:10:52.601 I/ActivityManager( 1178): Process com.android.packageinstaller (pid 15321) has died.
+01-03 15:10:52.656 D/szipinf (14558): Initializing inflate state
+01-03 15:10:52.656 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:10:52.679 I/ActivityManager( 1178): Process com.kingroot.kinguser (pid 14536) has died.
+01-03 15:10:52.726 D/szipinf (14558): Initializing inflate state
+01-03 15:10:52.734 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:10:52.867 I/shell   (14558): response: chmod 777 /data/data/com.mgyun.shua.su/files/su
+01-03 15:10:52.968 I/shell   (14558): response:
+01-03 15:10:52.976 I/shell   (14558): response: #
+01-03 15:10:52.992 I/shell   (14558): response: /data/data/com.mgyun.shua.su/files/su -r /system rw
+01-03 15:10:53.078 D/su      (15398): su invoked.
+01-03 15:10:53.093 I/shell   (14558): response: #
+01-03 15:10:53.140 I/shell   (14558): response: cat /data/data/com.mgyun.shua.su/files/su > /system/xbin/su; sync
+01-03 15:10:53.281 I/shell   (14558): response: #
+01-03 15:10:53.296 I/shell   (14558): response: chown root.root /system/xbin/su
+01-03 15:10:53.304 I/shell   (14558): response: #
+01-03 15:10:53.320 I/shell   (14558): response: chmod 6755 /system/xbin/su
+01-03 15:10:53.320 I/shell   (14558): #
+01-03 15:10:53.335 I/shell   (14558): response: rm /system/bin/su
+01-03 15:10:53.335 I/shell   (14558): #
+01-03 15:10:53.445 I/shell   (14558): response: cat /data/data/com.mgyun.shua.su/files/su > /system/bin/su; sync
+01-03 15:10:53.531 I/shell   (14558): response: #
+01-03 15:10:53.546 I/shell   (14558): response: chown root.root /system/bin/su
+01-03 15:10:53.554 I/shell   (14558): response: #
+01-03 15:10:53.570 I/shell   (14558): response: chmod 6755 /system/bin/su
+01-03 15:10:53.570 I/shell   (14558): #
+01-03 15:10:54.453 D/AndroidRuntime(15409):
+01-03 15:10:54.453 D/AndroidRuntime(15409): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:54.453 D/AndroidRuntime(15409): CheckJNI is OFF
+01-03 15:10:54.937 D/AndroidRuntime(15409): Calling main entry com.android.commands.am.Am
+01-03 15:10:54.976 I/iTestin (14491): recv broadcast>>>itestin.service.CMD_PrintPackageProcess
+01-03 15:10:54.984 D/AndroidRuntime(15409): Shutting down VM
+01-03 15:10:54.984 D/dalvikvm(15409): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:10:54.992 I/AndroidRuntime(15409): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:55.000 D/jdwp    (15409): adbd disconnected
+01-03 15:10:55.062 I/TestinExternalLog(14491): <<<<<<< Process com.giant.brizzle >>>>>>>
+01-03 15:10:55.085 D/dalvikvm(14558): GC_EXPLICIT freed 154K, 52% free 2840K/5895K, external 0K/0K, paused 302ms
+01-03 15:10:55.453 D/szipinf (14558): Initializing inflate state
+01-03 15:10:55.453 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:10:55.453 I/TestinExternalLog(1): <<<<<<< Package com.giant.brizzle installed >>>>>>>
+01-03 15:10:56.257 D/AndroidRuntime(15420):
+01-03 15:10:56.257 D/AndroidRuntime(15420): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:56.257 D/AndroidRuntime(15420): CheckJNI is OFF
+01-03 15:10:56.437 D/AndroidRuntime(15420): Calling main entry com.android.commands.pm.Pm
+01-03 15:10:56.445 W/PackageManager( 1178): Package named 'cn.itestin.tester' doesn't exist.
+01-03 15:10:56.585 D/dalvikvm( 1178): GC_EXPLICIT freed 352K, 64% free 9684K/26823K, external 2405K/3004K, paused 131ms
+01-03 15:10:56.609 D/AndroidRuntime(15420): Shutting down VM
+01-03 15:10:56.609 D/dalvikvm(15420): GC_CONCURRENT freed 101K, 70% free 309K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:10:56.609 I/AndroidRuntime(15420): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:56.609 D/jdwp    (15420): adbd disconnected
+01-03 15:10:57.054 D/AndroidRuntime(15430):
+01-03 15:10:57.054 D/AndroidRuntime(15430): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:57.054 D/AndroidRuntime(15430): CheckJNI is OFF
+01-03 15:10:57.382 D/AndroidRuntime(15435):
+01-03 15:10:57.382 D/AndroidRuntime(15435): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:10:57.382 D/AndroidRuntime(15430): Calling main entry com.android.commands.input.Input
+01-03 15:10:57.382 I/SendKeyEvent(15430): 3
+01-03 15:10:57.382 D/AndroidRuntime(15435): CheckJNI is OFF
+01-03 15:10:57.414 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.borqs.launcher/com.borqs.launcher2.Launcher } from pid 1178
+01-03 15:10:57.437 D/AndroidRuntime(15430): Shutting down VM
+01-03 15:10:57.437 D/dalvikvm(15430): GC_CONCURRENT freed 100K, 70% free 308K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:10:57.437 D/Launcher(14521): addPendingWidgetViewsToDisplay: enter
+01-03 15:10:57.437 D/Launcher(14521): addPendingWidgetViewsToDisplay: exit
+01-03 15:10:57.437 I/AndroidRuntime(15430): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:57.445 D/jdwp    (15430): adbd disconnected
+01-03 15:10:57.632 D/AndroidRuntime(15435): Calling main entry com.android.commands.pm.Pm
+01-03 15:10:57.648 I/ActivityManager( 1178): Start proc com.android.defcontainer for service com.android.defcontainer/.DefaultContainerService: pid=15449 uid=10038 gids={1015, 2001}
+01-03 15:10:57.757 D/dalvikvm(15449): GC_EXPLICIT freed 48K, 51% free 2679K/5379K, external 0K/0K, paused 28ms
+01-03 15:10:57.773 W/ActivityManager( 1178): No content provider found for:
+01-03 15:10:57.789 W/ActivityManager( 1178): No content provider found for:
+01-03 15:10:57.796 D/PackageParser( 1178): Scanning package: /data/app/vmdl654517271.tmp
+01-03 15:10:57.828 D/PackageManager( 1178): Scanning package cn.itestin.tester
+01-03 15:10:57.835 I/PackageManager( 1178): Unpacking native libraries for /data/app/cn.itestin.tester-1.apk
+01-03 15:10:57.843 D/installd( 1062): DexInv: --- BEGIN '/data/app/cn.itestin.tester-1.apk' ---
+01-03 15:10:58.070 D/installd( 1062): DexInv: --- END '/data/app/cn.itestin.tester-1.apk' (success) ---
+01-03 15:10:58.078 D/PackageManager( 1178):   Instrumentation: cn.itestin.tester.TestRunner
+01-03 15:10:58.078 I/ActivityManager( 1178): Force stopping package cn.itestin.tester uid=10084
+01-03 15:10:58.179 I/installd( 1062): move /data/dalvik-cache/data@app@cn.itestin.tester-1.apk@classes.dex -> /data/dalvik-cache/data@app@cn.itestin.tester-1.apk@classes.dex
+01-03 15:10:58.179 D/PackageManager( 1178): [embedded] New package installed in /data/app/cn.itestin.tester-1.apk
+01-03 15:10:58.281 D/PhoneApp( 1287): -- PackageChangeBroadcastReceiver  action = android.intent.action.PACKAGE_ADDED
+01-03 15:10:58.335 I/ActivityManager( 1178): Start proc com.kingroot.kinguser for broadcast com.kingroot.kinguser/.receiver.PackageReceiver: pid=15458 uid=10057 gids={3003, 1015}
+01-03 15:10:58.398 W/RecognitionManagerService( 1178): no available voice recognition services found
+01-03 15:10:58.953 D/dalvikvm( 1178): GC_EXPLICIT freed 625K, 64% free 9708K/26823K, external 2405K/3004K, paused 435ms
+01-03 15:10:59.007 D/AndroidRuntime(15435): Shutting down VM
+01-03 15:10:59.007 D/dalvikvm(15435): GC_CONCURRENT freed 102K, 70% free 312K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:10:59.015 I/AndroidRuntime(15435): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:10:59.015 D/jdwp    (15435): adbd disconnected
+01-03 15:10:59.062 D/szipinf (15458): Initializing inflate state
+01-03 15:10:59.226 W/Searchables( 1178): No global search activity found
+01-03 15:10:59.265 D/Database(15458): dbopen(): path = /data/data/com.kingroot.kinguser/databases/permissions.sqlite, flag = 6, file size = 58368
+01-03 15:10:59.265 D/Database(15458): dbopen(): path = /data/data/com.kingroot.kinguser/databases/permissions.sqlite, mode: wal, disk free size: 494 M, handle: 0x3120d0
+01-03 15:10:59.398 D/dalvikvm(15458): GC_CONCURRENT freed 289K, 50% free 2847K/5639K, external 0K/0K, paused 2ms+4ms
+01-03 15:10:59.554 I/ActivityManager( 1178): Start proc com.android.packageinstaller for broadcast com.android.packageinstaller/com.htc.app.HtcPackageEnabler: pid=15471 uid=10028 gids={}
+01-03 15:10:59.617 D/PackageEnabler(15471): action: android.intent.action.PACKAGE_ADDED, pkg: cn.itestin.tester, disabled: false, replacing: false
+01-03 15:10:59.640 I/KuUser: (15458): 0
+01-03 15:10:59.695 D/Database(14561): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgets.db, flag = 6, file size = 15360
+01-03 15:10:59.734 D/HtcWidgetScanner(14690): action - android.intent.action.PACKAGE_ADDED
+01-03 15:10:59.742 D/Database(14561): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgets.db, mode: wal, disk free size: 494 M, handle: 0x425430
+01-03 15:10:59.750 D/dopodFileManager(15354): FileManagerReceiver: onReceive()...
+01-03 15:10:59.750 D/dopodFileManager(15354): FileManagerReceiver: context: android.app.ReceiverRestrictedContext@40526048
+01-03 15:10:59.757 D/dopodFileManager(15354): FileManagerReceiver: intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:cn.itestin.tester flg=0x10000000 cmp=android.dopod.FileManager/.FileManagerReceiver (has extras) }
+01-03 15:10:59.773 D/BootCompletedReceiver(14561): ----------- Cursor size: 4
+01-03 15:10:59.796 D/BootCompletedReceiver(14561): ----------- loop=0  runstatus: 0 Process:
+01-03 15:10:59.796 D/BootCompletedReceiver(14561): ----------- loop=1  runstatus: 0 Process:
+01-03 15:10:59.812 D/HtcWidgetScanner(14690): packageUid - 10084
+01-03 15:10:59.828 D/BootCompletedReceiver(14561): ----------- loop=2  runstatus: 0 Process:
+01-03 15:10:59.828 D/BootCompletedReceiver(14561): ----------- loop=3  runstatus: 0 Process:
+01-03 15:10:59.828 D/Database(14561): dbclose(): path = /data/data/borqs.mobilewidget/databases/widgets.db, handle = 0x425430
+01-03 15:10:59.890 D/dalvikvm(14561): GC_CONCURRENT freed 554K, 49% free 3325K/6407K, external 376K/542K, paused 9ms+3ms
+01-03 15:11:00.382 D/PhoneApp( 1287): EVENT_QUERY_MO_PACKAGES
+01-03 15:11:00.390 D/RegisterService(14656): insert plugin size 1
+01-03 15:11:00.414 D/PhoneApp( 1287): -- N1 =1
+01-03 15:11:00.453 D/su      (15490): su invoked.
+01-03 15:11:00.460 D/RegisterService(14656): insert plugin size 1
+01-03 15:11:00.468 D/PhoneApp( 1287): -- N2 =0
+01-03 15:11:00.500 D/RegisterService(14656): insert plugin size 1
+01-03 15:11:00.500 D/PhoneApp( 1287): -- N3 =0
+01-03 15:11:00.531 D/su      (15499): silent_run 1, r=10057, e=0, s=0
+01-03 15:11:00.531 D/su      (15497): allow, r=10057, e=0, s=0, ctx->to.uid=0
+01-03 15:11:00.554 D/su      (15493): db allowed
+01-03 15:11:00.570 D/su      (15494): silent_run 0, r=10057, e=0, s=0
+01-03 15:11:00.570 D/RegisterService(14656): insert plugin size 1
+01-03 15:11:00.585 D/su      (15498): 10057 com.kingroot.kinguser executing 0 /system/bin/sh using binary /system/bin/sh : sh
+01-03 15:11:00.585 D/su      (15500): silent_run 2
+01-03 15:11:00.640 D/RegisterService(14656): insert plugin size 1
+01-03 15:11:00.687 D/RegisterService(14656): insert plugin size 3
+01-03 15:11:00.750 D/dalvikvm(14656): GC_CONCURRENT freed 434K, 52% free 2719K/5639K, external 0K/0K, paused 2ms+12ms
+01-03 15:11:00.882 I/ActivityManager( 1178): Process com.android.defcontainer (pid 15449) has died.
+01-03 15:11:01.273 D/AndroidRuntime(15495):
+01-03 15:11:01.273 D/AndroidRuntime(15495): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:01.273 D/AndroidRuntime(15495): CheckJNI is OFF
+01-03 15:11:01.773 D/AndroidRuntime(15495): Calling main entry com.android.commands.am.Am
+01-03 15:11:01.804 D/szipinf (14558): Initializing inflate state
+01-03 15:11:01.804 D/Database(14558): dbopen(): path = /data/data/com.mgyun.shua.su/databases/su.sqlite, flag = 6, file size = 5120
+01-03 15:11:01.812 D/Database(14558): dbopen(): path = /data/data/com.mgyun.shua.su/databases/su.sqlite, mode: wal, disk free size: 494 M, handle: 0x19ad50
+01-03 15:11:01.820 D/Database(14558): dbclose(): path = /data/data/com.mgyun.shua.su/databases/su.sqlite, handle = 0x19ad50
+01-03 15:11:01.828 D/Database(14558): dbopen(): path = /data/data/com.mgyun.shua.su/databases/superuser.sqlite, flag = 6, file size = 162816
+01-03 15:11:01.835 D/Database(14558): dbopen(): path = /data/data/com.mgyun.shua.su/databases/superuser.sqlite, mode: wal, disk free size: 494 M, handle: 0x19ad50
+01-03 15:11:01.851 D/Database(14558): dbclose(): path = /data/data/com.mgyun.shua.su/databases/superuser.sqlite, handle = 0x19ad50
+01-03 15:11:01.859 D/AndroidRuntime(15495): Shutting down VM
+01-03 15:11:01.859 I/AndroidRuntime(15495): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:01.875 D/dalvikvm(15495): GC_CONCURRENT freed 103K, 67% free 346K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:11:01.875 D/jdwp    (15495): adbd disconnected
+01-03 15:11:01.890 D/dalvikvm(15458): GC_CONCURRENT freed 390K, 51% free 2876K/5767K, external 0K/0K, paused 2ms+10ms
+01-03 15:11:02.312 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:11:02.312 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:11:02.320 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:11:02.320 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:11:02.320 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:11:02.320 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:11:02.320 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:11:03.335 D/BATD    ( 1073): [LifePercent] chg dwPredictPercentage=998
+01-03 15:11:03.335 D/BATD    ( 1073): [LifePercent] chg last=100
+01-03 15:11:03.335 D/BATD    ( 1073): [LifePercent]ACR_u=13770, KADC=1000, RARC=998, Predict percentage(10*)=998, Percentage=100, FL_u=13800!
+01-03 15:11:03.500 D/szipinf (14558): Initializing inflate state
+01-03 15:11:03.500 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:11:03.539 D/szipinf (14558): Initializing inflate state
+01-03 15:11:03.546 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:11:03.632 I/shell   (14558): response: chmod 777 /data/data/com.mgyun.shua.su/files/su
+01-03 15:11:03.734 I/shell   (14558): response:
+01-03 15:11:03.734 I/shell   (14558): #
+01-03 15:11:03.750 I/shell   (14558): response: /data/data/com.mgyun.shua.su/files/su -r /system rw
+01-03 15:11:03.851 D/su      (15543): su invoked.
+01-03 15:11:03.851 I/shell   (14558): response:
+01-03 15:11:03.851 I/shell   (14558): #
+01-03 15:11:03.921 I/shell   (14558): response: cat /data/data/com.mgyun.shua.su/files/su > /system/xbin/su; sync
+01-03 15:11:04.078 I/shell   (14558): response: #
+01-03 15:11:04.093 I/shell   (14558): response: chown root.root /system/xbin/su
+01-03 15:11:04.101 I/shell   (14558): response: #
+01-03 15:11:04.117 I/shell   (14558): response: chmod 6755 /system/xbin/su
+01-03 15:11:04.117 I/shell   (14558): #
+01-03 15:11:04.132 I/shell   (14558): response: rm /system/bin/su
+01-03 15:11:04.132 I/shell   (14558): #
+01-03 15:11:04.242 I/shell   (14558): response: cat /data/data/com.mgyun.shua.su/files/su > /system/bin/su; sync
+01-03 15:11:04.312 I/shell   (14558): response: #
+01-03 15:11:04.328 I/shell   (14558): response: chown root.root /system/bin/su
+01-03 15:11:04.335 I/shell   (14558): response: #
+01-03 15:11:04.351 I/shell   (14558): response: chmod 6755 /system/bin/su
+01-03 15:11:04.351 I/shell   (14558): #
+01-03 15:11:04.585 D/AndroidRuntime(15555):
+01-03 15:11:04.585 D/AndroidRuntime(15555): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:04.585 D/AndroidRuntime(15555): CheckJNI is OFF
+01-03 15:11:04.773 D/AndroidRuntime(15555): Calling main entry com.android.commands.monkey.Monkey
+01-03 15:11:05.812 D/AndroidRuntime(15566):
+01-03 15:11:05.812 D/AndroidRuntime(15566): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:05.820 D/AndroidRuntime(15566): CheckJNI is OFF
+01-03 15:11:06.000 D/AndroidRuntime(15566): Calling main entry com.android.commands.monkey.Monkey
+01-03 15:11:06.367 D/szipinf (14558): Initializing inflate state
+01-03 15:11:06.382 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:11:07.210 D/AndroidRuntime(15578):
+01-03 15:11:07.210 D/AndroidRuntime(15578): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:07.210 D/AndroidRuntime(15578): CheckJNI is OFF
+01-03 15:11:07.398 D/AndroidRuntime(15578): Calling main entry com.android.commands.monkey.Monkey
+01-03 15:11:08.531 D/AndroidRuntime(15589):
+01-03 15:11:08.531 D/AndroidRuntime(15589): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:08.531 D/AndroidRuntime(15589): CheckJNI is OFF
+01-03 15:11:08.718 D/AndroidRuntime(15589): Calling main entry com.android.commands.monkey.Monkey
+01-03 15:11:09.648 D/AndroidRuntime(15599):
+01-03 15:11:09.648 D/AndroidRuntime(15599): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:09.648 D/AndroidRuntime(15599): CheckJNI is OFF
+01-03 15:11:09.835 D/AndroidRuntime(15599): Calling main entry com.android.commands.input.Input
+01-03 15:11:09.835 I/SendKeyEvent(15599): 21
+01-03 15:11:09.851 I/KeyCharacterMap(14521): No keyboard for id 0
+01-03 15:11:09.851 I/KeyCharacterMap(14521): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+01-03 15:11:09.882 D/AndroidRuntime(15599): Shutting down VM
+01-03 15:11:09.882 D/dalvikvm(15599): GC_CONCURRENT freed 100K, 70% free 308K/1024K, external 0K/0K, paused 0ms+0ms
+01-03 15:11:09.890 I/AndroidRuntime(15599): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:09.890 D/jdwp    (15599): adbd disconnected
+01-03 15:11:10.070 D/AndroidRuntime(15609):
+01-03 15:11:10.070 D/AndroidRuntime(15609): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:10.070 D/AndroidRuntime(15609): CheckJNI is OFF
+01-03 15:11:10.257 D/AndroidRuntime(15609): Calling main entry com.android.commands.input.Input
+01-03 15:11:10.265 I/SendKeyEvent(15609): 23
+01-03 15:11:10.312 D/AndroidRuntime(15609): Shutting down VM
+01-03 15:11:10.320 D/dalvikvm(15609): GC_CONCURRENT freed 100K, 70% free 308K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:11:10.320 I/AndroidRuntime(15609): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:10.320 D/jdwp    (15609): adbd disconnected
+01-03 15:11:10.484 D/AndroidRuntime(15619):
+01-03 15:11:10.484 D/AndroidRuntime(15619): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:10.484 D/AndroidRuntime(15619): CheckJNI is OFF
+01-03 15:11:10.671 D/AndroidRuntime(15619): Calling main entry com.android.commands.input.Input
+01-03 15:11:10.671 I/SendKeyEvent(15619): 3
+01-03 15:11:10.687 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.borqs.launcher/com.borqs.launcher2.Launcher } from pid 1178
+01-03 15:11:10.703 D/Launcher(14521): addPendingWidgetViewsToDisplay: enter
+01-03 15:11:10.703 D/Launcher(14521): addPendingWidgetViewsToDisplay: exit
+01-03 15:11:10.710 D/AndroidRuntime(15619): Shutting down VM
+01-03 15:11:10.710 D/dalvikvm(15619): GC_CONCURRENT freed 100K, 70% free 308K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:11:10.726 I/AndroidRuntime(15619): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:10.726 D/jdwp    (15619): adbd disconnected
+01-03 15:11:11.171 D/AndroidRuntime(15629):
+01-03 15:11:11.171 D/AndroidRuntime(15629): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:11.171 D/AndroidRuntime(15629): CheckJNI is OFF
+01-03 15:11:11.359 D/AndroidRuntime(15629): Calling main entry com.android.commands.am.Am
+01-03 15:11:11.375 D/AndroidRuntime(15629): Shutting down VM
+01-03 15:11:11.375 D/dalvikvm(15629): GC_CONCURRENT freed 102K, 67% free 341K/1024K, external 0K/0K, paused 0ms+0ms
+01-03 15:11:11.382 I/AndroidRuntime(15629): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:11.382 D/jdwp    (15629): adbd disconnected
+01-03 15:11:11.382 I/TestinExternalLog(1): <<<<<<< Starting Package com.giant.brizzle >>>>>>>
+01-03 15:11:12.554 D/AndroidRuntime(15639):
+01-03 15:11:12.554 D/AndroidRuntime(15639): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:12.554 D/AndroidRuntime(15639): CheckJNI is OFF
+01-03 15:11:12.734 D/AndroidRuntime(15639): Calling main entry com.android.commands.am.Am
+01-03 15:11:12.742 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.giant.brizzle/.Brizzle } from pid 15639
+01-03 15:11:12.750 W/ActivityManager( 1178): Activity start request from 2000 stopped
+01-03 15:11:12.757 D/AndroidRuntime(15639): Shutting down VM
+01-03 15:11:12.757 D/dalvikvm(15639): GC_CONCURRENT freed 103K, 67% free 344K/1024K, external 0K/0K, paused 1ms+0ms
+01-03 15:11:12.765 I/AndroidRuntime(15639): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:12.765 D/jdwp    (15639): adbd disconnected
+01-03 15:11:12.765 I/TestinExternalLog(1): Displayed com.giant.brizzle/com.giant.brizzle.Brizzle: +392ms
+01-03 15:11:12.937 D/AndroidRuntime(15649):
+01-03 15:11:12.937 D/AndroidRuntime(15649): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:12.937 D/AndroidRuntime(15649): CheckJNI is OFF
+01-03 15:11:13.125 D/AndroidRuntime(15649): Calling main entry com.android.commands.am.Am
+01-03 15:11:13.148 I/iTestin (14491): recv broadcast>>>itestin.service.CMD_AllService
+01-03 15:11:13.156 D/AndroidRuntime(15649): Shutting down VM
+01-03 15:11:13.164 I/AndroidRuntime(15649): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:13.164 D/dalvikvm(15649): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:11:13.164 D/jdwp    (15649): adbd disconnected
+01-03 15:11:13.164 I/TestinExternalLog(1): <<<<<<< StartTest launcher Package com.giant.brizzle >>>>>>>
+01-03 15:11:13.250 D/dalvikvm(14491): GC_CONCURRENT freed 449K, 52% free 2795K/5767K, external 0K/0K, paused 2ms+6ms
+01-03 15:11:13.406 D/dalvikvm( 5727): GC_CONCURRENT freed 367K, 51% free 2829K/5767K, external 0K/0K, paused 2ms+3ms
+01-03 15:11:15.734 I/ActivityManager( 1178): Start proc com.giant.brizzle for activity com.giant.brizzle/.Brizzle: pid=15692 uid=10083 gids={3003}
+01-03 15:11:15.796 D/dalvikvm( 1058): GC_EXPLICIT freed 11K, 51% free 2675K/5379K, external 0K/0K, paused 58ms
+01-03 15:11:15.867 D/dalvikvm( 1058): GC_EXPLICIT freed <1K, 51% free 2675K/5379K, external 0K/0K, paused 64ms
+01-03 15:11:15.937 D/dalvikvm( 1058): GC_EXPLICIT freed <1K, 51% free 2675K/5379K, external 0K/0K, paused 58ms
+01-03 15:11:15.968 I/TestinExternalLog(14491): Battery>>>> Temperature 35.7
+01-03 15:11:16.117 D/Cocos2dxActivity(15692): model=HTC A9188
+01-03 15:11:16.117 D/Cocos2dxActivity(15692): product=huashan
+01-03 15:11:16.117 D/Cocos2dxActivity(15692): isEmulator=false
+01-03 15:11:16.140 D/ATRecorder(15692): com.htc.autotest.dlib.RecordEngine in loader dalvik.system.DexClassLoader@40535ee8
+01-03 15:11:16.226 D/libEGL  (15692): loaded /system/lib/egl/libGLES_android.so
+01-03 15:11:16.234 I/ActivityManager( 1178): Displayed com.giant.brizzle/.Brizzle: +518ms
+01-03 15:11:16.250 W/InputManagerService( 1178): [unbindCurrentClientLocked] Disable input method client.
+01-03 15:11:16.250 W/InputManagerService( 1178): [startInputLocked] Enable input method client.
+01-03 15:11:16.265 D/libEGL  (15692): loaded /vendor/lib/egl/libEGL_POWERVR_SGX530_125.so
+01-03 15:11:16.273 D/libEGL  (15692): loaded /vendor/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so
+01-03 15:11:16.304 I/TestinExternalLog(14491): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-03 15:11:16.382 D/libEGL  (15692): loaded /vendor/lib/egl/libGLESv2_POWERVR_SGX530_125.so
+01-03 15:11:16.601 I/TestinExternalLog(14491): CPU>>>> User 14%, System 32%, IOW 2%, IRQ 0%, com.giant.brizzle(0):0%
+01-03 15:11:16.718 I/ActivityManager( 1178): Process com.android.packageinstaller (pid 15471) has died.
+01-03 15:11:16.765 I/ActivityManager( 1178): Process com.kingroot.kinguser (pid 15458) has died.
+01-03 15:11:16.804 I/ActivityManager( 1178): Process com.svox.pico (pid 15340) has died.
+01-03 15:11:16.945 D/cocos2d-x debug info(15692):
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): <dict>
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	cocos2d.x.version: 2.2.1
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	cocos2d.x.compiled_with_profiler: false
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	cocos2d.x.compiled_with_gl_state_cache: true
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.vendor: Imagination Technologies
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.renderer: PowerVR SGX 530
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.version: OpenGL ES 2.0
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.max_texture_size: 2048
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.max_texture_units: 8
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.supports_PVRTC: true
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.supports_NPOT: true
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.supports_BGRA8888: true
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.supports_discard_framebuffer: true
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): 	gl.supports_vertex_array_object: true
+01-03 15:11:16.945 D/cocos2d-x debug info(15692): </dict>
+01-03 15:11:17.031 I/ActivityManager( 1178): Process android.dopod.FileManager (pid 15354) has died.
+01-03 15:11:17.210 D/cocos2d-x debug info(15692): cocos2d: CCTextureCache: texture: cc_fps_images
+01-03 15:11:17.218 D/cocos2d-x debug info(15692): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_a_RETINA.png as texture
+01-03 15:11:17.273 D/szipinf (14558): Initializing inflate state
+01-03 15:11:17.335 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:11:17.335 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:11:17.335 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:11:17.335 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:11:17.335 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:11:17.335 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:11:17.335 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:11:17.359 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:11:17.781 D/cocos2d-x debug info(15692): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_b_RETINA.png as texture
+01-03 15:11:17.796 D/szipinf (14558): Initializing inflate state
+01-03 15:11:17.828 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:11:18.054 D/cocos2d-x debug info(15692): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_RETINA.png as texture
+01-03 15:11:18.078 I/ActivityManager( 1178): Process com.htc.RosieUtility (pid 14690) has died.
+01-03 15:11:18.281 I/ActivityManager( 1178): Process com.htc.bgp (pid 14807) has died.
+01-03 15:11:18.343 I/shell   (14558): response: chmod 777 /data/data/com.mgyun.shua.su/files/su
+01-03 15:11:18.445 I/shell   (14558): response:
+01-03 15:11:18.468 I/shell   (14558): response: #
+01-03 15:11:18.523 D/su      (15705): su invoked.
+01-03 15:11:18.562 I/shell   (14558): response: /data/data/com.mgyun.shua.su/files/su -r /system rw
+01-03 15:11:18.726 D/cocos2d-x debug info(15692): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_b_CN_RETINA.png as texture
+01-03 15:11:18.843 I/shell   (14558): response: #
+01-03 15:11:19.062 I/shell   (14558): response: cat /data/data/com.mgyun.shua.su/files/su > /system/xbin/su; sync
+01-03 15:11:19.101 D/cocos2d-x debug info(15692): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_CN_RETINA.png as texture
+01-03 15:11:19.195 I/ActivityManager( 1178): Process com.htc.opensense.pluginmanager (pid 14656) has died.
+01-03 15:11:19.195 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:19.273 I/shell   (14558): response: #
+01-03 15:11:19.289 I/shell   (14558): response: chown root.root /system/xbin/su
+01-03 15:11:19.296 I/shell   (14558): response: #
+01-03 15:11:19.312 I/shell   (14558): response: chmod 6755 /system/xbin/su
+01-03 15:11:19.312 I/shell   (14558): #
+01-03 15:11:19.328 I/shell   (14558): response: rm /system/bin/su
+01-03 15:11:19.328 I/shell   (14558): #
+01-03 15:11:19.507 I/shell   (14558): response: cat /data/data/com.mgyun.shua.su/files/su > /system/bin/su; sync
+01-03 15:11:19.585 I/shell   (14558): response: #
+01-03 15:11:19.632 I/shell   (14558): response: chown root.root /system/bin/su
+01-03 15:11:19.640 I/shell   (14558): response: #
+01-03 15:11:19.710 I/shell   (14558): response: chmod 6755 /system/bin/su
+01-03 15:11:19.710 I/shell   (14558): response: #
+01-03 15:11:20.976 I/TestinExternalLog(14491): Battery>>>> Temperature 35.7
+01-03 15:11:21.398 D/dalvikvm(14491): GC_CONCURRENT freed 489K, 51% free 2874K/5831K, external 0K/0K, paused 3ms+8ms
+01-03 15:11:21.406 I/TestinExternalLog(14491): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-03 15:11:21.539 D/szipinf (14558): Initializing inflate state
+01-03 15:11:21.539 D/szipinf (14558): Initializing zlib to inflate
+01-03 15:11:21.648 I/TestinExternalLog(14491): Mem>>>> Avalable:69352KB, com.giant.brizzle(15692) used:34487KB
+01-03 15:11:24.250 D/dalvikvm( 4670): GC_EXPLICIT freed 14K, 45% free 3176K/5767K, external 1528K/2040K, paused 46ms
+01-03 15:11:25.218 I/TestinExternalLog(14491): CPU>>>> User 13%, System 5%, IOW 0%, IRQ 0%, com.giant.brizzle(15692):6%
+01-03 15:11:25.812 D/skia    (14521): purging 121K from font cache [9 entries]
+01-03 15:11:25.867 D/dalvikvm(14521): GC_EXPLICIT freed 287K, 50% free 3224K/6407K, external 1961K/2473K, paused 52ms
+01-03 15:11:25.976 I/TestinExternalLog(14491): Battery>>>> Temperature 35.7
+01-03 15:11:26.460 I/TestinExternalLog(14491): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-03 15:11:26.500 D/dalvikvm(14491): GC_CONCURRENT freed 281K, 49% free 3024K/5831K, external 0K/0K, paused 2ms+4ms
+01-03 15:11:28.851 D/AndroidRuntime(15719):
+01-03 15:11:28.851 D/AndroidRuntime(15719): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:28.851 D/AndroidRuntime(15719): CheckJNI is OFF
+01-03 15:11:29.195 D/AndroidRuntime(15719): Calling main entry com.android.commands.am.Am
+01-03 15:11:29.234 I/iTestin (14491): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:11:29.257 I/TestinExternalLog(14491): <<<<<<< Capturing image (1) >>>>>>>
+01-03 15:11:29.257 D/AndroidRuntime(15719): Shutting down VM
+01-03 15:11:29.265 I/AndroidRuntime(15719): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:29.265 D/dalvikvm(15719): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:11:29.289 D/jdwp    (15719): adbd disconnected
+01-03 15:11:29.289 I/TestinExternalLog(1): <<<<<<< StopTest launcher Package com.giant.brizzle >>>>>>>
+01-03 15:11:29.289 I/TestinExternalLog(1): <<<<<<< StartTest ui Package com.giant.brizzle >>>>>>>
+01-03 15:11:29.335 D/dalvikvm( 5727): GC_EXPLICIT freed 111K, 52% free 2768K/5767K, external 0K/0K, paused 123ms
+01-03 15:11:29.531 D/AndroidRuntime(15729):
+01-03 15:11:29.531 D/AndroidRuntime(15729): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:29.531 D/AndroidRuntime(15729): CheckJNI is OFF
+01-03 15:11:29.773 D/AndroidRuntime(15729): Calling main entry com.android.commands.am.Am
+01-03 15:11:29.796 I/ActivityManager( 1178): Force stopping package com.giant.brizzle uid=10083
+01-03 15:11:29.804 I/Process ( 1178): Sending signal. PID: 15692 SIG: 9
+01-03 15:11:29.812 E/ActivityManager( 1178): fail to set top app changed!
+01-03 15:11:29.835 I/ActivityManager( 1178): Start proc com.giant.brizzle for added application com.giant.brizzle: pid=15737 uid=10083 gids={3003}
+01-03 15:11:29.843 I/WindowManager( 1178): WIN DEATH: Window{40a8b688 com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-03 15:11:29.851 I/WindowManager( 1178): WIN DEATH: Window{40b2a910 SurfaceView paused=false}
+01-03 15:11:29.898 E/SurfaceFlinger( 1178): layer=0xb3e2f8 is not in the purgatory list
+01-03 15:11:29.914 D/Launcher(14521): addPendingWidgetViewsToDisplay: enter
+01-03 15:11:29.921 D/Launcher(14521): addPendingWidgetViewsToDisplay: exit
+01-03 15:11:29.945 D/InputManagerService( 1178): Got RemoteException sending setActive(false) notification to pid 15692 uid 10083
+01-03 15:11:29.945 W/InputManagerService( 1178): [startInputLocked] Enable input method client.
+01-03 15:11:30.109 I/TestRunner(15737): started: test1(a.ApiTestCase)
+01-03 15:11:30.117 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.giant.brizzle/.Brizzle } from pid 15737
+01-03 15:11:30.234 D/Cocos2dxActivity(15737): model=HTC A9188
+01-03 15:11:30.234 D/Cocos2dxActivity(15737): product=huashan
+01-03 15:11:30.234 D/Cocos2dxActivity(15737): isEmulator=false
+01-03 15:11:30.257 D/ATRecorder(15737): com.htc.autotest.dlib.RecordEngine in loader dalvik.system.DexClassLoader@405484b0
+01-03 15:11:30.328 D/libEGL  (15737): loaded /system/lib/egl/libGLES_android.so
+01-03 15:11:30.335 I/ActivityManager( 1178): Displayed com.giant.brizzle/.Brizzle: +147ms
+01-03 15:11:30.351 W/InputManagerService( 1178): [unbindCurrentClientLocked] Disable input method client.
+01-03 15:11:30.351 W/InputManagerService( 1178): [startInputLocked] Enable input method client.
+01-03 15:11:30.367 D/libEGL  (15737): loaded /vendor/lib/egl/libEGL_POWERVR_SGX530_125.so
+01-03 15:11:30.375 D/libEGL  (15737): loaded /vendor/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so
+01-03 15:11:30.375 D/libEGL  (15737): loaded /vendor/lib/egl/libGLESv2_POWERVR_SGX530_125.so
+01-03 15:11:30.453 D/cocos2d-x debug info(15737):
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): <dict>
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	cocos2d.x.version: 2.2.1
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	cocos2d.x.compiled_with_profiler: false
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	cocos2d.x.compiled_with_gl_state_cache: true
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.vendor: Imagination Technologies
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.renderer: PowerVR SGX 530
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.version: OpenGL ES 2.0
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.max_texture_size: 2048
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.max_texture_units: 8
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.supports_PVRTC: true
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.supports_NPOT: true
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.supports_BGRA8888: true
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.supports_discard_framebuffer: true
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): 	gl.supports_vertex_array_object: true
+01-03 15:11:30.453 D/cocos2d-x debug info(15737): </dict>
+01-03 15:11:30.789 D/cocos2d-x debug info(15737): cocos2d: CCTextureCache: texture: cc_fps_images
+01-03 15:11:30.789 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_a_RETINA.png as texture
+01-03 15:11:30.867 I/TestinExternalLog(14491): Mem>>>> Avalable:76844KB, com.giant.brizzle(15737) used:20027KB
+01-03 15:11:30.867 D/AndroidRuntime(15750):
+01-03 15:11:30.867 D/AndroidRuntime(15750): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:30.867 D/AndroidRuntime(15750): CheckJNI is OFF
+01-03 15:11:31.234 D/AndroidRuntime(15750): Calling main entry com.android.commands.am.Am
+01-03 15:11:31.265 I/TestinExternalLog(14491): Battery>>>> Temperature 35.7
+01-03 15:11:31.265 I/iTestin (14491): recv broadcast>>>itestin.service.CMD_STARTPROCESSSTATEMONITOR
+01-03 15:11:31.281 D/AndroidRuntime(15750): Shutting down VM
+01-03 15:11:31.281 D/dalvikvm(15750): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:11:31.281 I/AndroidRuntime(15750): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:31.289 D/jdwp    (15750): adbd disconnected
+01-03 15:11:31.492 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_b_RETINA.png as texture
+01-03 15:11:31.710 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_RETINA.png as texture
+01-03 15:11:31.953 I/TestinExternalLog(14491): <<<<<<< StartApp >>>>>>>
+01-03 15:11:32.125 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_b_CN_RETINA.png as texture
+01-03 15:11:32.148 I/TestinExternalLog(14491): <<<<<<< com.giant.brizzle(15737) >>>>>>>
+01-03 15:11:32.351 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:11:32.351 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:11:32.351 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:11:32.351 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:11:32.351 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:11:32.351 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:11:32.359 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:11:32.367 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_CN_RETINA.png as texture
+01-03 15:11:32.460 D/Device Model(15737): HTC A9188
+01-03 15:11:32.460 D/AudioFlinger( 1022): [AudioFlinger::MixerThread::threadLoop] set ALC to enable
+01-03 15:11:32.492 I/OMXCodec( 1022): [Stagefright] use software codec=VorbisDecoder
+01-03 15:11:32.500 D/MediaPlayer(15737): stop() in
+01-03 15:11:32.500 I/AwesomePlayer( 1022): Lock success within 0 us
+01-03 15:11:32.500 D/MediaPlayer(15737): stop() out
+01-03 15:11:32.500 I/AwesomePlayer( 1022): Lock success within 0 us
+01-03 15:11:32.500 D/MediaPlayer(15737): handleMessage:MEDIA_SEEK_COMPLETE
+01-03 15:11:32.500 D/MediaPlayer(15737): start() in
+01-03 15:11:32.507 D/AudioPolicyManagerALSA( 1022): startOutput() output 1, stream 3
+01-03 15:11:32.507 D/AudioPolicyManagerALSA( 1022): getDeviceForStrategy() strategy 0, device 2
+01-03 15:11:32.507 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 2 delayMs 0
+01-03 15:11:32.507 V/AudioPolicyManagerALSA( 1022): setOutputDevice() setting same device 2 for output 1
+01-03 15:11:32.507 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 1
+01-03 15:11:32.507 D/AwesomePlayer( 1022): [SHORT_SND] endpos = 0, latency = 557, add a short delay
+01-03 15:11:32.515 D/AudioHardwareALSA( 1022): [ALSA] handle closed, reopen it
+01-03 15:11:32.515 D/ALSAModule( 1022): open called for devices 00000002 in mode 0...
+01-03 15:11:32.515 D/ALSA-lib( 1022): snd_pcm_open AndroidPlayback_Speaker_normal
+01-03 15:11:32.546 I/ALSAModule( 1022): Initialized ALSA PLAYBACK device AndroidPlayback_Speaker_normal
+01-03 15:11:32.562 I/TestinExternalLog(14491): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-03 15:11:33.070 D/MediaPlayer(15737): start() out
+01-03 15:11:33.195 D/MediaPlayer(15737): handleMessage:MEDIA_SEEK_COMPLETE
+01-03 15:11:33.312 W/ContentService( 1178): binderDied() at ObserverNode name favorites
+01-03 15:11:33.312 I/ActivityManager( 1178): Process com.borqs.launcher (pid 14521) has died.
+01-03 15:11:33.320 W/ContentService( 1178): binderDied() at ObserverNode name appWidgetReset
+01-03 15:11:33.320 I/WindowManager( 1178): WIN DEATH: Window{4093ab90 com.borqs.launcher/com.borqs.launcher2.Launcher paused=false}
+01-03 15:11:33.328 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:33.398 D/BATD    ( 1073): [LifePercent] chg dwPredictPercentage=998
+01-03 15:11:33.398 D/BATD    ( 1073): [LifePercent] chg last=100
+01-03 15:11:33.398 D/BATD    ( 1073): [LifePercent]ACR_u=13762, KADC=1000, RARC=998, Predict percentage(10*)=998, Percentage=100, FL_u=13800!
+01-03 15:11:33.718 D/dalvikvm(15737): GC_CONCURRENT freed 271K, 49% free 2909K/5639K, external 0K/0K, paused 2ms+8ms
+01-03 15:11:34.000 D/dalvikvm(15737): GC_CONCURRENT freed 468K, 50% free 2960K/5895K, external 0K/0K, paused 2ms+12ms
+01-03 15:11:34.351 D/AndroidRuntime(15765):
+01-03 15:11:34.351 D/AndroidRuntime(15765): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:34.351 D/AndroidRuntime(15765): CheckJNI is OFF
+01-03 15:11:34.656 D/AndroidRuntime(15765): Calling main entry com.android.commands.am.Am
+01-03 15:11:34.695 I/iTestin (14491): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:11:34.703 I/TestinExternalLog(14491): <<<<<<< Capturing image (2) >>>>>>>
+01-03 15:11:34.703 D/AndroidRuntime(15765): Shutting down VM
+01-03 15:11:34.710 I/AndroidRuntime(15765): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:34.710 D/dalvikvm(15765): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:11:34.718 D/jdwp    (15765): adbd disconnected
+01-03 15:11:36.070 D/dalvikvm(14491): GC_CONCURRENT freed 601K, 53% free 2843K/5959K, external 0K/0K, paused 9ms+7ms
+01-03 15:11:36.195 I/TestinExternalLog(14491): CPU>>>> User 46%, System 18%, IOW 15%, IRQ 0%, com.giant.brizzle(15737):14%
+01-03 15:11:36.265 I/TestinExternalLog(14491): Battery>>>> Temperature 35.7
+01-03 15:11:37.601 I/TestinExternalLog(14491): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-03 15:11:38.843 D/AndroidRuntime(15776):
+01-03 15:11:38.843 D/AndroidRuntime(15776): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:38.843 D/AndroidRuntime(15776): CheckJNI is OFF
+01-03 15:11:39.140 D/AndroidRuntime(15776): Calling main entry com.android.commands.am.Am
+01-03 15:11:39.164 I/iTestin (14491): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:11:39.171 I/TestinExternalLog(14491): <<<<<<< Capturing image (3) >>>>>>>
+01-03 15:11:39.179 D/AndroidRuntime(15776): Shutting down VM
+01-03 15:11:39.187 I/AndroidRuntime(15776): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:39.187 D/dalvikvm(15776): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 2ms+0ms
+01-03 15:11:39.187 D/jdwp    (15776): adbd disconnected
+01-03 15:11:41.187 D/dalvikvm(15737): GC_CONCURRENT freed 508K, 50% free 2982K/5959K, external 0K/0K, paused 2ms+5ms
+01-03 15:11:41.250 I/TestinExternalLog(14491): Mem>>>> Avalable:73616KB, com.giant.brizzle(15737) used:36126KB
+01-03 15:11:41.265 I/TestinExternalLog(14491): Battery>>>> Temperature 35.7
+01-03 15:11:42.210 I/OMXCodec( 1022): [Stagefright] use software codec=VorbisDecoder
+01-03 15:11:42.234 D/AudioPolicyManagerALSA( 1022): getDeviceForStrategy() strategy 0, device 2
+01-03 15:11:42.234 V/AudioPolicyManagerALSA( 1022): getOutput() stream 3, samplingRate 0, format 0, channels c, flags 0
+01-03 15:11:42.234 D/AudioPolicyManagerALSA( 1022): startOutput() output 1, stream 3
+01-03 15:11:42.234 D/AudioPolicyManagerALSA( 1022): getDeviceForStrategy() strategy 0, device 2
+01-03 15:11:42.234 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 2
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_c@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_trees_a@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_trees_b@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_a@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_b@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_light@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_blue@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_green@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_orange@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_pink@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_purple@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_red@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_white@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_yellow@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_bg@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank_push@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_title@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_option_push@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_option@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_cancel_normal_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_cancel_push_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_classic_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_classic_push_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_continue_normal_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_continue_push_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_icebreak_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_icebreak_push_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_newgame_normal_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_newgame_push_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_pandora_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_pandora_push_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_option_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_option_push_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank_push_china@2x.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCTextureCache: texture: cc_fps_images
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCTextureCache: texture: assets/images/main_menu/main_bg_a_RETINA.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCTextureCache: texture: assets/images/main_menu/main_bg_b_RETINA.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_a_RETINA.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_b_CN_RETINA.png
+01-03 15:11:42.234 D/cocos2d-x debug info(15737): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_a_CN_RETINA.png
+01-03 15:11:42.273 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/character/Character_RETINA.png as texture
+01-03 15:11:42.546 D/AudioPolicyManagerALSA( 1022): stopOutput() output 1, stream 3
+01-03 15:11:42.546 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 1
+01-03 15:11:42.632 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/stage_classic/stage_RETINA.png as texture
+01-03 15:11:42.828 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itemblackhole_RETINA.png as texture
+01-03 15:11:43.046 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itembomb_RETINA.png as texture
+01-03 15:11:43.187 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itemfirebird_RETINA.png as texture
+01-03 15:11:43.453 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itemlightning_RETINA.png as texture
+01-03 15:11:43.523 I/TestinExternalLog(14491): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-03 15:11:43.585 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/effectblackhole_RETINA.png as texture
+01-03 15:11:43.632 I/ActivityManager( 1178): Process borqs.mobilewidget (pid 14561) has died.
+01-03 15:11:43.632 W/ActivityManager( 1178): Canceling start item Intent { act=vnd.borqs.widgetinit typ=vnd.android.cursor.item/vnd.borqs.widgetinitialize } in service ComponentInfo{borqs.mobilewidget/borqs.widgetlauncher.services.RegisterWidgetService}
+01-03 15:11:43.632 W/ActivityManager( 1178): Canceling start item Intent { act=vnd.borqs.widgetinit typ=vnd.android.cursor.item/vnd.borqs.widgetinitialize } in service ComponentInfo{borqs.mobilewidget/borqs.widgetlauncher.services.RegisterWidgetService}
+01-03 15:11:43.632 W/ActivityManager( 1178): Canceling start item Intent { act=vnd.borqs.widgetinit typ=vnd.android.cursor.item/vnd.borqs.widgetinitialize } in service ComponentInfo{borqs.mobilewidget/borqs.widgetlauncher.services.RegisterWidgetService}
+01-03 15:11:43.632 W/ActivityManager( 1178): Canceling start item Intent { act=vnd.borqs.widgetinit typ=vnd.android.cursor.item/vnd.borqs.widgetinitialize } in service ComponentInfo{borqs.mobilewidget/borqs.widgetlauncher.services.RegisterWidgetService}
+01-03 15:11:43.632 W/ActivityManager( 1178): Scheduling restart of crashed service borqs.mobilewidget/borqs.widgetlauncher.services.RegisterWidgetService in 256116ms
+01-03 15:11:43.679 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:43.937 D/dalvikvm(14491): GC_CONCURRENT freed 349K, 51% free 2975K/5959K, external 0K/0K, paused 3ms+5ms
+01-03 15:11:44.093 I/ActivityManager( 1178): Process com.mgyun.shua.su (pid 14558) has died.
+01-03 15:11:44.093 W/ActivityManager( 1178): Scheduling restart of crashed service com.mgyun.shua.su/.service.SuService in 12998ms
+01-03 15:11:44.093 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:44.273 I/ActivityManager( 1178): Process cn.testin.itestin (pid 14491) has died.
+01-03 15:11:44.273 W/ActivityManager( 1178): Scheduling restart of crashed service cn.testin.itestin/.os.ServicesManagerNew in 22812ms
+01-03 15:11:44.281 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:44.414 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/effectbomb_RETINA.png as texture
+01-03 15:11:44.695 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/effectfirebird_RETINA.png as texture
+01-03 15:11:44.937 D/cocos2d-x debug info(15737): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/cloud_RETINA.png as texture
+01-03 15:11:45.968 W/ContentService( 1178): binderDied() at ObserverNode name com.servo.app
+01-03 15:11:45.968 W/ContentService( 1178): binderDied() at ObserverNode name com.servo.setting
+01-03 15:11:45.968 W/ContentService( 1178): binderDied() at ObserverNode name playlists
+01-03 15:11:45.968 I/ActivityManager( 1178): Process com.servo.search (pid 14528) has died.
+01-03 15:11:45.968 W/ActivityManager( 1178): Scheduling restart of crashed service com.servo.search/com.servo.core.android.ServoIndexerService in 49261ms
+01-03 15:11:45.968 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:46.132 D/MediaPlayer(15737): release() in
+01-03 15:11:46.187 D/AudioTrack( 1022): Audio Track already stopped
+01-03 15:11:46.187 D/AudioPolicyManagerALSA( 1022): stopOutput() output 1, stream 3
+01-03 15:11:46.187 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 0
+01-03 15:11:46.187 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 0 delayMs 372
+01-03 15:11:46.187 V/AudioPolicyManagerALSA( 1022): releaseOutput() 1
+01-03 15:11:46.203 I/ActivityManager( 1178): Process com.marigold.android.notes (pid 15057) has died.
+01-03 15:11:46.203 W/ActivityManager( 1178): Scheduling restart of crashed service com.marigold.android.notes/.service.NotificationService in 59025ms
+01-03 15:11:46.203 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:46.210 D/MediaPlayer(15737): release() out
+01-03 15:11:46.234 I/OMXCodec( 1022): [Stagefright] use software codec=VorbisDecoder
+01-03 15:11:46.234 D/MediaPlayer(15737): stop() in
+01-03 15:11:46.234 D/AndroidRuntime(15791):
+01-03 15:11:46.234 D/AndroidRuntime(15791): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:46.234 D/AndroidRuntime(15791): CheckJNI is OFF
+01-03 15:11:46.242 I/AwesomePlayer( 1022): Lock success within 5000 us
+01-03 15:11:46.242 D/MediaPlayer(15737): stop() out
+01-03 15:11:46.242 I/AwesomePlayer( 1022): Lock success within 0 us
+01-03 15:11:46.242 D/MediaPlayer(15737): handleMessage:MEDIA_SEEK_COMPLETE
+01-03 15:11:46.242 D/MediaPlayer(15737): start() in
+01-03 15:11:46.242 D/AudioPolicyManagerALSA( 1022): startOutput() output 1, stream 3
+01-03 15:11:46.242 D/AudioPolicyManagerALSA( 1022): getDeviceForStrategy() strategy 0, device 2
+01-03 15:11:46.250 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 2 delayMs 0
+01-03 15:11:46.250 V/AudioPolicyManagerALSA( 1022): setOutputDevice() setting same device 2 for output 1
+01-03 15:11:46.250 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 1
+01-03 15:11:46.250 D/AwesomePlayer( 1022): [SHORT_SND] endpos = 0, latency = 557, add a short delay
+01-03 15:11:46.453 D/AndroidRuntime(15791): Calling main entry com.android.commands.am.Am
+01-03 15:11:46.476 I/ActivityManager( 1178): Start proc cn.testin.itestin for broadcast cn.testin.itestin/.TestinService: pid=15801 uid=10082 gids={3003}
+01-03 15:11:46.578 I/iTestin (15801): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:11:46.593 D/AndroidRuntime(15791): Shutting down VM
+01-03 15:11:46.601 I/iTestin (15801): install system
+01-03 15:11:46.601 D/dalvikvm(15791): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 0ms+0ms
+01-03 15:11:46.601 I/AndroidRuntime(15791): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:46.601 D/jdwp    (15791): adbd disconnected
+01-03 15:11:46.695 D/WindowManager( 1178): disableKeyguard - unLock
+01-03 15:11:46.734 I/TestinExternalLog(15801): <<<<<<< Capturing image (4) >>>>>>>
+01-03 15:11:46.734 I/TestinExternalLog(15801): <<<<<<< StartApp >>>>>>>
+01-03 15:11:46.750 I/TestinExternalLog(15801): <<<<<<< com.giant.brizzle(15737) >>>>>>>
+01-03 15:11:46.804 D/MediaPlayer(15737): start() out
+01-03 15:11:46.835 D/MediaPlayer(15737): handleMessage:MEDIA_SEEK_COMPLETE
+01-03 15:11:46.929 I/ActivityManager( 1178): Process cn.testin.itestin (pid 15801) has died.
+01-03 15:11:46.937 W/ActivityManager( 1178): Scheduling restart of crashed service cn.testin.itestin/.os.ServicesManagerNew in 20149ms
+01-03 15:11:46.937 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:47.101 I/ActivityManager( 1178): Start proc com.smithmicro.DM for service com.smithmicro.DM/.DMServiceApp: pid=15822 uid=10033 gids={3003, 1015}
+01-03 15:11:47.281 I/OMC     (15822): FileOutputStream
+01-03 15:11:47.289 D/szipinf (15822): Initializing inflate state
+01-03 15:11:47.289 I/OMC     (15822): InputStream
+01-03 15:11:47.289 D/szipinf (15822): Initializing zlib to inflate
+01-03 15:11:47.437 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:11:47.437 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:11:47.437 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:11:47.437 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:11:47.437 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:11:47.445 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:11:47.445 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:11:47.539 I/OMC     (15822): Trying to load /data/data/com.smithmicro.DM/libomc_cmcc.so
+01-03 15:11:47.570 I/OMC     (15822): Log Mode :true
+01-03 15:11:47.570 I/OMC     (15822): DM Service : onCreate
+01-03 15:11:47.570 I/OMC     (15822): Save Log Mode :false
+01-03 15:11:47.570 I/OMC     (15822): SD state is mounted
+01-03 15:11:47.570 I/OMC     (15822): log level: 6 save_log: 0
+01-03 15:11:47.609 I/ActivityManager( 1178): Start proc com.htc.android.omadm.service for service com.htc.android.omadm.service/.HtcDmService: pid=15830 uid=10030 gids={3003, 2001}
+01-03 15:11:47.648 D/OMC     (15822): onCallStateChanged() 0
+01-03 15:11:47.765 I/HtcDmService(15830): onCreate
+01-03 15:11:47.796 I/Setting (15830): SERVER_ADDRESS: 1065840409
+01-03 15:11:47.796 I/Setting (15830): PROJECT: HTC A9188
+01-03 15:11:47.812 I/Setting (15830): SERVER_ADDRESS: 1065840409
+01-03 15:11:47.812 I/Setting (15830): PROJECT: HTC A9188
+01-03 15:11:47.820 I/Setting (15830): SERVER_ADDRESS: 1065840409
+01-03 15:11:47.820 I/Setting (15830): PROJECT: HTC A9188
+01-03 15:11:47.820 I/Setting (15830): SERVER_ADDRESS: 1065840409
+01-03 15:11:47.820 I/Setting (15830): PROJECT: HTC A9188
+01-03 15:11:47.820 I/        (15830): Entering JNI_OnLoad
+01-03 15:11:47.820 I/        (15830): Leaving JNI_OnLoad (result=0x10004)
+01-03 15:11:47.828 I/Setting (15830): SERVER_ADDRESS: 1065840409
+01-03 15:11:47.828 I/Setting (15830): PROJECT: HTC A9188
+01-03 15:11:47.859 I/HtcDmService(15830): onBind
+01-03 15:11:47.859 I/HtcDmService(15830): return Binder.
+01-03 15:11:47.875 I/OMC     (15822): DM Service : DMLib connected android.os.BinderProxy@40531de8
+01-03 15:11:47.875 W/HTCLoad (15822): HTC_LoadSymbols: func=80602fc9
+01-03 15:11:47.882 I/HtcDmService(15830): onStart
+01-03 15:11:47.890 I/Scomo   (15830): Check unfinish job.
+01-03 15:11:47.890 I/Scomo   (15830): No unfinish job.
+01-03 15:11:47.898 I/MDReceiver(15830):  Received: android.intent.action.ANY_DATA_STATE state: DISCONNECTED unavailable: true capability: null
+01-03 15:11:47.898 I/MDReceiver(15830): mInterfaceName=null
+01-03 15:11:47.898 D/ConnCtl (15830): Dormancy countdown sec:14
+01-03 15:11:48.289 I/Setting (15830): SERVER_ADDRESS: 1065840409
+01-03 15:11:48.289 I/Setting (15830): PROJECT: HTC A9188
+01-03 15:11:48.289 I/Lawmo   (15830): Didn't receive boot completed, skip check phone lock.
+01-03 15:11:48.375 D/cocos2d-x debug info(15737): cocos2d: CCSpriteBatchNode: resizing TextureAtlas capacity from [29] to [40].
+01-03 15:11:48.390 D/cocos2d-x debug info(15737): cocos2d: CCSpriteBatchNode: resizing TextureAtlas capacity from [40] to [54].
+01-03 15:11:48.398 D/cocos2d-x debug info(15737): cocos2d: CCSpriteBatchNode: resizing TextureAtlas capacity from [54] to [73].
+01-03 15:11:48.468 D/dalvikvm(15737): GC_CONCURRENT freed 559K, 51% free 2995K/6023K, external 0K/0K, paused 3ms+13ms
+01-03 15:11:48.484 I/KeyCharacterMap(15737): No keyboard for id 0
+01-03 15:11:48.484 I/KeyCharacterMap(15737): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+01-03 15:11:48.898 D/ConnCtl (15830): Dormancy countdown sec:13
+01-03 15:11:49.835 D/PluginFactory(15737): Java class name of plugin AdsAdmob is : org/cocos2dx/plugin/AdsAdmob
+01-03 15:11:49.835 I/PluginWrapper(15737): class name : ----org/cocos2dx/plugin/AdsAdmob----
+01-03 15:11:49.835 D/PluginFactory(15737): The type of plugin AdsAdmob is : 1
+01-03 15:11:49.835 D/ProtocolAds(15737): Class name : org/cocos2dx/plugin/AdsAdmob
+01-03 15:11:49.898 D/ConnCtl (15830): Dormancy countdown sec:12
+01-03 15:11:50.226 D/Database(15737): dbopen(): path = /data/data/com.giant.brizzle/databases/webview.db, flag = 6, cannot stat file, errno: 2,message: No such file or directory
+01-03 15:11:50.226 D/Database(15737): dbopen(): path = /data/data/com.giant.brizzle/databases/webview.db, mode: delete, disk free size: 493 M, handle: 0x4f8410
+01-03 15:11:50.296 D/Database(15737): dbopen(): path = /data/data/com.giant.brizzle/databases/webviewCache.db, flag = 6, cannot stat file, errno: 2,message: No such file or directory
+01-03 15:11:50.296 D/Database(15737): dbopen(): path = /data/data/com.giant.brizzle/databases/webviewCache.db, mode: delete, disk free size: 493 M, handle: 0x4d31a8
+01-03 15:11:50.351 D/skia    (15737): htcFlashPlugin::htcFlashPlugin
+01-03 15:11:50.367 D/qct     (15737): [WebView.WebView] >> Enable Shutdown = false
+01-03 15:11:50.382 D/skia    (15737): htcFlashPlugin::htcFlashPlugin
+01-03 15:11:50.382 D/qct     (15737): [WebView.WebView] >> Enable Shutdown = false
+01-03 15:11:50.398 D/qct     (15737): [RequestQueue.ActivePool.ActivePool] >> Enable Shutdown = false
+01-03 15:11:50.398 D/qct     (15737): [IdleCache.IdleCache] >> IDLE_CACHE_MAX = 40
+01-03 15:11:50.500 D/qct     (15737): [PreConnectionManager.PreConnectionManager] >> TCP_PRE_CONNECT = false
+01-03 15:11:50.578 D/dalvikvm(15737): GC_CONCURRENT freed 390K, 49% free 3117K/6023K, external 0K/0K, paused 4ms+10ms
+01-03 15:11:50.695 D/skia    (15737): htcFlashPlugin::htcFlashPlugin
+01-03 15:11:50.695 E/ActivityThread(15737): Failed to find provider info for com.google.plus.platform
+01-03 15:11:50.710 D/qct     (15737): [WebView.WebView] >> Enable Shutdown = false
+01-03 15:11:50.765 I/Ads     (15737): To get test ads on this device, call adRequest.addTestDevice("F8B1EFBED0C533F964F308223AFED801");
+01-03 15:11:50.882 D/qct     (15737): [PreConnectionManager.PreConnectionManager] >> TCP_PRE_CONNECT = false
+01-03 15:11:50.898 D/qct     (15737): [PreConnectionManager.PreConnectionManager] >> TCP_PRE_CONNECT = false
+01-03 15:11:50.953 I/Ads     (15737): adRequestUrlHtml: <html><head><script src="http://media.admob.com/sdk-core-v40.js"></script><script>AFMA_getSdkConstants();AFMA_buildAdURL({"preqs":0,"session_id":"17244755708347110919","u_sd":1.5,"seq_num":"1","slotname":"a152c0e2117dbe6","u_w":320,"msid":"com.giant.brizzle","cap":"m,a","js":"afma-sdk-a-v6.3.1","ms":"tTyx3msu5UWkLhRGmswr1qzupVshxW-ivVO5rEZtrLwnZevCOml72ljkSykw0SXrw6hRi_a-oz3-pJZKAOxpua-wMvkFxw5FSG9D1GD2HNTz3YSPt79SYqNc03WFLJSiK_qhClj1XhgAveznymQmQoWtChtYrcVEq908sZd5BXZrLzyahkH8OVs98ZIJ25U9quj-2NslYAcgdgvB6zk4fjWmRKAumFfjDW3wbKWXwGTMeYEpZvfqvk8-nc4CpXx4gqqjP-K_EuEBGazEW0DKafM-j367VzYmo_nkQd-82NQbVM-KZ90BONSTMr13IGrUmAXzbA_b1nqkJQs9nvZMzg","isu":"F8B1EFBED0C533F964F308223AFED801","bas_off":0,"format":"320x50_mb","oar":0,"net":"wi","app_name":"1.android.com.giant.brizzle","hl":"zh","ad_pos":{"height":0,"visible":0,"y":0,"x":240,"width":0},"gnt":0,"u_h":533,"pt":1,"bas_on":0,"ptime":0,"u_audio":3});</script></head><body></body></html>
+01-03 15:11:50.960 D/webkit-timers(15737): [JWebCoreJavaBridge::resume] >> do resume
+01-03 15:11:51.007 D/RequestQueue(15737): setProxyConfig: wifi enabled.
+01-03 15:11:51.007 D/RequestQueue(15737): setProxyConfig mProxyHost=null
+01-03 15:11:51.054 I/ActivityManager( 1178): Process com.htc.android.omadm.service (pid 15830) has died.
+01-03 15:11:51.054 W/ActivityManager( 1178): Scheduling restart of crashed service com.htc.android.omadm.service/.HtcDmService in 64176ms
+01-03 15:11:51.054 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:51.257 I/ActivityManager( 1178): Process com.smithmicro.DM (pid 15822) has died.
+01-03 15:11:51.265 W/ActivityManager( 1178): Scheduling restart of crashed service com.smithmicro.DM/.DMServiceApp in 1103136ms
+01-03 15:11:51.265 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:52.257 V/DeviceStorageMonitorService( 1178): freeMemory=517877760
+01-03 15:11:52.257 D/DeviceStorageMonitorService( 1178): OoO SMS Memory available. SMS_AVAILABLE_THRESHOLD == 524288
+01-03 15:11:52.265 I/DeviceStorageMonitorService( 1178): Posting Message again
+01-03 15:11:52.671 D/AndroidRuntime(15861):
+01-03 15:11:52.671 D/AndroidRuntime(15861): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:52.679 D/AndroidRuntime(15861): CheckJNI is OFF
+01-03 15:11:53.195 D/AndroidRuntime(15861): Calling main entry com.android.commands.am.Am
+01-03 15:11:53.382 I/ActivityManager( 1178): Start proc cn.testin.itestin for broadcast cn.testin.itestin/.TestinService: pid=15869 uid=10082 gids={3003}
+01-03 15:11:53.546 I/iTestin (15869): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:11:53.578 D/AndroidRuntime(15861): Shutting down VM
+01-03 15:11:53.601 I/iTestin (15869): install system
+01-03 15:11:53.601 I/AndroidRuntime(15861): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:53.609 D/dalvikvm(15861): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 4ms+1ms
+01-03 15:11:53.617 D/jdwp    (15861): adbd disconnected
+01-03 15:11:53.757 D/WindowManager( 1178): disableKeyguard - unLock
+01-03 15:11:53.875 I/TestinExternalLog(15869): <<<<<<< StartApp >>>>>>>
+01-03 15:11:53.875 I/TestinExternalLog(15869): <<<<<<< Capturing image (5) >>>>>>>
+01-03 15:11:53.882 I/TestinExternalLog(15869): <<<<<<< com.giant.brizzle(15737) >>>>>>>
+01-03 15:11:53.914 W/webcore (15737): Can't get the viewWidth after the first layout
+01-03 15:11:53.929 D/webcore (15737): [WebViewCore::handleMessage] handle msg=[4::120] over 1 sec. (2122.0
+01-03 15:11:53.976 I/ActivityManager( 1178): Process cn.testin.itestin (pid 15869) has died.
+01-03 15:11:53.976 W/ActivityManager( 1178): Scheduling restart of crashed service cn.testin.itestin/.os.ServicesManagerNew in 13111ms
+01-03 15:11:53.976 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:11:54.023 I/Ads     (15737): Received ad url: <url: "http://googleads.g.doubleclick.net:80/mads/gma?preqs=0&session_id=17244755708347110919&u_sd=1.5&seq_num=1&u_w=320&msid=com.giant.brizzle&cap=m%2Ca&js=afma-sdk-a-v6.3.1&ms=tTyx3msu5UWkLhRGmswr1qzupVshxW-ivVO5rEZtrLwnZevCOml72ljkSykw0SXrw6hRi_a-oz3-pJZKAOxpua-wMvkFxw5FSG9D1GD2HNTz3YSPt79SYqNc03WFLJSiK_qhClj1XhgAveznymQmQoWtChtYrcVEq908sZd5BXZrLzyahkH8OVs98ZIJ25U9quj-2NslYAcgdgvB6zk4fjWmRKAumFfjDW3wbKWXwGTMeYEpZvfqvk8-nc4CpXx4gqqjP-K_EuEBGazEW0DKafM-j367VzYmo_nkQd-82NQbVM-KZ90BONSTMr13IGrUmAXzbA_b1nqkJQs9nvZMzg&bas_off=0&format=320x50_mb&oar=0&net=wi&app_name=1.android.com.giant.brizzle&hl=zh-CN&gnt=0&u_h=533&bas_on=0&ptime=0&u_audio=3&u_so=p&output=html&region=mobile_app&u_tz=480&client_sdk=1&ex=1&slotname=a152c0e2117dbe6&gsb=wi&caps=interactiveVideo_th_mediation_sdkAdmobApiForAds_di&jsv=66&urll=799" type: "admob" afmaNotifyDt: "null" activationOverlayUrl: "null" useWebViewLoadUrl: "false">
+01-03 15:11:54.023 I/Ads     (15737): Request scenario: Online server request.
+01-03 15:11:54.593 D/dalvikvm(15737): GC_CONCURRENT freed 328K, 46% free 3354K/6151K, external 0K/0K, paused 11ms+5ms
+01-03 15:11:54.765 D/dalvikvm(15737): GC_CONCURRENT freed 435K, 46% free 3435K/6343K, external 0K/0K, paused 4ms+5ms
+01-03 15:11:54.976 D/dalvikvm(15737): GC_CONCURRENT freed 485K, 47% free 3424K/6407K, external 0K/0K, paused 4ms+12ms
+01-03 15:11:55.890 D/cocos2d-x debug info(15737): touch mask layer
+01-03 15:11:56.531 W/webcore (15737): Can't get the viewWidth after the first layout
+01-03 15:11:56.734 D/dalvikvm(15737): GC_FOR_MALLOC freed 161K, 46% free 3521K/6407K, external 0K/0K, paused 28ms
+01-03 15:11:57.101 I/ActivityManager( 1178): Start proc com.mgyun.shua.su for service com.mgyun.shua.su/.service.SuService: pid=15891 uid=10013 gids={1015, 3003}
+01-03 15:11:57.328 D/Database(15891): dbopen(): path = /data/data/com.mgyun.shua.su/databases/download_status.db, flag = 6, file size = 5120
+01-03 15:11:57.335 D/Database(15891): dbopen(): path = /data/data/com.mgyun.shua.su/databases/download_status.db, mode: wal, disk free size: 493 M, handle: 0x3174c0
+01-03 15:11:57.367 D/Socket_Alarm(15891): registerHTCSocketMonitorCallBack
+01-03 15:11:57.367 D/Socket_Alarm(15891): set mSocketMonitor
+01-03 15:11:57.367 D/Socket_Alarm(15891): HTCSocketMonitorImpl::HTCSocketMonitorImpl
+01-03 15:11:57.390 D/Database(15891): dbopen(): path = /data/data/com.mgyun.shua.su/databases/app_info.db, flag = 6, file size = 4096
+01-03 15:11:57.398 D/Database(15891): dbopen(): path = /data/data/com.mgyun.shua.su/databases/app_info.db, mode: wal, disk free size: 493 M, handle: 0x3324a8
+01-03 15:11:57.437 I/libjackpal-androidterm(15891): JNI_OnLoad
+01-03 15:11:57.492 D/su      (15903): su invoked.
+01-03 15:11:57.531 D/su      (15904): silent_run 0, r=10013, e=0, s=0
+01-03 15:11:57.539 D/su      (15910): 10013 /system/bin/sh executing 0 /system/bin/sh using binary /system/bin/sh : sh
+01-03 15:11:57.546 D/su      (15909): allow, r=10013, e=0, s=0, ctx->to.uid=0
+01-03 15:11:57.546 D/su      (15908): silent_run 2
+01-03 15:11:57.546 D/su      (15907): silent_run 1, r=10013, e=0, s=0
+01-03 15:11:57.570 D/webviewglue(15737): nativeDestroy view: 0x592dc0
+01-03 15:11:57.585 I/Ads     (15737): onReceiveAd()
+01-03 15:11:57.593 D/AdsAdmob(15737): onReceiveAd invoked
+01-03 15:11:57.625 D/ProtocolAds(15737): nativeOnAdsResult(), Get plugin ptr : 0x488ba0
+01-03 15:11:57.625 D/ProtocolAds(15737): nativeOnAdsResult(), Get plugin name : AdsAdmob
+01-03 15:11:57.625 D/ProtocolAds(15737): ProtocolAds::adsResult invoked!
+01-03 15:11:57.625 D/cocos2d-x debug info(15737): OnAdsResult, code : 0, msg : Ads request received success!
+01-03 15:11:57.929 D/AndroidRuntime(15905):
+01-03 15:11:57.929 D/AndroidRuntime(15905): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:11:57.929 D/AndroidRuntime(15905): CheckJNI is OFF
+01-03 15:11:58.242 D/AndroidRuntime(15905): Calling main entry com.android.commands.am.Am
+01-03 15:11:58.968 I/shell   (15891): response: $ .suv
+01-03 15:11:58.968 I/shell   (15891): #
+01-03 15:11:58.984 I/shell   (15891): response: id
+01-03 15:11:59.000 I/shell   (15891): response: uid=0(root) gid=0(root) groups=1015(sdcard_rw),3003(inet)
+01-03 15:11:59.007 I/shell   (15891): response: #
+01-03 15:11:59.328 I/shell   (15891): response: id
+01-03 15:11:59.429 I/shell   (15891): response:
+01-03 15:11:59.460 I/shell   (15891): response: uid=0(root) gid=0(root) groups=1015(sdcard_rw),3003(inet)
+01-03 15:11:59.468 I/shell   (15891): response: #
+01-03 15:11:59.632 D/AndroidRuntime(15905): Shutting down VM
+01-03 15:11:59.640 D/dalvikvm(15905): GC_CONCURRENT freed 103K, 67% free 346K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:11:59.664 I/AndroidRuntime(15905): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:11:59.671 D/jdwp    (15905): adbd disconnected
+01-03 15:12:00.312 D/AndroidRuntime(15926):
+01-03 15:12:00.312 D/AndroidRuntime(15926): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:00.320 D/AndroidRuntime(15926): CheckJNI is OFF
+01-03 15:12:00.960 D/AndroidRuntime(15926): Calling main entry com.android.commands.am.Am
+01-03 15:12:01.000 I/ActivityManager( 1178): Start proc cn.testin.itestin for broadcast cn.testin.itestin/.TestinService: pid=15934 uid=10082 gids={3003}
+01-03 15:12:01.093 I/ActivityManager( 1178): Process com.mgyun.shua.su (pid 15891) has died.
+01-03 15:12:01.093 W/ActivityManager( 1178): Scheduling restart of crashed service com.mgyun.shua.su/.service.SuService in 88884ms
+01-03 15:12:01.093 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:12:01.140 I/iTestin (15934): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:12:01.156 D/AndroidRuntime(15926): Shutting down VM
+01-03 15:12:01.164 I/iTestin (15934): install system
+01-03 15:12:01.164 I/AndroidRuntime(15926): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:01.171 D/dalvikvm(15926): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 0ms+4ms
+01-03 15:12:01.187 D/jdwp    (15926): adbd disconnected
+01-03 15:12:01.296 D/WindowManager( 1178): disableKeyguard - unLock
+01-03 15:12:01.359 I/TestinExternalLog(15934): <<<<<<< Capturing image (6) >>>>>>>
+01-03 15:12:01.406 I/TestinExternalLog(15934): <<<<<<< StartApp >>>>>>>
+01-03 15:12:01.406 I/TestinExternalLog(15934): <<<<<<< com.giant.brizzle(15737) >>>>>>>
+01-03 15:12:02.132 D/dalvikvm(15737): GC_CONCURRENT freed 670K, 49% free 3395K/6535K, external 0K/0K, paused 4ms+5ms
+01-03 15:12:02.312 D/dalvikvm(15737): GC_CONCURRENT freed 419K, 47% free 3487K/6535K, external 0K/0K, paused 3ms+7ms
+01-03 15:12:02.390 I/KeyCharacterMap(15737): No keyboard for id 0
+01-03 15:12:02.390 I/KeyCharacterMap(15737): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+01-03 15:12:02.453 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:12:02.453 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:12:02.460 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:12:02.460 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:12:02.460 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:12:02.484 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:12:02.484 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:12:02.515 I/DEBUG   (14114): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+01-03 15:12:02.515 I/DEBUG   (14114): Build fingerprint: 'htccn_chs_cmcc/huashan/huashan:2.3/GRI40/88420:user/release-keys'
+01-03 15:12:02.515 I/DEBUG   (14114): pid: 15737, tid: 15737  >>> com.giant.brizzle <<<
+01-03 15:12:02.515 I/DEBUG   (14114): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000000
+01-03 15:12:02.515 I/DEBUG   (14114):  r0 afd47604  r1 00367b60  r2 0068ba7c  r3 00000000
+01-03 15:12:02.515 I/DEBUG   (14114):  r4 bed3a2d0  r5 00000000  r6 bed3a358  r7 42154e04
+01-03 15:12:02.515 I/DEBUG   (14114):  r8 bed3a2b0  r9 42154dfc  10 42154de8  fp bed3a29c
+01-03 15:12:02.515 I/DEBUG   (14114):  ip 80ebbb20  sp bed3a270  lr 80b753a8  pc 00000000  cpsr a0000010
+01-03 15:12:02.515 I/DEBUG   (14114):  d0  000000060059a6f0  d1  00000000000000a6
+01-03 15:12:02.515 I/DEBUG   (14114):  d2  000000b000000059  d3  004a8b5000000000
+01-03 15:12:02.515 I/DEBUG   (14114):  d4  000000040000006e  d5  0000000200000001
+01-03 15:12:02.515 I/DEBUG   (14114):  d6  0000010100000000  d7  0000000400000001
+01-03 15:12:02.515 I/DEBUG   (14114):  d8  443687f63c8ac80e  d9  43974e244902259a
+01-03 15:12:02.515 I/DEBUG   (14114):  d10 403fda004395ce70  d11 410fc70641c13a43
+01-03 15:12:02.515 I/DEBUG   (14114):  d12 403827485a00b037  d13 43365050431e2908
+01-03 15:12:02.515 I/DEBUG   (14114):  d14 0000000043365072  d15 0000000000000000
+01-03 15:12:02.515 I/DEBUG   (14114):  d16 0000003300000008  d17 001f001f001f001f
+01-03 15:12:02.515 I/DEBUG   (14114):  d18 0024002400240024  d19 0024002400240024
+01-03 15:12:02.515 I/DEBUG   (14114):  d20 0003000300030003  d21 0003000300030003
+01-03 15:12:02.515 I/DEBUG   (14114):  d22 0016001600160016  d23 0016001600160016
+01-03 15:12:02.515 I/DEBUG   (14114):  d24 001f001f001f001f  d25 001f001f001f001f
+01-03 15:12:02.515 I/DEBUG   (14114):  d26 b3e8b3e8b3e8b3e8  d27 b3e8b3e8b3e8b3e8
+01-03 15:12:02.515 I/DEBUG   (14114):  d28 00ff00ff00ff00ff  d29 00ff00ff00ff00ff
+01-03 15:12:02.515 I/DEBUG   (14114):  d30 001f001f001f001f  d31 001f001f001f001f
+01-03 15:12:02.515 I/DEBUG   (14114):  scr 80000012
+01-03 15:12:02.515 I/DEBUG   (14114):
+01-03 15:12:02.593 I/DEBUG   (14114):          #00  pc 00000000
+01-03 15:12:02.593 I/DEBUG   (14114):          #01  pc 003753a4  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-03 15:12:02.593 I/DEBUG   (14114):          #02  pc 001a20d0  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-03 15:12:02.593 I/DEBUG   (14114):          #03  pc 00018174  /system/lib/libdvm.so
+01-03 15:12:02.601 I/DEBUG   (14114):          #04  pc 00049f2a  /system/lib/libdvm.so
+01-03 15:12:02.601 I/DEBUG   (14114):          #05  pc 0001d374  /system/lib/libdvm.so
+01-03 15:12:02.601 I/DEBUG   (14114):          #06  pc 0002286c  /system/lib/libdvm.so
+01-03 15:12:02.601 I/DEBUG   (14114):          #07  pc 00021764  /system/lib/libdvm.so
+01-03 15:12:02.601 I/DEBUG   (14114):          #08  pc 00060c4e  /system/lib/libdvm.so
+01-03 15:12:02.601 I/DEBUG   (14114):          #09  pc 00068c36  /system/lib/libdvm.so
+01-03 15:12:02.601 I/DEBUG   (14114):          #10  pc 0001d374  /system/lib/libdvm.so
+01-03 15:12:02.601 I/DEBUG   (14114):          #11  pc 0002286c  /system/lib/libdvm.so
+01-03 15:12:02.601 I/DEBUG   (14114):          #12  pc 00021764  /system/lib/libdvm.so
+01-03 15:12:02.609 I/DEBUG   (14114):          #13  pc 00060ab0  /system/lib/libdvm.so
+01-03 15:12:02.609 I/DEBUG   (14114):          #14  pc 0004ca06  /system/lib/libdvm.so
+01-03 15:12:02.609 I/DEBUG   (14114):          #15  pc 00041046  /system/lib/libandroid_runtime.so
+01-03 15:12:02.609 I/DEBUG   (14114):          #16  pc 00041ef2  /system/lib/libandroid_runtime.so
+01-03 15:12:02.609 I/DEBUG   (14114):          #17  pc 00008cca  /system/bin/app_process
+01-03 15:12:02.609 I/DEBUG   (14114):          #18  pc 0001512a  /system/lib/libc.so
+01-03 15:12:02.609 I/DEBUG   (14114):
+01-03 15:12:02.609 I/DEBUG   (14114): code around pc:
+01-03 15:12:02.609 I/DEBUG   (14114):
+01-03 15:12:02.609 I/DEBUG   (14114): code around lr:
+01-03 15:12:02.609 I/DEBUG   (14114): 80b75388 e3530000 0a000046 e51b300c e5933000
+01-03 15:12:02.609 I/DEBUG   (14114): 80b75398 e2833020 e5933000 e51b000c e12fff33
+01-03 15:12:02.609 I/DEBUG   (14114): 80b753a8 e1a03000 e51b0024 e1a01003 ebf8adb9
+01-03 15:12:02.609 I/DEBUG   (14114): 80b753b8 e1a03000 e3530000 1a000017 e51b300c
+01-03 15:12:02.609 I/DEBUG   (14114): 80b753c8 e5933000 e2833024 e5933000 e51b000c
+01-03 15:12:02.609 I/DEBUG   (14114):
+01-03 15:12:02.609 I/DEBUG   (14114): stack:
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a230  bed3a24c
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a234  80b79dc0  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a238  0043e6b8
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a23c  0059a6f0
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a240  00000014
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a244  00000014
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a248  bed3a25c
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a24c  80b79e2c  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a250  0043e6b8
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a254  0059a6f0
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a258  bed3a26c
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a25c  80af2588  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a260  00415508
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a264  00367b30
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a268  df002777
+01-03 15:12:02.617 I/DEBUG   (14114):     bed3a26c  e3a070ad
+01-03 15:12:02.625 I/DEBUG   (14114): #01 bed3a270  405a3c30
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a274  00000000
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a278  80e07b48  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a27c  0043b980
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a280  afd47604
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a284  0068ba7c
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a288  005e8990
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a28c  0068bac4
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a290  afd47604
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a294  bed3a2d0
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a298  bed3a2ac
+01-03 15:12:02.625 I/DEBUG   (14114):     bed3a29c  809a20d4  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-03 15:12:03.453 D/BATD    ( 1073): [LifePercent] chg dwPredictPercentage=997
+01-03 15:12:03.453 D/BATD    ( 1073): [LifePercent] chg last=100
+01-03 15:12:03.453 D/BATD    ( 1073): [LifePercent]ACR_u=13754, KADC=1000, RARC=997, Predict percentage(10*)=997, Percentage=100, FL_u=13800!
+01-03 15:12:04.726 I/BootReceiver( 1178): Copying /data/tombstones/tombstone_03 to DropBox (SYSTEM_TOMBSTONE)
+01-03 15:12:04.804 I/ActivityManager( 1178): Process com.giant.brizzle (pid 15737) has died.
+01-03 15:12:04.812 I/WindowManager( 1178): WIN DEATH: Window{40d800b8 com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-03 15:12:04.820 E/SurfaceFlinger( 1178): layer=0x3b49e0 is not in the purgatory list
+01-03 15:12:04.820 I/WindowManager( 1178): WIN DEATH: Window{40a06d20 SurfaceView paused=false}
+01-03 15:12:04.820 I/WindowManager( 1178): WIN DEATH: Window{40cbb300 Panel:com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-03 15:12:04.828 E/SurfaceFlinger( 1178): layer=0xb81430 is not in the purgatory list
+01-03 15:12:04.828 E/SurfaceFlinger( 1178): layer=0x4ca630 is not in the purgatory list
+01-03 15:12:04.828 W/ActivityManager( 1178): Crash of app com.giant.brizzle running instrumentation ComponentInfo{cn.itestin.tester/cn.itestin.tester.TestRunner}
+01-03 15:12:04.835 D/AndroidRuntime(15729): Shutting down VM
+01-03 15:12:04.843 D/AudioTrack( 1022): Audio Track already stopped
+01-03 15:12:04.843 I/AndroidRuntime(15729): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:04.843 D/AudioPolicyManagerALSA( 1022): stopOutput() output 1, stream 3
+01-03 15:12:04.843 I/ActivityManager( 1178): Force stopping package com.giant.brizzle uid=10083
+01-03 15:12:04.851 D/dalvikvm(15729): GC_CONCURRENT freed 108K, 69% free 318K/1024K, external 0K/0K, paused 1ms+9ms
+01-03 15:12:04.867 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 0
+01-03 15:12:04.867 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 0 delayMs 372
+01-03 15:12:04.867 D/jdwp    (15729): adbd disconnected
+01-03 15:12:04.867 I/ActivityManager( 1178): Start proc com.borqs.launcher for activity com.borqs.launcher/com.borqs.launcher2.Launcher: pid=15957 uid=10073 gids={3003, 3001, 3002, 1006, 1015}
+01-03 15:12:04.875 V/AudioPolicyManagerALSA( 1022): releaseOutput() 1
+01-03 15:12:04.882 V/AudioPolicyManagerALSA( 1022): releaseOutput() 1
+01-03 15:12:04.921 D/Zygote  ( 1058): Process 15737 terminated by signal (11)
+01-03 15:12:04.960 E/ActivityManager( 1178): fail to set top app changed!
+01-03 15:12:05.078 I/ActivityThread(15957): Pub com.borqs.launcher2.settings: com.borqs.launcher2.LauncherProvider
+01-03 15:12:05.242 D/dalvikvm(15957): GC_EXTERNAL_ALLOC freed 61K, 50% free 2723K/5379K, external 0K/0K, paused 97ms
+01-03 15:12:05.289 D/dalvikvm( 1178): GC_CONCURRENT freed 1554K, 62% free 10193K/26823K, external 2405K/3004K, paused 8ms+94ms
+01-03 15:12:05.351 W/WindowManagerService.mKeyguardTokenWatcher( 1178): cleaning up leaked reference: unLock
+01-03 15:12:05.382 W/WindowManagerService.mKeyguardTokenWatcher( 1178): cleaning up leaked reference: unLock
+01-03 15:12:05.382 W/WindowManagerService.mKeyguardTokenWatcher( 1178): cleaning up leaked reference: unLock
+01-03 15:12:05.382 W/WindowManagerService.mKeyguardTokenWatcher( 1178): cleaning up leaked reference: unLock
+01-03 15:12:05.492 D/AndroidRuntime(15965):
+01-03 15:12:05.492 D/AndroidRuntime(15965): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:05.500 D/AndroidRuntime(15965): CheckJNI is OFF
+01-03 15:12:05.507 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.giant.brizzle/.Brizzle } from pid 15934
+01-03 15:12:05.890 D/AndroidRuntime(15965): Calling main entry com.android.commands.am.Am
+01-03 15:12:05.906 I/iTestin (15934): recv broadcast>>>itestin.service.CMD_STOPPROCESSSTATEMONITOR
+01-03 15:12:05.914 D/AndroidRuntime(15965): Shutting down VM
+01-03 15:12:05.929 D/dalvikvm(15965): GC_CONCURRENT freed 102K, 67% free 342K/1024K, external 0K/0K, paused 1ms+9ms
+01-03 15:12:05.929 I/AndroidRuntime(15965): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:05.929 D/jdwp    (15965): adbd disconnected
+01-03 15:12:06.062 W/ActivityManager( 1178): Activity pause timeout for HistoryRecord{40a99eb8 com.borqs.launcher/com.borqs.launcher2.Launcher}
+01-03 15:12:06.070 I/ActivityManager( 1178): Start proc com.giant.brizzle for activity com.giant.brizzle/.Brizzle: pid=15974 uid=10083 gids={3003}
+01-03 15:12:06.101 D/Database(15957): dbopen(): path = /data/data/com.borqs.launcher/databases/launcher.db, flag = 6, file size = 4096
+01-03 15:12:06.109 D/Database(15957): dbopen(): path = /data/data/com.borqs.launcher/databases/launcher.db, mode: wal, disk free size: 493 M, handle: 0x384928
+01-03 15:12:06.367 D/Cocos2dxActivity(15974): model=HTC A9188
+01-03 15:12:06.367 D/Cocos2dxActivity(15974): product=huashan
+01-03 15:12:06.367 D/Cocos2dxActivity(15974): isEmulator=false
+01-03 15:12:06.390 D/ATRecorder(15974): com.htc.autotest.dlib.RecordEngine in loader dalvik.system.DexClassLoader@40535940
+01-03 15:12:06.492 D/libEGL  (15974): loaded /system/lib/egl/libGLES_android.so
+01-03 15:12:06.500 I/ActivityManager( 1178): Displayed com.giant.brizzle/.Brizzle: +437ms (total +1s656ms)
+01-03 15:12:06.507 D/InputManagerService( 1178): Got RemoteException sending setActive(false) notification to pid 15737 uid 10083
+01-03 15:12:06.515 W/InputManagerService( 1178): [startInputLocked] Enable input method client.
+01-03 15:12:06.531 D/libEGL  (15974): loaded /vendor/lib/egl/libEGL_POWERVR_SGX530_125.so
+01-03 15:12:06.531 D/libEGL  (15974): loaded /vendor/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so
+01-03 15:12:06.539 D/libEGL  (15974): loaded /vendor/lib/egl/libGLESv2_POWERVR_SGX530_125.so
+01-03 15:12:06.601 D/cocos2d-x debug info(15974):
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): <dict>
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	cocos2d.x.version: 2.2.1
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	cocos2d.x.compiled_with_profiler: false
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	cocos2d.x.compiled_with_gl_state_cache: true
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.vendor: Imagination Technologies
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.renderer: PowerVR SGX 530
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.version: OpenGL ES 2.0
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.max_texture_size: 2048
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.max_texture_units: 8
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.supports_PVRTC: true
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.supports_NPOT: true
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.supports_BGRA8888: true
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.supports_discard_framebuffer: true
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): 	gl.supports_vertex_array_object: true
+01-03 15:12:06.601 D/cocos2d-x debug info(15974): </dict>
+01-03 15:12:06.843 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: cc_fps_images
+01-03 15:12:06.843 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_a_RETINA.png as texture
+01-03 15:12:06.843 I/TestinExternalLog(1): <<<<<<< StopTest ui Package com.giant.brizzle >>>>>>>
+01-03 15:12:06.843 I/TestinExternalLog(1): <<<<<<< StartTest monkey Package com.giant.brizzle >>>>>>>
+01-03 15:12:07.242 D/AndroidRuntime(15986):
+01-03 15:12:07.242 D/AndroidRuntime(15986): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:07.257 D/AndroidRuntime(15986): CheckJNI is OFF
+01-03 15:12:07.554 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_b_RETINA.png as texture
+01-03 15:12:07.664 D/AndroidRuntime(15986): Calling main entry com.android.commands.monkey.Monkey
+01-03 15:12:07.968 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_RETINA.png as texture
+01-03 15:12:07.976 D/ALSA-lib( 1022): snd_pcm_close AndroidPlayback_Speaker_normal
+01-03 15:12:07.976 D/ALSA-lib( 1022): snd_pcm_close default
+01-03 15:12:07.976 D/ALSA-lib( 1022): snd_pcm_close (null)
+01-03 15:12:07.976 D/StreamProcess( 1022): OutputStreamProcess::ResetAOLC()
+01-03 15:12:08.398 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.giant.brizzle/.Brizzle } from pid 15986
+01-03 15:12:08.710 D/PhoneWindow(15974): couldn't save which view has focus because the focused view org.cocos2dx.lib.Cocos2dxGLSurfaceView@4052f1c8 has no id.
+01-03 15:12:08.734 D/Cocos2dxActivity(15974): model=HTC A9188
+01-03 15:12:08.734 D/Cocos2dxActivity(15974): product=huashan
+01-03 15:12:08.734 D/Cocos2dxActivity(15974): isEmulator=false
+01-03 15:12:08.765 D/Device Model(15974): HTC A9188
+01-03 15:12:08.828 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_b_CN_RETINA.png as texture
+01-03 15:12:08.882 I/ActivityManager( 1178): Displayed com.giant.brizzle/.Brizzle: +172ms
+01-03 15:12:09.562 I/ActivityManager( 1178): Start proc com.mgyun.shua.su for service com.mgyun.shua.su/.service.SuService: pid=15999 uid=10013 gids={1015, 3003}
+01-03 15:12:09.609 D/cocos2d-x debug info(15974): reload all texture
+01-03 15:12:09.835 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_CN_RETINA.png as texture
+01-03 15:12:10.140 D/Database(15999): dbopen(): path = /data/data/com.mgyun.shua.su/databases/download_status.db, flag = 6, file size = 5120
+01-03 15:12:10.171 D/Database(15999): dbopen(): path = /data/data/com.mgyun.shua.su/databases/download_status.db, mode: wal, disk free size: 493 M, handle: 0x317580
+01-03 15:12:10.250 D/Socket_Alarm(15999): registerHTCSocketMonitorCallBack
+01-03 15:12:10.250 D/Socket_Alarm(15999): set mSocketMonitor
+01-03 15:12:10.250 D/Socket_Alarm(15999): HTCSocketMonitorImpl::HTCSocketMonitorImpl
+01-03 15:12:10.281 D/Database(15999): dbopen(): path = /data/data/com.mgyun.shua.su/databases/app_info.db, flag = 6, file size = 4096
+01-03 15:12:10.281 D/Database(15999): dbopen(): path = /data/data/com.mgyun.shua.su/databases/app_info.db, mode: wal, disk free size: 493 M, handle: 0x332568
+01-03 15:12:10.445 D/AudioFlinger( 1022): [AudioFlinger::MixerThread::threadLoop] set ALC to enable
+01-03 15:12:10.476 I/libjackpal-androidterm(15999): JNI_OnLoad
+01-03 15:12:10.500 I/OMXCodec( 1022): [Stagefright] use software codec=VorbisDecoder
+01-03 15:12:10.523 D/MediaPlayer(15974): stop() in
+01-03 15:12:10.523 I/AwesomePlayer( 1022): Lock success within 5000 us
+01-03 15:12:10.523 D/MediaPlayer(15974): stop() out
+01-03 15:12:10.531 I/AwesomePlayer( 1022): Lock success within 0 us
+01-03 15:12:10.531 D/MediaPlayer(15974): start() in
+01-03 15:12:10.531 D/AudioPolicyManagerALSA( 1022): startOutput() output 1, stream 3
+01-03 15:12:10.531 D/AudioPolicyManagerALSA( 1022): getDeviceForStrategy() strategy 0, device 2
+01-03 15:12:10.531 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 2 delayMs 0
+01-03 15:12:10.531 V/AudioPolicyManagerALSA( 1022): setOutputDevice() setting same device 2 for output 1
+01-03 15:12:10.531 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 1
+01-03 15:12:10.531 D/AwesomePlayer( 1022): [SHORT_SND] endpos = 0, latency = 557, add a short delay
+01-03 15:12:10.539 D/AudioHardwareALSA( 1022): [ALSA] handle closed, reopen it
+01-03 15:12:10.539 D/ALSAModule( 1022): open called for devices 00000002 in mode 0...
+01-03 15:12:10.539 D/ALSA-lib( 1022): snd_pcm_open AndroidPlayback_Speaker_normal
+01-03 15:12:10.570 I/ALSAModule( 1022): Initialized ALSA PLAYBACK device AndroidPlayback_Speaker_normal
+01-03 15:12:10.632 D/su      (16015): su invoked.
+01-03 15:12:10.648 D/su      (16020): 10013 /system/bin/sh executing 0 /system/bin/sh using binary /system/bin/sh : sh
+01-03 15:12:10.656 D/su      (16022): silent_run 2
+01-03 15:12:10.656 D/su      (16021): silent_run 1, r=10013, e=0, s=0
+01-03 15:12:10.679 D/su      (16016): silent_run 0, r=10013, e=0, s=0
+01-03 15:12:10.679 D/su      (16019): allow, r=10013, e=0, s=0, ctx->to.uid=0
+01-03 15:12:10.695 D/AndroidRuntime(16007):
+01-03 15:12:10.695 D/AndroidRuntime(16007): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:10.703 D/AndroidRuntime(16007): CheckJNI is OFF
+01-03 15:12:11.093 D/MediaPlayer(15974): start() out
+01-03 15:12:11.132 D/AndroidRuntime(16017):
+01-03 15:12:11.132 D/AndroidRuntime(16017): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:11.140 D/AndroidRuntime(16017): CheckJNI is OFF
+01-03 15:12:11.312 D/AndroidRuntime(16007): Calling main entry com.android.commands.am.Am
+01-03 15:12:11.335 I/iTestin (15934): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:12:11.343 I/TestinExternalLog(15934): <<<<<<< Capturing image (7) >>>>>>>
+01-03 15:12:11.343 D/AndroidRuntime(16007): Shutting down VM
+01-03 15:12:11.351 I/AndroidRuntime(16007): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:11.351 D/dalvikvm(16007): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+3ms
+01-03 15:12:11.359 D/jdwp    (16007): adbd disconnected
+01-03 15:12:11.648 D/MediaPlayer(15974): pause() in
+01-03 15:12:11.648 I/AwesomePlayer( 1022): Lock success within 0 us
+01-03 15:12:11.648 D/AudioPolicyManagerALSA( 1022): stopOutput() output 1, stream 3
+01-03 15:12:11.648 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 0
+01-03 15:12:11.648 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 0 delayMs 372
+01-03 15:12:11.648 D/MediaPlayer(15974): pause() out
+01-03 15:12:11.648 D/AudioTrack( 1022): Audio Track already stopped
+01-03 15:12:11.781 D/MediaPlayer(15974): handleMessage:MEDIA_SEEK_COMPLETE
+01-03 15:12:11.781 D/MediaPlayer(15974): handleMessage:MEDIA_SEEK_COMPLETE
+01-03 15:12:12.007 I/shell   (15999): response: $ .suv
+01-03 15:12:12.007 I/shell   (15999): #
+01-03 15:12:12.023 I/shell   (15999): response: id
+01-03 15:12:12.023 I/shell   (15999): uid=0(root) gid=0(root) groups=1015(sdcard_rw),3003(inet)
+01-03 15:12:12.023 I/shell   (15999): #
+01-03 15:12:12.070 D/AndroidRuntime(16017): Calling main entry com.android.commands.am.Am
+01-03 15:12:12.328 I/KeyCharacterMap(15974): No keyboard for id 0
+01-03 15:12:12.328 I/KeyCharacterMap(15974): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+01-03 15:12:12.335 I/shell   (15999): response: id
+01-03 15:12:12.437 I/shell   (15999): response:
+01-03 15:12:12.445 I/shell   (15999): response: uid=0(root) gid=0(root) groups=1015(sdcard_rw),3003(inet)
+01-03 15:12:12.445 I/shell   (15999): #
+01-03 15:12:12.515 D/AndroidRuntime(16017): Shutting down VM
+01-03 15:12:12.523 D/dalvikvm(16017): GC_CONCURRENT freed 103K, 67% free 346K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:12:12.523 I/AndroidRuntime(16017): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:12.531 D/jdwp    (16017): adbd disconnected
+01-03 15:12:12.757 D/szipinf (15999): Initializing inflate state
+01-03 15:12:12.765 D/szipinf (15999): Initializing zlib to inflate
+01-03 15:12:12.984 D/dalvikvm(15999): GC_FOR_MALLOC freed 196K, 49% free 2915K/5639K, external 0K/0K, paused 63ms
+01-03 15:12:13.312 I/ActivityManager( 1178): Start proc borqs.mobilewidget for service borqs.mobilewidget/.provider.WidgetManagerOCSPService: pid=16052 uid=10021 gids={3003, 3001, 3002, 1006, 1015}
+01-03 15:12:13.429 D/dalvikvm( 1058): GC_EXPLICIT freed 11K, 51% free 2675K/5379K, external 0K/0K, paused 118ms
+01-03 15:12:13.515 D/dalvikvm( 1058): GC_EXPLICIT freed <1K, 51% free 2675K/5379K, external 0K/0K, paused 80ms
+01-03 15:12:13.539 I/ActivityThread(16052): Pub widgetplayer: borqs.widgetplayer.widgetmodel.WidgetContentProvider
+01-03 15:12:13.585 D/dalvikvm( 1058): GC_EXPLICIT freed <1K, 51% free 2675K/5379K, external 0K/0K, paused 70ms
+01-03 15:12:14.570 D/dalvikvm(16052): GC_CONCURRENT freed 193K, 48% free 2938K/5639K, external 0K/0K, paused 2ms+6ms
+01-03 15:12:14.718 D/dalvikvm(16052): GC_EXTERNAL_ALLOC freed 307K, 50% free 2897K/5703K, external 0K/0K, paused 41ms
+01-03 15:12:14.765 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/webview.db, flag = 6, file size = 15360
+01-03 15:12:14.773 I/Database(16052): sqlite returned: error code = 0, msg = Recovered 15 frames from WAL file /data/data/borqs.mobilewidget/databases/webview.db-wal
+01-03 15:12:14.781 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/webview.db, mode: wal, disk free size: 493 M, handle: 0x3213c8
+01-03 15:12:14.804 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/webviewCache.db, flag = 6, file size = 6144
+01-03 15:12:14.812 I/Database(16052): sqlite returned: error code = 0, msg = Recovered 6 frames from WAL file /data/data/borqs.mobilewidget/databases/webviewCache.db-wal
+01-03 15:12:14.812 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/webviewCache.db, mode: wal, disk free size: 493 M, handle: 0x348788
+01-03 15:12:14.828 D/qct     (16052): [RequestQueue.ActivePool.ActivePool] >> Enable Shutdown = false
+01-03 15:12:14.828 D/qct     (16052): [IdleCache.IdleCache] >> IDLE_CACHE_MAX = 40
+01-03 15:12:14.835 D/qct     (16052): [PreConnectionManager.PreConnectionManager] >> TCP_PRE_CONNECT = false
+01-03 15:12:14.851 D/skia    (16052): htcFlashPlugin::htcFlashPlugin
+01-03 15:12:14.859 D/qct     (16052): [WebView.WebView] >> Enable Shutdown = false
+01-03 15:12:14.875 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgets.db, flag = 6, file size = 15360
+01-03 15:12:14.875 D/ActivityThread(16052): Loading provider jilwidgetmanager: jil.mobilewidget.provider.WidgetProvider
+01-03 15:12:14.890 I/Database(16052): sqlite returned: error code = 0, msg = Recovered 19 frames from WAL file /data/data/borqs.mobilewidget/databases/widgets.db-wal
+01-03 15:12:14.906 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgets.db, mode: wal, disk free size: 493 M, handle: 0x3a55d0
+01-03 15:12:14.953 D/ALSA-lib( 1022): snd_pcm_close AndroidPlayback_Speaker_normal
+01-03 15:12:14.953 D/ALSA-lib( 1022): snd_pcm_close default
+01-03 15:12:14.953 D/ALSA-lib( 1022): snd_pcm_close (null)
+01-03 15:12:14.953 D/StreamProcess( 1022): OutputStreamProcess::ResetAOLC()
+01-03 15:12:14.968 W/ActivityManager( 1178): Activity idle timeout for HistoryRecord{40a99eb8 com.borqs.launcher/com.borqs.launcher2.Launcher}
+01-03 15:12:15.187 I/ActivityThread(16052): Pub widgetstore: borqs.widgetstore.widgetmanager.WidgetStoreProvider
+01-03 15:12:15.195 I/ActivityThread(16052): Pub jilwidgetmanager: jil.mobilewidget.provider.WidgetProvider
+01-03 15:12:15.265 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgetstore.db, flag = 6, file size = 18432
+01-03 15:12:15.312 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgets.db, flag = 6, file size = 15360
+01-03 15:12:15.312 D/Database(15999): dbopen(): path = /data/data/com.mgyun.shua.su/databases/su.sqlite, flag = 6, file size = 5120
+01-03 15:12:15.320 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgets.db, mode: wal, disk free size: 493 M, handle: 0x402c00
+01-03 15:12:15.343 D/Database(16052): dbopen(): path = /data/data/borqs.mobilewidget/databases/widgetstore.db, mode: wal, disk free size: 493 M, handle: 0x3da260
+01-03 15:12:15.351 D/Database(15999): dbopen(): path = /data/data/com.mgyun.shua.su/databases/su.sqlite, mode: wal, disk free size: 493 M, handle: 0x349538
+01-03 15:12:15.414 D/Database(15999): dbclose(): path = /data/data/com.mgyun.shua.su/databases/su.sqlite, handle = 0x349538
+01-03 15:12:15.656 D/dalvikvm(16052): GC_CONCURRENT freed 345K, 48% free 3146K/5959K, external 376K/542K, paused 3ms+10ms
+01-03 15:12:15.742 D/Database(15957): dbopen(): path = /data/data/com.borqs.launcher/databases/webview.db, flag = 6, file size = 15360
+01-03 15:12:15.750 I/Database(15957): sqlite returned: error code = 0, msg = Recovered 15 frames from WAL file /data/data/com.borqs.launcher/databases/webview.db-wal
+01-03 15:12:15.757 D/Database(15957): dbopen(): path = /data/data/com.borqs.launcher/databases/webview.db, mode: wal, disk free size: 493 M, handle: 0x602fa0
+01-03 15:12:15.765 D/Database(15957): dbopen(): path = /data/data/com.borqs.launcher/databases/webviewCache.db, flag = 6, file size = 6144
+01-03 15:12:15.773 I/Database(15957): sqlite returned: error code = 0, msg = Recovered 6 frames from WAL file /data/data/com.borqs.launcher/databases/webviewCache.db-wal
+01-03 15:12:15.773 D/Database(15957): dbopen(): path = /data/data/com.borqs.launcher/databases/webviewCache.db, mode: wal, disk free size: 493 M, handle: 0x61bd10
+01-03 15:12:15.796 D/qct     (15957): [RequestQueue.ActivePool.ActivePool] >> Enable Shutdown = false
+01-03 15:12:15.796 D/qct     (15957): [IdleCache.IdleCache] >> IDLE_CACHE_MAX = 40
+01-03 15:12:15.796 D/skia    (15957): htcFlashPlugin::htcFlashPlugin
+01-03 15:12:15.812 D/qct     (15957): [PreConnectionManager.PreConnectionManager] >> TCP_PRE_CONNECT = false
+01-03 15:12:15.828 D/qct     (15957): [WebView.WebView] >> Enable Shutdown = false
+01-03 15:12:16.242 D/dalvikvm(16052): GC_CONCURRENT freed 471K, 49% free 3163K/6151K, external 376K/542K, paused 7ms+18ms
+01-03 15:12:16.546 D/dalvikvm(15986): GC_FOR_MALLOC freed 1257K, 62% free 788K/2051K, external 0K/0K, paused 15ms
+01-03 15:12:16.679 D/ATRecorder(15957): com.htc.autotest.dlib.RecordEngine in loader dalvik.system.DexClassLoader@40639fb0
+01-03 15:12:16.695 D/Launcher(15957): addPendingWidgetViewsToDisplay: enter
+01-03 15:12:16.695 D/Launcher(15957): addPendingWidgetViewsToDisplay: exit
+01-03 15:12:16.875 D/dalvikvm(15957): GC_CONCURRENT freed 473K, 47% free 3386K/6343K, external 1912K/2116K, paused 3ms+5ms
+01-03 15:12:17.468 D/AndroidRuntime(16105):
+01-03 15:12:17.468 D/AndroidRuntime(16105): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:17.468 D/AndroidRuntime(16105): CheckJNI is OFF
+01-03 15:12:17.484 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:12:17.484 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:12:17.484 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:12:17.484 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:12:17.484 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:12:17.484 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:12:17.484 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:12:17.750 D/AndroidRuntime(16105): Calling main entry com.android.commands.am.Am
+01-03 15:12:17.765 I/iTestin (15934): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:12:17.781 I/TestinExternalLog(15934): <<<<<<< Capturing image (8) >>>>>>>
+01-03 15:12:17.781 D/AndroidRuntime(16105): Shutting down VM
+01-03 15:12:17.789 I/AndroidRuntime(16105): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:17.789 D/dalvikvm(16105): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:12:17.789 D/jdwp    (16105): adbd disconnected
+01-03 15:12:19.460 W/ContentService( 1178): binderDied() at ObserverNode name favorites
+01-03 15:12:19.460 I/ActivityManager( 1178): Process com.borqs.launcher (pid 15957) has died.
+01-03 15:12:19.468 W/ContentService( 1178): binderDied() at ObserverNode name appWidgetReset
+01-03 15:12:19.468 I/WindowManager( 1178): WIN DEATH: Window{40b711f0 com.borqs.launcher/com.borqs.launcher2.Launcher paused=false}
+01-03 15:12:19.484 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:12:20.757 D/dalvikvm(15986): GC_CONCURRENT freed 670K, 62% free 793K/2051K, external 0K/0K, paused 1ms+1ms
+01-03 15:12:20.773 W/System.err(16052): org.apache.http.conn.ConnectTimeoutException: Connect to /119.145.0.78:8082 timed out
+01-03 15:12:20.781 W/System.err(16052): 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+01-03 15:12:20.781 W/System.err(16052): 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:143)
+01-03 15:12:20.781 W/System.err(16052): 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+01-03 15:12:20.781 W/System.err(16052): 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+01-03 15:12:20.781 W/System.err(16052): 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:359)
+01-03 15:12:20.781 W/System.err(16052): 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+01-03 15:12:20.781 W/System.err(16052): 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+01-03 15:12:20.781 W/System.err(16052): 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+01-03 15:12:20.781 W/System.err(16052): 	at borqs.widgetstore.http.NetworkManager.requestURL(NetworkManager.java:161)
+01-03 15:12:20.781 W/System.err(16052): 	at borqs.widgetstore.httptasks.GetSecurityTokenTask.start(GetSecurityTokenTask.java:57)
+01-03 15:12:20.789 W/System.err(16052): 	at borqs.widgetstore.charging.WidgetManagerChargingService$2.run(WidgetManagerChargingService.java:172)
+01-03 15:12:23.554 D/AndroidRuntime(16118):
+01-03 15:12:23.554 D/AndroidRuntime(16118): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:23.554 D/AndroidRuntime(16118): CheckJNI is OFF
+01-03 15:12:23.906 D/AndroidRuntime(16118): Calling main entry com.android.commands.am.Am
+01-03 15:12:23.937 I/iTestin (15934): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:12:23.945 D/AndroidRuntime(16118): Shutting down VM
+01-03 15:12:23.953 I/TestinExternalLog(15934): <<<<<<< Capturing image (9) >>>>>>>
+01-03 15:12:23.953 D/dalvikvm(16118): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+0ms
+01-03 15:12:23.953 I/AndroidRuntime(16118): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:23.960 D/jdwp    (16118): adbd disconnected
+01-03 15:12:24.898 I/ActivityManager( 1178): Starting activity: Intent { act=android.intent.action.CALL_BUTTON flg=0x10000000 cmp=com.android.htcdialer/.Dialer } from pid 15974
+01-03 15:12:25.242 I/ActivityManager( 1178): Start proc com.android.bluetooth for service com.android.bluetooth/.pbap.BluetoothPbapService: pid=16127 uid=10014 gids={3003, 3002, 3001, 1015, 1006}
+01-03 15:12:25.335 I/ActivityThread(16127): Pub com.android.bluetooth.opp: com.android.bluetooth.opp.BluetoothOppProvider
+01-03 15:12:25.359 D/BluetoothPbapService(16127): BluetoothPbapService. entered
+01-03 15:12:25.359 D/BluetoothPbapService(16127): PbapService onCreate
+01-03 15:12:25.359 D/BluetoothPbapService(16127): PbapService register intentfilter
+01-03 15:12:25.937 D/dalvikvm(15986): GC_CONCURRENT freed 724K, 62% free 795K/2051K, external 0K/0K, paused 1ms+1ms
+01-03 15:12:28.015 I/OMXCodec( 1022): [Stagefright] use software codec=VorbisDecoder
+01-03 15:12:28.039 D/AudioPolicyManagerALSA( 1022): getDeviceForStrategy() strategy 0, device 2
+01-03 15:12:28.039 V/AudioPolicyManagerALSA( 1022): getOutput() stream 3, samplingRate 0, format 0, channels c, flags 0
+01-03 15:12:28.039 D/AudioPolicyManagerALSA( 1022): startOutput() output 1, stream 3
+01-03 15:12:28.039 D/AudioPolicyManagerALSA( 1022): getDeviceForStrategy() strategy 0, device 2
+01-03 15:12:28.039 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 2 delayMs 0
+01-03 15:12:28.039 V/AudioPolicyManagerALSA( 1022): setOutputDevice() setting same device 2 for output 1
+01-03 15:12:28.039 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 1
+01-03 15:12:28.039 D/AudioFlinger( 1022): [AudioFlinger::MixerThread::threadLoop] set ALC to enable
+01-03 15:12:28.039 D/AudioHardwareALSA( 1022): [ALSA] handle closed, reopen it
+01-03 15:12:28.039 D/ALSAModule( 1022): open called for devices 00000002 in mode 0...
+01-03 15:12:28.039 D/ALSA-lib( 1022): snd_pcm_open AndroidPlayback_Speaker_normal
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_c@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_trees_a@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_trees_b@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_a@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_b@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_light@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_blue@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_green@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_orange@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_pink@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_purple@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_red@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_white@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_yellow@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_bg@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank_push@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_title@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_option_push@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_option@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_cancel_normal_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_cancel_push_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_classic_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_classic_push_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_continue_normal_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_continue_push_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_icebreak_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_icebreak_push_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_newgame_normal_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_newgame_push_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_pandora_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_pandora_push_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_option_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_option_push_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank_push_china@2x.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: cc_fps_images
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/main_bg_a_RETINA.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/main_bg_b_RETINA.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_a_RETINA.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_b_CN_RETINA.png
+01-03 15:12:28.054 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_a_CN_RETINA.png
+01-03 15:12:28.062 I/ALSAModule( 1022): Initialized ALSA PLAYBACK device AndroidPlayback_Speaker_normal
+01-03 15:12:28.085 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/character/Character_RETINA.png as texture
+01-03 15:12:28.343 D/AudioPolicyManagerALSA( 1022): stopOutput() output 1, stream 3
+01-03 15:12:28.343 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 0
+01-03 15:12:28.343 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 0 delayMs 372
+01-03 15:12:28.414 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/stage_classic/stage_RETINA.png as texture
+01-03 15:12:28.601 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itemblackhole_RETINA.png as texture
+01-03 15:12:28.789 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itembomb_RETINA.png as texture
+01-03 15:12:28.914 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itemfirebird_RETINA.png as texture
+01-03 15:12:29.398 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itemlightning_RETINA.png as texture
+01-03 15:12:29.617 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/effectblackhole_RETINA.png as texture
+01-03 15:12:29.703 D/AndroidRuntime(16141):
+01-03 15:12:29.703 D/AndroidRuntime(16141): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:29.703 D/AndroidRuntime(16141): CheckJNI is OFF
+01-03 15:12:29.703 I/ActivityManager( 1178): Process borqs.mobilewidget (pid 16052) has died.
+01-03 15:12:29.703 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:12:30.085 D/AndroidRuntime(16141): Calling main entry com.android.commands.am.Am
+01-03 15:12:30.117 I/iTestin (15934): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:12:30.125 I/TestinExternalLog(15934): <<<<<<< Capturing image (10) >>>>>>>
+01-03 15:12:30.125 D/AndroidRuntime(16141): Shutting down VM
+01-03 15:12:30.132 I/AndroidRuntime(16141): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:30.132 D/dalvikvm(16141): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+1ms
+01-03 15:12:30.132 D/jdwp    (16141): adbd disconnected
+01-03 15:12:30.476 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/effectbomb_RETINA.png as texture
+01-03 15:12:30.679 D/dalvikvm(15986): GC_CONCURRENT freed 744K, 60% free 826K/2051K, external 0K/0K, paused 1ms+1ms
+01-03 15:12:30.765 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/effectfirebird_RETINA.png as texture
+01-03 15:12:31.171 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/cloud_RETINA.png as texture
+01-03 15:12:31.429 D/ALSA-lib( 1022): snd_pcm_close AndroidPlayback_Speaker_normal
+01-03 15:12:31.429 D/ALSA-lib( 1022): snd_pcm_close default
+01-03 15:12:31.429 D/ALSA-lib( 1022): snd_pcm_close (null)
+01-03 15:12:31.429 D/StreamProcess( 1022): OutputStreamProcess::ResetAOLC()
+01-03 15:12:31.617 I/ActivityManager( 1178): Process com.mgyun.shua.su (pid 15999) has died.
+01-03 15:12:31.617 W/ActivityManager( 1178): Scheduling restart of crashed service com.mgyun.shua.su/.service.SuService in 58360ms
+01-03 15:12:31.617 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:12:31.882 I/ActivityManager( 1178): Process com.android.bluetooth (pid 16127) has died.
+01-03 15:12:31.882 W/ActivityManager( 1178): Scheduling restart of crashed service com.android.bluetooth/.pbap.BluetoothPbapService in 1194000ms
+01-03 15:12:31.882 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:12:31.906 D/MediaPlayer(15974): release() in
+01-03 15:12:31.914 V/AudioPolicyManagerALSA( 1022): releaseOutput() 1
+01-03 15:12:31.914 D/MediaPlayer(15974): release() out
+01-03 15:12:31.921 I/OMXCodec( 1022): [Stagefright] use software codec=VorbisDecoder
+01-03 15:12:31.929 D/MediaPlayer(15974): stop() in
+01-03 15:12:31.929 I/AwesomePlayer( 1022): Lock success within 5000 us
+01-03 15:12:31.929 D/MediaPlayer(15974): stop() out
+01-03 15:12:31.937 I/AwesomePlayer( 1022): Lock success within 5000 us
+01-03 15:12:31.945 D/MediaPlayer(15974): handleMessage:MEDIA_SEEK_COMPLETE
+01-03 15:12:31.945 D/MediaPlayer(15974): start() in
+01-03 15:12:31.945 D/AudioPolicyManagerALSA( 1022): startOutput() output 1, stream 3
+01-03 15:12:31.945 D/AudioPolicyManagerALSA( 1022): getDeviceForStrategy() strategy 0, device 2
+01-03 15:12:31.945 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 2 delayMs 0
+01-03 15:12:31.945 V/AudioPolicyManagerALSA( 1022): setOutputDevice() setting same device 2 for output 1
+01-03 15:12:31.945 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 1
+01-03 15:12:31.945 D/AudioFlinger( 1022): [AudioFlinger::MixerThread::threadLoop] set ALC to enable
+01-03 15:12:31.945 D/AudioHardwareALSA( 1022): [ALSA] handle closed, reopen it
+01-03 15:12:31.945 D/ALSAModule( 1022): open called for devices 00000002 in mode 0...
+01-03 15:12:31.945 D/ALSA-lib( 1022): snd_pcm_open AndroidPlayback_Speaker_normal
+01-03 15:12:31.953 D/AwesomePlayer( 1022): [SHORT_SND] endpos = 0, latency = 557, add a short delay
+01-03 15:12:31.953 I/ALSAModule( 1022): Initialized ALSA PLAYBACK device AndroidPlayback_Speaker_normal
+01-03 15:12:32.500 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:12:32.500 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:12:32.500 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:12:32.507 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:12:32.507 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:12:32.507 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:12:32.507 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:12:32.515 D/MediaPlayer(15974): start() out
+01-03 15:12:32.609 D/MediaPlayer(15974): handleMessage:MEDIA_SEEK_COMPLETE
+01-03 15:12:33.257 D/AudioPolicyManagerALSA( 1022): startOutput() output 1, stream 3
+01-03 15:12:33.257 D/AudioPolicyManagerALSA( 1022): getDeviceForStrategy() strategy 0, device 2
+01-03 15:12:33.257 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 2
+01-03 15:12:33.257 V/AudioPolicyManagerALSA( 1022): releaseOutput() 1
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box00_burn@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box01_burn@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box02_burn@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box03_burn@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box04_burn@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box05_burn@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box06_burn@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box07_burn@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box00_feather@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box01_feather@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box02_feather@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box03_feather@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box04_feather@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box05_feather@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box06_feather@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box07_feather@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: bone@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box00_normal_00@2x.png
+01-03 15:12:33.257 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box00_normal_02@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box01_normal_00@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box01_normal_02@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box02_normal_00@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box02_normal_02@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box03_normal_00@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box03_normal_02@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box04_normal_00@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box04_normal_02@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box05_normal_00@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box05_normal_02@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box06_normal_00@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box06_normal_02@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box07_normal_00@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: box07_normal_02@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_level_bg@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_pause_sound_off@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_pause_sound_on@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_tree_gauge_alert@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_tree_gauge_bar@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_tree_gauge_head@2x.png
+01-03 15:12:33.265 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_birds_birds@2x.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_level_level@2x.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_level_ready@2x.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: stage_level_start@2x.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: bomb_star_1.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: bomb_star_2.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: bomb_star_3.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: Cloud_black_01.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: Cloud_black_02.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: Cloud_black_03.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: Cloud_black_04.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: Cloud_white_01.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: Cloud_white_02.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: Cloud_white_03.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: removing unused frame: Cloud_white_04.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: cc_fps_images
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/main_bg_a_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/main_bg_b_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_a_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_b_CN_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_a_CN_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/character/Character_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/stage_classic/stage_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/item/itemblackhole_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/item/itembomb_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/item/itemfirebird_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/item/itemlightning_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/item_effect/effectblackhole_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/item_effect/effectbomb_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/item_effect/effectfirebird_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/item_effect/cloud_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/stage_classic/stage_bg_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/stage_classic/stage_tree_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/stage_classic/stage_tree_grass_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: texture: assets/images/stage_classic/stage_dimm2_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: removing unused texture: assets/images/character/Character_RETINA.png
+01-03 15:12:33.273 D/cocos2d-x debug info(15974): cocos2d: CCTextureCache: removing unused texture: assets/images/item_effect/cloud_RETINA.png
+01-03 15:12:33.281 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/options/option_CN_RETINA.png as texture
+01-03 15:12:33.398 D/cocos2d-x debug info(15974): cocos2d: CCSpriteFrameCache: Trying to use file images/options/option_RETINA.png as texture
+01-03 15:12:33.492 D/BATD    ( 1073): [LifePercent] chg dwPredictPercentage=997
+01-03 15:12:33.492 D/BATD    ( 1073): [LifePercent] chg last=100
+01-03 15:12:33.492 D/BATD    ( 1073): [LifePercent]ACR_u=13745, KADC=1000, RARC=997, Predict percentage(10*)=997, Percentage=100, FL_u=13800!
+01-03 15:12:33.625 D/AudioPolicyManagerALSA( 1022): stopOutput() output 1, stream 3
+01-03 15:12:33.625 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 1
+01-03 15:12:35.242 I/ActivityManager( 1178): Start proc com.servo.search for service com.servo.search/com.servo.core.android.ServoIndexerService: pid=16154 uid=10026 gids={3003, 1015}
+01-03 15:12:35.585 I/ActivityThread(16154): Pub com.servo.setting: com.servo.crawler.android.app.SettingProvider
+01-03 15:12:35.710 I/ActivityThread(16154): Pub com.servo.app: com.servo.crawler.android.app.AppProvider
+01-03 15:12:35.710 I/ActivityThread(16154): Pub com.servo.file: com.servo.crawler.android.file.FileProvider
+01-03 15:12:35.726 I/ActivityThread(16154): Pub servo_search: com.servo.search.ui.ServoProvider
+01-03 15:12:36.062 D/AndroidRuntime(16162):
+01-03 15:12:36.062 D/AndroidRuntime(16162): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:36.070 D/AndroidRuntime(16162): CheckJNI is OFF
+01-03 15:12:36.140 I/servo   (16154): [AndroidGlobalSession]:SocialSearch: false , VersionCheck:false ,Search all filter uncheck all:false ,SQLiteHook:true ,SECONDARY SQLITE CONF:false ,SQLITE_COMMIT_INTERVAL:10 ,Device:HTC ,Index Internal Media:false ,Enable SDCard File Search:true ,Advance Search:true ,RESULT LONG PRESS:false ,AUDIO INDEX PLAYLIST:true ,AUDIO INDEX GENRES:true ,DEPLOY:true ,TRACES INFO ENABLE:true ,TRACES ERROR ENABLE:true ,TRACES_INFO_MORE_ENABLE:false ,RECENTLY_USED_LIMIT:15 ,ENABLE_GLOBAL_SEARCH:false
+01-03 15:12:36.140 I/servo   (16154): [Logger]:class com.servo.core.android.AndroidGlobalSession init finished in : 0ms
+01-03 15:12:36.328 D/AndroidRuntime(16162): Calling main entry com.android.commands.am.Am
+01-03 15:12:36.359 I/iTestin (15934): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:12:36.359 I/TestinExternalLog(15934): <<<<<<< Capturing image (11) >>>>>>>
+01-03 15:12:36.367 D/AndroidRuntime(16162): Shutting down VM
+01-03 15:12:36.382 I/AndroidRuntime(16162): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:36.406 D/dalvikvm(16162): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 0ms+31ms
+01-03 15:12:36.406 D/jdwp    (16162): adbd disconnected
+01-03 15:12:36.429 W/ContentService( 1178): binderDied() at ObserverNode name com.servo.app
+01-03 15:12:36.429 W/ContentService( 1178): binderDied() at ObserverNode name com.servo.setting
+01-03 15:12:36.429 W/ContentService( 1178): binderDied() at ObserverNode name playlists
+01-03 15:12:36.429 I/ActivityManager( 1178): Process com.servo.search (pid 16154) has died.
+01-03 15:12:36.429 W/ActivityManager( 1178): Scheduling restart of crashed service com.servo.search/com.servo.core.android.ServoIndexerService in 63543ms
+01-03 15:12:36.437 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:12:36.937 D/dalvikvm(15986): GC_CONCURRENT freed 787K, 62% free 790K/2051K, external 0K/0K, paused 1ms+2ms
+01-03 15:12:40.031 I/ActivityManager( 1178): Start proc com.htc.music for broadcast com.htc.music/.MediaButtonIntentReceiver: pid=16173 uid=10066 gids={3003, 3002, 1015}
+01-03 15:12:40.148 I/ActivityThread(16173): Pub com.12530.musicdownload: com.htc.music.mobilemusic.DownloadManager.DownloadProvider
+01-03 15:12:40.218 I/ActivityManager( 1178): Start proc com.htc.fm for broadcast com.htc.fm/.MediaButtonIntentReceiver: pid=16180 uid=10052 gids={3003, 1015}
+01-03 15:12:40.328 D/MediaButtonIntentReceiver_FM(16180): [MediaButtonIntent][FMTuner] onReceive(Intent { act=android.intent.action.MEDIA_BUTTON cmp=com.htc.fm/.MediaButtonIntentReceiver (has extras) })
+01-03 15:12:40.335 D/MediaButtonIntentReceiver_FM(16180): [MediaButtonIntent][FMTuner]  headsetOwner(null)
+01-03 15:12:40.351 I/ActivityManager( 1178): Process com.htc.music (pid 16173) has died.
+01-03 15:12:40.382 I/ActivityManager( 1178): Process com.htc.fm (pid 16180) has died.
+01-03 15:12:40.382 I/ActivityManager( 1178): Low Memory: No more background processes.
+01-03 15:12:42.210 D/AndroidRuntime(16193):
+01-03 15:12:42.210 D/AndroidRuntime(16193): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:42.210 D/AndroidRuntime(16193): CheckJNI is OFF
+01-03 15:12:42.460 D/AndroidRuntime(16193): Calling main entry com.android.commands.am.Am
+01-03 15:12:42.492 I/iTestin (15934): recv broadcast>>>itestin.service.CMD_LOG
+01-03 15:12:42.492 I/TestinExternalLog(15934): <<<<<<< Capturing image (12) >>>>>>>
+01-03 15:12:42.507 D/AndroidRuntime(16193): Shutting down VM
+01-03 15:12:42.515 I/AndroidRuntime(16193): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:42.515 D/dalvikvm(16193): GC_CONCURRENT freed 103K, 67% free 345K/1024K, external 0K/0K, paused 1ms+0ms
+01-03 15:12:42.515 D/jdwp    (16193): adbd disconnected
+01-03 15:12:45.234 I/ActivityManager( 1178): Start proc com.marigold.android.notes for service com.marigold.android.notes/.service.NotificationService: pid=16203 uid=10006 gids={1015}
+01-03 15:12:45.351 I/ActivityThread(16203): Pub com.marigold.provider.androidnotes.database: com.marigold.android.notes.db.AndroidNotesDBProvider
+01-03 15:12:45.562 D/dalvikvm( 1178): GC_EXPLICIT freed 1682K, 65% free 9564K/26823K, external 2405K/3004K, paused 188ms
+01-03 15:12:45.593 D/Database(16203): dbopen(): path = /data/data/com.marigold.android.notes/databases/notes, flag = 6, file size = 7168
+01-03 15:12:45.601 D/Database(16203): dbopen(): path = /data/data/com.marigold.android.notes/databases/notes, mode: wal, disk free size: 493 M, handle: 0x3131f0
+01-03 15:12:45.632 D/Database(16203): dbclose(): path = /data/data/com.marigold.android.notes/databases/notes, handle = 0x3131f0
+01-03 15:12:46.843 D/dalvikvm(15934): GC_CONCURRENT freed 394K, 52% free 2720K/5575K, external 0K/0K, paused 3ms+4ms
+01-03 15:12:47.515 I/TestinExternalLog(1): <<<<<<< StopTest monkey Package com.giant.brizzle >>>>>>>
+01-03 15:12:47.515 D/NetworkProviderService( 5727): Get data from Mapbar - onLocationChanged location:Location[mProvider=network,mTime=1388731844151,mLatitude=40.06816,mLongitude=116.34497,mHasAltitude=false,mAltitude=0.0,mHasSpeed=false,mSpeed=0.0,mHasBearing=false,mBearing=0.0,mHasAccuracy=true,mAccuracy=75.0,mExtras=Bundle[{city=北京市}]]
+01-03 15:12:47.515 D/NetworkProviderService( 5727): 1-reportLocation() to location manager-1
+01-03 15:12:47.523 D/GpsLocationProvider( 1178): [handleMessage] UPDATE_LOCATION
+01-03 15:12:47.523 D/GpsLocationProvider( 1178): GetGpsInterface+
+01-03 15:12:47.523 D/GpsLocationProvider( 1178): GetGpsInterface-
+01-03 15:12:47.523 D/NetworkProviderService( 5727): in getStatusUpdateTime()
+01-03 15:12:47.523 D/NetworkProviderService( 5727): in getStatus():2
+01-03 15:12:47.554 D/dalvikvm( 4670): GC_EXPLICIT freed 17K, 45% free 3176K/5767K, external 1528K/2040K, paused 58ms
+01-03 15:12:47.554 I/TestinExternalLog(1): <<<<<<< Begin uninstalling package com.giant.brizzle >>>>>>>
+01-03 15:12:47.937 D/AndroidRuntime(16212):
+01-03 15:12:47.937 D/AndroidRuntime(16212): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+01-03 15:12:47.937 D/AndroidRuntime(16212): CheckJNI is OFF
+01-03 15:12:48.226 D/AndroidRuntime(16212): Calling main entry com.android.commands.pm.Pm
+01-03 15:12:48.242 I/PackageManager( 1178): Removing non-system package:com.giant.brizzle
+01-03 15:12:48.242 I/ActivityManager( 1178): Force stopping package com.giant.brizzle uid=10083
+01-03 15:12:48.257 I/Process ( 1178): Sending signal. PID: 15974 SIG: 9
+01-03 15:12:48.257 I/ActivityManager( 1178):   Force finishing activity HistoryRecord{40879d40 com.giant.brizzle/.Brizzle}
+01-03 15:12:48.289 I/ActivityManager( 1178): Start proc com.borqs.launcher for activity com.borqs.launcher/com.borqs.launcher2.Launcher: pid=16221 uid=10073 gids={3003, 3001, 3002, 1006, 1015}
+01-03 15:12:48.343 I/WindowManager( 1178): WIN DEATH: Window{4093ab90 com.giant.brizzle/com.giant.brizzle.Brizzle paused=true}
+01-03 15:12:48.351 D/AudioTrack( 1022): Audio Track already stopped
+01-03 15:12:48.351 D/AudioPolicyManagerALSA( 1022): stopOutput() output 1, stream 3
+01-03 15:12:48.351 V/AudioPolicyManagerALSA( 1022): changeRefCount() stream 3, count 0
+01-03 15:12:48.351 D/AudioPolicyManagerALSA( 1022): setOutputDevice() output 1 device 0 delayMs 372
+01-03 15:12:48.351 V/AudioPolicyManagerALSA( 1022): releaseOutput() 1
+01-03 15:12:48.359 I/WindowManager( 1178): WIN DEATH: Window{409ec780 SurfaceView paused=false}
+01-03 15:12:48.359 I/WindowManager( 1178): WIN DEATH: Window{409f2bd0 com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-03 15:12:48.367 E/SurfaceFlinger( 1178): layer=0x800090 is not in the purgatory list
+01-03 15:12:48.367 I/WindowManager( 1178): WIN DEATH: Window{40b6fc30 SurfaceView paused=false}
+01-03 15:12:48.375 E/ActivityManager( 1178): fail to set top app changed!
+01-03 15:12:48.398 V/AudioPolicyManagerALSA( 1022): releaseOutput() 1
+01-03 15:12:48.421 I/ActivityThread(16221): Pub com.borqs.launcher2.settings: com.borqs.launcher2.LauncherProvider
+01-03 15:12:48.445 D/PackageManager( 1178): [embedded] Removing package com.giant.brizzle
+01-03 15:12:48.468 D/PackageManager( 1178):   Activities: com.giant.brizzle.Brizzle com.google.ads.AdActivity
+01-03 15:12:48.492 D/dalvikvm(16221): GC_EXTERNAL_ALLOC freed 59K, 50% free 2723K/5379K, external 0K/0K, paused 32ms
+01-03 15:12:48.742 I/ActivityManager( 1178): Force stopping package com.giant.brizzle uid=10083
+01-03 15:12:48.992 D/PhoneApp( 1287): -- PackageChangeBroadcastReceiver  action = android.intent.action.PACKAGE_REMOVED
+01-03 15:12:49.000 I/ActivityManager( 1178): Start proc com.kingroot.kinguser for broadcast com.kingroot.kinguser/.receiver.PackageReceiver: pid=16228 uid=10057 gids={3003, 1015}
+01-03 15:12:49.273 D/dalvikvm( 1178): GC_EXPLICIT freed 337K, 65% free 9551K/26823K, external 2405K/3004K, paused 199ms
+01-03 15:12:49.296 D/szipinf (16228): Initializing inflate state
+01-03 15:12:49.304 I/installd( 1062): unlink /data/dalvik-cache/data@app@com.giant.brizzle-1.apk@classes.dex
+01-03 15:12:49.320 D/Database(16221): dbopen(): path = /data/data/com.borqs.launcher/databases/launcher.db, flag = 6, file size = 4096
+01-03 15:12:49.367 D/AndroidRuntime(16212): Shutting down VM
+01-03 15:12:49.367 D/dalvikvm(16212): GC_CONCURRENT freed 101K, 70% free 309K/1024K, external 0K/0K, paused 0ms+0ms
+01-03 15:12:49.367 I/AndroidRuntime(16212): NOTE: attach of thread 'Binder Thread #3' failed
+01-03 15:12:49.375 D/jdwp    (16212): adbd disconnected
+01-03 15:12:49.398 D/Database(16221): dbopen(): path = /data/data/com.borqs.launcher/databases/launcher.db, mode: wal, disk free size: 501 M, handle: 0x3853a8
+01-03 15:12:49.398 I/TestinExternalLog(1): <<<<<<< Package com.giant.brizzle uninstalled >>>>>>>
+<<<<<<< StartFileTag monkey >>>>>>>
+:Monkey: seed=1 count=150
+:AllowPackage: com.giant.brizzle
+:IncludeCategory: android.intent.category.LAUNCHER
+// Event percentages:
+//   0: 34.88372%
+//   1: 23.255814%
+//   2: -0.0%
+//   3: -0.0%
+//   4: 34.88372%
+//   5: 4.6511626%
+//   6: -0.0%
+//   7: 2.3255813%
+//   8: -0.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10000000;component=com.giant.brizzle/.Brizzle;end
+// Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.giant.brizzle/.Brizzle } in package com.giant.brizzle
+:Sending Pointer ACTION_DOWN x=335.0 y=157.0
+:Sending Pointer ACTION_UP x=335.0 y=157.0
+:Sending Pointer ACTION_DOWN x=469.0 y=206.0
+:Sending Pointer ACTION_UP x=469.0 y=206.0
+:Sending Pointer ACTION_DOWN x=381.0 y=308.0
+:Sending Pointer ACTION_UP x=381.0 y=308.0
+:Sending Pointer ACTION_DOWN x=166.0 y=173.0
+:Sending Pointer ACTION_UP x=166.0 y=173.0
+:Sending Pointer ACTION_DOWN x=170.0 y=95.0
+:Sending Pointer ACTION_UP x=179.0 y=80.0
+:Sending Pointer ACTION_DOWN x=61.0 y=457.0
+:Sending Pointer ACTION_UP x=61.0 y=457.0
+:Sending Pointer ACTION_DOWN x=407.0 y=418.0
+:Sending Pointer ACTION_UP x=407.0 y=418.0
+:Sending Pointer ACTION_DOWN x=289.0 y=483.0
+:Sending Pointer ACTION_UP x=289.0 y=483.0
+:Sending Pointer ACTION_DOWN x=257.0 y=37.0
+:Sending Pointer ACTION_UP x=270.0 y=45.0
+:Sending Pointer ACTION_DOWN x=181.0 y=534.0
+:Sending Pointer ACTION_UP x=181.0 y=534.0
+:Sending Pointer ACTION_DOWN x=174.0 y=699.0
+:Sending Pointer ACTION_UP x=174.0 y=699.0
+:Sending Pointer ACTION_DOWN x=246.0 y=184.0
+:Sending Pointer ACTION_UP x=246.0 y=184.0
+:Sending Pointer ACTION_DOWN x=235.0 y=744.0
+:Sending Pointer ACTION_UP x=235.0 y=744.0
+:Sending Pointer ACTION_DOWN x=398.0 y=613.0
+:Sending Pointer ACTION_UP x=390.0 y=614.0
+:Sending Pointer ACTION_DOWN x=225.0 y=666.0
+:Sending Pointer ACTION_UP x=225.0 y=666.0
+// Rejecting start of Intent { act=android.intent.action.CALL_BUTTON cmp=com.android.htcdialer/.Dialer } in package com.android.htcdialer
+:Sending Pointer ACTION_DOWN x=142.0 y=6.0
+:Sending Pointer ACTION_UP x=156.0 y=16.0
+:Sending Pointer ACTION_DOWN x=5.0 y=552.0
+:Sending Pointer ACTION_UP x=5.0 y=552.0
+:Sending Pointer ACTION_DOWN x=468.0 y=233.0
+:Sending Pointer ACTION_UP x=468.0 y=233.0
+:Sending Pointer ACTION_DOWN x=189.0 y=290.0
+:Sending Pointer ACTION_UP x=189.0 y=290.0
+:Sending Pointer ACTION_DOWN x=273.0 y=230.0
+:Sending Pointer ACTION_UP x=281.0 y=224.0
+:Sending Pointer ACTION_DOWN x=379.0 y=577.0
+:Sending Pointer ACTION_UP x=390.0 y=588.0
+:Sending Pointer ACTION_DOWN x=461.0 y=490.0
+:Sending Pointer ACTION_UP x=461.0 y=490.0
+:Sending Pointer ACTION_DOWN x=121.0 y=77.0
+:Sending Pointer ACTION_UP x=121.0 y=77.0
+:Sending Pointer ACTION_DOWN x=396.0 y=492.0
+//[calendar_time:2014-01-03 15:12:30.648  system_uptime:780439608]
+// Sending event #100
+:Sending Pointer ACTION_UP x=383.0 y=468.0
+:Sending Pointer ACTION_DOWN x=98.0 y=525.0
+:Sending Pointer ACTION_UP x=90.0 y=526.0
+:Sending Pointer ACTION_DOWN x=278.0 y=209.0
+:Sending Pointer ACTION_UP x=279.0 y=216.0
+:Sending Pointer ACTION_DOWN x=92.0 y=740.0
+:Sending Pointer ACTION_UP x=92.0 y=749.0
+:Sending Pointer ACTION_DOWN x=214.0 y=66.0
+:Sending Pointer ACTION_UP x=214.0 y=66.0
+:Sending Pointer ACTION_DOWN x=361.0 y=683.0
+:Sending Pointer ACTION_UP x=361.0 y=683.0
+:Sending Pointer ACTION_DOWN x=352.0 y=56.0
+:Sending Pointer ACTION_UP x=352.0 y=56.0
+:Sending Pointer ACTION_DOWN x=300.0 y=199.0
+:Sending Pointer ACTION_UP x=300.0 y=199.0
+:Sending Pointer ACTION_DOWN x=469.0 y=708.0
+:Sending Pointer ACTION_UP x=469.0 y=708.0
+:Sending Pointer ACTION_DOWN x=205.0 y=216.0
+:Sending Pointer ACTION_UP x=205.0 y=216.0
+Events injected: 150
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0
+## Network stats: elapsed time=33719ms (0ms mobile, 33719ms wifi, 0ms not connected)
+// Monkey finished
+
+<<<<<<< EndFileTag >>>>>>>

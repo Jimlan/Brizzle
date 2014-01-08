@@ -293,35 +293,35 @@ void ClassicScene::__showScore( CCObject *data )
     levelNode->addChild(levelBg);
     ShareManager *sm = ShareManager::shareManager();
     int level = currentScore/(500+sm->topLevel*150)+1;
-    if(level>sm->topLevel)
-    {
-        sm->topLevel = level;
-        CCLabelBMFont *levelNum = CCLabelBMFont::create(CCString::createWithFormat("LEVEL%d",sm->topLevel)->getCString(),"images/common/alphanum.fnt");
-        CCMoveTo *moveIn = CCMoveTo::create(0.5f,VisibleRect::center());
-        CCMoveTo *moveOut = CCMoveTo::create(0.5f,ccp(1000,VisibleRect::right().y));
-        CCCallFunc *delayCall = CCCallFunc::create(levelNode,callfunc_selector(CCNode::removeFromParent));
-        levelNode->addChild(levelNum);
-        addChild(levelNode);
-        toast("恭喜升级，时间条长满了哟^_^");
-        passSeconds = 0;
-        totalSeconds += 5;
-        levelNode->setPosition(ccp(-500,VisibleRect::center().y));
-        levelNode->runAction(CCSequence::create(moveIn,CCDelayTime::create(0.5f),moveOut,delayCall,NULL));
-        switch(sm->topLevel)
-        {
-        case 5:
-            sm->birdTypes = 5;
-            break;
-        case 10:
-            sm->birdTypes = 6;
-            break;
-        case 15:
-            sm->birdTypes = 7;
-            break;
-        default:
-            break;
-        }
-    }
+	if(level>sm->topLevel)
+	{
+		sm->topLevel = level;
+		CCLabelBMFont *levelNum = CCLabelBMFont::create(CCString::createWithFormat("LEVEL%d",sm->topLevel)->getCString(),"images/common/alphanum.fnt");
+		CCMoveTo *moveIn = CCMoveTo::create(0.5f,VisibleRect::center());
+		CCMoveTo *moveOut = CCMoveTo::create(0.5f,ccp(1000,VisibleRect::right().y));
+		CCCallFunc *delayCall = CCCallFunc::create(levelNode,callfunc_selector(CCNode::removeFromParent));
+		levelNode->addChild(levelNum);
+		addChild(levelNode);
+		toast("恭喜升级，时间条长满了哟^_^");
+		passSeconds = 0;
+		totalSeconds += 5;
+		levelNode->setPosition(ccp(-500,VisibleRect::center().y));
+		levelNode->runAction(CCSequence::create(moveIn,CCDelayTime::create(0.5f),moveOut,delayCall,NULL));
+		switch(sm->topLevel)
+		{
+		case 5:
+			sm->birdTypes = 5;
+			break;
+		case 10:
+			sm->birdTypes = 6;
+			break;
+		case 15:
+			sm->birdTypes = 7;
+			break;
+		default:
+			break;
+		}
+	}
 }
 
 void ClassicScene::progressUpdate( float del )

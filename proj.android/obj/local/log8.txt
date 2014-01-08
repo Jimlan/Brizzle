@@ -1,0 +1,2182 @@
+----------------------------------------------------
+[ro.build.id]:[GRK39F]
+[ro.build.display.id]:[U8-eng 2.3.6 GRK39F 20120320.143711.svn12710 test-keys]
+[ro.build.version.incremental]:[20120320.143711.svn12710]
+[ro.build.version.sdk]:[10]
+[ro.build.version.codename]:[REL]
+[ro.build.version.release]:[2.3.6]
+[ro.build.date]:[Tue Mar 20 14:39:45 CST 2012]
+[ro.build.date.utc]:[1332225585]
+[ro.build.type]:[eng]
+[ro.build.user]:[hmct]
+[ro.build.host]:[hmct]
+[ro.build.tags]:[test-keys]
+[ro.product.model]:[HS-U8]
+[ro.product.brand]:[Hisense]
+[ro.product.manufacturer]:[Hisense]
+[ro.product.locale.language]:[zh]
+[ro.build.product]:[U8]
+[ro.build.description]:[U8-eng 2.3.6 GRK39F 20120320.143711.svn12710 test-keys]
+[ro.build.fingerprint]:[Hisense/U8/U8:2.3.6/GRK39F/20120320.143711.svn12710:eng/test-keys]
+----------------------------------------------------
+--------- tester 1
+01-08 11:40:15.739 I/TestinExternalLog(  826): <<<<<<< 046689173f24e9d6cd5f8b7b5d4ef27a >>>>>>>
+01-08 11:40:16.679 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:17.119 I/TestinExternalLog(  826): <<<<<<< DateTime 2014-01-08 11:40:17.132 >>>>>>>
+01-08 11:40:17.119 I/TestinExternalLog(1): <<<<<<< Begin installing package com.giant.brizzle >>>>>>>
+01-08 11:40:17.679 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:18.679 I/SendKeyEvent( 2551): 3
+01-08 11:40:18.689 D/xiaohong(  265):  handwritingwhideInputMethodMenu();
+01-08 11:40:18.689 I/Launcher(15726): onPause!
+01-08 11:40:18.689 I/Launcher(15726): onResume!
+--------- beginning of /dev/log/system
+01-08 11:40:18.689 I/ActivityManager(  159): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/.Launcher } from pid 159
+01-08 11:40:18.699 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:19.699 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:20.709 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:21.709 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:22.719 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:23.719 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:24.489 W/ActivityManager(  159): No content provider found for: 
+01-08 11:40:24.729 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:24.989 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:24.989 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:24.989 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:24.989 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:24.989 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:24.989 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:24.989 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:24.989 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:24.989 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:24.989 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:24.989 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:24.989 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:24.989 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:24.989 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:24.989 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:24.989 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:24.989 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:24.989 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:24.989 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:24.989 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:24.989 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.099 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.099 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.099 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.159 I/SendKeyEvent( 2573): 3
+01-08 11:40:25.169 D/xiaohong(  265):  handwritingwhideInputMethodMenu();
+01-08 11:40:25.169 I/Launcher(15726): onPause!
+01-08 11:40:25.169 I/Launcher(15726): onResume!
+01-08 11:40:25.169 I/ActivityManager(  159): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/.Launcher } from pid 159
+01-08 11:40:25.349 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.349 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.349 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.419 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.419 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.419 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.419 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.419 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.419 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.419 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.419 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.419 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.419 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.419 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.419 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.419 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.419 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.559 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.559 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.559 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.589 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.589 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.589 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.639 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.639 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.639 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.729 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:25.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:25.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:25.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:25.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.159 D/SntpClient(  159): request time failed: java.net.UnknownHostException: xtra1.gpsonextra.net
+01-08 11:40:26.169 D/NetdConnector(  159): SND -> {interface readrxcounter rmnet0} {null}
+01-08 11:40:26.179 D/NetdConnector(  159): RCV <- {216 0}
+01-08 11:40:26.179 D/NetdConnector(  159): RSP <- {216 0}
+01-08 11:40:26.179 D/NetdConnector(  159): SND -> {interface readtxcounter rmnet0} {null}
+01-08 11:40:26.179 D/NetdConnector(  159): RCV <- {217 0}
+01-08 11:40:26.189 D/NetdConnector(  159): RSP <- {217 0}
+01-08 11:40:26.209 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.209 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.209 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.219 D/SntpClient(  159): request time failed: java.net.UnknownHostException: xtra1.gpsonextra.net
+01-08 11:40:26.219 D/SntpClient(  159): request time failed: java.net.UnknownHostException: xtra1.gpsonextra.net
+01-08 11:40:26.269 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.269 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.269 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.369 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.369 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.369 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.369 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.369 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.369 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.369 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.369 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.369 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.369 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:26.369 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.369 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.369 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.369 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.369 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.369 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.369 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.369 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.369 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.369 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.369 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.369 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.369 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.369 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.369 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:26.369 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:26.379 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:40:26.729 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:27.739 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:28.739 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:29.739 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:30.749 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:30.769 W/ActivityManager(  159): No content provider found for: 
+01-08 11:40:30.789 D/PackageParser(  159): Scanning package: /data/app/vmdl-1071079543.tmp
+01-08 11:40:31.559 I/SendKeyEvent( 2734): 3
+01-08 11:40:31.569 I/Launcher(15726): onPause!
+01-08 11:40:31.569 D/xiaohong(  265):  handwritingwhideInputMethodMenu();
+01-08 11:40:31.569 I/Launcher(15726): onResume!
+01-08 11:40:31.569 I/ActivityManager(  159): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/.Launcher } from pid 159
+01-08 11:40:31.749 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:32.599 D/PackageManager(  159): Scanning package com.giant.brizzle
+01-08 11:40:32.599 I/PackageManager(  159): Unpacking native libraries for /data/app/com.giant.brizzle-1.apk
+01-08 11:40:32.749 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:33.759 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:34.759 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:35.759 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:35.819 D/PackageManager(  159):   Activities: com.giant.brizzle.Brizzle com.google.ads.AdActivity
+01-08 11:40:35.819 I/ActivityManager(  159): Force stopping package com.giant.brizzle uid=10052
+01-08 11:40:35.869 D/PackageManager(  159): New package installed in /data/app/com.giant.brizzle-1.apk
+01-08 11:40:35.919 D/PackageIntentReceiver(26244): onReceive Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.giant.brizzle flg=0x10000000 (has extras) }
+01-08 11:40:36.129 W/RecognitionManagerService(  159): no available voice recognition services found
+01-08 11:40:36.359 D/Launcher.Gridspace(15726): rectify 1 group Apps Adapter List!
+01-08 11:40:36.759 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:36.769 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.769 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.769 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.829 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.829 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.829 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.919 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.919 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.919 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.959 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.959 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.959 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.959 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.959 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.959 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.959 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:36.959 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.959 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.959 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.959 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.959 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.959 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.959 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.959 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.959 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.959 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.959 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.959 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:36.959 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:36.959 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.059 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.059 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.059 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.169 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.169 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.169 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.219 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.219 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.219 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.379 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.379 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.379 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.379 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.379 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.379 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.379 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.379 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.379 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.379 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.379 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.379 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.379 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.379 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.379 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.379 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.379 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.379 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.379 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.379 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.379 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.439 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.439 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.439 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.759 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:37.899 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.909 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.909 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.909 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.909 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.909 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.909 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.909 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.909 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.909 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.909 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.909 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.909 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.909 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.909 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.909 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.909 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.909 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.909 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.909 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.909 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.909 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:37.929 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:37.929 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:37.929 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:38.019 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:38.019 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:38.019 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:38.019 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:38.019 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:38.019 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:38.019 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:40:38.769 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:39.769 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:40.769 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:41.769 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:42.769 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:42.809 I/TestinExternalLog(  826): <<<<<<< Process com.giant.brizzle >>>>>>>
+01-08 11:40:42.809 I/TestinExternalLog(1): <<<<<<< Package com.giant.brizzle installed >>>>>>>
+01-08 11:40:43.779 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:44.779 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:45.779 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:46.789 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:47.289 I/TestinExternalLog(1): <<<<<<< Starting Package com.giant.brizzle >>>>>>>
+01-08 11:40:47.789 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:48.229 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:40:48.429 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.429 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.429 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.489 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.489 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.489 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.489 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.489 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.489 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.489 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.489 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.489 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.489 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.489 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.489 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.489 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.489 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.489 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.489 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.489 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.489 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.489 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.489 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.489 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.589 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.589 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.589 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.719 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.719 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.719 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.799 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:48.899 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.909 I/ActivityManager(  159): Starting: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.giant.brizzle/.Brizzle } from pid 2991
+01-08 11:40:48.929 I/Launcher(15726): onPause!
+01-08 11:40:48.959 I/ActivityManager(  159): Start proc com.giant.brizzle for activity com.giant.brizzle/.Brizzle: pid=3008 uid=10052 gids={3003}
+01-08 11:40:48.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.969 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.969 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.969 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.969 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.969 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.969 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.969 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.969 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.969 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.969 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.969 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.969 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.969 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.969 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.969 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.969 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:48.999 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:48.999 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:48.999 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.159 D/Cocos2dxActivity( 3008): model=HS-U8
+01-08 11:40:49.159 D/Cocos2dxActivity( 3008): product=U8
+01-08 11:40:49.159 D/Cocos2dxActivity( 3008): isEmulator=false
+01-08 11:40:49.169 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.169 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.169 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.189 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.189 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.189 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.259 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.259 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.259 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.409 I/ActivityManager(  159): Displayed com.giant.brizzle/.Brizzle: +461ms
+01-08 11:40:49.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): <dict>
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	cocos2d.x.version: 2.2.1
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	cocos2d.x.compiled_with_profiler: false
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	cocos2d.x.compiled_with_gl_state_cache: true
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.vendor: Qualcomm
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.renderer: Adreno (TM) 200
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.version: OpenGL ES 2.0 1849878
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.max_texture_size: 4096
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.max_texture_units: 20
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.supports_PVRTC: false
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.supports_NPOT: true
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.supports_BGRA8888: false
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.supports_discard_framebuffer: false
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): 	gl.supports_vertex_array_object: false
+01-08 11:40:49.599 D/cocos2d-x debug info( 3008): </dict>
+01-08 11:40:49.609 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.609 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.609 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.659 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.659 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:40:49.659 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.659 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.659 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:40:49.659 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:40:49.679 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:40:49.809 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:49.889 D/cocos2d-x debug info( 3008): cocos2d: CCTextureCache: texture: cc_fps_images
+01-08 11:40:49.889 I/TestinExternalLog(1): Displayed com.giant.brizzle/com.giant.brizzle.Brizzle: +461ms
+01-08 11:40:50.809 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:50.899 I/TestinExternalLog(  826): CPU>>>> User 42%, System 25%, IOW 5%, IRQ 0%, com.giant.brizzle(3008):0%
+01-08 11:40:51.579 D/cocos2d-x debug info( 3008): cocos2d: CCTextureCache: texture: cc_fps_images
+01-08 11:40:51.579 D/cocos2d-x debug info( 3008): cocos2d: CCTextureCache: texture: assets/images/loading/splash.png
+01-08 11:40:51.599 D/cocos2d-x debug info( 3008): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_a_RETINA.png as texture
+01-08 11:40:51.819 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:52.119 I/ActivityManager(  159): Force stopping package com.giant.brizzle uid=10052
+01-08 11:40:52.149 I/Launcher(15726): onResume!
+01-08 11:40:52.149 I/ActivityManager(  159): Start proc com.giant.brizzle for added application com.giant.brizzle: pid=3126 uid=10052 gids={3003}
+01-08 11:40:52.179 E/InputDispatcher(  159): channel '409bbf88 com.giant.brizzle/com.giant.brizzle.Brizzle (server)' ~ Consumer closed input channel or an error occurred.  events=0x8
+01-08 11:40:52.179 E/InputDispatcher(  159): channel '409bbf88 com.giant.brizzle/com.giant.brizzle.Brizzle (server)' ~ Channel is unrecoverably broken and will be disposed!
+01-08 11:40:52.179 I/WindowManager(  159): WINDOW DIED Window{409bbf88 com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-08 11:40:52.189 E/JavaBinder(  159): Transact on 0x28c050 in Java object 0x409bbb38 with code 3 failed
+01-08 11:40:52.189 E/JavaBinder(  159): Transact on 0x28c050 in Java object 0x409bbb38 with code 4 failed
+01-08 11:40:52.189 I/WindowManager(  159): WIN DEATH: Window{409bd2c0 SurfaceView paused=false}
+01-08 11:40:52.189 W/InputManagerService(  159): Got RemoteException sending setActive(false) notification to pid 3008 uid 10052
+01-08 11:40:52.229 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:40:52.439 I/TestRunner( 3126): started: test1(a.ApiTestCase)
+01-08 11:40:52.449 I/ActivityManager(  159): Starting: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.giant.brizzle/.Brizzle } from pid 3126
+01-08 11:40:52.569 I/Launcher(15726): onPause!
+01-08 11:40:52.649 D/Cocos2dxActivity( 3126): model=HS-U8
+01-08 11:40:52.649 D/Cocos2dxActivity( 3126): product=U8
+01-08 11:40:52.649 D/Cocos2dxActivity( 3126): isEmulator=false
+01-08 11:40:52.879 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:53.069 I/ActivityManager(  159): Displayed com.giant.brizzle/.Brizzle: +482ms
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): <dict>
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	cocos2d.x.version: 2.2.1
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	cocos2d.x.compiled_with_profiler: false
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	cocos2d.x.compiled_with_gl_state_cache: true
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.vendor: Qualcomm
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.renderer: Adreno (TM) 200
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.version: OpenGL ES 2.0 1849878
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.max_texture_size: 4096
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.max_texture_units: 20
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.supports_PVRTC: false
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.supports_NPOT: true
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.supports_BGRA8888: false
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.supports_discard_framebuffer: false
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): 	gl.supports_vertex_array_object: false
+01-08 11:40:53.239 D/cocos2d-x debug info( 3126): </dict>
+01-08 11:40:53.729 D/cocos2d-x debug info( 3126): cocos2d: CCTextureCache: texture: cc_fps_images
+01-08 11:40:53.939 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:54.139 I/TestinExternalLog(  826): Mem>>>> Avalable:268292KB, com.giant.brizzle(3126) used:14529KB
+01-08 11:40:54.269 I/TestinExternalLog(  826): <<<<<<< StartApp >>>>>>>
+01-08 11:40:54.279 I/TestinExternalLog(  826): <<<<<<< com.giant.brizzle(3126) >>>>>>>
+01-08 11:40:54.399 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:40:54.959 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:55.639 D/cocos2d-x debug info( 3126): cocos2d: CCTextureCache: texture: cc_fps_images
+01-08 11:40:55.639 D/cocos2d-x debug info( 3126): cocos2d: CCTextureCache: texture: assets/images/loading/splash.png
+01-08 11:40:55.649 D/cocos2d-x debug info( 3126): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_a_RETINA.png as texture
+01-08 11:40:55.979 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:56.019 D/cocos2d-x debug info( 3126): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_b_RETINA.png as texture
+01-08 11:40:56.209 D/cocos2d-x debug info( 3126): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_RETINA.png as texture
+01-08 11:40:56.519 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:40:56.709 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:40:56.719 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:40:56.739 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:40:56.739 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:40:56.739 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:40:56.909 D/cocos2d-x debug info( 3126): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_b_CN_RETINA.png as texture
+01-08 11:40:56.989 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:57.199 D/cocos2d-x debug info( 3126): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_CN_RETINA.png as texture
+01-08 11:40:57.239 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:40:57.369 D/Device Model( 3126): HS-U8
+01-08 11:40:57.369 D/MediaPlayer( 3126): setDataSource(58, 13281517, 244915)
+01-08 11:40:57.369 D/MediaPlayerService(   99): setDataSource fd=17, offset=13281517, length=244915
+01-08 11:40:57.389 D/MediaPlayer( 3126): stop state 8
+01-08 11:40:57.389 D/MediaPlayerService(   99): [17] stop
+01-08 11:40:57.389 D/MediaPlayer( 3126): seekTo 0 state 8
+01-08 11:40:57.389 D/MediaPlayerService(   99): [17] seekTo(0)
+01-08 11:40:57.389 D/MediaPlayer( 3126): start state 8
+01-08 11:40:57.389 E/AwesomePlayer(   99): AudioPlayer created, Non-LPA mode mime audio/vorbis duration 0
+01-08 11:40:57.389 D/AudioSink(   99): flush
+01-08 11:40:57.389 D/AudioTrack(   99): Request AudioFlinger to create track
+01-08 11:40:57.389 D/AudioFlinger(   99): createTrack() lSessionId: 31
+01-08 11:40:57.389 D/AudioFlinger(   99): Track constructor name 4097, calling thread 3126
+01-08 11:40:57.389 D/AudioSink(   99): start
+01-08 11:40:57.389 D/AudioTrack(   99): start 0x807f0
+01-08 11:40:57.389 D/AudioFlinger(   99): start(4097), calling thread 3126 session 31
+01-08 11:40:57.389 E/AudioPolicyManagerBase(   99): zouyanfei for bluetoothsco
+01-08 11:40:57.599 W/AudioFlinger(   99): write blocked for 172 msecs, 7 delayed writes, thread 0xcc50
+01-08 11:40:57.609 I/TestinExternalLog(  826): <<<<<<< Capturing image (1) >>>>>>>
+01-08 11:40:57.719 I/TestinExternalLog(  826): CPU>>>> User 59%, System 16%, IOW 9%, IRQ 0%, com.giant.brizzle(3126):52%
+01-08 11:40:57.999 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:58.999 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:40:59.569 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:00.039 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.039 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.039 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.039 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.039 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.039 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.039 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.039 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.039 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.039 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.039 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.039 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.039 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.039 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.039 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.039 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.039 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.039 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.039 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.039 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.039 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.069 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:00.109 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.109 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.109 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.119 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.119 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.119 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.159 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.159 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.159 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.179 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.179 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.179 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.349 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.349 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.349 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.399 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.399 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.399 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.409 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.409 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.459 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.459 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.459 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.459 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.459 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.459 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.459 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.459 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.459 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.459 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.459 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.459 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.459 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.459 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.459 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.459 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.459 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.459 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.459 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.459 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.459 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.619 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.619 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.619 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.649 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.649 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.649 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.649 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.659 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.659 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.769 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.769 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.769 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.789 I/TestinExternalLog(  826): Mem>>>> Avalable:256768KB, com.giant.brizzle(3126) used:29193KB
+01-08 11:41:00.849 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.849 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.849 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.849 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.849 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.849 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.879 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.879 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.879 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.879 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.879 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.879 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.879 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.879 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.879 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.879 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.879 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.879 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.879 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.879 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.879 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.879 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.879 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.879 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.879 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.879 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.879 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.949 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.949 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.949 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:00.989 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:00.989 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:00.989 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.089 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:01.129 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.129 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.129 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.139 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.139 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.139 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.209 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.209 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.209 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.299 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.299 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.299 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.299 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.299 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.299 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.299 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:01.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:01.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:01.329 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:41:02.089 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:02.239 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:03.109 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:03.789 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:03.879 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:03.909 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:03.919 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:03.919 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:03.919 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:04.129 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:04.389 I/TestinExternalLog(  826): CPU>>>> User 33%, System 26%, IOW 31%, IRQ 0%, com.giant.brizzle(3126):24%
+01-08 11:41:04.739 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:05.209 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:05.309 I/TestinExternalLog(  826): <<<<<<< Capturing image (2) >>>>>>>
+01-08 11:41:06.219 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:07.219 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:07.249 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:07.469 I/TestinExternalLog(  826): Mem>>>> Avalable:257008KB, com.giant.brizzle(3126) used:29008KB
+01-08 11:41:08.249 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:09.249 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:09.939 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:10.259 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:10.689 I/TestinExternalLog(  826): CPU>>>> User 28%, System 22%, IOW 39%, IRQ 0%, com.giant.brizzle(3126):19%
+01-08 11:41:11.219 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:11.289 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:11.299 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:11.319 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:11.489 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:11.499 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:11.499 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:11.519 W/KeyCharacterMap( 3126): No keyboard for id 0
+01-08 11:41:11.519 W/KeyCharacterMap( 3126): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+01-08 11:41:11.759 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:11.759 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:11.759 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:11.859 D/AudioSink(   99): flush
+01-08 11:41:11.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:11.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:11.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:11.999 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:11.999 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:11.999 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:11.999 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:11.999 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:11.999 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:11.999 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:11.999 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:11.999 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:11.999 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:11.999 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:11.999 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:11.999 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:11.999 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:11.999 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:11.999 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:11.999 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:11.999 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:11.999 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:11.999 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:11.999 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.009 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.009 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.009 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.089 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.159 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.169 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.169 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.249 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:12.309 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:12.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.429 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.429 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.429 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.429 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.429 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.429 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.429 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.429 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.429 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.429 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.429 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.429 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.429 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.429 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.429 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.429 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.429 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.429 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.429 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.429 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.429 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.519 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.519 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.519 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.529 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.529 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.529 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.749 I/TestinExternalLog(  826): <<<<<<< Capturing image (3) >>>>>>>
+01-08 11:41:12.809 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.809 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.809 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.949 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.949 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.949 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.979 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:12.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:12.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:12.989 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:41:13.309 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:13.769 I/TestinExternalLog(  826): Mem>>>> Avalable:256264KB, com.giant.brizzle(3126) used:29996KB
+01-08 11:41:14.319 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:15.319 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:15.489 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:16.329 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:16.559 I/TestinExternalLog(  826): <<<<<<< Capturing image (4) >>>>>>>
+01-08 11:41:16.999 I/TestinExternalLog(  826): CPU>>>> User 40%, System 31%, IOW 26%, IRQ 0%, com.giant.brizzle(3126):20%
+01-08 11:41:17.249 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:17.359 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:17.529 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:17.579 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:17.599 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:17.659 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:17.659 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:17.669 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:18.369 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:18.699 D/cocos2d-x debug info( 3126): touch mask layer
+01-08 11:41:19.369 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:20.079 I/TestinExternalLog(  826): Mem>>>> Avalable:256520KB, com.giant.brizzle(3126) used:29912KB
+01-08 11:41:20.369 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:20.669 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:21.369 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:22.259 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:22.379 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:23.389 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:23.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.519 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.519 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.519 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.549 I/TestinExternalLog(  826): CPU>>>> User 34%, System 21%, IOW 42%, IRQ 0%, com.giant.brizzle(3126):23%
+01-08 11:41:23.709 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.709 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.709 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.739 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.749 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.749 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.759 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.759 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.759 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.849 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.849 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.849 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.889 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.889 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.889 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.889 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.889 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.889 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.889 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:23.899 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:23.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:23.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.009 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.009 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.009 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.189 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.189 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.189 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.209 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.209 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.209 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.219 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.219 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.219 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.229 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.229 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.229 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.279 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.279 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.279 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.309 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.309 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.309 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.409 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:24.459 I/TestinExternalLog(  826): <<<<<<< Capturing image (5) >>>>>>>
+01-08 11:41:24.509 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.509 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.509 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.519 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.519 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.519 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.629 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.629 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:24.629 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.629 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.629 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:24.629 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:24.659 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:41:24.799 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:24.849 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:24.869 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:24.939 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:24.939 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:24.939 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:24.949 W/KeyCharacterMap( 3126): No keyboard for id 0
+01-08 11:41:24.949 W/KeyCharacterMap( 3126): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+01-08 11:41:25.419 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:25.829 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:26.429 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:26.629 I/TestinExternalLog(  826): Mem>>>> Avalable:256636KB, com.giant.brizzle(3126) used:29912KB
+01-08 11:41:26.669 D/AudioSink(   99): flush
+01-08 11:41:27.269 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:27.439 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:28.449 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:29.449 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:29.869 I/TestinExternalLog(  826): CPU>>>> User 30%, System 19%, IOW 39%, IRQ 0%, com.giant.brizzle(3126):20%
+01-08 11:41:30.449 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:30.959 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:31.019 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:31.019 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:31.089 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:31.089 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:31.089 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:31.219 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:31.459 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:31.999 I/TestinExternalLog(  826): <<<<<<< Capturing image (6) >>>>>>>
+01-08 11:41:32.269 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:32.469 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:32.909 I/TestinExternalLog(  826): Mem>>>> Avalable:256272KB, com.giant.brizzle(3126) used:29904KB
+01-08 11:41:33.479 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:34.479 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:35.019 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.019 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.019 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.019 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.019 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.019 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.019 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.019 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.019 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.019 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.019 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.019 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.019 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.019 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.019 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.019 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.019 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.019 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.019 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.019 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.019 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.029 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.029 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.029 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.029 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.029 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.029 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.089 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.139 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.139 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.139 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.239 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.239 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.239 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.429 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.429 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.429 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.439 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.439 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.439 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.439 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.439 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.439 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.439 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.439 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.439 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.439 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.439 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.439 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.439 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.439 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.439 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.439 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.439 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.439 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.439 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.439 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.439 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.489 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:35.489 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.489 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.489 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.489 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.489 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.489 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.559 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.559 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.559 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.699 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.699 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.699 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:35.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:35.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:35.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:36.169 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:36.169 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:36.169 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:36.199 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:36.199 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:36.199 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:36.289 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:36.289 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:36.289 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:36.289 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:36.289 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:36.289 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:36.299 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:41:36.529 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:36.549 I/TestinExternalLog(  826): <<<<<<< Capturing image (7) >>>>>>>
+01-08 11:41:36.799 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:36.819 I/TestinExternalLog(  826): CPU>>>> User 29%, System 24%, IOW 34%, IRQ 0%, com.giant.brizzle(3126):21%
+01-08 11:41:37.279 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:37.559 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:37.709 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:37.749 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:37.819 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:37.819 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:37.819 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:37.829 W/ResourceType( 3126): No known package when getting name for resource number 0xffffffff
+01-08 11:41:37.829 W/KeyCharacterMap( 3126): No keyboard for id 0
+01-08 11:41:37.829 W/KeyCharacterMap( 3126): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+01-08 11:41:37.959 I/DEBUG   (   96): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+01-08 11:41:37.959 I/DEBUG   (   96): Build fingerprint: 'Hisense/U8/U8:2.3.6/GRK39F/20120320.143711.svn12710:eng/test-keys'
+01-08 11:41:37.959 I/DEBUG   (   96): pid: 3126, tid: 3137  >>> com.giant.brizzle <<<
+01-08 11:41:37.959 I/DEBUG   (   96): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr fffffff4
+01-08 11:41:37.959 I/DEBUG   (   96):  r0 00000000  r1 002e4f6c  r2 44a3e940  r3 00262610
+01-08 11:41:37.959 I/DEBUG   (   96):  r4 0026271c  r5 80b40154  r6 002c04b0  r7 00000000
+01-08 11:41:37.959 I/DEBUG   (   96):  r8 44a3eb50  r9 4008bf50  10 4008bf3c  fp 44a3e88c
+01-08 11:41:37.959 I/DEBUG   (   96):  ip 00000070  sp 44a3e870  lr 809b41c4  pc 80d81108  cpsr 20000010
+01-08 11:41:37.969 I/DEBUG   (   96):  d0  6e702e687375705f  d1  7365795f74697865
+01-08 11:41:37.969 I/DEBUG   (   96):  d2  0000000000000061  d3  0000000000000067
+01-08 11:41:37.969 I/DEBUG   (   96):  d4  000000ff00000000  d5  ffff000000000000
+01-08 11:41:37.969 I/DEBUG   (   96):  d6  00000000ffff0000  d7  4370000043700000
+01-08 11:41:37.969 I/DEBUG   (   96):  d8  0000000000000000  d9  0000000000000000
+01-08 11:41:37.969 I/DEBUG   (   96):  d10 0000000000000000  d11 0000000000000000
+01-08 11:41:37.969 I/DEBUG   (   96):  d12 0000000000000000  d13 0000000000000000
+01-08 11:41:37.969 I/DEBUG   (   96):  d14 0000000000000000  d15 0000000000000000
+01-08 11:41:37.969 I/DEBUG   (   96):  d16 43c80000c3c80000  d17 3effff003effff00
+01-08 11:41:37.969 I/DEBUG   (   96):  d18 3f8000004113d70a  d19 3f80000041808889
+01-08 11:41:37.969 I/DEBUG   (   96):  d20 070107010070079c  d21 0000000000001c07
+01-08 11:41:37.969 I/DEBUG   (   96):  d22 0000043f00890000  d23 0000000000080008
+01-08 11:41:37.969 I/DEBUG   (   96):  d24 3fe8e7e160000000  d25 3e5dd928e0000000
+01-08 11:41:37.969 I/DEBUG   (   96):  d26 3e5dd928e0000000  d27 3ef99342e0ee5069
+01-08 11:41:37.969 I/DEBUG   (   96):  d28 0000000000000000  d29 0000000000000000
+01-08 11:41:37.969 I/DEBUG   (   96):  d30 0000000000000000  d31 0000000000000000
+01-08 11:41:37.969 I/DEBUG   (   96):  scr 80000012
+01-08 11:41:37.969 I/DEBUG   (   96): 
+01-08 11:41:38.019 I/DEBUG   (   96):          #00  pc 00581108  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #01  pc 001b41c0  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #02  pc 001b3be8  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #03  pc 00344210  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #04  pc 00342924  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #05  pc 0034196c  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #06  pc 0034031c  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #07  pc 0038b1d8  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #08  pc 0035a304  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #09  pc 003599a0  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):          #10  pc 001a14f0  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96): 
+01-08 11:41:38.019 I/DEBUG   (   96): code around pc:
+01-08 11:41:38.019 I/DEBUG   (   96): 80d810e8 e3500000 e1a0000c 1afffff8 e3e00000 
+01-08 11:41:38.019 I/DEBUG   (   96): 80d810f8 e12fff1e e5900000 e5911000 e92d4038 
+01-08 11:41:38.019 I/DEBUG   (   96): 80d81108 e510500c e511400c e1540005 31a02004 
+01-08 11:41:38.019 I/DEBUG   (   96): 80d81118 21a02005 ebf076fe e3500000 00640005 
+01-08 11:41:38.019 I/DEBUG   (   96): 80d81128 e8bd8038 e5900000 e92d4038 e510c00c 
+01-08 11:41:38.019 I/DEBUG   (   96): 
+01-08 11:41:38.019 I/DEBUG   (   96): code around lr:
+01-08 11:41:38.019 I/DEBUG   (   96): 809b41a4 e92d4800 e28db004 e24dd008 e50b0008 
+01-08 11:41:38.019 I/DEBUG   (   96): 809b41b4 e50b100c e51b0008 e51b100c eb0f33cd 
+01-08 11:41:38.019 I/DEBUG   (   96): 809b41c4 e1a03000 e1a03fa3 e20330ff e1a00003 
+01-08 11:41:38.019 I/DEBUG   (   96): 809b41d4 e24bd004 e8bd8800 e92d4810 e28db008 
+01-08 11:41:38.019 I/DEBUG   (   96): 809b41e4 e24dd014 e50b0018 e50b101c e51b0018 
+01-08 11:41:38.019 I/DEBUG   (   96): 
+01-08 11:41:38.019 I/DEBUG   (   96): stack:
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e830  00000006  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e834  80e8f6c8  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e838  00000001  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e83c  00000000  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e840  00296360  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e844  00000000  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e848  00000000  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e84c  00000006  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e850  00000000  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e854  00000000  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e858  80e8f6c8  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e85c  44a3e944  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e860  00000000  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e864  00000000  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e868  df002777  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e86c  e3a070ad  
+01-08 11:41:38.019 I/DEBUG   (   96): #00 44a3e870  00262610  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e874  0026271c  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e878  80b40154  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e87c  809b41c4  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.019 I/DEBUG   (   96): #01 44a3e880  44a3e940  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e884  00262610  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e888  44a3e8a4  
+01-08 11:41:38.019 I/DEBUG   (   96):     44a3e88c  809b3bec  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:38.509 I/BootReceiver(  159): Copying /data/tombstones/tombstone_01 to DropBox (SYSTEM_TOMBSTONE)
+01-08 11:41:38.519 D/AudioSink(   99): stop
+01-08 11:41:38.519 D/AudioTrack(   99): stop 0x807f0
+01-08 11:41:38.519 D/AudioFlinger(   99): stop(4097), calling thread 99
+01-08 11:41:38.519 D/AudioTrack(   99): stop 0x807f0
+01-08 11:41:38.519 D/AudioFlinger(   99): remove track (4097) and delete from mixer
+01-08 11:41:38.519 E/InputDispatcher(  159): channel '40b0cdb0 com.giant.brizzle/com.giant.brizzle.Brizzle (server)' ~ Consumer closed input channel or an error occurred.  events=0x8
+01-08 11:41:38.519 E/InputDispatcher(  159): channel '40b0cdb0 com.giant.brizzle/com.giant.brizzle.Brizzle (server)' ~ Channel is unrecoverably broken and will be disposed!
+01-08 11:41:38.609 I/ActivityManager(  159): Process com.giant.brizzle (pid 3126) has died.
+01-08 11:41:38.609 I/WindowManager(  159): WIN DEATH: Window{40ab3b08 SurfaceView paused=false}
+01-08 11:41:38.719 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:38.719 I/WindowManager(  159): WIN DEATH: Window{40b0cdb0 com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-08 11:41:38.769 E/JavaBinder(  159): Transact on 0x3058d0 in Java object 0x40b0cbe8 with code 5 failed
+01-08 11:41:38.769 W/ActivityManager(  159): Crash of app com.giant.brizzle running instrumentation ComponentInfo{cn.itestin.tester/cn.itestin.tester.TestRunner}
+01-08 11:41:38.769 I/ActivityManager(  159): Force stopping package com.giant.brizzle uid=10052
+01-08 11:41:38.809 I/Launcher(15726): onResume!
+01-08 11:41:38.859 E/JavaBinder(  159): Transact on 0x384250 in Java object 0x40b0c900 with code 3 failed
+01-08 11:41:38.859 E/JavaBinder(  159): Transact on 0x384250 in Java object 0x40b0c900 with code 4 failed
+01-08 11:41:38.859 W/InputManagerService(  159): Got RemoteException sending setActive(false) notification to pid 3126 uid 10052
+01-08 11:41:38.859 I/ActivityManager(  159): Starting: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=com.giant.brizzle/.Brizzle } from pid 826
+01-08 11:41:38.949 I/Launcher(15726): onPause!
+01-08 11:41:38.969 I/ActivityManager(  159): Start proc com.giant.brizzle for activity com.giant.brizzle/.Brizzle: pid=3911 uid=10052 gids={3003}
+01-08 11:41:39.229 D/Cocos2dxActivity( 3911): model=HS-U8
+01-08 11:41:39.239 D/Cocos2dxActivity( 3911): product=U8
+01-08 11:41:39.239 D/Cocos2dxActivity( 3911): isEmulator=false
+01-08 11:41:39.519 I/ActivityManager(  159): Displayed com.giant.brizzle/.Brizzle: +559ms
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): <dict>
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	cocos2d.x.version: 2.2.1
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	cocos2d.x.compiled_with_profiler: false
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	cocos2d.x.compiled_with_gl_state_cache: true
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.vendor: Qualcomm
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.renderer: Adreno (TM) 200
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.version: OpenGL ES 2.0 1849878
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.max_texture_size: 4096
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.max_texture_units: 20
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.supports_PVRTC: false
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.supports_NPOT: true
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.supports_BGRA8888: false
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.supports_discard_framebuffer: false
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): 	gl.supports_vertex_array_object: false
+01-08 11:41:39.739 D/cocos2d-x debug info( 3911): </dict>
+01-08 11:41:39.889 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:39.929 I/TestinExternalLog(  826): <<<<<<< StartApp >>>>>>>
+01-08 11:41:39.959 I/TestinExternalLog(  826): <<<<<<< com.giant.brizzle(3911) >>>>>>>
+01-08 11:41:39.969 I/TestinExternalLog(  826): Mem>>>> Avalable:277720KB, com.giant.brizzle(3911) used:10750KB
+01-08 11:41:40.089 D/cocos2d-x debug info( 3911): cocos2d: CCTextureCache: texture: cc_fps_images
+01-08 11:41:40.959 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:41.899 D/cocos2d-x debug info( 3911): cocos2d: CCTextureCache: texture: cc_fps_images
+01-08 11:41:41.899 D/cocos2d-x debug info( 3911): cocos2d: CCTextureCache: texture: assets/images/loading/splash.png
+01-08 11:41:41.899 D/cocos2d-x debug info( 3911): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_a_RETINA.png as texture
+01-08 11:41:41.999 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:42.299 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:42.719 D/PhoneWindow( 3911): couldn't save which view has focus because the focused view org.cocos2dx.lib.Cocos2dxGLSurfaceView@4071f3b0 has no id.
+01-08 11:41:42.719 I/ActivityManager(  159): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.giant.brizzle/.Brizzle } from pid 3936
+01-08 11:41:42.729 D/Cocos2dxActivity( 3911): model=HS-U8
+01-08 11:41:42.729 D/Cocos2dxActivity( 3911): product=U8
+01-08 11:41:42.729 D/Cocos2dxActivity( 3911): isEmulator=false
+01-08 11:41:42.739 D/Device Model( 3911): HS-U8
+01-08 11:41:42.939 D/HandwritingIME(  265): _______+++onFinishInput+++_______
+01-08 11:41:42.949 D/FsHandViewContainer(  265): +++closing+++
+01-08 11:41:43.059 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:43.109 I/ActivityManager(  159): Displayed com.giant.brizzle/.Brizzle: +385ms
+01-08 11:41:43.169 D/cocos2d-x debug info( 3911): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_b_RETINA.png as texture
+01-08 11:41:43.389 D/cocos2d-x debug info( 3911): reload all texture
+01-08 11:41:43.539 I/TestinExternalLog(  826): <<<<<<< Capturing image (8) >>>>>>>
+01-08 11:41:43.739 D/cocos2d-x debug info( 3911): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_RETINA.png as texture
+01-08 11:41:43.839 I/DEBUG   (   96): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+01-08 11:41:43.839 I/DEBUG   (   96): Build fingerprint: 'Hisense/U8/U8:2.3.6/GRK39F/20120320.143711.svn12710:eng/test-keys'
+01-08 11:41:43.839 I/DEBUG   (   96): pid: 3911, tid: 3947  >>> com.giant.brizzle <<<
+01-08 11:41:43.839 I/DEBUG   (   96): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00004003
+01-08 11:41:43.839 I/DEBUG   (   96):  r0 00000018  r1 00004003  r2 00004003  r3 00004018
+01-08 11:41:43.839 I/DEBUG   (   96):  r4 000e5032  r5 00000000  r6 80b4b218  r7 00000320
+01-08 11:41:43.839 I/DEBUG   (   96):  r8 48d7cb50  r9 400c1f3c  10 400c1f28  fp 48d7ca04
+01-08 11:41:43.839 I/DEBUG   (   96):  ip 00004000  sp 48d7c9a0  lr 80b7f488  pc 80b7f410  cpsr 20000010
+01-08 11:41:43.839 I/DEBUG   (   96):  d0  940003e002dc4680  d1  016e17ddc00107ea
+01-08 11:41:43.839 I/DEBUG   (   96):  d2  81c91e00030009d0  d3  16d98f25c2e48f86
+01-08 11:41:43.839 I/DEBUG   (   96):  d4  a00040013a0019ba  d5  21613001260002b9
+01-08 11:41:43.839 I/DEBUG   (   96):  d6  c31d46f880092d5c  d7  5846ffd3478debe2
+01-08 11:41:43.839 I/DEBUG   (   96):  d8  0000000000000000  d9  0000000000000000
+01-08 11:41:43.839 I/DEBUG   (   96):  d10 0000000000000000  d11 0000000000000000
+01-08 11:41:43.839 I/DEBUG   (   96):  d12 0000000000000000  d13 0000000000000000
+01-08 11:41:43.839 I/DEBUG   (   96):  d14 0000000000000000  d15 0000000000000000
+01-08 11:41:43.839 I/DEBUG   (   96):  d16 b84b0eccf1b345e2  d17 62c30745fc5878e8
+01-08 11:41:43.839 I/DEBUG   (   96):  d18 cf823a833a8cda2f  d19 fcc403a5e018198f
+01-08 11:41:43.839 I/DEBUG   (   96):  d20 399674024940faf3  d21 1d1baf4009390d02
+01-08 11:41:43.839 I/DEBUG   (   96):  d22 7713f423d46b4b0c  d23 dafd742ba15d0ae8
+01-08 11:41:43.839 I/DEBUG   (   96):  d24 0000000000000000  d25 0000000000000000
+01-08 11:41:43.839 I/DEBUG   (   96):  d26 0000000000000000  d27 0000000000000000
+01-08 11:41:43.839 I/DEBUG   (   96):  d28 0100010001000100  d29 3ff0000000000000
+01-08 11:41:43.839 I/DEBUG   (   96):  d30 0000000000000000  d31 3ff0000000000000
+01-08 11:41:43.839 I/DEBUG   (   96):  scr 60000012
+01-08 11:41:43.839 I/DEBUG   (   96): 
+01-08 11:41:43.899 I/DEBUG   (   96):          #00  pc 0037f410  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.899 I/DEBUG   (   96):          #01  pc 00379194  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.899 I/DEBUG   (   96):          #02  pc 00378fec  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.899 I/DEBUG   (   96):          #03  pc 0034b434  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.899 I/DEBUG   (   96):          #04  pc 0034b24c  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.899 I/DEBUG   (   96):          #05  pc 0038d14c  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.899 I/DEBUG   (   96):          #06  pc 0038c4d8  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.899 I/DEBUG   (   96): 
+01-08 11:41:43.899 I/DEBUG   (   96): code around pc:
+01-08 11:41:43.899 I/DEBUG   (   96): 80b7f3f0 e51b3030 e5932010 e51b3038 e0823003 
+01-08 11:41:43.909 I/DEBUG   (   96): 80b7f400 e51b2030 e5921004 e51b2038 e0812002 
+01-08 11:41:43.909 I/DEBUG   (   96): 80b7f410 e5d22000 e5c32000 e51b3038 e2833001 
+01-08 11:41:43.909 I/DEBUG   (   96): 80b7f420 e50b3038 e51b2038 e51b303c e1520003 
+01-08 11:41:43.909 I/DEBUG   (   96): 80b7f430 23a03000 33a03001 e20330ff e3530000 
+01-08 11:41:43.909 I/DEBUG   (   96): 
+01-08 11:41:43.909 I/DEBUG   (   96): code around lr:
+01-08 11:41:43.909 I/DEBUG   (   96): 80b7f468 e51b3030 e5932070 e51b3030 e5933010 
+01-08 11:41:43.909 I/DEBUG   (   96): 80b7f478 e1a00002 e1a01003 e51b203c ebf88007 
+01-08 11:41:43.909 I/DEBUG   (   96): 80b7f488 e1a02000 e51b3030 e5832070 e51b3030 
+01-08 11:41:43.909 I/DEBUG   (   96): 80b7f498 e1c308d0 e51bc03c e1a0200c e3a03000 
+01-08 11:41:43.909 I/DEBUG   (   96): 80b7f4a8 e0502002 e0c13003 e51b1030 e1c128f0 
+01-08 11:41:43.909 I/DEBUG   (   96): 
+01-08 11:41:43.909 I/DEBUG   (   96): stack:
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c960  000e5032  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c964  00000000  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c968  80b4b218  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c96c  00000320  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c970  48d7cb50  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c974  4891d008  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c978  400c1f28  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c97c  00000001  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c980  000e5032  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c984  00000000  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c988  80b4b218  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c98c  00000320  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c990  48d7cb50  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c994  400c1f3c  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c998  df002777  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c99c  e3a070ad  
+01-08 11:41:43.909 I/DEBUG   (   96): #00 48d7c9a0  00000000  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9a4  000e5038  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9a8  000e5038  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9ac  000e5032  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9b0  488ad008  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9b4  00258a50  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9b8  80b4b218  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9bc  00000000  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9c0  00074000  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9c4  00004000  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9c8  ffffc000  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9cc  00000000  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9d0  00258a50  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9d4  0033c448  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9d8  80b4b218  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9dc  00000320  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9e0  48d7cb50  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9e4  afd145d1  /system/lib/libc.so
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9e8  000e5032  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9ec  80d97424  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9f0  00257420  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9f4  0033f31c  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9f8  00257420  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7c9fc  0033f31c  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca00  48d7ca4c  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca04  80b79198  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.909 I/DEBUG   (   96): #01 48d7ca08  00000039  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca0c  80d97424  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca10  00257430  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca14  48d7caf4  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca18  48d7ca8c  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca1c  00257420  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca20  0025aba0  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca24  0025aba0  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca28  00257438  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca2c  00257438  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca30  488ad008  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca34  00000000  
+01-08 11:41:43.909 I/DEBUG   (   96):     48d7ca38  0033fdc8  
+01-08 11:41:43.919 I/DEBUG   (   96):     48d7ca3c  01310de1  
+01-08 11:41:43.919 I/DEBUG   (   96):     48d7ca40  00000029  
+01-08 11:41:43.919 I/DEBUG   (   96):     48d7ca44  000e5032  
+01-08 11:41:43.919 I/DEBUG   (   96):     48d7ca48  48d7ca64  
+01-08 11:41:43.919 I/DEBUG   (   96):     48d7ca4c  80b78ff0  /data/data/com.giant.brizzle/lib/libcocos2dcpp.so
+01-08 11:41:44.099 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:44.459 I/DEBUG   (   96): debuggerd committing suicide to free the zombie!
+01-08 11:41:44.469 E/InputDispatcher(  159): channel '40a09ca0 com.giant.brizzle/com.giant.brizzle.Brizzle (server)' ~ Consumer closed input channel or an error occurred.  events=0x8
+01-08 11:41:44.469 E/InputDispatcher(  159): channel '40a09ca0 com.giant.brizzle/com.giant.brizzle.Brizzle (server)' ~ Channel is unrecoverably broken and will be disposed!
+01-08 11:41:44.469 I/WindowManager(  159): WINDOW DIED Window{40a09ca0 com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-08 11:41:44.469 I/BootReceiver(  159): Copying /data/tombstones/tombstone_01 to DropBox (SYSTEM_TOMBSTONE)
+01-08 11:41:44.479 E/InputDispatcher(  159): channel '40b0b058 com.giant.brizzle/com.giant.brizzle.Brizzle (server)' ~ Consumer closed input channel or an error occurred.  events=0x8
+01-08 11:41:44.479 E/InputDispatcher(  159): channel '40b0b058 com.giant.brizzle/com.giant.brizzle.Brizzle (server)' ~ Channel is unrecoverably broken and will be disposed!
+01-08 11:41:44.479 I/WindowManager(  159): WINDOW DIED Window{40b0b058 com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-08 11:41:44.479 I/WindowManager(  159): WIN DEATH: Window{40a36390 SurfaceView paused=false}
+01-08 11:41:44.489 E/JavaBinder(  159): Transact on 0x342390 in Java object 0x408d1ec0 with code 5 failed
+01-08 11:41:44.489 I/ActivityManager(  159): Process com.giant.brizzle (pid 3911) has died.
+01-08 11:41:44.489 W/WindowManager(  159): Failed looking up window
+01-08 11:41:44.489 W/WindowManager(  159): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@408d1ec0 does not exist
+01-08 11:41:44.489 W/WindowManager(  159): 	at com.android.server.WindowManagerService.windowForClientLocked(WindowManagerService.java:8191)
+01-08 11:41:44.489 W/WindowManager(  159): 	at com.android.server.WindowManagerService.windowForClientLocked(WindowManagerService.java:8182)
+01-08 11:41:44.489 W/WindowManager(  159): 	at com.android.server.WindowManagerService$WindowState$DeathRecipient.binderDied(WindowManagerService.java:7041)
+01-08 11:41:44.489 W/WindowManager(  159): 	at android.os.BinderProxy.sendDeathNotice(Binder.java:392)
+01-08 11:41:44.489 W/WindowManager(  159): 	at dalvik.system.NativeStart.run(Native Method)
+01-08 11:41:44.489 I/WindowManager(  159): WIN DEATH: null
+01-08 11:41:44.489 I/WindowManager(  159): WIN DEATH: Window{40905e88 SurfaceView paused=false}
+01-08 11:41:44.499 I/ActivityManager(  159): Start proc com.giant.brizzle for activity com.giant.brizzle/.Brizzle: pid=3961 uid=10052 gids={3003}
+01-08 11:41:44.509 W/WindowManager(  159): Input event injection failed.
+01-08 11:41:44.509 I/DEBUG   ( 3960): debuggerd: Mar 18 2012 15:25:25
+01-08 11:41:44.629 D/Cocos2dxActivity( 3961): model=HS-U8
+01-08 11:41:44.629 D/Cocos2dxActivity( 3961): product=U8
+01-08 11:41:44.629 D/Cocos2dxActivity( 3961): isEmulator=false
+01-08 11:41:44.819 I/ActivityManager(  159): Displayed com.giant.brizzle/.Brizzle: +329ms
+01-08 11:41:44.829 E/JavaBinder(  159): Transact on 0x2f12e0 in Java object 0x4090b060 with code 3 failed
+01-08 11:41:44.829 E/JavaBinder(  159): Transact on 0x2f12e0 in Java object 0x4090b060 with code 4 failed
+01-08 11:41:44.829 W/InputManagerService(  159): Got RemoteException sending setActive(false) notification to pid 3911 uid 10052
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): <dict>
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	cocos2d.x.version: 2.2.1
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	cocos2d.x.compiled_with_profiler: false
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	cocos2d.x.compiled_with_gl_state_cache: true
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.vendor: Qualcomm
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.renderer: Adreno (TM) 200
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.version: OpenGL ES 2.0 1849878
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.max_texture_size: 4096
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.max_texture_units: 20
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.supports_PVRTC: false
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.supports_NPOT: true
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.supports_BGRA8888: false
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.supports_discard_framebuffer: false
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): 	gl.supports_vertex_array_object: false
+01-08 11:41:44.929 D/cocos2d-x debug info( 3961): </dict>
+01-08 11:41:45.049 W/KeyCharacterMap( 3961): No keyboard for id 0
+01-08 11:41:45.049 W/KeyCharacterMap( 3961): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+01-08 11:41:45.149 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:45.189 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:45.279 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: cc_fps_images
+01-08 11:41:45.499 I/TestinExternalLog(  826): CPU>>>> User 60%, System 19%, IOW 8%, IRQ 0%, com.giant.brizzle(3961):0%
+01-08 11:41:46.169 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:46.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.759 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.759 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.759 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.779 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.779 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.779 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.849 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.849 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.849 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.899 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.929 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: cc_fps_images
+01-08 11:41:46.929 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: assets/images/loading/splash.png
+01-08 11:41:46.939 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_a_RETINA.png as texture
+01-08 11:41:46.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.969 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.979 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.979 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.979 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:46.999 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:46.999 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:46.999 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.099 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.099 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.099 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.129 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.129 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.129 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.159 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.159 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.159 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.169 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:47.229 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.229 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.229 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.239 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.239 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.239 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.319 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:47.349 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/main_bg_b_RETINA.png as texture
+01-08 11:41:47.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.359 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.359 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.359 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.449 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.449 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.449 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.479 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.479 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.479 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.519 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.519 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.519 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.559 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_RETINA.png as texture
+01-08 11:41:47.569 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.569 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.569 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.659 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.659 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.659 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.659 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.659 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.659 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.669 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.669 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.669 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.719 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.719 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.719 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.719 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.719 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.719 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.719 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.719 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.719 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.719 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.719 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.719 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.719 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.719 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.719 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.719 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.719 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.719 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.719 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.719 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.719 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.739 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.739 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.739 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.859 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.859 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.859 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.929 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.929 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:47.929 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.929 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.929 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:47.929 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:47.929 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:41:47.949 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_b_CN_RETINA.png as texture
+01-08 11:41:48.139 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/main_menu/mainmenu_a_CN_RETINA.png as texture
+01-08 11:41:48.179 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:48.229 D/Device Model( 3961): HS-U8
+01-08 11:41:48.229 D/MediaPlayer( 3961): setDataSource(53, 13281517, 244915)
+01-08 11:41:48.229 D/MediaPlayerService(   99): setDataSource fd=17, offset=13281517, length=244915
+01-08 11:41:48.239 D/MediaPlayer( 3961): stop state 8
+01-08 11:41:48.239 D/MediaPlayerService(   99): [18] stop
+01-08 11:41:48.239 D/MediaPlayer( 3961): seekTo 0 state 8
+01-08 11:41:48.239 D/MediaPlayerService(   99): [18] seekTo(0)
+01-08 11:41:48.239 D/MediaPlayer( 3961): start state 8
+01-08 11:41:48.239 E/AwesomePlayer(   99): AudioPlayer created, Non-LPA mode mime audio/vorbis duration 0
+01-08 11:41:48.239 D/AudioSink(   99): flush
+01-08 11:41:48.239 D/AudioTrack(   99): Request AudioFlinger to create track
+01-08 11:41:48.239 D/AudioFlinger(   99): createTrack() lSessionId: 32
+01-08 11:41:48.239 D/AudioFlinger(   99): Track constructor name 4097, calling thread 3961
+01-08 11:41:48.239 D/AudioSink(   99): start
+01-08 11:41:48.239 D/AudioTrack(   99): start 0x15e08
+01-08 11:41:48.239 D/AudioFlinger(   99): start(4097), calling thread 3961 session 32
+01-08 11:41:48.239 E/AudioPolicyManagerBase(   99): zouyanfei for bluetoothsco
+01-08 11:41:48.449 W/AudioFlinger(   99): write blocked for 167 msecs, 8 delayed writes, thread 0xcc50
+01-08 11:41:48.569 I/TestinExternalLog(  826): Mem>>>> Avalable:256144KB, com.giant.brizzle(3961) used:27578KB
+01-08 11:41:49.189 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:50.249 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:50.619 I/TestinExternalLog(  826): <<<<<<< Capturing image (9) >>>>>>>
+01-08 11:41:50.789 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:51.319 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:51.879 I/TestinExternalLog(  826): CPU>>>> User 41%, System 26%, IOW 24%, IRQ 0%, com.giant.brizzle(3961):16%
+01-08 11:41:52.319 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:52.359 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:53.359 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:54.369 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:54.929 I/TestinExternalLog(  826): Mem>>>> Avalable:257152KB, com.giant.brizzle(3961) used:27735KB
+01-08 11:41:55.369 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:56.249 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:41:56.369 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:57.199 I/TestinExternalLog(  826): <<<<<<< Capturing image (10) >>>>>>>
+01-08 11:41:57.319 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:41:57.379 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:58.199 I/TestinExternalLog(  826): CPU>>>> User 41%, System 24%, IOW 27%, IRQ 0%, com.giant.brizzle(3961):17%
+01-08 11:41:58.389 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:58.399 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.399 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.399 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.399 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.399 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.399 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.399 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.399 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.399 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.399 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.399 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.399 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.399 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.399 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.399 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.399 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.399 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.399 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.399 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.399 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.399 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.409 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.409 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.409 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.409 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.639 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.639 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.639 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.659 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.659 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.659 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.669 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.669 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.669 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.679 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.679 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.679 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.709 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.709 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.709 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.739 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.739 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.739 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.759 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.769 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.769 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.819 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.819 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.819 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.819 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.819 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.819 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.829 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.829 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.829 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.829 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.829 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.829 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.829 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.829 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.829 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.829 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.829 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.829 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.829 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.829 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.829 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.899 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.899 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.899 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.909 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.909 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.909 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:58.919 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:58.919 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:58.919 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.109 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.109 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.109 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.119 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.119 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.119 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.199 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.199 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.199 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.249 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.249 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.249 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.249 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.249 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.249 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.249 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.249 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.249 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.249 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.249 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.249 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.249 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.249 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.249 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.249 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.249 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.249 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.249 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.249 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.249 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.299 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.299 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.299 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.349 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.349 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.349 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.389 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:41:59.469 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.469 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.469 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.549 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.549 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.549 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.559 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.559 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:41:59.569 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.569 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.569 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:41:59.569 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:41:59.589 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:41:59.729 E/AwesomePlayer(   99): AudioPlayer created, Non-LPA mode mime audio/vorbis duration 490763
+01-08 11:41:59.749 D/AudioTrack( 3961): Request AudioFlinger to create track
+01-08 11:41:59.749 D/AudioFlinger(   99): createTrack() lSessionId: 33
+01-08 11:41:59.749 D/AudioFlinger(   99): Track constructor name 4098, calling thread 3961
+01-08 11:41:59.749 D/AudioTrack( 3961): start 0x2d4a78
+01-08 11:41:59.749 D/AudioFlinger(   99): start(4098), calling thread 3961 session 33
+01-08 11:41:59.749 E/AudioPolicyManagerBase(   99): zouyanfei for bluetoothsco
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_c@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_trees_a@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_trees_b@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_a@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_b@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_bg_light@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_blue@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_green@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_orange@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_pink@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_purple@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_red@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_white@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_cha_yellow@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_bg@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank_push@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_title@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_option_push@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_option@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_cancel_normal_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_cancel_push_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_classic_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_classic_push_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_continue_normal_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_continue_push_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_icebreak_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_icebreak_push_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_newgame_normal_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_newgame_push_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_pandora_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_menu_pandora_push_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_option_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_option_push_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: removing unused frame: main_rank_push_china@2x.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: cc_fps_images
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: assets/images/loading/splash.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: assets/images/main_menu/main_bg_a_RETINA.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: assets/images/main_menu/main_bg_b_RETINA.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_a_RETINA.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_b_CN_RETINA.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: texture: assets/images/main_menu/mainmenu_a_CN_RETINA.png
+01-08 11:41:59.749 D/cocos2d-x debug info( 3961): cocos2d: CCTextureCache: removing unused texture: assets/images/loading/splash.png
+01-08 11:41:59.769 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/character/Character_RETINA.png as texture
+01-08 11:42:00.089 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/stage_classic/stage_RETINA.png as texture
+01-08 11:42:00.089 D/AudioTrack( 3961): stop 0x2d4a78
+01-08 11:42:00.089 D/AudioFlinger(   99): stop(4098), calling thread 3961
+01-08 11:42:00.249 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itemblackhole_RETINA.png as texture
+01-08 11:42:00.399 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:00.419 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itembomb_RETINA.png as texture
+01-08 11:42:00.519 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itemfirebird_RETINA.png as texture
+01-08 11:42:00.699 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/item/itemlightning_RETINA.png as texture
+01-08 11:42:00.799 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/effectblackhole_RETINA.png as texture
+01-08 11:42:01.279 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/effectbomb_RETINA.png as texture
+01-08 11:42:01.309 I/TestinExternalLog(  826): Mem>>>> Avalable:241820KB, com.giant.brizzle(3961) used:41794KB
+01-08 11:42:01.449 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:01.499 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/effectfirebird_RETINA.png as texture
+01-08 11:42:01.709 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteFrameCache: Trying to use file images/item_effect/cloud_RETINA.png as texture
+01-08 11:42:02.319 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:42:02.469 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:02.599 D/AudioSink(   99): stop
+01-08 11:42:02.599 D/AudioTrack(   99): stop 0x15e08
+01-08 11:42:02.599 D/AudioFlinger(   99): stop(4097), calling thread 3961
+01-08 11:42:02.599 D/AudioTrack(   99): stop 0x15e08
+01-08 11:42:02.599 D/MediaPlayer( 3961): setDataSource(61, 14266248, 769336)
+01-08 11:42:02.599 D/MediaPlayerService(   99): setDataSource fd=25, offset=14266248, length=769336
+01-08 11:42:02.629 D/MediaPlayer( 3961): stop state 8
+01-08 11:42:02.629 D/MediaPlayerService(   99): [19] stop
+01-08 11:42:02.629 D/MediaPlayer( 3961): seekTo 0 state 8
+01-08 11:42:02.629 D/MediaPlayerService(   99): [19] seekTo(0)
+01-08 11:42:02.629 D/MediaPlayer( 3961): start state 8
+01-08 11:42:02.629 E/AwesomePlayer(   99): AudioPlayer created, Non-LPA mode mime audio/vorbis duration 0
+01-08 11:42:02.629 D/AudioSink(   99): flush
+01-08 11:42:02.629 D/AudioTrack(   99): Request AudioFlinger to create track
+01-08 11:42:02.629 D/AudioFlinger(   99): createTrack() lSessionId: 34
+01-08 11:42:02.629 D/AudioFlinger(   99): Track constructor name 4099, calling thread 3961
+01-08 11:42:02.629 D/AudioSink(   99): start
+01-08 11:42:02.629 D/AudioTrack(   99): start 0x86df0
+01-08 11:42:02.629 D/AudioFlinger(   99): start(4099), calling thread 3961 session 34
+01-08 11:42:02.629 E/AudioPolicyManagerBase(   99): zouyanfei for bluetoothsco
+01-08 11:42:02.649 D/AudioFlinger(   99): remove track (4097) and delete from mixer
+01-08 11:42:02.829 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:42:03.449 I/TestinExternalLog(  826): <<<<<<< Capturing image (11) >>>>>>>
+01-08 11:42:03.489 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:04.159 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteBatchNode: resizing TextureAtlas capacity from [29] to [40].
+01-08 11:42:04.159 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteBatchNode: resizing TextureAtlas capacity from [40] to [54].
+01-08 11:42:04.159 D/cocos2d-x debug info( 3961): cocos2d: CCSpriteBatchNode: resizing TextureAtlas capacity from [54] to [73].
+01-08 11:42:04.509 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:05.229 D/xiaohong(  265):  handwritingwhideInputMethodMenu();
+01-08 11:42:05.229 I/ActivityManager(  159): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/.Launcher } from pid 159
+01-08 11:42:05.509 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:05.669 D/PluginFactory( 3961): Java class name of plugin AdsAdmob is : org/cocos2dx/plugin/AdsAdmob
+01-08 11:42:05.679 I/PluginWrapper( 3961): class name : ----org/cocos2dx/plugin/AdsAdmob----
+01-08 11:42:05.689 D/PluginFactory( 3961): The type of plugin AdsAdmob is : 1
+01-08 11:42:05.689 D/ProtocolAds( 3961): Class name : org/cocos2dx/plugin/AdsAdmob
+01-08 11:42:06.089 E/msm7k.gralloc(  159): [unregister] handle 0x20ece0 still locked (state=40000001)
+01-08 11:42:06.519 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:06.659 I/TestinExternalLog(  826): CPU>>>> User 47%, System 31%, IOW 19%, IRQ 0%, com.giant.brizzle(3961):29%
+01-08 11:42:06.799 D/ADDRESS_CACHE_MONITOR( 3961): Address cache monitor created and armed
+01-08 11:42:06.959 E/ActivityThread( 3961): Failed to find provider info for com.google.plus.platform
+01-08 11:42:06.999 I/Ads     ( 3961): To get test ads on this device, call adRequest.addTestDevice("174A651AC224BB11A9FC908CBD5A3B36");
+01-08 11:42:07.029 I/ADDRESS_CACHE_MONITOR( 3961): No permission to access connection info? - java.lang.SecurityException: WifiService: Neither user 10052 nor current process has android.permission.ACCESS_WIFI_STATE.
+01-08 11:42:07.029 D/ADDRESS_CACHE_MONITOR( 3961): network (WIFI) is disconnected
+01-08 11:42:07.129 I/Ads     ( 3961): adRequestUrlHtml: <html><head><script src="http://media.admob.com/sdk-core-v40.js"></script><script>AFMA_getSdkConstants();AFMA_buildAdURL({"preqs":0,"session_id":"14970175495990145721","u_sd":1.5,"seq_num":"1","slotname":"a152c0e2117dbe6","u_w":320,"msid":"com.giant.brizzle","cap":"m,a","js":"afma-sdk-a-v6.3.1","ms":"5edmRW2-USHUq6V0A0k75oqJvAAk49LQbxo4qYhcdJNJRGrYdabEK-fksmYnc_fMK7vEKMwYDwlwCQiE1H9U7Jxy_oUm8BHEZpIuPR1MMUixvNDm5nCuw0kqgtdRfNY4UtjpQ8cZbizGbWv2Xf6z_BFzN3adq53neLK2OJ59mZoaAEk1AdsOndHFO3CFp19X5ah_VySBSHS6kZWhhhJe1dsQT9iHDCIDA7BA20YMIUXC9yFtxwCsLze-IuzhUmcFxliXl59FugzqPyoYrJxY3MoC__mvKDPVGQT-7xUEkHaGyhumx-QVnikMaAc2fGZhPZ30PoWUeQAIYHsqoZPfcw","isu":"174A651AC224BB11A9FC908CBD5A3B36","bas_off":0,"format":"320x50_mb","oar":0,"net":"null","app_name":"2.android.com.giant.brizzle","hl":"zh","ad_pos":{"height":0,"visible":0,"y":0,"x":0,"width":0},"gnt":0,"u_h":533,"pt":1,"carrier":"null","bas_on":0,"ptime":0,"u_audio":3});</script></head><body></body></html>
+01-08 11:42:07.329 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:42:07.529 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:07.569 W/webcore ( 3961): Can't get the viewWidth after the first layout
+01-08 11:42:07.609 W/KeyCharacterMap( 3961): No keyboard for id 0
+01-08 11:42:07.609 W/KeyCharacterMap( 3961): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+01-08 11:42:08.069 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:42:08.529 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:09.559 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:09.719 E/AwesomePlayer(   99): AudioPlayer created, Non-LPA mode mime audio/vorbis duration 308302
+01-08 11:42:09.789 D/AudioTrack( 3961): Request AudioFlinger to create track
+01-08 11:42:09.789 D/AudioFlinger(   99): createTrack() lSessionId: 35
+01-08 11:42:09.789 D/AudioFlinger(   99): Track constructor name 4097, calling thread 3961
+01-08 11:42:09.789 D/AudioTrack( 3961): start 0x3f80d8
+01-08 11:42:09.789 D/AudioFlinger(   99): start(4097), calling thread 3961 session 35
+01-08 11:42:09.789 E/AudioPolicyManagerBase(   99): zouyanfei for bluetoothsco
+01-08 11:42:09.789 D/AudioTrack( 3961): stop 0x2d4a78
+01-08 11:42:09.789 D/AudioFlinger(   99): remove track (4098) and delete from mixer
+01-08 11:42:09.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:09.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:09.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:09.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:09.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:09.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:09.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:09.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:09.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:09.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:09.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:09.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:09.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:09.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:09.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:09.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:09.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:09.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:09.869 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:09.869 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:09.869 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:09.919 I/TestinExternalLog(  826): Mem>>>> Avalable:228296KB, com.giant.brizzle(3961) used:59570KB
+01-08 11:42:09.989 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:09.989 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:09.989 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:09.999 D/AudioTrack( 3961): stop 0x3f80d8
+01-08 11:42:09.999 D/AudioFlinger(   99): stop(4097), calling thread 3961
+01-08 11:42:10.049 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.049 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.049 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.049 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.049 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.049 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.079 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.079 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.079 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.089 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.199 I/ActivityManager(  159): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/.Launcher } from pid 159
+01-08 11:42:10.219 D/xiaohong(  265):  handwritingwhideInputMethodMenu();
+01-08 11:42:10.239 I/TestinExternalLog(  826): <<<<<<< Capturing image (12) >>>>>>>
+01-08 11:42:10.269 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.269 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.269 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.269 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.269 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.269 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.269 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.269 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.269 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.269 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.269 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.269 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.269 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.269 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.269 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.269 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.269 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.269 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.269 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.269 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.269 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.349 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.349 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.349 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.349 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.349 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.349 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.409 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.409 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.419 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.419 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.419 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.419 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.499 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.499 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.499 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.569 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:10.579 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.579 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.579 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.579 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.579 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.579 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.599 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.599 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.599 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.659 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.659 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.659 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.689 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.689 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.689 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.689 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.689 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.689 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.689 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.689 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.689 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.689 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.689 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.689 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.689 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.689 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.689 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.689 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.689 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.689 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.689 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.689 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.689 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.699 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.699 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.699 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.789 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.789 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.789 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.799 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.799 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.799 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.819 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.819 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.819 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.819 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.819 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.819 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:10.909 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:10.909 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:10.909 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.049 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.049 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.049 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.079 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.079 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.079 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.079 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.079 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.079 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.079 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.089 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.089 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.099 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.099 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.099 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.099 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.099 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.099 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.119 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.119 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.119 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.219 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.219 E/BT_DUN  (  405): Error while opening socket!
+01-08 11:42:11.219 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.219 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.229 D/BT_DUN  (  405): Ignoring event PLATFORM_EVENT_ERROR in EMB_DATA_CALL_IDLE 
+01-08 11:42:11.229 D/BT_DUN  (  405): Moved to state(EMB_DATA_CALL_IDLE) 
+01-08 11:42:11.249 D/WifiStateTracker(  159): handleMessage msg: 5
+01-08 11:42:11.579 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:12.329 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:42:12.589 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:13.299 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:42:13.579 I/TestinExternalLog(  826): CPU>>>> User 38%, System 26%, IOW 35%, IRQ 0%, com.giant.brizzle(3961):22%
+01-08 11:42:13.599 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:14.599 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:15.609 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:16.649 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:16.669 I/TestinExternalLog(  826): Mem>>>> Avalable:233688KB, com.giant.brizzle(3961) used:59509KB
+01-08 11:42:17.329 I/TestinExternalLog(  826): Battery>>>> Temperature 0.0
+01-08 11:42:17.649 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:17.649 I/TestinExternalLog(1): <<<<<<< Begin uninstalling package com.giant.brizzle >>>>>>>
+01-08 11:42:18.529 I/TestinExternalLog(  826): NetFlow>>>> UpFlow 0, DownFlow 0, TotalFlow 0
+01-08 11:42:18.679 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:19.529 I/PackageManager(  159): Removing non-system package:com.giant.brizzle
+01-08 11:42:19.529 I/ActivityManager(  159): Force stopping package com.giant.brizzle uid=10052
+01-08 11:42:19.539 D/PackageManager(  159): Removing package com.giant.brizzle
+01-08 11:42:19.549 I/Launcher(15726): onResume!
+01-08 11:42:19.749 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:19.999 D/PackageManager(  159):   Activities: com.giant.brizzle.Brizzle com.google.ads.AdActivity
+01-08 11:42:20.089 D/AudioSink(   99): stop
+01-08 11:42:20.089 D/AudioTrack(   99): stop 0x86df0
+01-08 11:42:20.089 D/AudioFlinger(   99): stop(4099), calling thread 99
+01-08 11:42:20.089 D/AudioTrack(   99): stop 0x86df0
+01-08 11:42:20.089 I/WindowManager(  159): WIN DEATH: Window{4092c948 SurfaceView paused=false}
+01-08 11:42:20.099 I/WindowManager(  159): WIN DEATH: Window{4090cba0 com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-08 11:42:20.109 I/WindowManager(  159): WIN DEATH: Window{40b0c5b8 Panel:com.giant.brizzle/com.giant.brizzle.Brizzle paused=false}
+01-08 11:42:20.119 D/AudioFlinger(   99): remove track (4099) and delete from mixer
+01-08 11:42:20.119 D/AudioFlinger(   99): remove track (4097) and delete from mixer
+01-08 11:42:20.199 I/ActivityManager(  159): Force stopping package com.giant.brizzle uid=10052
+01-08 11:42:20.369 D/PackageIntentReceiver(26244): onReceive Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.giant.brizzle flg=0x10000000 (has extras) }
+01-08 11:42:20.609 D/Launcher.Gridspace(15726): rectify 1 group Apps Adapter List!
+01-08 11:42:20.759 W/AudioService(  159): stream: 3 was already muted by this client
+01-08 11:42:20.759 I/TestinExternalLog(1): <<<<<<< Package com.giant.brizzle uninstalled >>>>>>>
+<<<<<<< StartFileTag monkey >>>>>>>
+:Monkey: seed=90 count=150
+:AllowPackage: com.giant.brizzle
+:IncludeCategory: android.intent.category.LAUNCHER
+// Event percentages:
+//   0: 34.88372%
+//   1: 23.255814%
+//   2: -0.0%
+//   3: -0.0%
+//   4: 34.88372%
+//   5: 4.6511626%
+//   6: -0.0%
+//   7: 2.3255813%
+//   8: -0.0%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10000000;component=com.giant.brizzle/.Brizzle;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.giant.brizzle/.Brizzle } in package com.giant.brizzle
+:Sending Pointer ACTION_DOWN x=185.0 y=543.0
+:Sending Pointer ACTION_UP x=179.0 y=547.0
+:Sending Pointer ACTION_DOWN x=179.0 y=703.0
+:Sending Pointer ACTION_UP x=179.0 y=703.0
+:Sending Pointer ACTION_DOWN x=300.0 y=148.0
+:Sending Pointer ACTION_UP x=293.0 y=138.0
+:Sending Pointer ACTION_DOWN x=79.0 y=81.0
+:Sending Pointer ACTION_UP x=79.0 y=81.0
+:Sending Pointer ACTION_DOWN x=373.0 y=606.0
+:Sending Pointer ACTION_UP x=373.0 y=606.0
+:Sending Pointer ACTION_DOWN x=374.0 y=94.0
+:Sending Pointer ACTION_UP x=374.0 y=94.0
+:Sending Pointer ACTION_DOWN x=65.0 y=260.0
+:Sending Pointer ACTION_UP x=51.0 y=267.0
+:Sending Pointer ACTION_DOWN x=398.0 y=182.0
+:Sending Pointer ACTION_UP x=398.0 y=182.0
+:Sending Pointer ACTION_DOWN x=408.0 y=622.0
+:Sending Pointer ACTION_UP x=430.0 y=626.0
+:Sending Pointer ACTION_DOWN x=468.0 y=732.0
+:Sending Pointer ACTION_UP x=457.0 y=723.0
+:Sending Pointer ACTION_DOWN x=7.0 y=150.0
+:Sending Pointer ACTION_UP x=7.0 y=150.0
+:Sending Pointer ACTION_DOWN x=159.0 y=615.0
+:Sending Pointer ACTION_UP x=157.0 y=617.0
+:Sending Pointer ACTION_DOWN x=388.0 y=430.0
+:Sending Pointer ACTION_UP x=388.0 y=430.0
+:Sending Pointer ACTION_DOWN x=357.0 y=27.0
+:Sending Pointer ACTION_UP x=357.0 y=27.0
+:Sending Pointer ACTION_DOWN x=55.0 y=54.0
+:Sending Pointer ACTION_UP x=76.0 y=64.0
+:Sending Pointer ACTION_DOWN x=271.0 y=455.0
+:Sending Pointer ACTION_UP x=271.0 y=455.0
+:Sending Pointer ACTION_DOWN x=135.0 y=291.0
+:Sending Pointer ACTION_UP x=135.0 y=291.0
+:Sending Pointer ACTION_DOWN x=415.0 y=510.0
+:Sending Pointer ACTION_UP x=415.0 y=510.0
+:Sending Pointer ACTION_DOWN x=38.0 y=632.0
+    //[calendar_time:2014-01-08 11:42:01.926  system_uptime:2000050]
+    // Sending event #100
+:Sending Pointer ACTION_UP x=38.0 y=632.0
+:Sending Pointer ACTION_DOWN x=367.0 y=273.0
+:Sending Pointer ACTION_UP x=348.0 y=273.0
+:Sending Pointer ACTION_DOWN x=268.0 y=468.0
+:Sending Pointer ACTION_UP x=277.0 y=464.0
+:Sending Pointer ACTION_DOWN x=210.0 y=328.0
+:Sending Pointer ACTION_UP x=210.0 y=328.0
+:Sending Pointer ACTION_DOWN x=57.0 y=72.0
+:Sending Pointer ACTION_UP x=57.0 y=72.0
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher/.Launcher } in package com.android.launcher
+:Sending Pointer ACTION_DOWN x=190.0 y=586.0
+:Sending Pointer ACTION_UP x=215.0 y=595.0
+:Sending Pointer ACTION_DOWN x=61.0 y=282.0
+:Sending Pointer ACTION_UP x=62.0 y=288.0
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.android.launcher/.Launcher } in package com.android.launcher
+Events injected: 150
+:Dropped: keys=1 pointers=0 trackballs=0 flips=0
+## Network stats: elapsed time=28014ms (0ms mobile, 0ms wifi, 28014ms not connected)
+// Monkey finished
+
+<<<<<<< EndFileTag >>>>>>>
