@@ -255,7 +255,7 @@ bool PuzzleUtil::isCanPuzzle()
                         }
                         else
                         {
-                            focus = (Bird*)(*iter)->objectAtIndex(ceil(count/2));
+                            focus = (Bird*)(*iter)->objectAtIndex(ceil(float(count/2)));
                         }
                     }
 
